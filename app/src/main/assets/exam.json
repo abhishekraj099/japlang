@@ -1,0 +1,231 @@
+{
+  "title": "JLPT N5 mock test",
+  "minutes": 10,
+  "passPercent": 60,
+  "questions": [
+    {
+      "section": "Vocabulary",
+      "prompt": "「せんせい」 means:",
+      "options": [
+        "teacher",
+        "student",
+        "friend",
+        "doctor"
+      ],
+      "explain": "せんせい (sensei) = teacher."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which word means \"tomorrow\"?",
+      "options": [
+        "あした",
+        "きのう",
+        "きょう",
+        "いま"
+      ],
+      "explain": "あした = tomorrow, きょう = today, きのう = yesterday, いま = now."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "「えき」 is a place where you:",
+      "options": [
+        "catch a train",
+        "buy bread",
+        "see a doctor",
+        "borrow books"
+      ],
+      "explain": "えき (eki) = station."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which word means \"to drink\"?",
+      "options": [
+        "のみます",
+        "たべます",
+        "みます",
+        "かいます"
+      ],
+      "explain": "のみます = drink, たべます = eat, みます = see, かいます = buy."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "The opposite of 「あさ」 is:",
+      "options": [
+        "よる",
+        "いま",
+        "きょう",
+        "まいにち"
+      ],
+      "explain": "あさ = morning, よる = night."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "「じゅうご」 is which number?",
+      "options": [
+        "15",
+        "50",
+        "5",
+        "10"
+      ],
+      "explain": "じゅう (10) + ご (5) = 15. Fifty would be ごじゅう."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "How is 「山」 read?",
+      "options": [
+        "やま",
+        "かわ",
+        "ひと",
+        "つき"
+      ],
+      "explain": "山 = やま (yama), mountain."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "Which kanji means \"person\"?",
+      "options": [
+        "人",
+        "日",
+        "月",
+        "川"
+      ],
+      "explain": "人 = ひと (hito), person."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "How is 「三」 read?",
+      "options": [
+        "さん",
+        "に",
+        "いち",
+        "ご"
+      ],
+      "explain": "三 = さん (san), three."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「月」 can mean:",
+      "options": [
+        "moon",
+        "river",
+        "mountain",
+        "person"
+      ],
+      "explain": "月 = つき (tsuki), moon or month."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "わたし ＿＿ がくせい です。",
+      "options": [
+        "は",
+        "を",
+        "に",
+        "で"
+      ],
+      "explain": "は marks the topic: \"As for me, I am a student.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "パン ＿＿ たべます。",
+      "options": [
+        "を",
+        "に",
+        "へ",
+        "と"
+      ],
+      "explain": "を marks the thing that is eaten."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "あした がっこう ＿＿ いきます。",
+      "options": [
+        "に",
+        "を",
+        "が",
+        "と"
+      ],
+      "explain": "に marks the place you are going to."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "Make it a question: たなかさん は せんせい です＿＿。",
+      "options": [
+        "か",
+        "は",
+        "を",
+        "に"
+      ],
+      "explain": "Adding か to the end of a sentence makes it a question."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"I don't drink coffee.\"  コーヒー を ＿＿。",
+      "options": [
+        "のみません",
+        "のみます",
+        "のみました",
+        "のみましょう"
+      ],
+      "explain": "～ません is the polite negative. のみました = drank, のみましょう = let's drink."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "A: ありがとうございます。  B: ＿＿",
+      "options": [
+        "どういたしまして",
+        "おはよう",
+        "さようなら",
+        "いただきます"
+      ],
+      "explain": "どういたしまして = \"You're welcome.\""
+    },
+    {
+      "section": "Reading",
+      "prompt": "Where does Ken go every day?",
+      "options": [
+        "School",
+        "The station",
+        "The park",
+        "The hospital"
+      ],
+      "explain": "まいにち がっこう に いきます = \"I go to school every day.\"",
+      "passage": "わたし は ケン です。がくせい です。まいにち がっこう に いきます。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What does Yuki not drink?",
+      "options": [
+        "Tea",
+        "Coffee",
+        "Water",
+        "Milk"
+      ],
+      "explain": "おちゃ は のみません = \"Tea, she does not drink.\"",
+      "passage": "ゆきさん は あさ パン を たべます。コーヒー を のみます。おちゃ は のみません。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "When is the writer going to the station?",
+      "options": [
+        "Tomorrow",
+        "Today",
+        "Yesterday",
+        "Every day"
+      ],
+      "explain": "あした えき に いきます = \"I will go to the station tomorrow.\"",
+      "passage": "きょう は うち に います。あした えき に いきます。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "Who is a student?",
+      "options": [
+        "Tanaka's friend",
+        "Tanaka",
+        "Tanaka's teacher",
+        "Nobody"
+      ],
+      "explain": "たなかさん の ともだち = Tanaka's friend. の links an owner to what they have.",
+      "passage": "たなかさん は せんせい です。たなかさん の ともだち は がくせい です。"
+    }
+  ]
+}

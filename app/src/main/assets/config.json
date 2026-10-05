@@ -1,0 +1,336 @@
+{
+  "goals": [
+    {
+      "xp": 10,
+      "name": "Casual",
+      "time": "about 5 minutes a day"
+    },
+    {
+      "xp": 30,
+      "name": "Regular",
+      "time": "about 10 minutes a day"
+    },
+    {
+      "xp": 50,
+      "name": "Serious",
+      "time": "about 20 minutes a day"
+    }
+  ],
+  "defaultGoal": 30,
+  "rewards": {
+    "lesson": 10,
+    "practice": 5,
+    "perfectBonus": 5,
+    "challenge": 20,
+    "examPass": 20,
+    "gameMax": 10
+  },
+  "challenge": {
+    "size": 10,
+    "minLearned": 8
+  },
+  "game": {
+    "seconds": 60,
+    "minPool": 8
+  },
+  "reminderHour": 19,
+  "srsHours": [
+    0,
+    4,
+    24,
+    72,
+    168,
+    504
+  ],
+  "quests": {
+    "perDay": 3,
+    "pool": [
+      {
+        "title": "Earn {target} XP",
+        "metric": "XP",
+        "target": "GOAL"
+      },
+      {
+        "title": "Finish {target} lessons",
+        "metric": "LESSONS",
+        "target": 2
+      },
+      {
+        "title": "Finish a session with no mistakes",
+        "metric": "PERFECT",
+        "target": 1
+      },
+      {
+        "title": "Do a practice session",
+        "metric": "PRACTICE",
+        "target": 1
+      },
+      {
+        "title": "Beat the daily challenge",
+        "metric": "CHALLENGE",
+        "target": 1
+      }
+    ]
+  },
+  "badges": [
+    {
+      "title": "First step",
+      "how": "Finish your first session",
+      "metric": "XP",
+      "target": 1
+    },
+    {
+      "title": "On a roll",
+      "how": "Keep a 3-day streak",
+      "metric": "STREAK",
+      "target": 3
+    },
+    {
+      "title": "Week strong",
+      "how": "Keep a 7-day streak",
+      "metric": "STREAK",
+      "target": 7
+    },
+    {
+      "title": "Centurion",
+      "how": "Earn 100 XP",
+      "metric": "XP",
+      "target": 100
+    },
+    {
+      "title": "Hiragana hero",
+      "how": "Finish both hiragana units",
+      "metric": "UNITS",
+      "units": [
+        "hira"
+      ]
+    },
+    {
+      "title": "Katakana hero",
+      "how": "Finish both katakana units",
+      "metric": "UNITS",
+      "units": [
+        "kata"
+      ]
+    },
+    {
+      "title": "Collector",
+      "how": "Learn 50 items",
+      "metric": "LEARNED",
+      "target": 50
+    },
+    {
+      "title": "Test taker",
+      "how": "Pass the mock test",
+      "metric": "EXAM",
+      "target": 60
+    },
+    {
+      "title": "Sharp eye",
+      "how": "Answer 10 in a row correctly in one session",
+      "metric": "RUN",
+      "target": 10
+    },
+    {
+      "title": "Guardian",
+      "how": "Have an omamori protect your streak",
+      "metric": "PROTECTED",
+      "target": 1
+    },
+    {
+      "title": "Saver",
+      "how": "Hold 500 drops",
+      "metric": "COINS",
+      "target": 500
+    }
+  ],
+  "placement": {
+    "stepUp": 2,
+    "maxMisses": 2,
+    "maxQuestions": 14,
+    "levels": [
+      {
+        "name": "Hiragana",
+        "units": [
+          "hira"
+        ]
+      },
+      {
+        "name": "Katakana",
+        "units": [
+          "kata"
+        ]
+      },
+      {
+        "name": "Basics",
+        "units": [
+          "b1",
+          "b2",
+          "fam",
+          "ani",
+          "dish"
+        ]
+      },
+      {
+        "name": "Everyday things",
+        "units": [
+          "comp",
+          "ask",
+          "place",
+          "num",
+          "time",
+          "time2"
+        ]
+      },
+      {
+        "name": "Getting around",
+        "units": [
+          "dir",
+          "traf",
+          "days",
+          "life1",
+          "rel1",
+          "sport",
+          "life2",
+          "rel2"
+        ]
+      },
+      {
+        "name": "Describing",
+        "units": [
+          "colors",
+          "look",
+          "clothes",
+          "comp2",
+          "adj",
+          "taste",
+          "ability"
+        ]
+      },
+      {
+        "name": "Going further",
+        "units": [
+          "travel",
+          "reason",
+          "location",
+          "countobj",
+          "counttime",
+          "pastadj",
+          "compare",
+          "verbs",
+          "desire",
+          "purpose",
+          "groups",
+          "teform"
+        ]
+      },
+      {
+        "name": "Intermediate",
+        "units": [
+          "cont",
+          "perm",
+          "conn",
+          "seq",
+          "nai",
+          "oblig",
+          "cap1",
+          "hobby",
+          "ta",
+          "listing",
+          "indirect",
+          "nounmod",
+          "when",
+          "givetake",
+          "even",
+          "ndesu",
+          "advice",
+          "cap2",
+          "cond"
+        ]
+      }
+    ]
+  },
+  "league": {
+    "minWeeklyXp": 60,
+    "maxWeeklyXp": 520,
+    "sample": [
+      "Aiko T.",
+      "Marco R.",
+      "Lena S.",
+      "Priya K.",
+      "Tom W.",
+      "Sofia G.",
+      "Kenji M.",
+      "Hana Y.",
+      "Omar F.",
+      "Julia P.",
+      "Dev A.",
+      "Mei L.",
+      "Noah B.",
+      "Sara N."
+    ]
+  },
+  "coins": {
+    "lesson": 10,
+    "practice": 5,
+    "perfect": 5,
+    "challenge": 20
+  },
+  "streak": {
+    "protectionCost": 200,
+    "maxProtection": 2,
+    "goals": [
+      {
+        "days": 7,
+        "reward": 50
+      },
+      {
+        "days": 14,
+        "reward": 120
+      },
+      {
+        "days": 30,
+        "reward": 300
+      },
+      {
+        "days": 100,
+        "reward": 1000
+      }
+    ]
+  },
+  "ranks": [
+    {
+      "name": "Newcomer",
+      "japanese": "入門",
+      "xp": 0
+    },
+    {
+      "name": "Beginner",
+      "japanese": "初級",
+      "xp": 100
+    },
+    {
+      "name": "Intermediate",
+      "japanese": "中級",
+      "xp": 500
+    },
+    {
+      "name": "Advanced",
+      "japanese": "上級",
+      "xp": 1500
+    },
+    {
+      "name": "Expert",
+      "japanese": "達人",
+      "xp": 4000
+    },
+    {
+      "name": "Master",
+      "japanese": "師範",
+      "xp": 10000
+    }
+  ],
+  "testOut": {
+    "passPercent": 80
+  }
+}

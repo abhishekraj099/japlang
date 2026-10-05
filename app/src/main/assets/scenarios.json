@@ -1,0 +1,1547 @@
+{
+  "curated": [
+    "intro",
+    "visit",
+    "konbini",
+    "restaurant",
+    "station",
+    "doctor"
+  ],
+  "scenarios": [
+    {
+      "id": "intro",
+      "title": "Self-introduction",
+      "level": "Beginner",
+      "icon": "名",
+      "color": "#34408F",
+      "dark": "#1A2550",
+      "summary": "You meet someone new at class, at work or at a party and want to introduce yourself.",
+      "tags": [
+        "introduce",
+        "meeting",
+        "name",
+        "greetings",
+        "work",
+        "hometown"
+      ],
+      "parts": [
+        {
+          "title": "Asking someone's name",
+          "vocab": [
+            {
+              "jp": "失礼",
+              "reading": "しつれい",
+              "romaji": "shitsurei",
+              "meaning": "excuse me",
+              "note": "Literally \"rudeness\". 失礼ですが… softens a personal question, like \"sorry to ask, but…\"."
+            },
+            {
+              "jp": "お名前",
+              "reading": "おなまえ",
+              "romaji": "onamae",
+              "meaning": "(your) name",
+              "note": "お makes 名前 polite. Never use it for your own name."
+            },
+            {
+              "jp": "どうぞ",
+              "reading": "どうぞ",
+              "romaji": "douzo",
+              "meaning": "please; go ahead",
+              "note": "Offers something or invites someone to go first."
+            },
+            {
+              "jp": "さん",
+              "reading": "さん",
+              "romaji": "san",
+              "meaning": "Mr / Ms",
+              "note": "Goes after other people's names, never your own."
+            },
+            {
+              "jp": "よろしく",
+              "reading": "よろしく",
+              "romaji": "yoroshiku",
+              "meaning": "please treat me well",
+              "note": "Said after an introduction; the full polite form is よろしくお願いします."
+            },
+            {
+              "jp": "はい",
+              "reading": "はい",
+              "romaji": "hai",
+              "meaning": "yes"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "失礼ですが、",
+                "お名前は？"
+              ],
+              "romaji": "shitsurei desu ga, onamae wa?",
+              "en": "Excuse me, what's your name?"
+            },
+            {
+              "tokens": [
+                "リナ",
+                "です。"
+              ],
+              "romaji": "Rina desu.",
+              "en": "I'm Rina."
+            },
+            {
+              "tokens": [
+                "リナさん",
+                "ですか。"
+              ],
+              "romaji": "Rina-san desu ka.",
+              "en": "So you're Rina?"
+            },
+            {
+              "tokens": [
+                "どうぞ",
+                "よろしく。"
+              ],
+              "romaji": "douzo yoroshiku.",
+              "en": "Nice to meet you."
+            }
+          ]
+        },
+        {
+          "title": "Where you're from",
+          "vocab": [
+            {
+              "jp": "はじめまして",
+              "reading": "はじめまして",
+              "romaji": "hajimemashite",
+              "meaning": "nice to meet you",
+              "note": "Only for the very first meeting."
+            },
+            {
+              "jp": "こちらこそ",
+              "reading": "こちらこそ",
+              "romaji": "kochira koso",
+              "meaning": "likewise",
+              "note": "\"The pleasure is mine.\" A reply to よろしく."
+            },
+            {
+              "jp": "出身",
+              "reading": "しゅっしん",
+              "romaji": "shusshin",
+              "meaning": "hometown; origin"
+            },
+            {
+              "jp": "から",
+              "reading": "から",
+              "romaji": "kara",
+              "meaning": "from"
+            },
+            {
+              "jp": "来ました",
+              "reading": "きました",
+              "romaji": "kimashita",
+              "meaning": "came",
+              "note": "Past of 来ます. ～から来ました: I'm from…"
+            },
+            {
+              "jp": "どちら",
+              "reading": "どちら",
+              "romaji": "dochira",
+              "meaning": "where (polite)"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "はじめまして、",
+                "ケン",
+                "です。"
+              ],
+              "romaji": "hajimemashite, Ken desu.",
+              "en": "Nice to meet you, I'm Ken."
+            },
+            {
+              "tokens": [
+                "インド",
+                "から",
+                "来ました。"
+              ],
+              "romaji": "Indo kara kimashita.",
+              "en": "I'm from India."
+            },
+            {
+              "tokens": [
+                "ご出身は",
+                "どちら",
+                "ですか。"
+              ],
+              "romaji": "goshusshin wa dochira desu ka.",
+              "en": "Where are you from?"
+            },
+            {
+              "tokens": [
+                "こちらこそ",
+                "よろしく。"
+              ],
+              "romaji": "kochira koso yoroshiku.",
+              "en": "Nice to meet you too."
+            }
+          ]
+        },
+        {
+          "title": "Talking about your job",
+          "vocab": [
+            {
+              "jp": "会社員",
+              "reading": "かいしゃいん",
+              "romaji": "kaishain",
+              "meaning": "office worker"
+            },
+            {
+              "jp": "学生",
+              "reading": "がくせい",
+              "romaji": "gakusei",
+              "meaning": "student"
+            },
+            {
+              "jp": "仕事",
+              "reading": "しごと",
+              "romaji": "shigoto",
+              "meaning": "work; job"
+            },
+            {
+              "jp": "エンジニア",
+              "reading": "えんじにあ",
+              "romaji": "enjinia",
+              "meaning": "engineer"
+            },
+            {
+              "jp": "お仕事",
+              "reading": "おしごと",
+              "romaji": "oshigoto",
+              "meaning": "(your) job",
+              "note": "Polite form used when asking about someone else's work."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "お仕事は",
+                "何",
+                "ですか。"
+              ],
+              "romaji": "oshigoto wa nan desu ka.",
+              "en": "What do you do?"
+            },
+            {
+              "tokens": [
+                "エンジニア",
+                "です。"
+              ],
+              "romaji": "enjinia desu.",
+              "en": "I'm an engineer."
+            },
+            {
+              "tokens": [
+                "わたし",
+                "は",
+                "学生",
+                "です。"
+              ],
+              "romaji": "watashi wa gakusei desu.",
+              "en": "I'm a student."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visit",
+      "title": "Visiting a friend's house",
+      "level": "Beginner",
+      "icon": "家",
+      "color": "#4F7A4A",
+      "dark": "#2F4F2B",
+      "summary": "A friend invites you home. Greet the family, bring a small gift and thank them as you leave.",
+      "tags": [
+        "home",
+        "friends",
+        "visit",
+        "gifts",
+        "polite",
+        "family"
+      ],
+      "parts": [
+        {
+          "title": "At the door",
+          "vocab": [
+            {
+              "jp": "お邪魔します",
+              "reading": "おじゃまします",
+              "romaji": "ojama shimasu",
+              "meaning": "sorry to intrude",
+              "note": "Said as you step inside someone's home. Literally \"I will be in your way\"."
+            },
+            {
+              "jp": "いらっしゃい",
+              "reading": "いらっしゃい",
+              "romaji": "irasshai",
+              "meaning": "welcome",
+              "note": "What the host says when you arrive."
+            },
+            {
+              "jp": "どうぞ",
+              "reading": "どうぞ",
+              "romaji": "douzo",
+              "meaning": "please come in"
+            },
+            {
+              "jp": "靴",
+              "reading": "くつ",
+              "romaji": "kutsu",
+              "meaning": "shoes",
+              "note": "Take them off at the entrance, the 玄関."
+            },
+            {
+              "jp": "スリッパ",
+              "reading": "すりっぱ",
+              "romaji": "surippa",
+              "meaning": "slippers"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "いらっしゃい、",
+                "どうぞ。"
+              ],
+              "romaji": "irasshai, douzo.",
+              "en": "Welcome, come in."
+            },
+            {
+              "tokens": [
+                "お邪魔します。"
+              ],
+              "romaji": "ojama shimasu.",
+              "en": "Thank you for having me."
+            },
+            {
+              "tokens": [
+                "スリッパ",
+                "を",
+                "どうぞ。"
+              ],
+              "romaji": "surippa o douzo.",
+              "en": "Here, have some slippers."
+            }
+          ]
+        },
+        {
+          "title": "Giving a gift",
+          "vocab": [
+            {
+              "jp": "つまらないもの",
+              "reading": "つまらないもの",
+              "romaji": "tsumaranai mono",
+              "meaning": "a small thing",
+              "note": "Humble way to describe a gift you give. Younger people often say ほんの気持ちです instead."
+            },
+            {
+              "jp": "お土産",
+              "reading": "おみやげ",
+              "romaji": "omiyage",
+              "meaning": "souvenir; gift"
+            },
+            {
+              "jp": "ありがとう",
+              "reading": "ありがとう",
+              "romaji": "arigatou",
+              "meaning": "thank you"
+            },
+            {
+              "jp": "気持ち",
+              "reading": "きもち",
+              "romaji": "kimochi",
+              "meaning": "feeling; token"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "これ、",
+                "お土産",
+                "です。"
+              ],
+              "romaji": "kore, omiyage desu.",
+              "en": "This is a little gift."
+            },
+            {
+              "tokens": [
+                "ほんの",
+                "気持ち",
+                "です。"
+              ],
+              "romaji": "honno kimochi desu.",
+              "en": "It's just a small token."
+            },
+            {
+              "tokens": [
+                "ありがとう",
+                "ございます。"
+              ],
+              "romaji": "arigatou gozaimasu.",
+              "en": "Thank you very much."
+            }
+          ]
+        },
+        {
+          "title": "Leaving",
+          "vocab": [
+            {
+              "jp": "そろそろ",
+              "reading": "そろそろ",
+              "romaji": "sorosoro",
+              "meaning": "it's about time",
+              "note": "Signals you're about to leave."
+            },
+            {
+              "jp": "失礼します",
+              "reading": "しつれいします",
+              "romaji": "shitsurei shimasu",
+              "meaning": "excuse me (leaving)"
+            },
+            {
+              "jp": "楽しかった",
+              "reading": "たのしかった",
+              "romaji": "tanoshikatta",
+              "meaning": "it was fun"
+            },
+            {
+              "jp": "また",
+              "reading": "また",
+              "romaji": "mata",
+              "meaning": "again"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "そろそろ",
+                "失礼します。"
+              ],
+              "romaji": "sorosoro shitsurei shimasu.",
+              "en": "I should be going now."
+            },
+            {
+              "tokens": [
+                "今日は",
+                "楽しかった",
+                "です。"
+              ],
+              "romaji": "kyou wa tanoshikatta desu.",
+              "en": "I had a great time today."
+            },
+            {
+              "tokens": [
+                "また",
+                "来て",
+                "ください。"
+              ],
+              "romaji": "mata kite kudasai.",
+              "en": "Please come again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "konbini",
+      "title": "At the convenience store",
+      "level": "Beginner",
+      "icon": "店",
+      "color": "#C28A1A",
+      "dark": "#8A5E0C",
+      "summary": "Buy a snack at a konbini: answer the cashier's questions about bags, heating and paying.",
+      "tags": [
+        "shopping",
+        "store",
+        "konbini",
+        "money",
+        "food"
+      ],
+      "parts": [
+        {
+          "title": "At the till",
+          "vocab": [
+            {
+              "jp": "袋",
+              "reading": "ふくろ",
+              "romaji": "fukuro",
+              "meaning": "bag",
+              "note": "Plastic bags cost a few yen, so the cashier asks if you want one."
+            },
+            {
+              "jp": "いりません",
+              "reading": "いりません",
+              "romaji": "irimasen",
+              "meaning": "I don't need it"
+            },
+            {
+              "jp": "お願いします",
+              "reading": "おねがいします",
+              "romaji": "onegaishimasu",
+              "meaning": "yes, please"
+            },
+            {
+              "jp": "温めます",
+              "reading": "あたためます",
+              "romaji": "atatamemasu",
+              "meaning": "heat up",
+              "note": "Cashiers offer to microwave bento and snacks."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "袋",
+                "は",
+                "ご利用ですか。"
+              ],
+              "romaji": "fukuro wa goriyou desu ka.",
+              "en": "Would you like a bag?"
+            },
+            {
+              "tokens": [
+                "いいえ、",
+                "いりません。"
+              ],
+              "romaji": "iie, irimasen.",
+              "en": "No, I don't need one."
+            },
+            {
+              "tokens": [
+                "温めますか。"
+              ],
+              "romaji": "atatamemasu ka.",
+              "en": "Shall I heat it up?"
+            },
+            {
+              "tokens": [
+                "はい、",
+                "お願いします。"
+              ],
+              "romaji": "hai, onegaishimasu.",
+              "en": "Yes, please."
+            }
+          ]
+        },
+        {
+          "title": "Paying",
+          "vocab": [
+            {
+              "jp": "円",
+              "reading": "えん",
+              "romaji": "en",
+              "meaning": "yen"
+            },
+            {
+              "jp": "カード",
+              "reading": "かーど",
+              "romaji": "kaado",
+              "meaning": "card"
+            },
+            {
+              "jp": "現金",
+              "reading": "げんきん",
+              "romaji": "genkin",
+              "meaning": "cash"
+            },
+            {
+              "jp": "レシート",
+              "reading": "れしーと",
+              "romaji": "reshiito",
+              "meaning": "receipt"
+            },
+            {
+              "jp": "ちょうど",
+              "reading": "ちょうど",
+              "romaji": "choudo",
+              "meaning": "exactly",
+              "note": "ちょうどです: I'm paying the exact amount."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "カード",
+                "で",
+                "お願いします。"
+              ],
+              "romaji": "kaado de onegaishimasu.",
+              "en": "By card, please."
+            },
+            {
+              "tokens": [
+                "五百円",
+                "ちょうど",
+                "です。"
+              ],
+              "romaji": "gohyaku en choudo desu.",
+              "en": "Here's exactly 500 yen."
+            },
+            {
+              "tokens": [
+                "レシート",
+                "は",
+                "いりません。"
+              ],
+              "romaji": "reshiito wa irimasen.",
+              "en": "I don't need the receipt."
+            }
+          ]
+        },
+        {
+          "title": "Finding things",
+          "vocab": [
+            {
+              "jp": "どこ",
+              "reading": "どこ",
+              "romaji": "doko",
+              "meaning": "where"
+            },
+            {
+              "jp": "ありますか",
+              "reading": "ありますか",
+              "romaji": "arimasu ka",
+              "meaning": "do you have…?"
+            },
+            {
+              "jp": "あちら",
+              "reading": "あちら",
+              "romaji": "achira",
+              "meaning": "over there (polite)"
+            },
+            {
+              "jp": "水",
+              "reading": "みず",
+              "romaji": "mizu",
+              "meaning": "water"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "水",
+                "は",
+                "どこ",
+                "ですか。"
+              ],
+              "romaji": "mizu wa doko desu ka.",
+              "en": "Where is the water?"
+            },
+            {
+              "tokens": [
+                "あちら",
+                "です。"
+              ],
+              "romaji": "achira desu.",
+              "en": "It's over there."
+            },
+            {
+              "tokens": [
+                "おにぎり",
+                "は",
+                "ありますか。"
+              ],
+              "romaji": "onigiri wa arimasu ka.",
+              "en": "Do you have rice balls?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restaurant",
+      "title": "Ordering at a restaurant",
+      "level": "Beginner",
+      "icon": "食",
+      "color": "#B5562B",
+      "dark": "#7D3618",
+      "summary": "Get a table, order food and drinks and ask for the bill at a casual restaurant.",
+      "tags": [
+        "food",
+        "restaurant",
+        "ordering",
+        "drink",
+        "eating"
+      ],
+      "parts": [
+        {
+          "title": "Getting a table",
+          "vocab": [
+            {
+              "jp": "何名様",
+              "reading": "なんめいさま",
+              "romaji": "nanmei-sama",
+              "meaning": "how many people?",
+              "note": "Staff ask this at the door. Answer with ふたりです, ひとりです…"
+            },
+            {
+              "jp": "一人",
+              "reading": "ひとり",
+              "romaji": "hitori",
+              "meaning": "one person"
+            },
+            {
+              "jp": "二人",
+              "reading": "ふたり",
+              "romaji": "futari",
+              "meaning": "two people"
+            },
+            {
+              "jp": "禁煙席",
+              "reading": "きんえんせき",
+              "romaji": "kin'enseki",
+              "meaning": "non-smoking seat"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "何名様",
+                "ですか。"
+              ],
+              "romaji": "nanmei-sama desu ka.",
+              "en": "How many in your party?"
+            },
+            {
+              "tokens": [
+                "二人",
+                "です。"
+              ],
+              "romaji": "futari desu.",
+              "en": "Two."
+            },
+            {
+              "tokens": [
+                "こちら",
+                "へ",
+                "どうぞ。"
+              ],
+              "romaji": "kochira e douzo.",
+              "en": "This way, please."
+            }
+          ]
+        },
+        {
+          "title": "Ordering",
+          "vocab": [
+            {
+              "jp": "メニュー",
+              "reading": "めにゅー",
+              "romaji": "menyuu",
+              "meaning": "menu"
+            },
+            {
+              "jp": "おすすめ",
+              "reading": "おすすめ",
+              "romaji": "osusume",
+              "meaning": "recommendation"
+            },
+            {
+              "jp": "ください",
+              "reading": "ください",
+              "romaji": "kudasai",
+              "meaning": "please give me"
+            },
+            {
+              "jp": "にします",
+              "reading": "にします",
+              "romaji": "ni shimasu",
+              "meaning": "I'll have…",
+              "note": "Noun + にします decides on something."
+            },
+            {
+              "jp": "すみません",
+              "reading": "すみません",
+              "romaji": "sumimasen",
+              "meaning": "excuse me",
+              "note": "Call the staff over with this."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "すみません、",
+                "メニュー",
+                "を",
+                "ください。"
+              ],
+              "romaji": "sumimasen, menyuu o kudasai.",
+              "en": "Excuse me, a menu please."
+            },
+            {
+              "tokens": [
+                "おすすめ",
+                "は",
+                "何",
+                "ですか。"
+              ],
+              "romaji": "osusume wa nan desu ka.",
+              "en": "What do you recommend?"
+            },
+            {
+              "tokens": [
+                "ラーメン",
+                "に",
+                "します。"
+              ],
+              "romaji": "raamen ni shimasu.",
+              "en": "I'll have the ramen."
+            }
+          ]
+        },
+        {
+          "title": "Paying the bill",
+          "vocab": [
+            {
+              "jp": "お会計",
+              "reading": "おかいけい",
+              "romaji": "okaikei",
+              "meaning": "the bill"
+            },
+            {
+              "jp": "別々",
+              "reading": "べつべつ",
+              "romaji": "betsubetsu",
+              "meaning": "separately"
+            },
+            {
+              "jp": "ごちそうさまでした",
+              "reading": "ごちそうさまでした",
+              "romaji": "gochisousama deshita",
+              "meaning": "thanks for the meal",
+              "note": "Said after eating, and to staff as you leave."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "お会計",
+                "お願いします。"
+              ],
+              "romaji": "okaikei onegaishimasu.",
+              "en": "The bill, please."
+            },
+            {
+              "tokens": [
+                "別々",
+                "で",
+                "お願いします。"
+              ],
+              "romaji": "betsubetsu de onegaishimasu.",
+              "en": "Separately, please."
+            },
+            {
+              "tokens": [
+                "ごちそうさまでした。"
+              ],
+              "romaji": "gochisousama deshita.",
+              "en": "Thank you for the meal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "station",
+      "title": "At the train station",
+      "level": "Beginner",
+      "icon": "駅",
+      "color": "#2E8A99",
+      "dark": "#1A5862",
+      "summary": "Buy a ticket, find your platform and check where to change trains.",
+      "tags": [
+        "travel",
+        "train",
+        "station",
+        "directions",
+        "transport"
+      ],
+      "parts": [
+        {
+          "title": "Buying a ticket",
+          "vocab": [
+            {
+              "jp": "切符",
+              "reading": "きっぷ",
+              "romaji": "kippu",
+              "meaning": "ticket"
+            },
+            {
+              "jp": "まで",
+              "reading": "まで",
+              "romaji": "made",
+              "meaning": "to; as far as"
+            },
+            {
+              "jp": "片道",
+              "reading": "かたみち",
+              "romaji": "katamichi",
+              "meaning": "one way"
+            },
+            {
+              "jp": "往復",
+              "reading": "おうふく",
+              "romaji": "oufuku",
+              "meaning": "return trip"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "東京",
+                "まで",
+                "の",
+                "切符",
+                "を",
+                "ください。"
+              ],
+              "romaji": "Toukyou made no kippu o kudasai.",
+              "en": "A ticket to Tokyo, please."
+            },
+            {
+              "tokens": [
+                "片道",
+                "です。"
+              ],
+              "romaji": "katamichi desu.",
+              "en": "One way."
+            },
+            {
+              "tokens": [
+                "いくら",
+                "ですか。"
+              ],
+              "romaji": "ikura desu ka.",
+              "en": "How much is it?"
+            }
+          ]
+        },
+        {
+          "title": "Finding the platform",
+          "vocab": [
+            {
+              "jp": "何番線",
+              "reading": "なんばんせん",
+              "romaji": "nanbansen",
+              "meaning": "which platform",
+              "note": "～番線 is the platform number."
+            },
+            {
+              "jp": "電車",
+              "reading": "でんしゃ",
+              "romaji": "densha",
+              "meaning": "train"
+            },
+            {
+              "jp": "行き",
+              "reading": "ゆき",
+              "romaji": "yuki",
+              "meaning": "bound for",
+              "note": "Signs show 東京行き: bound for Tokyo."
+            },
+            {
+              "jp": "次",
+              "reading": "つぎ",
+              "romaji": "tsugi",
+              "meaning": "next"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "新宿",
+                "行き",
+                "は",
+                "何番線",
+                "ですか。"
+              ],
+              "romaji": "Shinjuku yuki wa nanbansen desu ka.",
+              "en": "Which platform for Shinjuku?"
+            },
+            {
+              "tokens": [
+                "三番線",
+                "です。"
+              ],
+              "romaji": "sanbansen desu.",
+              "en": "Platform three."
+            },
+            {
+              "tokens": [
+                "次",
+                "の",
+                "電車",
+                "は",
+                "何時",
+                "ですか。"
+              ],
+              "romaji": "tsugi no densha wa nanji desu ka.",
+              "en": "When is the next train?"
+            }
+          ]
+        },
+        {
+          "title": "Changing trains",
+          "vocab": [
+            {
+              "jp": "乗り換え",
+              "reading": "のりかえ",
+              "romaji": "norikae",
+              "meaning": "transfer"
+            },
+            {
+              "jp": "降ります",
+              "reading": "おります",
+              "romaji": "orimasu",
+              "meaning": "get off"
+            },
+            {
+              "jp": "駅",
+              "reading": "えき",
+              "romaji": "eki",
+              "meaning": "station"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "どこ",
+                "で",
+                "乗り換えますか。"
+              ],
+              "romaji": "doko de norikaemasu ka.",
+              "en": "Where do I change?"
+            },
+            {
+              "tokens": [
+                "次",
+                "の",
+                "駅",
+                "で",
+                "降ります。"
+              ],
+              "romaji": "tsugi no eki de orimasu.",
+              "en": "I get off at the next station."
+            }
+          ]
+        }
+      ],
+      "imageFocus": 0.46
+    },
+    {
+      "id": "doctor",
+      "title": "At the doctor",
+      "level": "Elementary",
+      "icon": "医",
+      "color": "#A84867",
+      "dark": "#6E2A41",
+      "summary": "Tell a doctor where it hurts, describe your symptoms and understand their advice.",
+      "tags": [
+        "health",
+        "doctor",
+        "hospital",
+        "body",
+        "illness"
+      ],
+      "parts": [
+        {
+          "title": "Describing symptoms",
+          "vocab": [
+            {
+              "jp": "痛い",
+              "reading": "いたい",
+              "romaji": "itai",
+              "meaning": "it hurts"
+            },
+            {
+              "jp": "頭",
+              "reading": "あたま",
+              "romaji": "atama",
+              "meaning": "head"
+            },
+            {
+              "jp": "熱",
+              "reading": "ねつ",
+              "romaji": "netsu",
+              "meaning": "fever"
+            },
+            {
+              "jp": "咳",
+              "reading": "せき",
+              "romaji": "seki",
+              "meaning": "cough"
+            },
+            {
+              "jp": "どうしましたか",
+              "reading": "どうしましたか",
+              "romaji": "dou shimashita ka",
+              "meaning": "what's the matter?",
+              "note": "The doctor's opening question."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "どうしましたか。"
+              ],
+              "romaji": "dou shimashita ka.",
+              "en": "What seems to be the problem?"
+            },
+            {
+              "tokens": [
+                "頭",
+                "が",
+                "痛い",
+                "です。"
+              ],
+              "romaji": "atama ga itai desu.",
+              "en": "I have a headache."
+            },
+            {
+              "tokens": [
+                "熱",
+                "が",
+                "あります。"
+              ],
+              "romaji": "netsu ga arimasu.",
+              "en": "I have a fever."
+            }
+          ]
+        },
+        {
+          "title": "When it started",
+          "vocab": [
+            {
+              "jp": "昨日",
+              "reading": "きのう",
+              "romaji": "kinou",
+              "meaning": "yesterday"
+            },
+            {
+              "jp": "から",
+              "reading": "から",
+              "romaji": "kara",
+              "meaning": "since"
+            },
+            {
+              "jp": "ずっと",
+              "reading": "ずっと",
+              "romaji": "zutto",
+              "meaning": "the whole time"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "昨日",
+                "から",
+                "です。"
+              ],
+              "romaji": "kinou kara desu.",
+              "en": "Since yesterday."
+            },
+            {
+              "tokens": [
+                "ずっと",
+                "咳",
+                "が",
+                "出ます。"
+              ],
+              "romaji": "zutto seki ga demasu.",
+              "en": "I keep coughing."
+            }
+          ]
+        },
+        {
+          "title": "The doctor's advice",
+          "vocab": [
+            {
+              "jp": "薬",
+              "reading": "くすり",
+              "romaji": "kusuri",
+              "meaning": "medicine"
+            },
+            {
+              "jp": "飲んで",
+              "reading": "のんで",
+              "romaji": "nonde",
+              "meaning": "take (medicine)",
+              "note": "Medicine is \"drunk\" in Japanese: 薬を飲みます."
+            },
+            {
+              "jp": "休んで",
+              "reading": "やすんで",
+              "romaji": "yasunde",
+              "meaning": "rest"
+            },
+            {
+              "jp": "お大事に",
+              "reading": "おだいじに",
+              "romaji": "odaiji ni",
+              "meaning": "get well soon"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "この",
+                "薬",
+                "を",
+                "飲んで",
+                "ください。"
+              ],
+              "romaji": "kono kusuri o nonde kudasai.",
+              "en": "Please take this medicine."
+            },
+            {
+              "tokens": [
+                "よく",
+                "休んで",
+                "ください。"
+              ],
+              "romaji": "yoku yasunde kudasai.",
+              "en": "Get plenty of rest."
+            },
+            {
+              "tokens": [
+                "お大事に。"
+              ],
+              "romaji": "odaiji ni.",
+              "en": "Take care."
+            }
+          ]
+        }
+      ],
+      "imageFocus": 0.4
+    },
+    {
+      "id": "weather",
+      "title": "Small talk about the weather",
+      "level": "Beginner",
+      "icon": "天",
+      "color": "#3F6E8C",
+      "dark": "#25455C",
+      "summary": "Open a chat with a neighbour or colleague with the easiest topic in Japan: the weather.",
+      "tags": [
+        "weather",
+        "small talk",
+        "neighbours",
+        "seasons"
+      ],
+      "parts": [
+        {
+          "title": "Today's weather",
+          "vocab": [
+            {
+              "jp": "いい天気",
+              "reading": "いいてんき",
+              "romaji": "ii tenki",
+              "meaning": "nice weather"
+            },
+            {
+              "jp": "暑い",
+              "reading": "あつい",
+              "romaji": "atsui",
+              "meaning": "hot"
+            },
+            {
+              "jp": "寒い",
+              "reading": "さむい",
+              "romaji": "samui",
+              "meaning": "cold"
+            },
+            {
+              "jp": "ですね",
+              "reading": "ですね",
+              "romaji": "desu ne",
+              "meaning": "isn't it?",
+              "note": "ね invites agreement and keeps small talk friendly."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "いい天気",
+                "ですね。"
+              ],
+              "romaji": "ii tenki desu ne.",
+              "en": "Lovely weather, isn't it?"
+            },
+            {
+              "tokens": [
+                "今日",
+                "は",
+                "暑い",
+                "ですね。"
+              ],
+              "romaji": "kyou wa atsui desu ne.",
+              "en": "It's hot today, isn't it?"
+            },
+            {
+              "tokens": [
+                "そうですね。"
+              ],
+              "romaji": "sou desu ne.",
+              "en": "It sure is."
+            }
+          ]
+        },
+        {
+          "title": "Rain and the forecast",
+          "vocab": [
+            {
+              "jp": "雨",
+              "reading": "あめ",
+              "romaji": "ame",
+              "meaning": "rain"
+            },
+            {
+              "jp": "傘",
+              "reading": "かさ",
+              "romaji": "kasa",
+              "meaning": "umbrella"
+            },
+            {
+              "jp": "降りそう",
+              "reading": "ふりそう",
+              "romaji": "furisou",
+              "meaning": "looks like it'll fall"
+            },
+            {
+              "jp": "明日",
+              "reading": "あした",
+              "romaji": "ashita",
+              "meaning": "tomorrow"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "雨",
+                "が",
+                "降りそう",
+                "です",
+                "ね。"
+              ],
+              "romaji": "ame ga furisou desu ne.",
+              "en": "Looks like rain, doesn't it?"
+            },
+            {
+              "tokens": [
+                "傘",
+                "を",
+                "持って",
+                "いますか。"
+              ],
+              "romaji": "kasa o motte imasu ka.",
+              "en": "Do you have an umbrella?"
+            },
+            {
+              "tokens": [
+                "明日",
+                "は",
+                "晴れる",
+                "そう",
+                "です。"
+              ],
+              "romaji": "ashita wa hareru sou desu.",
+              "en": "Apparently it'll be sunny tomorrow."
+            }
+          ]
+        },
+        {
+          "title": "Seasons",
+          "vocab": [
+            {
+              "jp": "春",
+              "reading": "はる",
+              "romaji": "haru",
+              "meaning": "spring"
+            },
+            {
+              "jp": "夏",
+              "reading": "なつ",
+              "romaji": "natsu",
+              "meaning": "summer"
+            },
+            {
+              "jp": "秋",
+              "reading": "あき",
+              "romaji": "aki",
+              "meaning": "autumn"
+            },
+            {
+              "jp": "冬",
+              "reading": "ふゆ",
+              "romaji": "fuyu",
+              "meaning": "winter"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "どの",
+                "季節",
+                "が",
+                "好き",
+                "ですか。"
+              ],
+              "romaji": "dono kisetsu ga suki desu ka.",
+              "en": "Which season do you like?"
+            },
+            {
+              "tokens": [
+                "春",
+                "が",
+                "一番",
+                "好き",
+                "です。"
+              ],
+              "romaji": "haru ga ichiban suki desu.",
+              "en": "I like spring best."
+            }
+          ]
+        }
+      ],
+      "imageFocus": 0.6
+    },
+    {
+      "id": "phone",
+      "title": "Making a phone call",
+      "level": "Elementary",
+      "icon": "電",
+      "color": "#6B4E8C",
+      "dark": "#45305E",
+      "summary": "Call a shop or office, ask for someone and leave a simple message.",
+      "tags": [
+        "phone",
+        "call",
+        "work",
+        "business",
+        "polite"
+      ],
+      "parts": [
+        {
+          "title": "Answering the phone",
+          "vocab": [
+            {
+              "jp": "もしもし",
+              "reading": "もしもし",
+              "romaji": "moshi moshi",
+              "meaning": "hello (on the phone)",
+              "note": "Only used on the phone, not in person."
+            },
+            {
+              "jp": "申します",
+              "reading": "もうします",
+              "romaji": "moushimasu",
+              "meaning": "my name is (humble)"
+            },
+            {
+              "jp": "いらっしゃいますか",
+              "reading": "いらっしゃいますか",
+              "romaji": "irasshaimasu ka",
+              "meaning": "is … there? (polite)"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "もしもし、",
+                "ケン",
+                "と",
+                "申します。"
+              ],
+              "romaji": "moshi moshi, Ken to moushimasu.",
+              "en": "Hello, this is Ken."
+            },
+            {
+              "tokens": [
+                "田中さん",
+                "は",
+                "いらっしゃいますか。"
+              ],
+              "romaji": "Tanaka-san wa irasshaimasu ka.",
+              "en": "Is Mr Tanaka there?"
+            }
+          ]
+        },
+        {
+          "title": "Leaving a message",
+          "vocab": [
+            {
+              "jp": "伝言",
+              "reading": "でんごん",
+              "romaji": "dengon",
+              "meaning": "message"
+            },
+            {
+              "jp": "後で",
+              "reading": "あとで",
+              "romaji": "ato de",
+              "meaning": "later"
+            },
+            {
+              "jp": "かけ直します",
+              "reading": "かけなおします",
+              "romaji": "kakenaoshimasu",
+              "meaning": "call back"
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "伝言",
+                "を",
+                "お願いできますか。"
+              ],
+              "romaji": "dengon o onegai dekimasu ka.",
+              "en": "Could I leave a message?"
+            },
+            {
+              "tokens": [
+                "後で",
+                "かけ直します。"
+              ],
+              "romaji": "ato de kakenaoshimasu.",
+              "en": "I'll call back later."
+            }
+          ]
+        },
+        {
+          "title": "Ending the call",
+          "vocab": [
+            {
+              "jp": "失礼します",
+              "reading": "しつれいします",
+              "romaji": "shitsurei shimasu",
+              "meaning": "goodbye (polite)",
+              "note": "On the phone this is the usual way to hang up politely."
+            }
+          ],
+          "patterns": [
+            {
+              "tokens": [
+                "では、",
+                "失礼します。"
+              ],
+              "romaji": "dewa, shitsurei shimasu.",
+              "en": "Well then, goodbye."
+            }
+          ]
+        }
+      ],
+      "imageFocus": 0.52
+    }
+  ]
+}

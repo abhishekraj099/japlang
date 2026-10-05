@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The window shows the brand colour until Compose draws, so launch has no white flash. -->
+    <style name="Theme.Jap" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/brand</item>
+    </style>
+</resources>
