@@ -1,0 +1,319 @@
+{
+  "tours": [
+    {
+      "screen": "learn",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "wave",
+          "text": "Hi, I'm {name}! I'll show you around. This is the Learn page, where all your lessons are."
+        },
+        {
+          "target": "today-card",
+          "pose": "point",
+          "text": "This is today's goal. Fill the ring a little every day and finish your daily quests."
+        },
+        {
+          "target": "streak",
+          "pose": "point",
+          "text": "Your streak and your tree live here. Each day you study, you can water the tree and watch it grow."
+        },
+        {
+          "target": "next-lesson",
+          "pose": "cheer",
+          "text": "Tap this to start your next lesson. Ganbatte! (That means \"you can do it!\")",
+          "tap": true
+        }
+      ]
+    },
+    {
+      "screen": "alphabet",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "wave",
+          "text": "This road teaches every letter, one by one. Each row ends with a small test."
+        },
+        {
+          "target": "alphabet-tabs",
+          "pose": "point",
+          "text": "Switch between hiragana, katakana and the letters with marks (が, ぱ, きゃ) here."
+        },
+        {
+          "target": "alphabet-current",
+          "pose": "cheer",
+          "text": "Tap the glowing letter to learn it.",
+          "tap": true
+        }
+      ]
+    },
+    {
+      "screen": "streak",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "target": "tree",
+          "pose": "point",
+          "text": "This is your tree! Study every day and it grows from a sprout into a blossoming sakura."
+        },
+        {
+          "target": "tree",
+          "pose": "think",
+          "text": "If you skip days, it dries out and loses its leaves. Don't worry: studying again brings them back."
+        }
+      ]
+    },
+    {
+      "screen": "practice",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "target": "review-card",
+          "pose": "point",
+          "text": "Words you learn come back here for review just before you'd forget them. A few minutes a day is enough."
+        },
+        {
+          "target": "writing-practice",
+          "pose": "cheer",
+          "text": "Here you write words by hand. I'll check your writing!"
+        }
+      ]
+    },
+    {
+      "screen": "me",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "wave",
+          "text": "This is your page: your weekly progress, your rank and your trophies."
+        },
+        {
+          "target": "me-links",
+          "pose": "point",
+          "text": "Practice, role-play, word lists and settings are all here. Tap the ? at any time to see my tips again."
+        }
+      ]
+    },
+    {
+      "screen": "ex-teach",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "target": "lesson-button",
+          "pose": "point",
+          "text": "New things to learn look like this. Tap the speaker to hear it, then tap Got it."
+        }
+      ]
+    },
+    {
+      "screen": "ex-choice",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "target": "lesson-button",
+          "pose": "point",
+          "text": "Pick an answer, then tap Check. Stuck? The light bulb at the top gives you a hint."
+        }
+      ]
+    },
+    {
+      "screen": "ex-match",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "think",
+          "text": "Tap a card on one side, then its partner on the other side, until every pair is matched."
+        }
+      ]
+    },
+    {
+      "screen": "ex-write",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "point",
+          "text": "Trace the grey letter with your finger, one letter in each box. Use Next for the following box, then tap Check."
+        }
+      ]
+    },
+    {
+      "screen": "ex-build",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "think",
+          "text": "Tap the word tiles in the right order to build the sentence. Tap a tile again to take it back."
+        }
+      ]
+    },
+    {
+      "screen": "ex-dictate",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "point",
+          "text": "Listen, then write what you hear. Tap the speaker to hear it again."
+        }
+      ]
+    },
+    {
+      "screen": "ex-speak",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "cheer",
+          "text": "Tap the microphone and say the line out loud. Don't be shy!"
+        }
+      ]
+    },
+    {
+      "screen": "ex-type",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "point",
+          "text": "Type how it sounds in English letters (romaji), then tap Check."
+        }
+      ]
+    },
+    {
+      "screen": "lessonplus",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "wave",
+          "text": "Welcome to Lesson+! Here you learn the words and phrases for real situations, like ordering food or asking the way."
+        },
+        {
+          "target": "topic-search",
+          "pose": "point",
+          "text": "Type a situation here, for example \"restaurant\" or \"train\", and I'll find lessons for it."
+        }
+      ]
+    },
+    {
+      "screen": "video",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "wave",
+          "text": "These are real Japanese videos. Each one has subtitles you can tap, with romaji and English."
+        },
+        {
+          "target": "video-search",
+          "pose": "point",
+          "text": "Search for a topic here. Start with the \"For beginners\" row if you're new."
+        }
+      ]
+    },
+    {
+      "screen": "tap-katakana",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "point",
+          "text": "This is katakana! It has the same sounds as hiragana but sharper shapes. It's used for words from other languages, like コーヒー (koohii, coffee) and テレビ (terebi, TV)."
+        }
+      ]
+    },
+    {
+      "screen": "tap-hiragana",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "point",
+          "text": "This is hiragana, the first script every learner starts with. It writes Japanese words and grammar, like ありがとう (arigatou, thank you)."
+        }
+      ]
+    },
+    {
+      "screen": "tap-combined",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "think",
+          "text": "Two little marks change a sound: か (ka) becomes が (ga), and は (ha) becomes ぱ (pa). Small や, ゆ, よ blend sounds too: き + ゃ = きゃ (kya)."
+        }
+      ]
+    },
+    {
+      "screen": "tap-table",
+      "beginnersOnly": true,
+      "steps": [
+        {
+          "pose": "point",
+          "text": "This is the whole chart in one table. Tap any letter to hear it. Letters you've learned are coloured in."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What are hiragana, katakana and kanji?",
+      "pose": "think",
+      "a": "Japanese uses three scripts together. Hiragana writes Japanese words and grammar. Katakana writes words from other languages. Kanji are characters with meanings, like 山 for mountain. Start with hiragana, then katakana."
+    },
+    {
+      "q": "How does my sakura tree grow?",
+      "pose": "point",
+      "a": "Each day you finish a lesson, your watering can fills up. Water your tree and it grows, from a sprout all the way to a blossoming sakura. If you skip days, its petals fall, but studying again brings them back."
+    },
+    {
+      "q": "How do I write in the boxes?",
+      "pose": "point",
+      "a": "Write one character in each box with your finger. Tap Next to move to the next box, then tap Check. At first you trace grey letters; once you know a word, you write it on your own."
+    },
+    {
+      "q": "What is review?",
+      "pose": "think",
+      "a": "Words you learn come back for review just before you'd forget them. Doing a few reviews every day moves them into long-term memory. Find them in Practice on the Me page."
+    },
+    {
+      "q": "Can I skip what I already know?",
+      "pose": "cheer",
+      "a": "Yes! Take the placement test from Settings, or tap Test out on any unit. If you pass, those lessons are marked as done."
+    }
+  ],
+  "demo": [
+    {
+      "pose": "wave",
+      "title": "Hi, I'm {name}!",
+      "text": "I'll be your guide. Together we'll learn Japanese from your very first letter."
+    },
+    {
+      "pose": "point",
+      "title": "Read, write and speak",
+      "text": "Learn hiragana, katakana and kanji step by step. Write by hand and I'll check it, and practise saying real phrases."
+    },
+    {
+      "pose": "cheer",
+      "title": "Grow your sakura",
+      "text": "Study a little every day and your cherry tree grows with you. Ready? Let's begin!"
+    }
+  ],
+  "characters": [
+    {
+      "id": "hana",
+      "name": "Hana",
+      "pitch": 1.2,
+      "about": "A cheerful girl in a kimono and hakama, with a sakura hair pin.",
+      "voice": "Bright and cheerful",
+      "voices": {
+        "ja": ["ja-jp-x-htm-local", "ja-jp-x-jab-local", "ja-jp-x-htm-network", "ja-jp-x-jab-network"],
+        "en": ["en-us-x-tpf-local", "en-us-x-sfg-local", "en-us-x-tpc-local", "en-us-x-tpf-network"]
+      }
+    },
+    {
+      "id": "ren",
+      "name": "Ren",
+      "pitch": 0.85,
+      "about": "A friendly boy in a haori jacket and hakama.",
+      "voice": "Calm and friendly",
+      "voices": {
+        "ja": ["ja-jp-x-jac-local", "ja-jp-x-jad-local", "ja-jp-x-jac-network", "ja-jp-x-jad-network"],
+        "en": ["en-us-x-iom-local", "en-us-x-tpd-local", "en-us-x-iol-local", "en-us-x-iom-network"]
+      }
+    }
+  ],
+  "about": "Your guide. Poses: wave, point, cheer, think. Put guide/<character id>/<pose>.webp (or .png) in assets to replace the drawn character with artwork. Steps may set \"side\": \"left\" or \"right\"; otherwise she stands on the side away from what she points at. Write {name} where the guide says their own name. \"voices\" lists the text-to-speech voices each character prefers, best first, by engine id (Google's ids here); the first one installed on the phone is used, otherwise the phone's default voice at the character's pitch."
+}
