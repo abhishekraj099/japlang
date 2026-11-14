@@ -201,9 +201,10 @@ object Course {
                 dialogue = d.getJSONArray("lines").objects().map(::line), sentences = sentences(d), tags = tags
             ).also { talks += id to it }
         }
-        // Speaking covers the unit's phrases plus every line of its conversation.
-        val spoken = unit.optJSONArray("phrases")?.objects().orEmpty().map(::phrase) +
-            talk?.dialogue.orEmpty().map { Phrase(it.jp, it.romaji, it.en, it.heard) }
+        // Speaking covers the unit's phrases plus every line of its conversation, each said once
+        // (spacing and punctuation ignored; digits kept so 6じ and 8じ stay apart).
+        val spoken = (unit.optJSONArray("phrases")?.objects().orEmpty().map(::phrase) +
+            talk?.dialogue.orEmpty().map { Phrase(it.jp, it.romaji, it.en, it.heard) }).distinctBy { it.jp.filter(Char::isLetterOrDigit) }
         return listOfNotNull(
             Lesson("$id-theory", "Theory", LessonType.THEORY, icons.getString("THEORY"), tags = tags, theory = theory)
                 .takeIf { theory.isNotEmpty() }

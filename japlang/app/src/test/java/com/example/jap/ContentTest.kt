@@ -140,9 +140,20 @@ class ContentTest {
     fun firstTenBasicUnitsHaveSixSentencesPerSet() {
         val byId = Course.units.associateBy { it.id }
         listOf("b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time").forEach { id ->
-            byId.getValue(id).lessons.filter { it.type == LessonType.PRACTICE }.forEach { lesson ->
+            val practices = byId.getValue(id).lessons.filter { it.type == LessonType.PRACTICE }
+            assertTrue("$id has no practice sets", practices.isNotEmpty())
+            practices.forEach { lesson ->
                 assertTrue("${lesson.id} has ${lesson.sentences.size} sentences", lesson.sentences.size >= 6)
+                assertTrue("${lesson.id} has too few gap sentences", lesson.sentences.count { it.blank >= 0 } >= 2)
             }
+        }
+    }
+
+    @Test
+    fun speakingLessonsSayEachPhraseOnce() {
+        Course.lessons.filter { it.type == LessonType.SPEAKING }.forEach { lesson ->
+            val keys = lesson.phrases.map { p -> p.jp.filter(Char::isLetterOrDigit) }
+            assertEquals("${lesson.id} repeats a phrase", keys.size, keys.toSet().size)
         }
     }
 

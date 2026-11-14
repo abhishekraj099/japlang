@@ -1868,12 +1868,11 @@
           },
           {
             "speaker": "Yuki",
-            "jp": "よろしく おねがいします。",
-            "romaji": "yoroshiku onegaishimasu.",
-            "en": "Pleased to meet you.",
+            "jp": "はは は せんせい です。",
+            "romaji": "haha wa sensei desu.",
+            "en": "My mother is a teacher.",
             "heard": [
-              "よろしくお願いします",
-              "宜しくお願いします"
+              "母は先生です"
             ]
           },
           {
@@ -2388,7 +2387,7 @@
             "speaker": "Ken",
             "jp": "すき です。ちゅうごく も すき です。",
             "romaji": "suki desu. chuugoku mo suki desu.",
-            "en": "I do. I like China too.",
+            "en": "Yes. I like China as well as Japan.",
             "heard": [
               "好きです中国も好きです"
             ]
@@ -2397,7 +2396,7 @@
             "speaker": "Yuki",
             "jp": "わたし も ちゅうごく が すき です。",
             "romaji": "watashi mo chuugoku ga suki desu.",
-            "en": "I like China too.",
+            "en": "Like you, I like China too.",
             "heard": [
               "私も中国が好きです"
             ]
