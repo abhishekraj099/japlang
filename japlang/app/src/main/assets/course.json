@@ -6067,6 +6067,64 @@
                 "おきます",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "まいあさ",
+                "7じ",
+                "に",
+                "おきます"
+              ],
+              "romaji": "maiasa shichiji ni okimasu",
+              "en": "I get up at seven every morning.",
+              "blank": 3,
+              "distract": [
+                "ねます",
+                "やすみます"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "10じ",
+                "に",
+                "ねました"
+              ],
+              "romaji": "kinou juuji ni nemashita",
+              "en": "I went to bed at ten yesterday.",
+              "blank": 2,
+              "distract": [
+                "を",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "5じ",
+                "に",
+                "おきます"
+              ],
+              "romaji": "ashita goji ni okimasu",
+              "en": "I'll get up at five tomorrow.",
+              "distract": [
+                "ねます",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "なんじ",
+                "に",
+                "ねますか"
+              ],
+              "romaji": "nanji ni nemasu ka",
+              "en": "What time do you go to bed?",
+              "blank": 0,
+              "distract": [
+                "なん",
+                "いま"
+              ]
             }
           ],
           "note": {
@@ -6147,6 +6205,72 @@
                 "から",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "としょかん",
+                "は",
+                "10じ",
+                "から",
+                "6じ",
+                "まで",
+                "です"
+              ],
+              "romaji": "toshokan wa juuji kara rokuji made desu",
+              "en": "The library is open from ten to six.",
+              "blank": 5,
+              "distract": [
+                "から",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "としょかん",
+                "は",
+                "なんじ",
+                "まで",
+                "ですか"
+              ],
+              "romaji": "toshokan wa nanji made desu ka",
+              "en": "Until what time is the library open?",
+              "blank": 3,
+              "distract": [
+                "から",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "9じ",
+                "から",
+                "5じ",
+                "まで",
+                "はたらきます"
+              ],
+              "romaji": "kuji kara goji made hatarakimasu",
+              "en": "I work from nine to five.",
+              "blank": 1,
+              "distract": [
+                "まで",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "まいにち",
+                "7じ",
+                "から",
+                "9じ",
+                "まで",
+                "べんきょうします"
+              ],
+              "romaji": "mainichi shichiji kara kuji made benkyou shimasu",
+              "en": "I study from seven to nine every day.",
+              "distract": [
+                "に",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -6156,6 +6280,78 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "What time do you get up?",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "まいあさ なんじ に おきますか。",
+            "romaji": "maiasa nanji ni okimasu ka.",
+            "en": "What time do you get up every morning?",
+            "heard": [
+              "毎朝何時に起きますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "6じ に おきます。",
+            "romaji": "rokuji ni okimasu.",
+            "en": "I get up at six.",
+            "heard": [
+              "6時に起きます",
+              "六時に起きます"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "なんじ に ねますか。",
+            "romaji": "nanji ni nemasu ka.",
+            "en": "What time do you go to bed?",
+            "heard": [
+              "何時に寝ますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "11じ に ねます。ケンさん は？",
+            "romaji": "juuichiji ni nemasu. Ken-san wa?",
+            "en": "At eleven. And you, Ken?",
+            "heard": [
+              "11時に寝ますケンさんは",
+              "十一時に寝ますケンさんは"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "わたし は 12じ に ねます。",
+            "romaji": "watashi wa juuniji ni nemasu.",
+            "en": "I go to bed at twelve.",
+            "heard": [
+              "私は12時に寝ます",
+              "私は十二時に寝ます"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん は なんじ から なんじ まで はたらきますか。",
+            "romaji": "Ken-san wa nanji kara nanji made hatarakimasu ka.",
+            "en": "What hours do you work, Ken?",
+            "heard": [
+              "ケンさんは何時から何時まで働きますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "9じ から 6じ まで はたらきます。",
+            "romaji": "kuji kara rokuji made hatarakimasu.",
+            "en": "I work from nine to six.",
+            "heard": [
+              "9時から6時まで働きます",
+              "九時から六時まで働きます"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "6じにおきます",
@@ -6262,6 +6458,51 @@
                 "いきます",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "とうきょう",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "ashita toukyou e ikimasu",
+              "en": "I'm going to Tokyo tomorrow.",
+              "blank": 2,
+              "distract": [
+                "を",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "ぎんこう",
+                "へ",
+                "いきました"
+              ],
+              "romaji": "kinou ginkou e ikimashita",
+              "en": "I went to the bank yesterday.",
+              "blank": 3,
+              "distract": [
+                "いきます",
+                "きます"
+              ]
+            },
+            {
+              "tokens": [
+                "なんじ",
+                "に",
+                "うち",
+                "へ",
+                "かえりますか"
+              ],
+              "romaji": "nanji ni uchi e kaerimasu ka",
+              "en": "What time do you go home?",
+              "distract": [
+                "を",
+                "いきます"
+              ]
             }
           ],
           "note": {
@@ -6324,6 +6565,70 @@
                 "を",
                 "が"
               ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "は",
+                "どこ",
+                "へ",
+                "も",
+                "いきませんでした"
+              ],
+              "romaji": "kinou wa doko e mo ikimasen deshita",
+              "en": "I didn't go anywhere yesterday.",
+              "blank": 4,
+              "distract": [
+                "を",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "あさ",
+                "は",
+                "なに",
+                "も",
+                "のみません"
+              ],
+              "romaji": "asa wa nani mo nomimasen",
+              "en": "I don't drink anything in the morning.",
+              "blank": 4,
+              "distract": [
+                "のみます",
+                "たべます"
+              ]
+            },
+            {
+              "tokens": [
+                "きょう",
+                "は",
+                "なに",
+                "も",
+                "たべませんでした"
+              ],
+              "romaji": "kyou wa nani mo tabemasen deshita",
+              "en": "I didn't eat anything today.",
+              "blank": 2,
+              "distract": [
+                "どこ",
+                "だれ"
+              ]
+            },
+            {
+              "tokens": [
+                "まいばん",
+                "どこ",
+                "へ",
+                "も",
+                "いきません"
+              ],
+              "romaji": "maiban doko e mo ikimasen",
+              "en": "I don't go anywhere in the evenings.",
+              "distract": [
+                "いきます",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -6371,6 +6676,35 @@
             "heard": [
               "いいえ明日は家にいます",
               "いいえ明日はうちにいます"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし は あした とうきょう へ いきます。",
+            "romaji": "watashi wa ashita toukyou e ikimasu.",
+            "en": "I'm going to Tokyo tomorrow.",
+            "heard": [
+              "私は明日東京へ行きます",
+              "私は明日東京に行きます"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "なんじ に かえりますか。",
+            "romaji": "nanji ni kaerimasu ka.",
+            "en": "What time will you be back?",
+            "heard": [
+              "何時に帰りますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "9じ に かえります。",
+            "romaji": "kuji ni kaerimasu.",
+            "en": "I'll be back at nine.",
+            "heard": [
+              "9時に帰ります",
+              "九時に帰ります"
             ]
           }
         ],
@@ -6493,6 +6827,68 @@
                 "を",
                 "じてんしゃ"
               ]
+            },
+            {
+              "tokens": [
+                "じてんしゃ",
+                "で",
+                "ぎんこう",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "jitensha de ginkou e ikimasu",
+              "en": "I go to the bank by bicycle.",
+              "blank": 1,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "バイク",
+                "で",
+                "かいしゃ",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "baiku de kaisha e ikimasu",
+              "en": "I go to work by motorbike.",
+              "blank": 0,
+              "distract": [
+                "でんしゃ",
+                "じてんしゃ"
+              ]
+            },
+            {
+              "tokens": [
+                "あるいて",
+                "がっこう",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "aruite gakkou e ikimasu",
+              "en": "I walk to school.",
+              "distract": [
+                "で",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "なに",
+                "で",
+                "うち",
+                "へ",
+                "かえりますか"
+              ],
+              "romaji": "nani de uchi e kaerimasu ka",
+              "en": "How do you get home?",
+              "blank": 1,
+              "distract": [
+                "を",
+                "に"
+              ]
             }
           ],
           "note": {
@@ -6556,6 +6952,66 @@
                 "と",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "と",
+                "えき",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "tomodachi to eki e ikimasu",
+              "en": "I go to the station with a friend.",
+              "blank": 1,
+              "distract": [
+                "で",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "だれ",
+                "と",
+                "いきますか"
+              ],
+              "romaji": "dare to ikimasu ka",
+              "en": "Who are you going with?",
+              "blank": 1,
+              "distract": [
+                "を",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "ひとりで",
+                "とうきょう",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "hitori de toukyou e ikimasu",
+              "en": "I'm going to Tokyo alone.",
+              "distract": [
+                "と",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "はは",
+                "と",
+                "おおさか",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "ashita haha to oosaka e ikimasu",
+              "en": "I'm going to Osaka with my mother tomorrow.",
+              "distract": [
+                "で",
+                "が"
+              ]
             }
           ],
           "note": {
@@ -6565,6 +7021,67 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "How are you getting there?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "あした どこ へ いきますか。",
+            "romaji": "ashita doko e ikimasu ka.",
+            "en": "Where are you going tomorrow?",
+            "heard": [
+              "明日どこへ行きますか",
+              "明日どこに行きますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "おおさか へ いきます。",
+            "romaji": "oosaka e ikimasu.",
+            "en": "I'm going to Osaka.",
+            "heard": [
+              "大阪へ行きます",
+              "大阪に行きます"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "でんしゃ で いきますか。",
+            "romaji": "densha de ikimasu ka.",
+            "en": "Are you going by train?",
+            "heard": [
+              "電車で行きますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい、でんしゃ で いきます。",
+            "romaji": "hai, densha de ikimasu.",
+            "en": "Yes, I'm going by train.",
+            "heard": [
+              "はい電車で行きます"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "だれ と いきますか。",
+            "romaji": "dare to ikimasu ka.",
+            "en": "Who are you going with?",
+            "heard": [
+              "誰と行きますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ひとりで いきます。",
+            "romaji": "hitori de ikimasu.",
+            "en": "I'm going alone.",
+            "heard": [
+              "一人で行きます"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "でんしゃでいきます",
@@ -6703,6 +7220,68 @@
                 "なんじ",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "きんようび",
+                "に",
+                "とうきょう",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "kin'youbi ni toukyou e ikimasu",
+              "en": "I'm going to Tokyo on Friday.",
+              "blank": 0,
+              "distract": [
+                "げつようび",
+                "かようび"
+              ]
+            },
+            {
+              "tokens": [
+                "げつようび",
+                "から",
+                "きんようび",
+                "まで",
+                "はたらきます"
+              ],
+              "romaji": "getsuyoubi kara kin'youbi made hatarakimasu",
+              "en": "I work from Monday to Friday.",
+              "distract": [
+                "に",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "どようび",
+                "と",
+                "にちようび",
+                "は",
+                "やすみます"
+              ],
+              "romaji": "doyoubi to nichiyoubi wa yasumimasu",
+              "en": "I'm off on Saturdays and Sundays.",
+              "blank": 2,
+              "distract": [
+                "もくようび",
+                "かようび"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "は",
+                "すいようび",
+                "です"
+              ],
+              "romaji": "ashita wa suiyoubi desu",
+              "en": "Tomorrow is Wednesday.",
+              "blank": 2,
+              "distract": [
+                "もくようび",
+                "どようび"
+              ]
             }
           ],
           "note": {
@@ -6784,6 +7363,71 @@
               "en": "My birthday is February 10th.",
               "distract": [
                 "ふつか",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "は",
+                "さんがつ",
+                "みっか",
+                "です"
+              ],
+              "romaji": "ashita wa sangatsu mikka desu",
+              "en": "Tomorrow is March 3rd.",
+              "blank": 3,
+              "distract": [
+                "ふつか",
+                "とおか"
+              ]
+            },
+            {
+              "tokens": [
+                "きょう",
+                "は",
+                "にがつ",
+                "ふつか",
+                "です"
+              ],
+              "romaji": "kyou wa nigatsu futsuka desu",
+              "en": "Today is February 2nd.",
+              "blank": 2,
+              "distract": [
+                "いちがつ",
+                "さんがつ"
+              ]
+            },
+            {
+              "tokens": [
+                "いちがつ",
+                "とおか",
+                "に",
+                "おおさか",
+                "へ",
+                "いきます"
+              ],
+              "romaji": "ichigatsu tooka ni oosaka e ikimasu",
+              "en": "I'm going to Osaka on January 10th.",
+              "distract": [
+                "ついたち",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "はは",
+                "の",
+                "たんじょうび",
+                "は",
+                "いちがつ",
+                "ふつか",
+                "です"
+              ],
+              "romaji": "haha no tanjoubi wa ichigatsu futsuka desu",
+              "en": "My mother's birthday is January 2nd.",
+              "distract": [
+                "とおか",
                 "を"
               ]
             }
@@ -6880,6 +7524,49 @@
                 "らいしゅう",
                 "やすみます"
               ]
+            },
+            {
+              "tokens": [
+                "きょう",
+                "は",
+                "なんにち",
+                "ですか"
+              ],
+              "romaji": "kyou wa nannichi desu ka",
+              "en": "What's the date today?",
+              "blank": 2,
+              "distract": [
+                "なんようび",
+                "なんじ"
+              ]
+            },
+            {
+              "tokens": [
+                "こんしゅう",
+                "は",
+                "はたらきません"
+              ],
+              "romaji": "konshuu wa hatarakimasen",
+              "en": "I'm not working this week.",
+              "blank": 0,
+              "distract": [
+                "せんしゅう",
+                "らいしゅう"
+              ]
+            },
+            {
+              "tokens": [
+                "せんしゅう",
+                "おおさか",
+                "へ",
+                "いきました"
+              ],
+              "romaji": "senshuu oosaka e ikimashita",
+              "en": "I went to Osaka last week.",
+              "distract": [
+                "らいしゅう",
+                "いきます"
+              ]
             }
           ],
           "note": {
@@ -6889,6 +7576,68 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "When is your birthday?",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "ゆきさん、たんじょうび は なんがつ なんにち ですか。",
+            "romaji": "Yuki-san, tanjoubi wa nangatsu nannichi desu ka.",
+            "en": "Yuki, when is your birthday?",
+            "heard": [
+              "ゆきさん誕生日は何月何日ですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "にがつ とおか です。",
+            "romaji": "nigatsu tooka desu.",
+            "en": "It's February 10th.",
+            "heard": [
+              "2月10日です",
+              "二月十日です"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "らいしゅう ですね。",
+            "romaji": "raishuu desu ne.",
+            "en": "That's next week!",
+            "heard": [
+              "来週ですね"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい。ケンさん の たんじょうび は？",
+            "romaji": "hai. Ken-san no tanjoubi wa?",
+            "en": "Yes. When is yours, Ken?",
+            "heard": [
+              "はいケンさんの誕生日は"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いちがつ ついたち です。",
+            "romaji": "ichigatsu tsuitachi desu.",
+            "en": "It's January 1st.",
+            "heard": [
+              "1月1日です",
+              "一月一日です"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし の ちち も いちがつ ついたち です。",
+            "romaji": "watashi no chichi mo ichigatsu tsuitachi desu.",
+            "en": "My father's is January 1st too.",
+            "heard": [
+              "私の父も1月1日です",
+              "私の父も一月一日です"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "きょうはなんようびですか",
@@ -6989,6 +7738,67 @@
                 "きのう",
                 "に"
               ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "パーティー",
+                "を",
+                "しました"
+              ],
+              "romaji": "kinou paatii o shimashita",
+              "en": "We had a party yesterday.",
+              "blank": 3,
+              "distract": [
+                "します",
+                "しません"
+              ]
+            },
+            {
+              "tokens": [
+                "どようび",
+                "も",
+                "しごと",
+                "を",
+                "します"
+              ],
+              "romaji": "doyoubi mo shigoto o shimasu",
+              "en": "I work on Saturdays too.",
+              "blank": 2,
+              "distract": [
+                "に",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "3じ",
+                "に",
+                "かいぎ",
+                "を",
+                "します"
+              ],
+              "romaji": "sanji ni kaigi o shimasu",
+              "en": "We have a meeting at three.",
+              "distract": [
+                "が",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "と",
+                "しゅくだい",
+                "を",
+                "します"
+              ],
+              "romaji": "tomodachi to shukudai o shimasu",
+              "en": "I do homework with a friend.",
+              "distract": [
+                "で",
+                "が"
+              ]
             }
           ],
           "note": {
@@ -7069,6 +7879,49 @@
                 "みます",
                 "に"
               ]
+            },
+            {
+              "tokens": [
+                "なに",
+                "を",
+                "ききますか"
+              ],
+              "romaji": "nani o kikimasu ka",
+              "en": "What do you listen to?",
+              "blank": 0,
+              "distract": [
+                "だれ",
+                "どこ"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "えいが",
+                "を",
+                "みました"
+              ],
+              "romaji": "kinou eiga o mimashita",
+              "en": "I saw a movie yesterday.",
+              "blank": 3,
+              "distract": [
+                "ききました",
+                "しました"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "なに",
+                "を",
+                "みますか"
+              ],
+              "romaji": "ashita nani o mimasu ka",
+              "en": "What will you watch tomorrow?",
+              "distract": [
+                "なん",
+                "に"
+              ]
             }
           ],
           "note": {
@@ -7078,6 +7931,75 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "What are you doing tomorrow?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん、あした なに を しますか。",
+            "romaji": "Ken-san, ashita nani o shimasu ka.",
+            "en": "Ken, what are you doing tomorrow?",
+            "heard": [
+              "ケンさん明日何をしますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "あさ は かいぎ を します。",
+            "romaji": "asa wa kaigi o shimasu.",
+            "en": "I have a meeting in the morning.",
+            "heard": [
+              "朝は会議をします"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ばん は？",
+            "romaji": "ban wa?",
+            "en": "And in the evening?",
+            "heard": [
+              "晩は"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "えいが を みます。ゆきさん は？",
+            "romaji": "eiga o mimasu. Yuki-san wa?",
+            "en": "I'll watch a movie. What about you, Yuki?",
+            "heard": [
+              "映画を見ますゆきさんは"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし は しゅくだい を します。",
+            "romaji": "watashi wa shukudai o shimasu.",
+            "en": "I'll do my homework.",
+            "heard": [
+              "私は宿題をします"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "なんじ まで しますか。",
+            "romaji": "nanji made shimasu ka.",
+            "en": "Until what time?",
+            "heard": [
+              "何時までしますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "9じ まで します。",
+            "romaji": "kuji made shimasu.",
+            "en": "Until nine.",
+            "heard": [
+              "9時までします",
+              "九時までします"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "えいがをみます",
@@ -7175,6 +8097,66 @@
                 "いいえ、",
                 "ちょっと"
               ]
+            },
+            {
+              "tokens": [
+                "いっしょに",
+                "えいが",
+                "を",
+                "みませんか"
+              ],
+              "romaji": "issho ni eiga o mimasen ka",
+              "en": "Would you like to watch a movie together?",
+              "blank": 3,
+              "distract": [
+                "みます",
+                "みました"
+              ]
+            },
+            {
+              "tokens": [
+                "いっしょに",
+                "コーヒー",
+                "を",
+                "のみませんか"
+              ],
+              "romaji": "issho ni koohii o nomimasen ka",
+              "en": "Would you like to have a coffee together?",
+              "blank": 0,
+              "distract": [
+                "ひとりで",
+                "まいにち"
+              ]
+            },
+            {
+              "tokens": [
+                "どようび",
+                "に",
+                "いっしょに",
+                "おおさか",
+                "へ",
+                "いきませんか"
+              ],
+              "romaji": "doyoubi ni issho ni oosaka e ikimasen ka",
+              "en": "Shall we go to Osaka together on Saturday?",
+              "distract": [
+                "いきます",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "いっしょに",
+                "おんがく",
+                "を",
+                "ききませんか"
+              ],
+              "romaji": "issho ni ongaku o kikimasen ka",
+              "en": "Would you like to listen to music together?",
+              "distract": [
+                "ききます",
+                "に"
+              ]
             }
           ],
           "note": {
@@ -7238,6 +8220,48 @@
                 "いいですね",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "3じ",
+                "に",
+                "あいましょう"
+              ],
+              "romaji": "sanji ni aimashou",
+              "en": "Let's meet at three.",
+              "blank": 2,
+              "distract": [
+                "あいます",
+                "あいません"
+              ]
+            },
+            {
+              "tokens": [
+                "いっしょに",
+                "ひるごはん",
+                "を",
+                "たべましょう"
+              ],
+              "romaji": "issho ni hirugohan o tabemashou",
+              "en": "Let's have lunch together.",
+              "blank": 1,
+              "distract": [
+                "あさごはん",
+                "ばんごはん"
+              ]
+            },
+            {
+              "tokens": [
+                "えいが",
+                "を",
+                "みましょう"
+              ],
+              "romaji": "eiga o mimashou",
+              "en": "Let's watch a movie.",
+              "distract": [
+                "に",
+                "みます"
+              ]
             }
           ],
           "note": {
@@ -7284,6 +8308,26 @@
             "en": "Great. Let's go.",
             "heard": [
               "いいですね行きましょう"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "12じ に えき で あいましょう。",
+            "romaji": "juuniji ni eki de aimashou.",
+            "en": "Let's meet at the station at twelve.",
+            "heard": [
+              "12時に駅で会いましょう",
+              "十二時に駅で会いましょう"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい、12じ に えき で。",
+            "romaji": "hai, juuniji ni eki de.",
+            "en": "OK, at the station at twelve.",
+            "heard": [
+              "はい12時に駅で",
+              "はい十二時に駅で"
             ]
           }
         ],
@@ -7417,6 +8461,51 @@
                 "します",
                 "が"
               ]
+            },
+            {
+              "tokens": [
+                "まいにち",
+                "サッカー",
+                "を",
+                "します"
+              ],
+              "romaji": "mainichi sakkaa o shimasu",
+              "en": "I play soccer every day.",
+              "blank": 3,
+              "distract": [
+                "みます",
+                "ききます"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "と",
+                "やきゅう",
+                "を",
+                "みます"
+              ],
+              "romaji": "tomodachi to yakyuu o mimasu",
+              "en": "I watch baseball with my friends.",
+              "blank": 4,
+              "distract": [
+                "します",
+                "ききます"
+              ]
+            },
+            {
+              "tokens": [
+                "スポーツ",
+                "が",
+                "すき",
+                "ですか"
+              ],
+              "romaji": "supootsu ga suki desu ka",
+              "en": "Do you like sports?",
+              "distract": [
+                "を",
+                "します"
+              ]
             }
           ],
           "note": {
@@ -7426,6 +8515,74 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "Do you like sports?",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "ゆきさん は スポーツ が すき ですか。",
+            "romaji": "Yuki-san wa supootsu ga suki desu ka.",
+            "en": "Yuki, do you like sports?",
+            "heard": [
+              "ゆきさんはスポーツが好きですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい、すき です。テニス を します。",
+            "romaji": "hai, suki desu. tenisu o shimasu.",
+            "en": "Yes, I do. I play tennis.",
+            "heard": [
+              "はい好きですテニスをします"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "まいにち しますか。",
+            "romaji": "mainichi shimasu ka.",
+            "en": "Do you play every day?",
+            "heard": [
+              "毎日しますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いいえ、どようび に します。ケンさん は？",
+            "romaji": "iie, doyoubi ni shimasu. Ken-san wa?",
+            "en": "No, on Saturdays. What about you, Ken?",
+            "heard": [
+              "いいえ土曜日にしますケンさんは"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "わたし は やきゅう を みます。",
+            "romaji": "watashi wa yakyuu o mimasu.",
+            "en": "I watch baseball.",
+            "heard": [
+              "私は野球を見ます"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いっしょに テニス を しませんか。",
+            "romaji": "issho ni tenisu o shimasen ka.",
+            "en": "Would you like to play tennis together?",
+            "heard": [
+              "一緒にテニスをしませんか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ええ、いいですね。",
+            "romaji": "ee, ii desu ne.",
+            "en": "Yes, that sounds good.",
+            "heard": [
+              "ええいいですね"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "サッカーがすきです",
@@ -7533,6 +8690,51 @@
                 "を",
                 "はし"
               ]
+            },
+            {
+              "tokens": [
+                "はし",
+                "で",
+                "さかな",
+                "を",
+                "たべます"
+              ],
+              "romaji": "hashi de sakana o tabemasu",
+              "en": "I eat fish with chopsticks.",
+              "blank": 0,
+              "distract": [
+                "ナイフ",
+                "スプーン"
+              ]
+            },
+            {
+              "tokens": [
+                "なに",
+                "で",
+                "たべますか"
+              ],
+              "romaji": "nani de tabemasu ka",
+              "en": "What do you eat it with?",
+              "blank": 1,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "ナイフ",
+                "で",
+                "ぎゅうにく",
+                "を",
+                "きります"
+              ],
+              "romaji": "naifu de gyuuniku o kirimasu",
+              "en": "I cut the beef with a knife.",
+              "distract": [
+                "スプーン",
+                "に"
+              ]
             }
           ],
           "note": {
@@ -7619,6 +8821,53 @@
                 "を",
                 "に"
               ]
+            },
+            {
+              "tokens": [
+                "「ねこ」",
+                "は",
+                "えいご",
+                "で",
+                "なん",
+                "ですか"
+              ],
+              "romaji": "\"neko\" wa eigo de nan desu ka",
+              "en": "How do you say \"neko\" in English?",
+              "blank": 2,
+              "distract": [
+                "にほんご",
+                "ベトナムご"
+              ]
+            },
+            {
+              "tokens": [
+                "にほんご",
+                "で",
+                "はなします"
+              ],
+              "romaji": "nihongo de hanashimasu",
+              "en": "I speak in Japanese.",
+              "blank": 0,
+              "distract": [
+                "えいご",
+                "ベトナムご"
+              ]
+            },
+            {
+              "tokens": [
+                "「ありがとう」",
+                "は",
+                "ベトナムご",
+                "で",
+                "なん",
+                "ですか"
+              ],
+              "romaji": "\"arigatou\" wa betonamugo de nan desu ka",
+              "en": "How do you say \"arigatou\" in Vietnamese?",
+              "distract": [
+                "に",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -7675,6 +8924,15 @@
             "heard": [
               "300円ですありがとうございます",
               "三百円ですありがとうございます"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ありがとう。",
+            "romaji": "arigatou.",
+            "en": "Thanks.",
+            "heard": [
+              "ありがとう"
             ]
           }
         ],
@@ -7834,6 +9092,53 @@
                 "あげます",
                 "で"
               ]
+            },
+            {
+              "tokens": [
+                "はは",
+                "に",
+                "プレゼント",
+                "を",
+                "あげました"
+              ],
+              "romaji": "haha ni purezento o agemashita",
+              "en": "I gave my mother a present.",
+              "blank": 4,
+              "distract": [
+                "もらいました",
+                "かしました"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "に",
+                "かさ",
+                "を",
+                "かします"
+              ],
+              "romaji": "tomodachi ni kasa o kashimasu",
+              "en": "I lend my umbrella to a friend.",
+              "distract": [
+                "で",
+                "あげます"
+              ]
+            },
+            {
+              "tokens": [
+                "いもうと",
+                "に",
+                "にほんご",
+                "を",
+                "おしえます"
+              ],
+              "romaji": "imouto ni nihongo o oshiemasu",
+              "en": "I teach my younger sister Japanese.",
+              "blank": 1,
+              "distract": [
+                "で",
+                "が"
+              ]
             }
           ],
           "note": {
@@ -7926,6 +9231,68 @@
                 "を",
                 "で"
               ]
+            },
+            {
+              "tokens": [
+                "あに",
+                "に",
+                "パソコン",
+                "を",
+                "かりました"
+              ],
+              "romaji": "ani ni pasokon o karimashita",
+              "en": "I borrowed a computer from my older brother.",
+              "blank": 4,
+              "distract": [
+                "かしました",
+                "あげました"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "に",
+                "とけい",
+                "を",
+                "もらいました"
+              ],
+              "romaji": "chichi ni tokei o moraimashita",
+              "en": "I got a watch from my father.",
+              "blank": 1,
+              "distract": [
+                "を",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "あね",
+                "に",
+                "けしょうひん",
+                "を",
+                "もらいました"
+              ],
+              "romaji": "ane ni keshouhin o moraimashita",
+              "en": "I got cosmetics from my older sister.",
+              "distract": [
+                "あげました",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "に",
+                "じしょ",
+                "を",
+                "かります"
+              ],
+              "romaji": "tomodachi ni jisho o karimasu",
+              "en": "I borrow a dictionary from a friend.",
+              "distract": [
+                "かします",
+                "で"
+              ]
             }
           ],
           "note": {
@@ -7935,6 +9302,65 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "A present",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん、それ は なん ですか。",
+            "romaji": "Ken-san, sore wa nan desu ka.",
+            "en": "Ken, what's that?",
+            "heard": [
+              "ケンさんそれは何ですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "とけい です。ちち に もらいました。",
+            "romaji": "tokei desu. chichi ni moraimashita.",
+            "en": "It's a watch. I got it from my father.",
+            "heard": [
+              "時計です父にもらいました"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "たんじょうび の プレゼント ですか。",
+            "romaji": "tanjoubi no purezento desu ka.",
+            "en": "Is it a birthday present?",
+            "heard": [
+              "誕生日のプレゼントですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい。ゆきさん は たんじょうび に なに を もらいましたか。",
+            "romaji": "hai. Yuki-san wa tanjoubi ni nani o moraimashita ka.",
+            "en": "Yes. What did you get for your birthday, Yuki?",
+            "heard": [
+              "はいゆきさんは誕生日に何をもらいましたか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はは に はな を もらいました。",
+            "romaji": "haha ni hana o moraimashita.",
+            "en": "I got flowers from my mother.",
+            "heard": [
+              "母に花をもらいました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いいですね。",
+            "romaji": "ii desu ne.",
+            "en": "How nice.",
+            "heard": [
+              "いいですね"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "プレゼントをあげます",
@@ -8061,6 +9487,50 @@
                 "を",
                 "黄色い"
               ]
+            },
+            {
+              "tokens": [
+                "白い",
+                "ねこ",
+                "が",
+                "います"
+              ],
+              "romaji": "shiroi neko ga imasu",
+              "en": "There's a white cat.",
+              "blank": 0,
+              "distract": [
+                "黒い",
+                "茶色い"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "の",
+                "かさ",
+                "は",
+                "黄色い",
+                "です"
+              ],
+              "romaji": "watashi no kasa wa kiiroi desu",
+              "en": "My umbrella is yellow.",
+              "distract": [
+                "を",
+                "青い"
+              ]
+            },
+            {
+              "tokens": [
+                "茶色い",
+                "いぬ",
+                "です"
+              ],
+              "romaji": "chairoi inu desu",
+              "en": "It's a brown dog.",
+              "distract": [
+                "の",
+                "白い"
+              ]
             }
           ],
           "note": {
@@ -8156,6 +9626,51 @@
                 "い",
                 "グレー"
               ]
+            },
+            {
+              "tokens": [
+                "グレー",
+                "の",
+                "かばん",
+                "です"
+              ],
+              "romaji": "guree no kaban desu",
+              "en": "It's a grey bag.",
+              "blank": 1,
+              "distract": [
+                "い",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "じどうしゃ",
+                "は",
+                "緑",
+                "です"
+              ],
+              "romaji": "ano jidousha wa midori desu",
+              "en": "That car over there is green.",
+              "distract": [
+                "の",
+                "青い"
+              ]
+            },
+            {
+              "tokens": [
+                "ベージュ",
+                "の",
+                "かさ",
+                "を",
+                "かいました"
+              ],
+              "romaji": "beeju no kasa o kaimashita",
+              "en": "I bought a beige umbrella.",
+              "distract": [
+                "い",
+                "ピンク"
+              ]
             }
           ],
           "note": {
@@ -8165,6 +9680,68 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "What colour?",
+        "lines": [
+          {
+            "speaker": "Staff",
+            "jp": "いらっしゃいませ。",
+            "romaji": "irasshaimase.",
+            "en": "Welcome!"
+          },
+          {
+            "speaker": "Ken",
+            "jp": "すみません、かさ は ありますか。",
+            "romaji": "sumimasen, kasa wa arimasu ka.",
+            "en": "Excuse me, do you have umbrellas?",
+            "heard": [
+              "すみません傘はありますか"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "はい、あります。なにいろ が いいですか。",
+            "romaji": "hai, arimasu. nani iro ga ii desu ka.",
+            "en": "Yes, we do. What colour would you like?",
+            "heard": [
+              "はいあります何色がいいですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "青い かさ は ありますか。",
+            "romaji": "aoi kasa wa arimasu ka.",
+            "en": "Do you have a blue umbrella?",
+            "heard": [
+              "青い傘はありますか"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "すみません、ありません。緑 の かさ は どうですか。",
+            "romaji": "sumimasen, arimasen. midori no kasa wa dou desu ka.",
+            "en": "Sorry, we don't. How about a green umbrella?",
+            "heard": [
+              "すみませんありません緑の傘はどうですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いいですね。それ を ください。",
+            "romaji": "ii desu ne. sore o kudasai.",
+            "en": "Nice. I'll take that one.",
+            "heard": [
+              "いいですねそれをください"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "ありがとうございます。",
+            "romaji": "arigatou gozaimasu.",
+            "en": "Thank you very much."
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "なにいろですか",
@@ -8276,6 +9853,72 @@
                 "を",
                 "目"
               ]
+            },
+            {
+              "tokens": [
+                "ゆきさん",
+                "は",
+                "目",
+                "が",
+                "大きい",
+                "です"
+              ],
+              "romaji": "Yuki-san wa me ga ookii desu",
+              "en": "Yuki has big eyes.",
+              "blank": 2,
+              "distract": [
+                "髪",
+                "足"
+              ]
+            },
+            {
+              "tokens": [
+                "ねこ",
+                "は",
+                "足",
+                "が",
+                "短い",
+                "です"
+              ],
+              "romaji": "neko wa ashi ga mijikai desu",
+              "en": "The cat has short legs.",
+              "blank": 4,
+              "distract": [
+                "長い",
+                "低い"
+              ]
+            },
+            {
+              "tokens": [
+                "あね",
+                "は",
+                "髪",
+                "が",
+                "短い",
+                "です"
+              ],
+              "romaji": "ane wa kami ga mijikai desu",
+              "en": "My older sister has short hair.",
+              "distract": [
+                "を",
+                "長い"
+              ]
+            },
+            {
+              "tokens": [
+                "うし",
+                "は",
+                "目",
+                "が",
+                "大きい",
+                "です"
+              ],
+              "romaji": "ushi wa me ga ookii desu",
+              "en": "Cows have big eyes.",
+              "distract": [
+                "を",
+                "口"
+              ]
             }
           ],
           "note": {
@@ -8368,6 +10011,55 @@
                 "長い",
                 "低い"
               ]
+            },
+            {
+              "tokens": [
+                "せんせい",
+                "は",
+                "背",
+                "が",
+                "低い",
+                "です"
+              ],
+              "romaji": "sensei wa se ga hikui desu",
+              "en": "The teacher is short.",
+              "blank": 4,
+              "distract": [
+                "高い",
+                "短い"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "ペン",
+                "は",
+                "長い",
+                "です"
+              ],
+              "romaji": "kono pen wa nagai desu",
+              "en": "This pen is long.",
+              "blank": 3,
+              "distract": [
+                "高い",
+                "低い"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "は",
+                "背",
+                "が",
+                "高い",
+                "です"
+              ],
+              "romaji": "tomodachi wa se ga takai desu",
+              "en": "My friend is tall.",
+              "distract": [
+                "を",
+                "低い"
+              ]
             }
           ],
           "note": {
@@ -8377,6 +10069,65 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "You're tall!",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん は 背 が 高い ですね。",
+            "romaji": "Ken-san wa se ga takai desu ne.",
+            "en": "Ken, you're tall!",
+            "heard": [
+              "ケンさんは背が高いですね"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ええ。あに も 背 が 高い です。",
+            "romaji": "ee. ani mo se ga takai desu.",
+            "en": "Yes. My older brother is tall too.",
+            "heard": [
+              "ええ兄も背が高いです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "おとうさん も？",
+            "romaji": "otousan mo?",
+            "en": "Your father too?",
+            "heard": [
+              "お父さんも"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いいえ、ちち は 背 が 低い です。",
+            "romaji": "iie, chichi wa se ga hikui desu.",
+            "en": "No, my father is short.",
+            "heard": [
+              "いいえ父は背が低いです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし も 背 が 低い です。",
+            "romaji": "watashi mo se ga hikui desu.",
+            "en": "I'm short too.",
+            "heard": [
+              "私も背が低いです"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ゆきさん は 髪 が 長い ですね。",
+            "romaji": "Yuki-san wa kami ga nagai desu ne.",
+            "en": "You have long hair, Yuki.",
+            "heard": [
+              "ゆきさんは髪が長いですね"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "せがたかいですね",
@@ -8483,6 +10234,51 @@
                 "きます",
                 "に"
               ]
+            },
+            {
+              "tokens": [
+                "白い",
+                "シャツ",
+                "を",
+                "きます"
+              ],
+              "romaji": "shiroi shatsu o kimasu",
+              "en": "I wear a white shirt.",
+              "blank": 3,
+              "distract": [
+                "はきます",
+                "かぶります"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "は",
+                "めがね",
+                "を",
+                "かけます"
+              ],
+              "romaji": "chichi wa megane o kakemasu",
+              "en": "My father wears glasses.",
+              "blank": 3,
+              "distract": [
+                "きます",
+                "はきます"
+              ]
+            },
+            {
+              "tokens": [
+                "黒い",
+                "くつ",
+                "を",
+                "かいました"
+              ],
+              "romaji": "kuroi kutsu o kaimashita",
+              "en": "I bought black shoes.",
+              "distract": [
+                "で",
+                "はきます"
+              ]
             }
           ],
           "note": {
@@ -8583,6 +10379,49 @@
                 "で",
                 "スカート"
               ]
+            },
+            {
+              "tokens": [
+                "スカート",
+                "を",
+                "はきます"
+              ],
+              "romaji": "sukaato o hakimasu",
+              "en": "I wear a skirt.",
+              "blank": 2,
+              "distract": [
+                "きます",
+                "かぶります"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "コート",
+                "は",
+                "長い",
+                "です"
+              ],
+              "romaji": "kono kooto wa nagai desu",
+              "en": "This coat is long.",
+              "blank": 3,
+              "distract": [
+                "短い",
+                "高い"
+              ]
+            },
+            {
+              "tokens": [
+                "セーター",
+                "を",
+                "きます"
+              ],
+              "romaji": "seetaa o kimasu",
+              "en": "I put on a sweater.",
+              "distract": [
+                "はきます",
+                "かけます"
+              ]
             }
           ],
           "note": {
@@ -8592,6 +10431,68 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "Shoes and a hat",
+        "lines": [
+          {
+            "speaker": "Staff",
+            "jp": "いらっしゃいませ。",
+            "romaji": "irasshaimase.",
+            "en": "Welcome!"
+          },
+          {
+            "speaker": "Ken",
+            "jp": "すみません、黒い くつ は ありますか。",
+            "romaji": "sumimasen, kuroi kutsu wa arimasu ka.",
+            "en": "Excuse me, do you have black shoes?",
+            "heard": [
+              "すみません黒い靴はありますか"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "はい、こちら です。",
+            "romaji": "hai, kochira desu.",
+            "en": "Yes, here they are.",
+            "heard": [
+              "はいこちらです"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ぼうし も ありますか。",
+            "romaji": "boushi mo arimasu ka.",
+            "en": "Do you have hats too?",
+            "heard": [
+              "帽子もありますか"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "はい。あの 白い ぼうし は どうですか。",
+            "romaji": "hai. ano shiroi boushi wa dou desu ka.",
+            "en": "Yes. How about that white hat?",
+            "heard": [
+              "はいあの白い帽子はどうですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いいですね。くつ と ぼうし を ください。",
+            "romaji": "ii desu ne. kutsu to boushi o kudasai.",
+            "en": "Nice. I'll take the shoes and the hat.",
+            "heard": [
+              "いいですね靴と帽子をください"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "ありがとうございます。",
+            "romaji": "arigatou gozaimasu.",
+            "en": "Thank you very much."
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "このくつはいくらですか",
@@ -8729,6 +10630,53 @@
                 "高い",
                 "な"
               ]
+            },
+            {
+              "tokens": [
+                "この",
+                "とけい",
+                "は",
+                "高い",
+                "です"
+              ],
+              "romaji": "kono tokei wa takai desu",
+              "en": "This watch is expensive.",
+              "blank": 3,
+              "distract": [
+                "安い",
+                "低い"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "じしょ",
+                "は",
+                "よくない",
+                "です"
+              ],
+              "romaji": "kono jisho wa yokunai desu",
+              "en": "This dictionary isn't good.",
+              "blank": 3,
+              "distract": [
+                "いくない",
+                "悪くない"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "みせ",
+                "は",
+                "安くない",
+                "です"
+              ],
+              "romaji": "ano mise wa yasukunai desu",
+              "en": "That shop isn't cheap.",
+              "distract": [
+                "安い",
+                "な"
+              ]
             }
           ],
           "note": {
@@ -8818,6 +10766,53 @@
                 "い",
                 "の"
               ]
+            },
+            {
+              "tokens": [
+                "ここ",
+                "は",
+                "有名",
+                "な",
+                "みせ",
+                "です"
+              ],
+              "romaji": "koko wa yuumei na mise desu",
+              "en": "This is a famous shop.",
+              "blank": 3,
+              "distract": [
+                "い",
+                "の"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "コンピューター",
+                "は",
+                "べんり",
+                "です"
+              ],
+              "romaji": "kono konpyuutaa wa benri desu",
+              "en": "This computer is handy.",
+              "distract": [
+                "な",
+                "い"
+              ]
+            },
+            {
+              "tokens": [
+                "すてき",
+                "な",
+                "かばん",
+                "です"
+              ],
+              "romaji": "suteki na kaban desu",
+              "en": "It's a lovely bag.",
+              "blank": 0,
+              "distract": [
+                "親切",
+                "有名"
+              ]
             }
           ],
           "note": {
@@ -8827,6 +10822,65 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "A famous mountain",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "あれ は ふじさん ですか。",
+            "romaji": "are wa Fuji-san desu ka.",
+            "en": "Is that Mt Fuji?",
+            "heard": [
+              "あれは富士山ですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい、そうです。有名 な 山 です。",
+            "romaji": "hai, sou desu. yuumei na yama desu.",
+            "en": "Yes, it is. It's a famous mountain.",
+            "heard": [
+              "はいそうです有名な山です"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "高い 山 ですね。",
+            "romaji": "takai yama desu ne.",
+            "en": "It's a high mountain, isn't it?",
+            "heard": [
+              "高い山ですね"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ええ。ケンさん、あの みせ は どうですか。",
+            "romaji": "ee. Ken-san, ano mise wa dou desu ka.",
+            "en": "Yes. Ken, how about that shop?",
+            "heard": [
+              "ええケンさんあの店はどうですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いい みせ ですね。安い です。",
+            "romaji": "ii mise desu ne. yasui desu.",
+            "en": "It's a nice shop. It's cheap.",
+            "heard": [
+              "いい店ですね安いです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "みせ の 人 も 親切 です。",
+            "romaji": "mise no hito mo shinsetsu desu.",
+            "en": "The staff are kind too.",
+            "heard": [
+              "店の人も親切です"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "やすいです",
@@ -8933,6 +10987,71 @@
                 "大きい",
                 "な"
               ]
+            },
+            {
+              "tokens": [
+                "きょう",
+                "は",
+                "とても",
+                "寒い",
+                "です"
+              ],
+              "romaji": "kyou wa totemo samui desu",
+              "en": "It's very cold today.",
+              "blank": 2,
+              "distract": [
+                "あまり",
+                "も"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "いぬ",
+                "は",
+                "とても",
+                "大きい",
+                "です"
+              ],
+              "romaji": "ano inu wa totemo ookii desu",
+              "en": "That dog is very big.",
+              "blank": 4,
+              "distract": [
+                "小さい",
+                "暑い"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "へや",
+                "は",
+                "とても",
+                "暑い",
+                "です"
+              ],
+              "romaji": "kono heya wa totemo atsui desu",
+              "en": "This room is very hot.",
+              "distract": [
+                "を",
+                "寒い"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "かばん",
+                "は",
+                "とても",
+                "小さい",
+                "です"
+              ],
+              "romaji": "kono kaban wa totemo chiisai desu",
+              "en": "This bag is very small.",
+              "distract": [
+                "な",
+                "大きい"
+              ]
             }
           ],
           "note": {
@@ -9025,6 +11144,53 @@
               "distract": [
                 "な",
                 "を"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "は",
+                "あまり",
+                "ひま",
+                "じゃありません"
+              ],
+              "romaji": "watashi wa amari hima ja arimasen",
+              "en": "I'm not very free.",
+              "blank": 2,
+              "distract": [
+                "とても",
+                "も"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "へや",
+                "は",
+                "あまり",
+                "きれい",
+                "じゃありません"
+              ],
+              "romaji": "kono heya wa amari kirei ja arimasen",
+              "en": "This room isn't very clean.",
+              "distract": [
+                "とても",
+                "な"
+              ]
+            },
+            {
+              "tokens": [
+                "おかあさん",
+                "は",
+                "元気",
+                "ですか"
+              ],
+              "romaji": "okaasan wa genki desu ka",
+              "en": "Is your mother well?",
+              "blank": 2,
+              "distract": [
+                "ひま",
+                "ハンサム"
               ]
             }
           ],
@@ -9122,6 +11288,55 @@
                 "上手",
                 "好き"
               ]
+            },
+            {
+              "tokens": [
+                "ゆきさん",
+                "は",
+                "テニス",
+                "が",
+                "上手",
+                "です"
+              ],
+              "romaji": "Yuki-san wa tenisu ga jouzu desu",
+              "en": "Yuki is good at tennis.",
+              "blank": 3,
+              "distract": [
+                "を",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "は",
+                "いぬ",
+                "が",
+                "好き",
+                "です"
+              ],
+              "romaji": "watashi wa inu ga suki desu",
+              "en": "I like dogs.",
+              "distract": [
+                "を",
+                "嫌い"
+              ]
+            },
+            {
+              "tokens": [
+                "ケンさん",
+                "は",
+                "スポーツ",
+                "が",
+                "下手",
+                "です"
+              ],
+              "romaji": "Ken-san wa supootsu ga heta desu",
+              "en": "Ken is bad at sports.",
+              "distract": [
+                "上手",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -9131,6 +11346,74 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "Are you free tomorrow?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "きょう は とても 暑い ですね。",
+            "romaji": "kyou wa totemo atsui desu ne.",
+            "en": "It's very hot today, isn't it?",
+            "heard": [
+              "今日はとても暑いですね"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ええ。ゆきさん、あした は ひま ですか。",
+            "romaji": "ee. Yuki-san, ashita wa hima desu ka.",
+            "en": "Yes. Yuki, are you free tomorrow?",
+            "heard": [
+              "ええゆきさん明日は暇ですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい、ひま です。",
+            "romaji": "hai, hima desu.",
+            "en": "Yes, I'm free.",
+            "heard": [
+              "はい暇です"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いっしょに テニス を しませんか。",
+            "romaji": "issho ni tenisu o shimasen ka.",
+            "en": "Would you like to play tennis together?",
+            "heard": [
+              "一緒にテニスをしませんか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし は テニス が 下手 です。",
+            "romaji": "watashi wa tenisu ga heta desu.",
+            "en": "I'm bad at tennis.",
+            "heard": [
+              "私はテニスが下手です"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "わたし も 上手 じゃありません。",
+            "romaji": "watashi mo jouzu ja arimasen.",
+            "en": "I'm not good at it either.",
+            "heard": [
+              "私も上手じゃありません"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "じゃあ、いきましょう。",
+            "romaji": "jaa, ikimashou.",
+            "en": "Then let's go.",
+            "heard": [
+              "じゃあ行きましょう"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "とてもあついです",
@@ -9266,6 +11549,50 @@
                 "苦い",
                 "塩辛い"
               ]
+            },
+            {
+              "tokens": [
+                "この",
+                "りょうり",
+                "は",
+                "塩辛い",
+                "です"
+              ],
+              "romaji": "kono ryouri wa shiokarai desu",
+              "en": "This dish is salty.",
+              "blank": 3,
+              "distract": [
+                "苦い",
+                "辛い"
+              ]
+            },
+            {
+              "tokens": [
+                "にほん",
+                "の",
+                "おちゃ",
+                "は",
+                "どうですか"
+              ],
+              "romaji": "nihon no ocha wa dou desu ka",
+              "en": "How is Japanese tea?",
+              "distract": [
+                "なん",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あじ",
+                "は",
+                "どうですか"
+              ],
+              "romaji": "aji wa dou desu ka",
+              "en": "How does it taste?",
+              "distract": [
+                "なん",
+                "が"
+              ]
             }
           ],
           "note": {
@@ -9384,6 +11711,52 @@
                 "濃い",
                 "甘い"
               ]
+            },
+            {
+              "tokens": [
+                "この",
+                "りんご",
+                "は",
+                "甘い",
+                "です"
+              ],
+              "romaji": "kono ringo wa amai desu",
+              "en": "This apple is sweet.",
+              "blank": 3,
+              "distract": [
+                "酸っぱい",
+                "薄い"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "おちゃ",
+                "は",
+                "濃い",
+                "です"
+              ],
+              "romaji": "kono ocha wa koi desu",
+              "en": "This tea is strong.",
+              "distract": [
+                "薄い",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "バナナ",
+                "は",
+                "とても",
+                "甘い",
+                "です"
+              ],
+              "romaji": "banana wa totemo amai desu",
+              "en": "Bananas are very sweet.",
+              "distract": [
+                "酸っぱい",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -9393,6 +11766,68 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "How is it?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん、タイ りょうり は どうですか。",
+            "romaji": "Ken-san, tai ryouri wa dou desu ka.",
+            "en": "Ken, how's the Thai food?",
+            "heard": [
+              "ケンさんタイ料理はどうですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "おいしい です。ちょっと 辛い です。",
+            "romaji": "oishii desu. chotto karai desu.",
+            "en": "It's delicious. It's a little spicy.",
+            "heard": [
+              "おいしいですちょっと辛いです",
+              "美味しいですちょっと辛いです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ジュース を のみませんか。",
+            "romaji": "juusu o nomimasen ka.",
+            "en": "Would you like some juice?",
+            "heard": [
+              "ジュースを飲みませんか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい、おねがいします。",
+            "romaji": "hai, onegai shimasu.",
+            "en": "Yes, please.",
+            "heard": [
+              "はいお願いします"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いちご の ジュース です。どうですか。",
+            "romaji": "ichigo no juusu desu. dou desu ka.",
+            "en": "It's strawberry juice. How is it?",
+            "heard": [
+              "いちごのジュースですどうですか",
+              "イチゴのジュースですどうですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "甘い です。おいしい です。",
+            "romaji": "amai desu. oishii desu.",
+            "en": "It's sweet. It's delicious.",
+            "heard": [
+              "甘いですおいしいです",
+              "甘いです美味しいです"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "おいしいです",
@@ -9504,6 +11939,68 @@
                 "を",
                 "あまり"
               ]
+            },
+            {
+              "tokens": [
+                "にほんご",
+                "が",
+                "だいたい",
+                "わかります"
+              ],
+              "romaji": "nihongo ga daitai wakarimasu",
+              "en": "I mostly understand Japanese.",
+              "blank": 2,
+              "distract": [
+                "よく",
+                "少し"
+              ]
+            },
+            {
+              "tokens": [
+                "ベトナムご",
+                "が",
+                "少し",
+                "わかります"
+              ],
+              "romaji": "betonamugo ga sukoshi wakarimasu",
+              "en": "I understand a little Vietnamese.",
+              "blank": 0,
+              "distract": [
+                "中国語",
+                "えいご"
+              ]
+            },
+            {
+              "tokens": [
+                "ゆきさん",
+                "は",
+                "えいご",
+                "が",
+                "よく",
+                "わかります"
+              ],
+              "romaji": "Yuki-san wa eigo ga yoku wakarimasu",
+              "en": "Yuki understands English well.",
+              "distract": [
+                "を",
+                "少し"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "は",
+                "にほんご",
+                "が",
+                "少し",
+                "わかります"
+              ],
+              "romaji": "chichi wa nihongo ga sukoshi wakarimasu",
+              "en": "My father understands a little Japanese.",
+              "distract": [
+                "を",
+                "よく"
+              ]
             }
           ],
           "note": {
@@ -9597,6 +12094,51 @@
                 "よく",
                 "わかります"
               ]
+            },
+            {
+              "tokens": [
+                "えいご",
+                "が",
+                "全然",
+                "わかりません"
+              ],
+              "romaji": "eigo ga zenzen wakarimasen",
+              "en": "I don't understand English at all.",
+              "blank": 2,
+              "distract": [
+                "よく",
+                "少し"
+              ]
+            },
+            {
+              "tokens": [
+                "中国語",
+                "が",
+                "あまり",
+                "わかりません"
+              ],
+              "romaji": "chuugokugo ga amari wakarimasen",
+              "en": "I don't understand Chinese very well.",
+              "distract": [
+                "よく",
+                "わかります"
+              ]
+            },
+            {
+              "tokens": [
+                "いもうと",
+                "は",
+                "かんじ",
+                "が",
+                "あまり",
+                "わかりません"
+              ],
+              "romaji": "imouto wa kanji ga amari wakarimasen",
+              "en": "My younger sister doesn't understand kanji very well.",
+              "distract": [
+                "全然",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -9606,6 +12148,71 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "Do you understand Japanese?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん、にほんご が わかりますか。",
+            "romaji": "Ken-san, nihongo ga wakarimasu ka.",
+            "en": "Ken, do you understand Japanese?",
+            "heard": [
+              "ケンさん日本語がわかりますか",
+              "ケンさん日本語が分かりますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい、少し わかります。",
+            "romaji": "hai, sukoshi wakarimasu.",
+            "en": "Yes, a little.",
+            "heard": [
+              "はい少しわかります",
+              "はい少し分かります"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "かんじ も わかりますか。",
+            "romaji": "kanji mo wakarimasu ka.",
+            "en": "Do you understand kanji too?",
+            "heard": [
+              "漢字もわかりますか",
+              "漢字も分かりますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いいえ、かんじ は 全然 わかりません。",
+            "romaji": "iie, kanji wa zenzen wakarimasen.",
+            "en": "No, I don't understand kanji at all.",
+            "heard": [
+              "いいえ漢字は全然わかりません",
+              "いいえ漢字は全然分かりません"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ひらがな は？",
+            "romaji": "hiragana wa?",
+            "en": "What about hiragana?",
+            "heard": [
+              "ひらがなは",
+              "平仮名は"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ひらがな は よく わかります。",
+            "romaji": "hiragana wa yoku wakarimasu.",
+            "en": "I know hiragana well.",
+            "heard": [
+              "ひらがなはよくわかります",
+              "ひらがなはよく分かります"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "わかりません",

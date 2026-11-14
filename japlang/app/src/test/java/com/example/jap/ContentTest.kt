@@ -136,10 +136,17 @@ class ContentTest {
         assertTrue(Course.goals(Course.units.first { it.id == "hira" }).first().startsWith("Read and write 46 hiragana"))
     }
 
+    /** Basic units brought up to full depth: six sentences per set and a conversation. */
+    private val contentReadyUnits = listOf(
+        "b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time",
+        "time2", "dir", "traf", "days", "life1", "rel1", "sport", "life2",
+        "rel2", "colors", "look", "clothes", "comp2", "adj", "taste", "ability",
+    )
+
     @Test
-    fun firstTenBasicUnitsHaveSixSentencesPerSet() {
+    fun basicUnitsHaveSixSentencesPerSet() {
         val byId = Course.units.associateBy { it.id }
-        listOf("b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time").forEach { id ->
+        contentReadyUnits.forEach { id ->
             val practices = byId.getValue(id).lessons.filter { it.type == LessonType.PRACTICE }
             assertTrue("$id has no practice sets", practices.isNotEmpty())
             practices.forEach { lesson ->
@@ -158,9 +165,9 @@ class ContentTest {
     }
 
     @Test
-    fun firstTenBasicUnitsHaveAConversation() {
+    fun basicUnitsHaveAConversation() {
         val talks = Course.conversations.associateBy { it.id }
-        listOf("b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time").forEach { id ->
+        contentReadyUnits.forEach { id ->
             val lines = talks["$id-talk"]?.dialogue.orEmpty()
             assertTrue("$id has ${lines.size} conversation lines", lines.size >= 6)
         }
