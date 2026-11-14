@@ -1858,6 +1858,26 @@
           },
           {
             "speaker": "Ken",
+            "jp": "わたし は せんせい です。",
+            "romaji": "watashi wa sensei desu.",
+            "en": "I'm a teacher.",
+            "heard": [
+              "私は先生です",
+              "わたしは先生です"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "よろしく おねがいします。",
+            "romaji": "yoroshiku onegaishimasu.",
+            "en": "Pleased to meet you.",
+            "heard": [
+              "よろしくお願いします",
+              "宜しくお願いします"
+            ]
+          },
+          {
+            "speaker": "Ken",
             "jp": "よろしく おねがいします。",
             "romaji": "yoroshiku onegaishimasu.",
             "en": "Pleased to meet you.",
@@ -2314,6 +2334,76 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "Do you like Japan?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "はじめまして。ゆき です。",
+            "romaji": "hajimemashite. Yuki desu.",
+            "en": "Nice to meet you. I'm Yuki.",
+            "heard": [
+              "初めましてゆきです",
+              "初めましてユキです"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はじめまして。ケン です。",
+            "romaji": "hajimemashite. Ken desu.",
+            "en": "Nice to meet you. I'm Ken.",
+            "heard": [
+              "初めましてケンです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "にほんじん ですか。",
+            "romaji": "nihonjin desu ka.",
+            "en": "Are you Japanese?",
+            "heard": [
+              "日本人ですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "にほんじん じゃありません。アメリカじん です。",
+            "romaji": "nihonjin ja arimasen. amerikajin desu.",
+            "en": "I'm not Japanese. I'm American.",
+            "heard": [
+              "日本人じゃありませんアメリカ人です",
+              "日本人ではありませんアメリカ人です"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "にほん が すき ですか。",
+            "romaji": "nihon ga suki desu ka.",
+            "en": "Do you like Japan?",
+            "heard": [
+              "日本が好きですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "すき です。ちゅうごく も すき です。",
+            "romaji": "suki desu. chuugoku mo suki desu.",
+            "en": "I do. I like China too.",
+            "heard": [
+              "好きです中国も好きです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし も ちゅうごく が すき です。",
+            "romaji": "watashi mo chuugoku ga suki desu.",
+            "en": "I like China too.",
+            "heard": [
+              "私も中国が好きです"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "にほんじんです",
@@ -2659,6 +2749,26 @@
             "en": "No, I don't.",
             "heard": [
               "いいえいません"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いぬ は いますか。",
+            "romaji": "inu wa imasu ka.",
+            "en": "Do you have a dog?",
+            "heard": [
+              "犬はいますか",
+              "イヌはいますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いぬ は いません。ねこ が います。",
+            "romaji": "inu wa imasen. neko ga imasu.",
+            "en": "No dog. I have a cat.",
+            "heard": [
+              "犬はいません猫がいます",
+              "犬はいませんネコがいます"
             ]
           }
         ],
@@ -3117,6 +3227,21 @@
             "heard": [
               "いいえ違います羊です"
             ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "あれ も ひつじ ですか。",
+            "romaji": "are mo hitsuji desu ka.",
+            "en": "Is that one over there a sheep too?",
+            "heard": [
+              "あれも羊ですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい、そうです。",
+            "romaji": "hai, sou desu.",
+            "en": "Yes, it is."
           }
         ],
         "sentences": [
@@ -3494,6 +3619,21 @@
           },
           {
             "speaker": "Staff",
+            "jp": "ミルク は？",
+            "romaji": "miruku wa?",
+            "en": "And milk?"
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい、おねがいします。",
+            "romaji": "hai, onegaishimasu.",
+            "en": "Yes, please.",
+            "heard": [
+              "はいお願いします"
+            ]
+          },
+          {
+            "speaker": "Staff",
             "jp": "ありがとうございます。",
             "romaji": "arigatou gozaimasu.",
             "en": "Thank you very much.",
@@ -3838,6 +3978,82 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "Is this your father's?",
+        "lines": [
+          {
+            "speaker": "Mai",
+            "jp": "この ほん は おとうさん の ですか。",
+            "romaji": "kono hon wa otousan no desu ka.",
+            "en": "Is this book your father's?",
+            "heard": [
+              "この本はお父さんのですか",
+              "この本はおとうさんのですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いいえ、ちがいます。わたし の です。",
+            "romaji": "iie, chigaimasu. watashi no desu.",
+            "en": "No, it isn't. It's mine.",
+            "heard": [
+              "いいえ違います私のです",
+              "いいえちがいます私のです"
+            ]
+          },
+          {
+            "speaker": "Mai",
+            "jp": "その じしょ は？",
+            "romaji": "sono jisho wa?",
+            "en": "And that dictionary?",
+            "heard": [
+              "その辞書は"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "これ も わたし の です。",
+            "romaji": "kore mo watashi no desu.",
+            "en": "This one is mine too.",
+            "heard": [
+              "これも私のです"
+            ]
+          },
+          {
+            "speaker": "Mai",
+            "jp": "あの カメラ は？",
+            "romaji": "ano kamera wa?",
+            "en": "And that camera over there?"
+          },
+          {
+            "speaker": "Ken",
+            "jp": "あれ は あに の です。",
+            "romaji": "are wa ani no desu.",
+            "en": "That's my older brother's.",
+            "heard": [
+              "あれは兄のです"
+            ]
+          },
+          {
+            "speaker": "Mai",
+            "jp": "この しんぶん は？",
+            "romaji": "kono shinbun wa?",
+            "en": "And this newspaper?",
+            "heard": [
+              "この新聞は"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "それ は ちち の です。",
+            "romaji": "sore wa chichi no desu.",
+            "en": "That's my father's.",
+            "heard": [
+              "それは父のです"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "このほんはわたしのです",
@@ -4232,6 +4448,62 @@
           ]
         }
       ],
+      "dialogue": {
+        "title": "Whose is this?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "この かさ は だれ の ですか。",
+            "romaji": "kono kasa wa dare no desu ka.",
+            "en": "Whose umbrella is this?",
+            "heard": [
+              "この傘は誰のですか",
+              "この傘はだれのですか"
+            ]
+          },
+          {
+            "speaker": "Tom",
+            "jp": "わたし の です。",
+            "romaji": "watashi no desu.",
+            "en": "It's mine.",
+            "heard": [
+              "私のです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "この かぎ も ですか。",
+            "romaji": "kono kagi mo desu ka.",
+            "en": "This key too?",
+            "heard": [
+              "この鍵もですか",
+              "このカギもですか"
+            ]
+          },
+          {
+            "speaker": "Tom",
+            "jp": "はい、そうです。",
+            "romaji": "hai, sou desu.",
+            "en": "Yes, that's right."
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "この ボールペン は？",
+            "romaji": "kono boorupen wa?",
+            "en": "And this ballpoint pen?"
+          },
+          {
+            "speaker": "Tom",
+            "jp": "いいえ、わたし の じゃありません。せんせい の です。",
+            "romaji": "iie, watashi no ja arimasen. sensei no desu.",
+            "en": "No, it's not mine. It's the teacher's.",
+            "heard": [
+              "いいえ私のじゃありません先生のです",
+              "いいえ私のではありません先生のです"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "だれのですか",
@@ -4588,6 +4860,24 @@
             "jp": "エレベーター は そちら です。",
             "romaji": "erebeetaa wa sochira desu.",
             "en": "The elevator is that way."
+          },
+          {
+            "speaker": "Ken",
+            "jp": "かいだん は？",
+            "romaji": "kaidan wa?",
+            "en": "And the stairs?",
+            "heard": [
+              "階段は"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "かいだん も そちら です。",
+            "romaji": "kaidan mo sochira desu.",
+            "en": "The stairs are that way too.",
+            "heard": [
+              "階段もそちらです"
+            ]
           },
           {
             "speaker": "Ken",
@@ -5126,6 +5416,71 @@
           ]
         }
       ],
+      "dialogue": {
+        "title": "Two coffees, please",
+        "lines": [
+          {
+            "speaker": "Staff",
+            "jp": "いらっしゃいませ。なんにん ですか。",
+            "romaji": "irasshaimase. nannin desu ka.",
+            "en": "Welcome! How many of you?",
+            "heard": [
+              "いらっしゃいませ何人ですか"
+            ]
+          },
+          {
+            "speaker": "Mai",
+            "jp": "二人 です。",
+            "romaji": "futari desu.",
+            "en": "Two.",
+            "heard": [
+              "2人です",
+              "ふたりです"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "はい、こちら です。",
+            "romaji": "hai, kochira desu.",
+            "en": "Sure, this way."
+          },
+          {
+            "speaker": "Mai",
+            "jp": "コーヒー を 二つ ください。",
+            "romaji": "koohii o futatsu kudasai.",
+            "en": "Two coffees, please.",
+            "heard": [
+              "コーヒーを2つください",
+              "コーヒーを二つ下さい"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "パン は？",
+            "romaji": "pan wa?",
+            "en": "How about bread?"
+          },
+          {
+            "speaker": "Mai",
+            "jp": "パン も 三つ ください。",
+            "romaji": "pan mo mittsu kudasai.",
+            "en": "Three bread rolls too, please.",
+            "heard": [
+              "パンも3つください",
+              "パンも三つ下さい"
+            ]
+          },
+          {
+            "speaker": "Staff",
+            "jp": "ありがとうございます。",
+            "romaji": "arigatou gozaimasu.",
+            "en": "Thank you very much.",
+            "heard": [
+              "有難うございます"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "いちにさん",
@@ -5532,6 +5887,81 @@
           }
         }
       ],
+      "dialogue": {
+        "title": "Are you working tomorrow?",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "いま なんじ ですか。",
+            "romaji": "ima nanji desu ka.",
+            "en": "What time is it now?",
+            "heard": [
+              "今何時ですか",
+              "いま何時ですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "8じ 10ぷん です。",
+            "romaji": "hachiji juppun desu.",
+            "en": "It's ten past eight.",
+            "heard": [
+              "8時10分です",
+              "八時十分です"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "きょう は はたらきますか。",
+            "romaji": "kyou wa hatarakimasu ka.",
+            "en": "Are you working today?",
+            "heard": [
+              "今日は働きますか",
+              "きょうは働きますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい、はたらきます。きのう は やすみました。",
+            "romaji": "hai, hatarakimasu. kinou wa yasumimashita.",
+            "en": "Yes, I am. I took yesterday off.",
+            "heard": [
+              "はい働きます昨日は休みました",
+              "はいはたらきます昨日は休みました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "あした も はたらきますか。",
+            "romaji": "ashita mo hatarakimasu ka.",
+            "en": "Are you working tomorrow too?",
+            "heard": [
+              "明日も働きますか",
+              "あしたも働きますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いいえ、あした は やすみます。",
+            "romaji": "iie, ashita wa yasumimasu.",
+            "en": "No, I'm off tomorrow.",
+            "heard": [
+              "いいえ明日は休みます",
+              "いいえあしたは休みます"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "わたし も あした は やすみます。",
+            "romaji": "watashi mo ashita wa yasumimasu.",
+            "en": "I'm off tomorrow too.",
+            "heard": [
+              "私も明日は休みます",
+              "わたしも明日は休みます"
+            ]
+          }
+        ]
+      },
       "phrases": [
         {
           "jp": "いまなんじですか",

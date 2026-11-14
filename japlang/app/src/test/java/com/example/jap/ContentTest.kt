@@ -147,6 +147,15 @@ class ContentTest {
     }
 
     @Test
+    fun firstTenBasicUnitsHaveAConversation() {
+        val talks = Course.conversations.associateBy { it.id }
+        listOf("b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time").forEach { id ->
+            val lines = talks["$id-talk"]?.dialogue.orEmpty()
+            assertTrue("$id has ${lines.size} conversation lines", lines.size >= 6)
+        }
+    }
+
+    @Test
     fun practiceSentencesAreUnderstoodBeforeTheyAreBuilt() {
         Course.lessons.filter { it.type == LessonType.PRACTICE && it.sentences.isNotEmpty() }.forEach { lesson ->
             val ex = Exercises.forLesson(lesson)
