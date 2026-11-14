@@ -141,6 +141,8 @@ class ContentTest {
         "b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time",
         "time2", "dir", "traf", "days", "life1", "rel1", "sport", "life2",
         "rel2", "colors", "look", "clothes", "comp2", "adj", "taste", "ability",
+        "travel", "reason", "location", "countobj", "counttime", "pastadj", "compare", "verbs",
+        "desire", "purpose", "groups", "teform", "cont", "perm", "conn", "seq",
     )
 
     @Test
