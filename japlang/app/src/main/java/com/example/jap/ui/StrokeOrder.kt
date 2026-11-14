@@ -25,6 +25,9 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.scale
 import androidx.compose.ui.graphics.drawscope.translate
 import androidx.compose.ui.graphics.vector.PathParser
+import androidx.compose.ui.text.drawText
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.Dp
@@ -37,13 +40,17 @@ fun hasStrokeOrder(char: String) = Strokes.of(char).isNotEmpty()
 
 /**
  * Draws [char] one stroke at a time in writing order, over a faint copy of the whole character and a guide cross.
- * The stroke being drawn is in [accent]. Tapping replays it.
+ * The stroke being drawn is in [accent]. With [numbered], each stroke's number appears where it starts, so the
+ * learner sees which line comes first. Tapping replays it.
  */
 @Composable
-fun StrokeOrder(char: String, accent: Color, modifier: Modifier = Modifier, size: Dp = 180.dp) {
+fun StrokeOrder(char: String, accent: Color, modifier: Modifier = Modifier, size: Dp = 180.dp, numbered: Boolean = false) {
     val scheme = MaterialTheme.colorScheme
     val strokes = remember(char) { Strokes.of(char).map { PathParser().parsePathString(it).toPath() } }
     val lengths = remember(strokes) { strokes.map { PathMeasure().apply { setPath(it, false) }.length } }
+    val starts = remember(strokes) { strokes.map { PathMeasure().apply { setPath(it, false) }.getPosition(0f) } }
+    val text = rememberTextMeasurer()
+    val label = MaterialTheme.typography.labelLarge.copy(color = accent, fontWeight = FontWeight.Bold)
     val progress = remember(char) { Animatable(0f) }
     var replays by remember { mutableIntStateOf(0) }
 
@@ -86,6 +93,17 @@ fun StrokeOrder(char: String, accent: Color, modifier: Modifier = Modifier, size
                             drawPath(part, accent, style = pen)
                         }
                     }
+                }
+            }
+        }
+        if (numbered) {
+            // Numbers are drawn unscaled so they stay readable; each sits just up-left of where its stroke begins.
+            val origin = Offset((this.size.width - Strokes.BOX * k) / 2, (this.size.height - Strokes.BOX * k) / 2)
+            starts.forEachIndexed { i, start ->
+                if (i < progress.value) {
+                    val layout = text.measure("${i + 1}", label)
+                    val at = origin + start * k - Offset(layout.size.width + 4f, layout.size.height.toFloat())
+                    drawText(layout, topLeft = Offset(at.x.coerceAtLeast(0f), at.y.coerceAtLeast(0f)))
                 }
             }
         }

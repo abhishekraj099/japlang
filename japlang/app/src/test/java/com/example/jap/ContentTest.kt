@@ -2,6 +2,8 @@ package com.example.jap
 
 import com.example.jap.data.Config
 import com.example.jap.data.Course
+import com.example.jap.data.Build
+import com.example.jap.data.Choice
 import com.example.jap.data.Strokes
 import com.example.jap.data.Exercises
 import com.example.jap.data.Kind
@@ -132,5 +134,16 @@ class ContentTest {
         val numbers = Course.goals(Course.units.first { it.id == "kj1" })
         assertEquals("Read and write 10 kanji: 一 二 三 四 五 六 七 八 九 十", numbers.first())
         assertTrue(Course.goals(Course.units.first { it.id == "hira" }).first().startsWith("Read and write 46 hiragana"))
+    }
+
+    @Test
+    fun practiceSentencesAreUnderstoodBeforeTheyAreBuilt() {
+        Course.lessons.filter { it.type == LessonType.PRACTICE && it.sentences.isNotEmpty() }.forEach { lesson ->
+            val ex = Exercises.forLesson(lesson)
+            val asked = ex.filterIsInstance<Choice>().filter { c -> lesson.sentences.any { it.en == c.options.getOrNull(c.answer) } }
+            assertEquals(lesson.id, lesson.sentences.size, asked.size)
+            assertTrue(lesson.id, ex.indexOf(asked.last()) < ex.indexOfFirst { it is Build })
+            asked.forEach { assertTrue("Too few options in ${lesson.id}", it.options.size >= 2) }
+        }
     }
 }

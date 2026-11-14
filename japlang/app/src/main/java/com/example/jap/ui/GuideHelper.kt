@@ -54,7 +54,7 @@ fun GuideHelperButton(screen: String, modifier: Modifier = Modifier) {
     var open by remember { mutableStateOf(false) }
     Box(
         modifier
-            .size(56.dp)
+            .size(52.dp)
             .shadow(6.dp, CircleShape)
             .clip(CircleShape)
             .background(Color(0xFFFFE3EC))
@@ -64,7 +64,7 @@ fun GuideHelperButton(screen: String, modifier: Modifier = Modifier) {
         contentAlignment = Alignment.TopCenter
     ) {
         // Only her face shows inside the circle.
-        GuideCharacter("wave", 72.dp, Modifier.wrapContentSize(Alignment.TopCenter, unbounded = true).padding(top = 2.dp))
+        GuideCharacter("wave", 66.dp, Modifier.wrapContentSize(Alignment.TopCenter, unbounded = true).padding(top = 2.dp, end = 14.dp))
     }
     if (open) GuideHelpSheet(screen, guide, onDismiss = { open = false })
 }

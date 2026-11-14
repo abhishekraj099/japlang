@@ -81,6 +81,9 @@ internal fun WriteView(item: Item, accent: Color, progress: Progress, done: (Boo
     // The grade is the first attempt; "Try again" is for practice.
     var firstTry by remember { mutableStateOf<Boolean?>(null) }
     var attempts by remember { mutableIntStateOf(0) }
+    // Before tracing a character for the first time, the learner watches it being written stroke by stroke.
+    val watched = remember { mutableStateListOf<Int>() }
+    val demo = guide.getOrNull(active)?.toString()?.takeIf { trace && active !in watched && hasStrokeOrder(it) }
     val title = if (trace) "Trace it" else "Write it"
 
     fun check() {
@@ -146,6 +149,7 @@ internal fun WriteView(item: Item, accent: Color, progress: Progress, done: (Boo
             }
             Text(
                 when {
+                    demo != null -> "Watch the order first: start with stroke 1."
                     trace -> "Trace the grey letters, one in each box."
                     spellings.size > 1 -> "Write it in kanji or in kana, one character per box. Leave spare boxes empty."
                     else -> "One character per box."
@@ -168,19 +172,34 @@ internal fun WriteView(item: Item, accent: Color, progress: Progress, done: (Boo
                 }
             }
             Spacer(Modifier.height(10.dp))
-            key(active) {
-                DrawPad(
-                    boxes[active],
-                    guide = if (trace) guide.getOrNull(active)?.toString() else null,
-                    enabled = verdict == null && !reading,
-                    padSize = PadSize
-                ) { area = it }
-            }
-            if (verdict == null) {
+            if (demo != null) {
+                key(demo) {
+                    StrokeOrder(
+                        demo, accent, numbered = true, size = PadSize,
+                        modifier = Modifier.clip(RoundedCornerShape(16.dp)).background(scheme.surface)
+                    )
+                }
                 Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                    TextButton(onClick = { active-- }, enabled = active > 0) { Text("‹ Back") }
-                    TextButton(onClick = { boxes[active].clear() }) { Text("Clear") }
-                    TextButton(onClick = { active++ }, enabled = active < count - 1) { Text("Next ›") }
+                    TextButton(onClick = { watched += active }) { Text("Now you try ›") }
+                }
+            } else {
+                key(active) {
+                    DrawPad(
+                        boxes[active],
+                        guide = if (trace) guide.getOrNull(active)?.toString() else null,
+                        enabled = verdict == null && !reading,
+                        padSize = PadSize
+                    ) { area = it }
+                }
+                if (verdict == null) {
+                    Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                        if (trace && guide.getOrNull(active)?.toString()?.let(::hasStrokeOrder) == true) {
+                            TextButton(onClick = { watched -= active }) { Text("Watch") }
+                        }
+                        TextButton(onClick = { active-- }, enabled = active > 0) { Text("‹ Back") }
+                        TextButton(onClick = { boxes[active].clear() }) { Text("Clear") }
+                        TextButton(onClick = { active++ }, enabled = active < count - 1) { Text("Next ›") }
+                    }
                 }
             }
         }

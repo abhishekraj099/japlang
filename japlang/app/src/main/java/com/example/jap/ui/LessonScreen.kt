@@ -520,8 +520,8 @@ private fun TeachView(item: Item, accent: Color, done: (Boolean?) -> Unit) {
             ) {
                 if (item.emoji.isNotEmpty()) Text(item.emoji, fontSize = 44.sp)
                 if (item.reading.isNotEmpty()) Text(item.reading, fontSize = 18.sp, color = scheme.onSurfaceVariant)
-                if (item.kind == Kind.KANJI && hasStrokeOrder(item.jp)) {
-                    // Kanji draw themselves in stroke order; tapping replays it.
+                if (item.jp.length == 1 && hasStrokeOrder(item.jp)) {
+                    // Single kana and kanji draw themselves in stroke order; tapping replays it.
                     StrokeOrder(item.jp, accent, Modifier.padding(vertical = 8.dp))
                     Text("Tap to watch the strokes again", style = MaterialTheme.typography.labelMedium, color = scheme.onSurfaceVariant)
                 } else {

@@ -1,5 +1,7 @@
 package com.example.jap.ui
 
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.offset
 import androidx.compose.animation.Crossfade
 import com.example.jap.ui.theme.isAppDark
 import androidx.compose.foundation.layout.Box
@@ -237,7 +239,10 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                             onClick = { tab = i },
                             icon = {
                                 if (icon != null) Icon(icon, contentDescription = null)
-                                else Text("あ", fontFamily = FontFamily.Serif, fontWeight = FontWeight.Bold, fontSize = 20.sp)
+                                // Same 24dp box as the icons, so this tab's label lines up with the others.
+                                else Box(Modifier.size(24.dp), contentAlignment = Alignment.Center) {
+                                    Text("あ", fontFamily = FontFamily.Serif, fontWeight = FontWeight.Bold, fontSize = 20.sp, lineHeight = 20.sp)
+                                }
                             },
                             label = { Text(label) },
                             colors = NavigationBarItemDefaults.colors(
@@ -332,7 +337,8 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
             if (progress.guideOn) {
                 GuideHelperButton(
                     listOf("learn", "alphabet", "lessonplus", "video", "me")[tab],
-                    Modifier.align(Alignment.BottomEnd).padding(padding).padding(end = 16.dp, bottom = 16.dp)
+                    // Peeks in from the right edge, so it never sits on top of cards and labels.
+                    Modifier.align(Alignment.BottomEnd).padding(padding).padding(bottom = 12.dp).offset(x = 18.dp)
                 )
             }
             }

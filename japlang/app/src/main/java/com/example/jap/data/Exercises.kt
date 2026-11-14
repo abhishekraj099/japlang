@@ -173,6 +173,12 @@ object Exercises {
         if (items.size >= 3) out += match(items)
         items.shuffled().take(4).forEach { out += if (Random.nextBoolean()) recall(it, items) else listen(it, items) }
         lesson.note?.let { out += NoteCard(it, lesson.sentences.take(2)) }
+        // Each sentence is understood before it is built: read or heard first, then put together.
+        val meanings = (Course.unitFor(lesson.id)?.lessons ?: listOf(lesson)).flatMap { it.sentences }.map { it.en }
+        lesson.sentences.shuffled().forEachIndexed { i, s ->
+            val read = translate(s.tokens.joinToString(" "), s.romaji, s.en, meanings)
+            out += if (i % 2 == 0) read else read.copy(instruction = "What do you hear?", listen = true)
+        }
         lesson.sentences.filter { it.blank >= 0 }.forEach { out += fillBlank(it) }
         lesson.sentences.shuffled().forEach { out += build(it) }
         items.shuffled().take(1).forEach { out += typeIn(it) }
