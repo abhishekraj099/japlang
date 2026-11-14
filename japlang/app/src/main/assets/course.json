@@ -1478,6 +1478,50 @@
                 "を",
                 "ます"
               ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "は",
+                "せんせい",
+                "です"
+              ],
+              "romaji": "watashi wa sensei desu",
+              "en": "I am a teacher.",
+              "blank": 1,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "せんせい",
+                "ですか"
+              ],
+              "romaji": "kare wa sensei desu ka",
+              "en": "Is he a teacher?",
+              "distract": [
+                "を",
+                "ます"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "がくせい",
+                "です"
+              ],
+              "romaji": "kare wa gakusei desu",
+              "en": "He is a student.",
+              "blank": 3,
+              "distract": [
+                "ですか",
+                "ます"
+              ]
             }
           ],
           "note": {
@@ -1561,6 +1605,60 @@
               "blank": 3,
               "distract": [
                 "ます",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "こんにちは、",
+                "せんせい"
+              ],
+              "romaji": "konnichiwa, sensei",
+              "en": "Hello, teacher.",
+              "blank": 0,
+              "distract": [
+                "さようなら、",
+                "ありがとう、"
+              ]
+            },
+            {
+              "tokens": [
+                "さようなら、",
+                "せんせい"
+              ],
+              "romaji": "sayounara, sensei",
+              "en": "Goodbye, teacher.",
+              "distract": [
+                "おはよう、",
+                "です"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "むすこ",
+                "です"
+              ],
+              "romaji": "kare wa musuko desu",
+              "en": "He is my son.",
+              "blank": 1,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "むすこ",
+                "は",
+                "せんせい",
+                "です"
+              ],
+              "romaji": "musuko wa sensei desu",
+              "en": "My son is a teacher.",
+              "distract": [
+                "がくせい",
                 "を"
               ]
             }
@@ -1647,6 +1745,50 @@
               "blank": 3,
               "distract": [
                 "ます",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "かのじょ",
+                "は",
+                "がくせい",
+                "です"
+              ],
+              "romaji": "kanojo wa gakusei desu",
+              "en": "She is a student.",
+              "blank": 1,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "あなた",
+                "は",
+                "せんせい",
+                "ですか"
+              ],
+              "romaji": "anata wa sensei desu ka",
+              "en": "Are you a teacher?",
+              "blank": 3,
+              "distract": [
+                "です",
+                "ます"
+              ]
+            },
+            {
+              "tokens": [
+                "おかあさん",
+                "は",
+                "せんせい",
+                "ですか"
+              ],
+              "romaji": "okaasan wa sensei desu ka",
+              "en": "Is your mother a teacher?",
+              "distract": [
+                "はは",
                 "を"
               ]
             }
@@ -1844,6 +1986,64 @@
                 "です",
                 "ます"
               ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "は",
+                "にほんじん",
+                "じゃありません"
+              ],
+              "romaji": "watashi wa nihonjin ja arimasen",
+              "en": "I am not Japanese.",
+              "blank": 3,
+              "distract": [
+                "です",
+                "ます"
+              ]
+            },
+            {
+              "tokens": [
+                "かのじょ",
+                "は",
+                "アメリカじん",
+                "です"
+              ],
+              "romaji": "kanojo wa amerikajin desu",
+              "en": "She is American.",
+              "blank": 1,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "あなた",
+                "は",
+                "にほんじん",
+                "ですか"
+              ],
+              "romaji": "anata wa nihonjin desu ka",
+              "en": "Are you Japanese?",
+              "distract": [
+                "アメリカ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "せんせい",
+                "じゃありません"
+              ],
+              "romaji": "kare wa sensei ja arimasen",
+              "en": "He is not a teacher.",
+              "distract": [
+                "です",
+                "がくせい"
+              ]
             }
           ],
           "note": {
@@ -1918,6 +2118,72 @@
                 "を",
                 "いぬ"
               ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "ねこ",
+                "が",
+                "すき",
+                "です"
+              ],
+              "romaji": "kare wa neko ga suki desu",
+              "en": "He likes cats.",
+              "blank": 3,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "あなた",
+                "は",
+                "いぬ",
+                "が",
+                "すき",
+                "ですか"
+              ],
+              "romaji": "anata wa inu ga suki desu ka",
+              "en": "Do you like dogs?",
+              "blank": 5,
+              "distract": [
+                "です",
+                "ます"
+              ]
+            },
+            {
+              "tokens": [
+                "はは",
+                "は",
+                "いぬ",
+                "が",
+                "すき",
+                "です"
+              ],
+              "romaji": "haha wa inu ga suki desu",
+              "en": "My mother likes dogs.",
+              "distract": [
+                "ねこ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "むすこ",
+                "は",
+                "ねこ",
+                "が",
+                "すき",
+                "です"
+              ],
+              "romaji": "musuko wa neko ga suki desu",
+              "en": "My son likes cats.",
+              "distract": [
+                "いぬ",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -1975,6 +2241,69 @@
               "distract": [
                 "を",
                 "に"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "は",
+                "ちゅうごく",
+                "が",
+                "すき",
+                "です"
+              ],
+              "romaji": "watashi wa chuugoku ga suki desu",
+              "en": "I like China.",
+              "blank": 3,
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "も",
+                "かんこく",
+                "が",
+                "すき",
+                "です"
+              ],
+              "romaji": "chichi mo kankoku ga suki desu",
+              "en": "My father likes Korea too.",
+              "blank": 1,
+              "distract": [
+                "は",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "はは",
+                "も",
+                "せんせい",
+                "です"
+              ],
+              "romaji": "haha mo sensei desu",
+              "en": "My mother is a teacher too.",
+              "distract": [
+                "は",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "も",
+                "アメリカじん",
+                "じゃありません"
+              ],
+              "romaji": "kare mo amerikajin ja arimasen",
+              "en": "He isn't American either.",
+              "blank": 1,
+              "distract": [
+                "は",
+                "を"
               ]
             }
           ],
@@ -2111,6 +2440,47 @@
                 "あります",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "おとうと",
+                "が",
+                "います"
+              ],
+              "romaji": "otouto ga imasu",
+              "en": "I have a younger brother.",
+              "blank": 2,
+              "distract": [
+                "あります",
+                "いません"
+              ]
+            },
+            {
+              "tokens": [
+                "いぬ",
+                "が",
+                "いません"
+              ],
+              "romaji": "inu ga imasen",
+              "en": "I don't have a dog.",
+              "blank": 2,
+              "distract": [
+                "ありません",
+                "います"
+              ]
+            },
+            {
+              "tokens": [
+                "あね",
+                "が",
+                "います"
+              ],
+              "romaji": "ane ga imasu",
+              "en": "I have an older sister.",
+              "distract": [
+                "あります",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -2191,6 +2561,56 @@
               "distract": [
                 "を",
                 "に"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "わたし",
+                "の",
+                "ともだち",
+                "です"
+              ],
+              "romaji": "kare wa watashi no tomodachi desu",
+              "en": "He is my friend.",
+              "blank": 3,
+              "distract": [
+                "を",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "かのじょ",
+                "は",
+                "ともだち",
+                "の",
+                "いもうと",
+                "です"
+              ],
+              "romaji": "kanojo wa tomodachi no imouto desu",
+              "en": "She is my friend's younger sister.",
+              "blank": 3,
+              "distract": [
+                "を",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "の",
+                "かぞく",
+                "は",
+                "アメリカじん",
+                "です"
+              ],
+              "romaji": "watashi no kazoku wa amerikajin desu",
+              "en": "My family is American.",
+              "distract": [
+                "を",
+                "が"
               ]
             }
           ],
@@ -2357,6 +2777,64 @@
                 "これ",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "これ",
+                "は",
+                "ねこ",
+                "です"
+              ],
+              "romaji": "kore wa neko desu",
+              "en": "This is a cat.",
+              "blank": 0,
+              "distract": [
+                "あれ",
+                "それ"
+              ]
+            },
+            {
+              "tokens": [
+                "それ",
+                "は",
+                "いぬ",
+                "です"
+              ],
+              "romaji": "sore wa inu desu",
+              "en": "That is a dog.",
+              "distract": [
+                "これ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あれ",
+                "は",
+                "パンダ",
+                "ですか"
+              ],
+              "romaji": "are wa panda desu ka",
+              "en": "Is that over there a panda?",
+              "blank": 0,
+              "distract": [
+                "これ",
+                "それ"
+              ]
+            },
+            {
+              "tokens": [
+                "これ",
+                "は",
+                "ぶた",
+                "ですか"
+              ],
+              "romaji": "kore wa buta desu ka",
+              "en": "Is this a pig?",
+              "distract": [
+                "あれ",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -2424,6 +2902,61 @@
                 "はい、",
                 "そうです"
               ]
+            },
+            {
+              "tokens": [
+                "これ",
+                "は",
+                "うし",
+                "ですか"
+              ],
+              "romaji": "kore wa ushi desu ka",
+              "en": "Is this a cow?",
+              "blank": 3,
+              "distract": [
+                "です",
+                "ます"
+              ]
+            },
+            {
+              "tokens": [
+                "はい、",
+                "そうです"
+              ],
+              "romaji": "hai, sou desu",
+              "en": "Yes, it is.",
+              "blank": 0,
+              "distract": [
+                "いいえ、",
+                "ちがいます"
+              ]
+            },
+            {
+              "tokens": [
+                "いいえ、",
+                "うし",
+                "です"
+              ],
+              "romaji": "iie, ushi desu",
+              "en": "No, it's a cow.",
+              "distract": [
+                "はい、",
+                "ひつじ"
+              ]
+            },
+            {
+              "tokens": [
+                "あれ",
+                "は",
+                "うし",
+                "です"
+              ],
+              "romaji": "are wa ushi desu",
+              "en": "That over there is a cow.",
+              "distract": [
+                "これ",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -2484,6 +3017,63 @@
               "distract": [
                 "いぬ",
                 "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あれ",
+                "は",
+                "にわとり",
+                "です"
+              ],
+              "romaji": "are wa niwatori desu",
+              "en": "That over there is a chicken.",
+              "blank": 0,
+              "distract": [
+                "これ",
+                "それ"
+              ]
+            },
+            {
+              "tokens": [
+                "それ",
+                "は",
+                "さかな",
+                "ですか"
+              ],
+              "romaji": "sore wa sakana desu ka",
+              "en": "Is that a fish?",
+              "blank": 3,
+              "distract": [
+                "です",
+                "ます"
+              ]
+            },
+            {
+              "tokens": [
+                "これ",
+                "は",
+                "とり",
+                "です"
+              ],
+              "romaji": "kore wa tori desu",
+              "en": "This is a bird.",
+              "distract": [
+                "さかな",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "いいえ、",
+                "にわとり",
+                "です"
+              ],
+              "romaji": "iie, niwatori desu",
+              "en": "No, it's a chicken.",
+              "distract": [
+                "はい、",
+                "とり"
               ]
             }
           ]
@@ -2667,6 +3257,53 @@
                 "たべます",
                 "と"
               ]
+            },
+            {
+              "tokens": [
+                "ぶたにく",
+                "と",
+                "やさい",
+                "を",
+                "たべます"
+              ],
+              "romaji": "butaniku to yasai o tabemasu",
+              "en": "I eat pork and vegetables.",
+              "blank": 3,
+              "distract": [
+                "に",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "ねこ",
+                "は",
+                "さかな",
+                "を",
+                "たべます"
+              ],
+              "romaji": "neko wa sakana o tabemasu",
+              "en": "Cats eat fish.",
+              "blank": 3,
+              "distract": [
+                "と",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "やさい",
+                "を",
+                "たべません"
+              ],
+              "romaji": "kare wa yasai o tabemasen",
+              "en": "He doesn't eat vegetables.",
+              "distract": [
+                "たべます",
+                "と"
+              ]
             }
           ],
           "note": {
@@ -2750,6 +3387,65 @@
               "distract": [
                 "たべます",
                 "が"
+              ]
+            },
+            {
+              "tokens": [
+                "おさけ",
+                "を",
+                "のみません"
+              ],
+              "romaji": "osake o nomimasen",
+              "en": "I don't drink alcohol.",
+              "blank": 2,
+              "distract": [
+                "のみます",
+                "たべません"
+              ]
+            },
+            {
+              "tokens": [
+                "ジュース",
+                "を",
+                "のみます"
+              ],
+              "romaji": "juusu o nomimasu",
+              "en": "I drink juice.",
+              "blank": 1,
+              "distract": [
+                "と",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "は",
+                "おさけ",
+                "が",
+                "すき",
+                "です"
+              ],
+              "romaji": "chichi wa osake ga suki desu",
+              "en": "My father likes sake.",
+              "distract": [
+                "を",
+                "のみます"
+              ]
+            },
+            {
+              "tokens": [
+                "かのじょ",
+                "は",
+                "コーヒー",
+                "を",
+                "のみません"
+              ],
+              "romaji": "kanojo wa koohii o nomimasen",
+              "en": "She doesn't drink coffee.",
+              "distract": [
+                "のみます",
+                "と"
               ]
             }
           ],
@@ -2929,6 +3625,71 @@
                 "あれ",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "その",
+                "かばん",
+                "は",
+                "わたし",
+                "の",
+                "です"
+              ],
+              "romaji": "sono kaban wa watashi no desu",
+              "en": "That bag is mine.",
+              "blank": 0,
+              "distract": [
+                "それ",
+                "これ"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "じしょ",
+                "は",
+                "せんせい",
+                "の",
+                "です"
+              ],
+              "romaji": "kono jisho wa sensei no desu",
+              "en": "This dictionary is the teacher's.",
+              "blank": 0,
+              "distract": [
+                "これ",
+                "あれ"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "ほん",
+                "が",
+                "すき",
+                "です"
+              ],
+              "romaji": "kono hon ga suki desu",
+              "en": "I like this book.",
+              "distract": [
+                "これ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "コンピューター",
+                "は",
+                "かれ",
+                "の",
+                "です"
+              ],
+              "romaji": "ano konpyuutaa wa kare no desu",
+              "en": "That computer over there is his.",
+              "distract": [
+                "あれ",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -3001,6 +3762,72 @@
               "distract": [
                 "を",
                 "が"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "とけい",
+                "は",
+                "はは",
+                "の",
+                "です"
+              ],
+              "romaji": "kono tokei wa haha no desu",
+              "en": "This watch is my mother's.",
+              "blank": 4,
+              "distract": [
+                "を",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "それ",
+                "は",
+                "わたし",
+                "の",
+                "しんぶん",
+                "です"
+              ],
+              "romaji": "sore wa watashi no shinbun desu",
+              "en": "That's my newspaper.",
+              "distract": [
+                "その",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "じどうしゃ",
+                "は",
+                "ともだち",
+                "の",
+                "です"
+              ],
+              "romaji": "ano jidousha wa tomodachi no desu",
+              "en": "That car over there is my friend's.",
+              "blank": 4,
+              "distract": [
+                "を",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "カメラ",
+                "は",
+                "あに",
+                "の",
+                "です"
+              ],
+              "romaji": "kono kamera wa ani no desu",
+              "en": "This camera is my older brother's.",
+              "distract": [
+                "これ",
+                "を"
               ]
             }
           ],
@@ -3103,6 +3930,65 @@
                 "はい、",
                 "そうです"
               ]
+            },
+            {
+              "tokens": [
+                "これ",
+                "は",
+                "ボールペン",
+                "ですか"
+              ],
+              "romaji": "kore wa boorupen desu ka",
+              "en": "Is this a ballpoint pen?",
+              "blank": 3,
+              "distract": [
+                "です",
+                "ます"
+              ]
+            },
+            {
+              "tokens": [
+                "はい、",
+                "そうです"
+              ],
+              "romaji": "hai, sou desu",
+              "en": "Yes, that's right.",
+              "blank": 1,
+              "distract": [
+                "そうじゃありません",
+                "ですか"
+              ]
+            },
+            {
+              "tokens": [
+                "かのじょ",
+                "は",
+                "だれ",
+                "ですか"
+              ],
+              "romaji": "kanojo wa dare desu ka",
+              "en": "Who is she?",
+              "blank": 2,
+              "distract": [
+                "なん",
+                "これ"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "ボールペン",
+                "は",
+                "だれ",
+                "の",
+                "ですか"
+              ],
+              "romaji": "kono boorupen wa dare no desu ka",
+              "en": "Whose ballpoint pen is this?",
+              "distract": [
+                "これ",
+                "なん"
+              ]
             }
           ],
           "note": {
@@ -3152,6 +4038,56 @@
               "distract": [
                 "ノート",
                 "ですか"
+              ]
+            },
+            {
+              "tokens": [
+                "ほんですか、",
+                "じしょですか"
+              ],
+              "romaji": "hon desu ka, jisho desu ka",
+              "en": "Is it a book or a dictionary?",
+              "distract": [
+                "です",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "じしょ",
+                "です"
+              ],
+              "romaji": "jisho desu",
+              "en": "It's a dictionary.",
+              "blank": 0,
+              "distract": [
+                "ほん",
+                "ノート"
+              ]
+            },
+            {
+              "tokens": [
+                "いぬですか、",
+                "ねこですか"
+              ],
+              "romaji": "inu desu ka, neko desu ka",
+              "en": "Is it a dog or a cat?",
+              "distract": [
+                "です",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "ねこ",
+                "です"
+              ],
+              "romaji": "neko desu",
+              "en": "It's a cat.",
+              "blank": 1,
+              "distract": [
+                "ですか",
+                "ます"
               ]
             }
           ],
@@ -3224,6 +4160,72 @@
               "en": "Whose key is this?",
               "distract": [
                 "なん",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "これ",
+                "は",
+                "わたし",
+                "の",
+                "めいし",
+                "です"
+              ],
+              "romaji": "kore wa watashi no meishi desu",
+              "en": "This is my business card.",
+              "blank": 4,
+              "distract": [
+                "かさ",
+                "かぎ"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "かさ",
+                "は",
+                "だれ",
+                "の",
+                "ですか"
+              ],
+              "romaji": "ano kasa wa dare no desu ka",
+              "en": "Whose umbrella is that over there?",
+              "blank": 3,
+              "distract": [
+                "なん",
+                "あれ"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "カード",
+                "は",
+                "ともだち",
+                "の",
+                "です"
+              ],
+              "romaji": "kono kaado wa tomodachi no desu",
+              "en": "This card is my friend's.",
+              "distract": [
+                "これ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "それ",
+                "は",
+                "かれ",
+                "の",
+                "かぎ",
+                "です"
+              ],
+              "romaji": "sore wa kare no kagi desu",
+              "en": "That's his key.",
+              "distract": [
+                "その",
                 "に"
               ]
             }
@@ -3350,6 +4352,66 @@
                 "これ",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "しょくどう",
+                "は",
+                "あそこ",
+                "です"
+              ],
+              "romaji": "shokudou wa asoko desu",
+              "en": "The cafeteria is over there.",
+              "blank": 2,
+              "distract": [
+                "ここ",
+                "そこ"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "の",
+                "へや",
+                "は",
+                "ここ",
+                "です"
+              ],
+              "romaji": "watashi no heya wa koko desu",
+              "en": "My room is here.",
+              "blank": 4,
+              "distract": [
+                "そこ",
+                "あそこ"
+              ]
+            },
+            {
+              "tokens": [
+                "きょうしつ",
+                "は",
+                "そこ",
+                "です"
+              ],
+              "romaji": "kyoushitsu wa soko desu",
+              "en": "The classroom is there.",
+              "distract": [
+                "それ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "ここ",
+                "は",
+                "しょくどう",
+                "ですか"
+              ],
+              "romaji": "koko wa shokudou desu ka",
+              "en": "Is this the cafeteria?",
+              "distract": [
+                "これ",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -3422,6 +4484,68 @@
               ],
               "romaji": "kaidan wa soko desu",
               "en": "The stairs are there.",
+              "distract": [
+                "どこ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "しょくどう",
+                "は",
+                "どこ",
+                "ですか"
+              ],
+              "romaji": "shokudou wa doko desu ka",
+              "en": "Where is the cafeteria?",
+              "blank": 2,
+              "distract": [
+                "なん",
+                "だれ"
+              ]
+            },
+            {
+              "tokens": [
+                "エレベーター",
+                "は",
+                "あそこ",
+                "です"
+              ],
+              "romaji": "erebeetaa wa asoko desu",
+              "en": "The elevator is over there.",
+              "distract": [
+                "どこ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "の",
+                "かいしゃ",
+                "は",
+                "どこ",
+                "ですか"
+              ],
+              "romaji": "kare no kaisha wa doko desu ka",
+              "en": "Where is his company?",
+              "blank": 4,
+              "distract": [
+                "なん",
+                "だれ"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "の",
+                "うち",
+                "は",
+                "あそこ",
+                "です"
+              ],
+              "romaji": "watashi no uchi wa asoko desu",
+              "en": "My home is over there.",
               "distract": [
                 "どこ",
                 "を"
@@ -3669,7 +4793,95 @@
               }
             }
           ],
-          "sentences": [],
+          "sentences": [
+            {
+              "tokens": [
+                "一、",
+                "二、",
+                "三、",
+                "四"
+              ],
+              "romaji": "ichi, ni, san, yon",
+              "en": "One, two, three, four.",
+              "distract": [
+                "五",
+                "十"
+              ]
+            },
+            {
+              "tokens": [
+                "パン",
+                "を",
+                "一つ",
+                "たべます"
+              ],
+              "romaji": "pan o hitotsu tabemasu",
+              "en": "I eat one bread roll.",
+              "blank": 2,
+              "distract": [
+                "二つ",
+                "三つ"
+              ]
+            },
+            {
+              "tokens": [
+                "あね",
+                "が",
+                "二人",
+                "います"
+              ],
+              "romaji": "ane ga futari imasu",
+              "en": "I have two older sisters.",
+              "blank": 2,
+              "distract": [
+                "二つ",
+                "四つ"
+              ]
+            },
+            {
+              "tokens": [
+                "かばん",
+                "が",
+                "三つ",
+                "あります"
+              ],
+              "romaji": "kaban ga mittsu arimasu",
+              "en": "There are three bags.",
+              "blank": 3,
+              "distract": [
+                "います",
+                "いません"
+              ]
+            },
+            {
+              "tokens": [
+                "かぎ",
+                "が",
+                "四つ",
+                "あります"
+              ],
+              "romaji": "kagi ga yottsu arimasu",
+              "en": "There are four keys.",
+              "distract": [
+                "三つ",
+                "います"
+              ]
+            },
+            {
+              "tokens": [
+                "とけい",
+                "が",
+                "十",
+                "あります"
+              ],
+              "romaji": "tokei ga too arimasu",
+              "en": "There are ten clocks.",
+              "distract": [
+                "四つ",
+                "います"
+              ]
+            }
+          ],
           "note": {
             "title": "Counting to ten",
             "pattern": "いち、に、さん…",
@@ -3821,7 +5033,97 @@
               }
             }
           ],
-          "sentences": []
+          "sentences": [
+            {
+              "tokens": [
+                "五、",
+                "六、",
+                "七、",
+                "八、",
+                "九、",
+                "十"
+              ],
+              "romaji": "go, roku, nana, hachi, kyuu, juu",
+              "en": "Five, six, seven, eight, nine, ten.",
+              "distract": [
+                "四",
+                "三"
+              ]
+            },
+            {
+              "tokens": [
+                "かぞく",
+                "は",
+                "五人",
+                "です"
+              ],
+              "romaji": "kazoku wa gonin desu",
+              "en": "There are five people in my family.",
+              "blank": 2,
+              "distract": [
+                "五つ",
+                "六つ"
+              ]
+            },
+            {
+              "tokens": [
+                "へや",
+                "が",
+                "六つ",
+                "あります"
+              ],
+              "romaji": "heya ga muttsu arimasu",
+              "en": "There are six rooms.",
+              "blank": 2,
+              "distract": [
+                "七つ",
+                "八つ"
+              ]
+            },
+            {
+              "tokens": [
+                "かばん",
+                "が",
+                "七つ",
+                "あります"
+              ],
+              "romaji": "kaban ga nanatsu arimasu",
+              "en": "There are seven bags.",
+              "distract": [
+                "六つ",
+                "います"
+              ]
+            },
+            {
+              "tokens": [
+                "とけい",
+                "が",
+                "八つ",
+                "あります"
+              ],
+              "romaji": "tokei ga yattsu arimasu",
+              "en": "There are eight clocks.",
+              "distract": [
+                "九つ",
+                "います"
+              ]
+            },
+            {
+              "tokens": [
+                "かぎ",
+                "が",
+                "九つ",
+                "あります"
+              ],
+              "romaji": "kagi ga kokonotsu arimasu",
+              "en": "There are nine keys.",
+              "blank": 2,
+              "distract": [
+                "八つ",
+                "十"
+              ]
+            }
+          ]
         }
       ],
       "phrases": [
@@ -3917,6 +5219,64 @@
                 "なんじ",
                 "を"
               ]
+            },
+            {
+              "tokens": [
+                "いま",
+                "4じ",
+                "です"
+              ],
+              "romaji": "ima yoji desu",
+              "en": "It's four o'clock.",
+              "blank": 1,
+              "distract": [
+                "4ふん",
+                "なんじ"
+              ]
+            },
+            {
+              "tokens": [
+                "いま",
+                "7じ",
+                "10ぷん",
+                "です"
+              ],
+              "romaji": "ima shichiji juppun desu",
+              "en": "It's ten past seven.",
+              "distract": [
+                "なんじ",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "いま",
+                "9じ",
+                "5ふん",
+                "です"
+              ],
+              "romaji": "ima kuji gofun desu",
+              "en": "It's five past nine.",
+              "blank": 2,
+              "distract": [
+                "5じ",
+                "なんじ"
+              ]
+            },
+            {
+              "tokens": [
+                "これ",
+                "は",
+                "なん",
+                "ですか"
+              ],
+              "romaji": "kore wa nan desu ka",
+              "en": "What is this?",
+              "blank": 2,
+              "distract": [
+                "なんじ",
+                "だれ"
+              ]
             }
           ],
           "note": {
@@ -4002,6 +5362,50 @@
                 "はたらきます",
                 "べんきょうします"
               ]
+            },
+            {
+              "tokens": [
+                "まいあさ",
+                "コーヒー",
+                "を",
+                "のみます"
+              ],
+              "romaji": "maiasa koohii o nomimasu",
+              "en": "I drink coffee every morning.",
+              "blank": 0,
+              "distract": [
+                "まいばん",
+                "まいにち"
+              ]
+            },
+            {
+              "tokens": [
+                "まいばん",
+                "おさけ",
+                "を",
+                "のみません"
+              ],
+              "romaji": "maiban osake o nomimasen",
+              "en": "I don't drink alcohol in the evenings.",
+              "blank": 3,
+              "distract": [
+                "のみます",
+                "たべません"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "は",
+                "まいにち",
+                "はたらきます"
+              ],
+              "romaji": "chichi wa mainichi hatarakimasu",
+              "en": "My father works every day.",
+              "distract": [
+                "はたらきません",
+                "を"
+              ]
             }
           ],
           "note": {
@@ -4078,6 +5482,46 @@
               "distract": [
                 "きのう",
                 "ました"
+              ]
+            },
+            {
+              "tokens": [
+                "きょう",
+                "やすみます"
+              ],
+              "romaji": "kyou yasumimasu",
+              "en": "I'm taking today off.",
+              "blank": 0,
+              "distract": [
+                "きのう",
+                "あした"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "はたらきませんでした"
+              ],
+              "romaji": "kinou hatarakimasen deshita",
+              "en": "I didn't work yesterday.",
+              "blank": 1,
+              "distract": [
+                "はたらきました",
+                "はたらきます"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "コーヒー",
+                "を",
+                "のみました"
+              ],
+              "romaji": "kinou koohii o nomimashita",
+              "en": "I drank coffee yesterday.",
+              "distract": [
+                "のみます",
+                "あした"
               ]
             }
           ],

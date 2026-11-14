@@ -137,6 +137,16 @@ class ContentTest {
     }
 
     @Test
+    fun firstTenBasicUnitsHaveSixSentencesPerSet() {
+        val byId = Course.units.associateBy { it.id }
+        listOf("b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time").forEach { id ->
+            byId.getValue(id).lessons.filter { it.type == LessonType.PRACTICE }.forEach { lesson ->
+                assertTrue("${lesson.id} has ${lesson.sentences.size} sentences", lesson.sentences.size >= 6)
+            }
+        }
+    }
+
+    @Test
     fun practiceSentencesAreUnderstoodBeforeTheyAreBuilt() {
         Course.lessons.filter { it.type == LessonType.PRACTICE && it.sentences.isNotEmpty() }.forEach { lesson ->
             val ex = Exercises.forLesson(lesson)
