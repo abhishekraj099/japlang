@@ -4871,11 +4871,11 @@
               "tokens": [
                 "とけい",
                 "が",
-                "十",
+                "二つ",
                 "あります"
               ],
-              "romaji": "tokei ga too arimasu",
-              "en": "There are ten clocks.",
+              "romaji": "tokei ga futatsu arimasu",
+              "en": "There are two clocks.",
               "distract": [
                 "四つ",
                 "います"
