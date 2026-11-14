@@ -138,7 +138,9 @@ class Session(
     /** Set when this run is a test-out: passing it completes the whole unit. */
     val testOut: CourseUnit? = null,
     /** Which spaced-repetition review this run is, "reading" or "writing", or null for anything else. */
-    val review: String? = null
+    val review: String? = null,
+    /** Builds a fresh run of the same kind once this one is saved ("Keep going"), or null when there is nothing more to ask. */
+    val next: (() -> Session?)? = null
 )
 
 internal class Verdict(val correct: Boolean, val message: String)
@@ -168,7 +170,8 @@ fun LessonScreen(
     session: Session,
     progress: Progress,
     onExit: () -> Unit,
-    onFinish: (Outcome) -> Unit
+    onFinish: (Outcome) -> Unit,
+    onKeepGoing: (Outcome) -> Unit = onFinish
 ) {
     val speaker = LocalSpeaker.current
     var paused by remember { mutableStateOf(false) }
@@ -252,7 +255,7 @@ fun LessonScreen(
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().safeDrawingPadding()) {
             if (finished) {
-                if (game) RevisionSummary(session, progress, results, writeResults, gained, comboBonus, graded, right, bestRun) { onFinish(outcome()) }
+                if (game) RevisionSummary(session, progress, results, writeResults, gained, comboBonus, graded, right, bestRun, keepGoing = { onKeepGoing(outcome()) }) { onFinish(outcome()) }
                 else Summary(session, gained, graded, right) { onFinish(outcome()) }
             } else {
                 val share by animateFloatAsState(index / queue.size.toFloat(), label = "progress")

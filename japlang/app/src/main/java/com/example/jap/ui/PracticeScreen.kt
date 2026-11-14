@@ -42,7 +42,7 @@ import com.example.jap.data.Memory
 import com.example.jap.data.Progress
 import com.example.jap.data.Review
 
-private const val SESSION_SIZE = 12
+internal const val SESSION_SIZE = 12
 
 @Composable
 fun PracticeScreen(
@@ -112,16 +112,14 @@ fun PracticeScreen(
                 )
                 PushButton(
                     if (plan.today.isEmpty()) "Nothing due" else "Start revision · ${minOf(plan.today.size, SESSION_SIZE)}",
-                    onClick = { onReview("Revision", plan.today.take(SESSION_SIZE), true) },
+                    onClick = { onReview("Revision", Review.pick(true, plan, srs, SESSION_SIZE), true) },
                     enabled = plan.today.isNotEmpty()
                 )
                 PushButton(
                     "Practise weakest words",
                     onClick = {
                         // Anything learned, the least remembered first, so extra practice goes where it helps most.
-                        val now = System.currentTimeMillis()
-                        val weakest = srs.entries.sortedBy { Memory.retrievability(it.value, now) }.mapNotNull { Course.item(it.key) }
-                        onReview("Practice", weakest.filter(Course::quizzable).take(SESSION_SIZE), false)
+                        onReview("Practice", Review.pick(false, plan, srs, SESSION_SIZE), false)
                     },
                     modifier = Modifier.padding(top = 10.dp),
                     enabled = learned.isNotEmpty(),

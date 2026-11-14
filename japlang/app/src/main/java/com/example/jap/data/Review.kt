@@ -37,4 +37,12 @@ object Review {
             capReached = left == 0 && due.isNotEmpty()
         )
     }
+
+    /**
+     * What one practice session asks. [due] picks today's due items (weakest first, per [plan]); otherwise the learned
+     * items the learner is least likely to recall. Shared by the Practice buttons and "Keep going" so both choose alike.
+     */
+    fun pick(due: Boolean, plan: Plan, srs: Map<String, Srs>, size: Int, now: Long = System.currentTimeMillis()): List<Item> =
+        if (due) plan.today.take(size)
+        else srs.entries.sortedBy { Memory.retrievability(it.value, now) }.mapNotNull { Course.item(it.key) }.filter(Course::quizzable).take(size)
 }

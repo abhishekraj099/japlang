@@ -47,6 +47,7 @@ import com.example.jap.data.Lesson
 import com.example.jap.data.Memory
 import com.example.jap.data.LessonType
 import com.example.jap.data.Progress
+import com.example.jap.data.Review
 import com.example.jap.data.Scenario
 import com.example.jap.data.Scenarios
 import com.example.jap.data.SessionKind
@@ -160,26 +161,53 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         go(Page.Run(Session(title, lessonId, color, xp, kind, exercises, review = review)))
     }
 
+    /** A practice run over [items]; its "Keep going" builds the next one from the memory as saved by then. */
+    fun revision(due: Boolean, items: List<Item>): Session {
+        // Both kinds are revision games; asked in the way that suits how well each item is known.
+        val entries = items.map { it to Memory.level(progress.srs[it.id]) }
+        return Session(
+            if (due) "Revision" else "Practice", null, scheme.secondary, Config.practiceXp, SessionKind.PRACTICE,
+            Exercises.forRevision(entries), review = if (due) "reading" else "practice",
+            next = {
+                val plan = Review.plan(progress.dueSchedule(writing = false, System.currentTimeMillis()), progress.reviewedToday(writing = false), progress.daysAway)
+                val more = Review.pick(due, plan, progress.srs, SESSION_SIZE)
+                // Nothing left due: carry on with the weakest words instead.
+                if (more.isNotEmpty()) revision(due, more)
+                else if (due) Review.pick(false, plan, progress.srs, SESSION_SIZE).takeIf { it.isNotEmpty() }?.let { revision(false, it) }
+                else null
+            }
+        )
+    }
+
     fun practice(title: String, items: List<Item>) = run(title, SessionKind.PRACTICE, Config.practiceXp, Exercises.forReview(items))
 
     fun lesson(lesson: Lesson) = go(Page.Run(lessonSession(lesson)))
+
+    /** Saves a finished session; returns where to go next (the streak page when the day's first session waters the tree). */
+    fun finish(session: Session, o: Outcome): Page? {
+        val firstToday = !progress.studiedToday
+        progress.finish(session.lessonId, o.xp, o.results, session.kind, o.perfect, o.answered, o.correct, o.bestRun, o.writeResults)
+        when (session.review) {
+            "reading" -> progress.addReviewed(writing = false, count = o.results.size)
+            "writing" -> progress.addReviewed(writing = true, count = o.writeResults.size)
+        }
+        val unit = session.testOut
+        if (unit != null && o.answered > 0 && o.correct * 100 / o.answered >= Config.testOutPercent) progress.completeUnit(unit)
+        // The first session of the day fills the watering can, so show the tree waiting to be watered.
+        return if (firstToday && progress.tree.canWater) Page.Streak else null
+    }
 
     when (page) {
         is Page.Run -> LessonScreen(
             session = page.session,
             progress = progress,
             onExit = { go(null) },
-            onFinish = { o ->
-                val firstToday = !progress.studiedToday
-                progress.finish(page.session.lessonId, o.xp, o.results, page.session.kind, o.perfect, o.answered, o.correct, o.bestRun, o.writeResults)
-                when (page.session.review) {
-                    "reading" -> progress.addReviewed(writing = false, count = o.results.size)
-                    "writing" -> progress.addReviewed(writing = true, count = o.writeResults.size)
-                }
-                val unit = page.session.testOut
-                if (unit != null && o.answered > 0 && o.correct * 100 / o.answered >= Config.testOutPercent) progress.completeUnit(unit)
-                // The first session of the day fills the watering can, so show the tree waiting to be watered.
-                go(if (firstToday && progress.tree.canWater) Page.Streak else null)
+            onFinish = { o -> go(finish(page.session, o)) },
+            onKeepGoing = { o ->
+                // Saved first, so the next session is built from the updated memory.
+                val streak = finish(page.session, o)
+                val next = page.session.next?.invoke()
+                go(if (next != null && next.exercises.isNotEmpty()) Page.Run(next) else streak)
             }
         )
         is Page.RolePlay -> RolePlayScreen(page.scene, progress, onBack = { go(null) })
@@ -210,11 +238,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         Page.Practice -> SubScreen("Practice", onBack = { go(null) }, action = { GuideHelpButton("practice") }) {
             PracticeScreen(
                 progress,
-                onReview = { title, items, due ->
-                    // Both kinds are revision games; asked in the way that suits how well each item is known.
-                    val entries = items.map { it to Memory.level(progress.srs[it.id]) }
-                    run(title, SessionKind.PRACTICE, Config.practiceXp, Exercises.forRevision(entries), review = if (due) "reading" else "practice")
-                },
+                onReview = { _, items, due -> go(Page.Run(revision(due, items))) },
                 onWords = { go(Page.Words) },
                 onSpeak = { run("Speaking", SessionKind.PRACTICE, Config.practiceXp, Exercises.forSpeaking(Course.phrases)) },
                 onDictate = {

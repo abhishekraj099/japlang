@@ -112,6 +112,7 @@ fun RevisionSummary(
     graded: Int,
     right: Int,
     bestRun: Int,
+    keepGoing: () -> Unit,
     onContinue: () -> Unit
 ) {
     val scheme = MaterialTheme.colorScheme
@@ -206,6 +207,10 @@ fun RevisionSummary(
             if (changes.size > 10) {
                 Text("and ${changes.size - 10} more", color = scheme.onSurfaceVariant, modifier = Modifier.padding(top = 6.dp))
             }
+        }
+        // Only offered when another session can be built; checked once, since the summary is not recomposed with new progress.
+        if (remember { session.next?.invoke()?.exercises?.isNotEmpty() == true }) {
+            PushButton("Keep going", keepGoing, color = scheme.secondary, modifier = Modifier.padding(bottom = 10.dp))
         }
         PushButton("Continue", onContinue, color = session.color)
     }
