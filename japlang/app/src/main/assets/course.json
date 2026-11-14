@@ -1462,7 +1462,7 @@
               "blank": 3,
               "distract": [
                 "ます",
-                "を"
+                "じゃありません"
               ]
             },
             {
@@ -1605,7 +1605,7 @@
               "blank": 3,
               "distract": [
                 "ます",
-                "を"
+                "じゃありません"
               ]
             },
             {
@@ -1745,7 +1745,7 @@
               "blank": 3,
               "distract": [
                 "ます",
-                "を"
+                "じゃありません"
               ]
             },
             {
@@ -4358,8 +4358,8 @@
               "en": "That's my umbrella.",
               "blank": 3,
               "distract": [
-                "かぎ",
-                "を"
+                "を",
+                "が"
               ]
             },
             {
@@ -7764,7 +7764,7 @@
               ],
               "romaji": "doyoubi mo shigoto o shimasu",
               "en": "I work on Saturdays too.",
-              "blank": 2,
+              "blank": 3,
               "distract": [
                 "に",
                 "で"
@@ -8793,8 +8793,8 @@
               "en": "How do you say \"thank you\" in Japanese?",
               "blank": 3,
               "distract": [
-                "に",
-                "を"
+                "えいご",
+                "ベトナムご"
               ]
             },
             {
@@ -9592,8 +9592,8 @@
               "en": "It's a green umbrella.",
               "blank": 1,
               "distract": [
-                "い",
-                "を"
+                "を",
+                "が"
               ]
             },
             {
@@ -9638,8 +9638,8 @@
               "en": "It's a grey bag.",
               "blank": 1,
               "distract": [
-                "い",
-                "を"
+                "を",
+                "が"
               ]
             },
             {
@@ -10260,7 +10260,7 @@
               ],
               "romaji": "chichi wa megane o kakemasu",
               "en": "My father wears glasses.",
-              "blank": 3,
+              "blank": 4,
               "distract": [
                 "きます",
                 "はきます"
@@ -10734,7 +10734,7 @@
               "blank": 1,
               "distract": [
                 "い",
-                "の"
+                "です"
               ]
             },
             {
@@ -10764,7 +10764,7 @@
               "blank": 1,
               "distract": [
                 "い",
-                "の"
+                "です"
               ]
             },
             {
@@ -10781,7 +10781,7 @@
               "blank": 3,
               "distract": [
                 "い",
-                "の"
+                "です"
               ]
             },
             {
@@ -11001,7 +11001,7 @@
               "blank": 2,
               "distract": [
                 "あまり",
-                "も"
+                "ちょっと"
               ]
             },
             {
@@ -11115,7 +11115,7 @@
               "blank": 2,
               "distract": [
                 "とても",
-                "も"
+                "ちょっと"
               ]
             },
             {
@@ -11159,7 +11159,7 @@
               "blank": 2,
               "distract": [
                 "とても",
-                "も"
+                "ちょっと"
               ]
             },
             {
@@ -13356,8 +13356,8 @@
               "en": "Just one ice cream, please.",
               "blank": 3,
               "distract": [
-                "も",
-                "を"
+                "しか",
+                "ぐらい"
               ]
             },
             {
@@ -13523,8 +13523,8 @@
               "en": "It takes about an hour by train.",
               "blank": 3,
               "distract": [
-                "から",
-                "まで"
+                "だけ",
+                "しか"
               ]
             },
             {
@@ -14143,8 +14143,8 @@
               "en": "Of Japanese dishes, I like sushi best.",
               "blank": 6,
               "distract": [
-                "より",
-                "とても"
+                "とても",
+                "あまり"
               ]
             },
             {
@@ -15790,8 +15790,8 @@
               "en": "You must not run here.",
               "blank": 4,
               "distract": [
-                "も",
-                "を"
+                "いいです",
+                "いきません"
               ]
             },
             {
@@ -16063,8 +16063,8 @@
               "en": "This town is quiet and pretty.",
               "blank": 4,
               "distract": [
-                "な",
-                "くて"
+                "に、",
+                "と、"
               ]
             },
             {
@@ -16082,8 +16082,8 @@
               "en": "My brother is an office worker and my sister is a student.",
               "blank": 3,
               "distract": [
-                "です",
-                "くて"
+                "と、",
+                "が、"
               ]
             }
           ],
@@ -16166,7 +16166,7 @@
               ],
               "romaji": "shigoto ga owatte kara, puuru e ikimasu",
               "en": "After work finishes, I go to the pool.",
-              "blank": 4,
+              "blank": 3,
               "distract": [
                 "まで",
                 "に"
@@ -16815,8 +16815,8 @@
               "en": "I can ride a horse.",
               "blank": 3,
               "distract": [
-                "の",
-                "もの"
+                "もの",
+                "ところ"
               ]
             },
             {
@@ -16928,10 +16928,10 @@
               ],
               "romaji": "watashi no shumi wa piano o hiku koto desu",
               "en": "My hobby is playing the piano.",
-              "blank": 6,
+              "blank": 7,
               "distract": [
                 "もの",
-                "の"
+                "ところ"
               ]
             },
             {
@@ -17013,7 +17013,7 @@
               "blank": 1,
               "distract": [
                 "あと",
-                "から"
+                "とき"
               ]
             },
             {
@@ -17435,8 +17435,8 @@
               "en": "It'll be spring soon.",
               "blank": 2,
               "distract": [
-                "く",
-                "を"
+                "を",
+                "が"
               ]
             },
             {
@@ -17934,7 +17934,7 @@
               "blank": 4,
               "distract": [
                 "まえ",
-                "から"
+                "あと"
               ]
             },
             {
@@ -18010,8 +18010,8 @@
               "en": "Press this button and a ticket comes out.",
               "blank": 4,
               "distract": [
-                "とき",
-                "から"
+                "から",
+                "が"
               ]
             },
             {
@@ -18921,7 +18921,7 @@
               "blank": 1,
               "distract": [
                 "だけ",
-                "も"
+                "ぐらい"
               ]
             },
             {
@@ -18952,7 +18952,7 @@
               "blank": 3,
               "distract": [
                 "だけ",
-                "も"
+                "ぐらい"
               ]
             }
           ],
@@ -19056,8 +19056,8 @@
               "en": "Even a child can understand.",
               "blank": 1,
               "distract": [
-                "から",
-                "は"
+                "だけ",
+                "しか"
               ]
             }
           ],
@@ -20232,7 +20232,7 @@
               ],
               "romaji": "watashi no chousho wa majime na tokoro desu",
               "en": "My strength is that I'm hard-working.",
-              "blank": 3,
+              "blank": 2,
               "distract": [
                 "けいけん",
                 "しゅっしん"
