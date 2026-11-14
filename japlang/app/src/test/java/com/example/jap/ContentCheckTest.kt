@@ -71,19 +71,25 @@ class ContentCheckTest {
         }
     }
 
-    /** A particle gap offers only particles and a word gap offers no particles, so no answer is given away by its kind. */
+    /**
+     * A function-word gap (particle or grammatical ending) offers only function words and a word gap offers none,
+     * so no answer is given away by its kind while な / の / い and くて / で contrasts stay possible.
+     */
     @Test
     fun gapOptionsAreTheSameKindAsTheAnswer() {
-        val particles = setOf("は", "が", "を", "に", "で", "へ", "と", "も", "の", "か", "や", "から", "まで", "より", "ね", "よ")
-        fun isParticle(token: String) = token.trimEnd('、') in particles
+        val functionWords = setOf(
+            "は", "が", "を", "に", "で", "へ", "と", "も", "の", "か", "や", "から", "まで", "より", "ね", "よ",
+            "な", "い", "く", "くて", "だ", "です", "でした", "ですか", "じゃありません", "ます", "かった",
+        )
+        fun isFunctionWord(token: String) = token.trimEnd('、') in functionWords
         allSentences().forEach { s ->
             val blank = s.optInt("blank", -1)
             if (blank < 0) return@forEach
             val tokens = s.getJSONArray("tokens").let { a -> List(a.length()) { a.getString(it) } }
             val distract = s.optJSONArray("distract")?.let { a -> List(a.length()) { a.getString(it) } }.orEmpty()
             val label = tokens.joinToString("")
-            val answerIsParticle = isParticle(tokens[blank])
-            assertTrue("Wrong options give away the gap: $label", distract.all { isParticle(it) == answerIsParticle })
+            val answerIsFunctionWord = isFunctionWord(tokens[blank])
+            assertTrue("Wrong options give away the gap: $label", distract.all { isFunctionWord(it) == answerIsFunctionWord })
         }
     }
 

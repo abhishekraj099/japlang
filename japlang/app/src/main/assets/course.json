@@ -1462,7 +1462,7 @@
               "blank": 3,
               "distract": [
                 "ます",
-                "じゃありません"
+                "を"
               ]
             },
             {
@@ -1605,7 +1605,7 @@
               "blank": 3,
               "distract": [
                 "ます",
-                "じゃありません"
+                "を"
               ]
             },
             {
@@ -1745,7 +1745,7 @@
               "blank": 3,
               "distract": [
                 "ます",
-                "じゃありません"
+                "を"
               ]
             },
             {
@@ -4171,7 +4171,7 @@
               "blank": 1,
               "distract": [
                 "そうじゃありません",
-                "ですか"
+                "ちがいます"
               ]
             },
             {
@@ -9592,8 +9592,8 @@
               "en": "It's a green umbrella.",
               "blank": 1,
               "distract": [
-                "を",
-                "が"
+                "い",
+                "を"
               ]
             },
             {
@@ -9638,8 +9638,8 @@
               "en": "It's a grey bag.",
               "blank": 1,
               "distract": [
-                "を",
-                "が"
+                "い",
+                "を"
               ]
             },
             {
@@ -10734,7 +10734,7 @@
               "blank": 1,
               "distract": [
                 "い",
-                "です"
+                "の"
               ]
             },
             {
@@ -10764,7 +10764,7 @@
               "blank": 1,
               "distract": [
                 "い",
-                "です"
+                "の"
               ]
             },
             {
@@ -10781,7 +10781,7 @@
               "blank": 3,
               "distract": [
                 "い",
-                "です"
+                "の"
               ]
             },
             {
@@ -16063,8 +16063,8 @@
               "en": "This town is quiet and pretty.",
               "blank": 4,
               "distract": [
-                "に、",
-                "と、"
+                "な",
+                "くて"
               ]
             },
             {
@@ -16082,8 +16082,8 @@
               "en": "My brother is an office worker and my sister is a student.",
               "blank": 3,
               "distract": [
-                "と、",
-                "が、"
+                "です",
+                "くて"
               ]
             }
           ],
@@ -17435,8 +17435,8 @@
               "en": "It'll be spring soon.",
               "blank": 2,
               "distract": [
-                "を",
-                "が"
+                "く",
+                "を"
               ]
             },
             {
