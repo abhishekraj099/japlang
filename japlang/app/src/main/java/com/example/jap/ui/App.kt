@@ -23,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -198,7 +199,8 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
     }
 
     when (page) {
-        is Page.Run -> LessonScreen(
+        // Keyed on the session so "Keep going" starts with fresh state instead of the finished summary.
+        is Page.Run -> key(page.session) { LessonScreen(
             session = page.session,
             progress = progress,
             onExit = { go(null) },
@@ -209,7 +211,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                 val next = page.session.next?.invoke()
                 go(if (next != null && next.exercises.isNotEmpty()) Page.Run(next) else streak)
             }
-        )
+        ) }
         is Page.RolePlay -> RolePlayScreen(page.scene, progress, onBack = { go(null) })
         is Page.Cards -> FlashcardScreen(page.items, onBack = { go(Page.Words) })
         Page.Words -> WordsScreen(progress, onBack = { go(null) }, onCards = { go(Page.Cards(it)) })
