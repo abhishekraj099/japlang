@@ -1,5 +1,7 @@
 package com.example.jap.ui
 
+import com.example.jap.ui.theme.keepWords
+import androidx.compose.material.icons.rounded.Mic
 import android.Manifest
 import android.content.pm.PackageManager
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -180,7 +182,7 @@ internal fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onFinished
                 IconButton(onClick = { speaker.speak(turn.jp.replace(" ", "")) }) {
                     Icon(Icons.AutoMirrored.Rounded.VolumeUp, contentDescription = "Hear ${Guide.name} again")
                 }
-                PushButton(if (speech.listening) "Listening…" else "Speak", ::listen, Modifier.weight(1f), enabled = !speech.listening)
+                PushButton(if (speech.listening) "Listening…" else "Speak", ::listen, Modifier.weight(1f), enabled = !speech.listening, icon = Icons.Rounded.Mic)
                 TextButton(onClick = { hint = true }) { Text("Hint") }
             }
             if (!tapping && misses < 2) TextButton(onClick = { tapping = true }) { Text("Can't speak now? Tap an answer") }
@@ -199,7 +201,7 @@ private fun TalkBubble(who: String, jp: String, romaji: String?, en: String?, mi
             line = if (current) scheme.primary else scheme.outlineVariant
         ) {
             Column(Modifier.fillMaxWidth().padding(14.dp)) {
-                Text(jp, fontSize = 19.sp, color = if (mine) scheme.onPrimaryContainer else scheme.onSurface)
+                Text(keepWords(jp), fontSize = 19.sp, color = if (mine) scheme.onPrimaryContainer else scheme.onSurface)
                 romaji?.let { Text(it, style = MaterialTheme.typography.bodyMedium, color = scheme.secondary) }
                 en?.let { Text(it, style = MaterialTheme.typography.bodyMedium, color = if (mine) scheme.onPrimaryContainer else scheme.onSurfaceVariant) }
             }

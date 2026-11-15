@@ -7,6 +7,13 @@ import androidx.compose.ui.unit.sp
 
 private val base = Typography()
 
+/**
+ * Japanese text breaks between any two characters, which can split a word such as いもうと across lines. Joining
+ * each space-separated word's characters with U+2060 (WORD JOINER, invisible) leaves only the spaces as break points.
+ * For display only: speak and match the original text.
+ */
+fun keepWords(text: String): String = text.split(" ").joinToString(" ") { it.toList().joinToString("\u2060") }
+
 // Headings are set in the system serif, which renders Japanese in a Mincho face;
 // running text stays in the sans for legibility at small sizes.
 private val Serif = FontFamily.Serif

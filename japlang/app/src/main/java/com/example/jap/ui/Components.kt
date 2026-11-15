@@ -67,7 +67,8 @@ fun PushButton(
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
     color: Color = MaterialTheme.colorScheme.primary,
-    contentColor: Color = color.ink()
+    contentColor: Color = color.ink(),
+    icon: ImageVector? = null
 ) {
     val source = remember { MutableInteractionSource() }
     val pressed by source.collectIsPressedAsState()
@@ -86,13 +87,11 @@ fun PushButton(
             .clickable(source, indication = null, enabled = enabled, role = Role.Button, onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
-        Text(
-            text,
-            color = if (enabled) contentColor else scheme.onSurfaceVariant,
-            fontSize = 16.sp,
-            fontWeight = FontWeight.SemiBold,
-            letterSpacing = 0.4.sp
-        )
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            val ink = if (enabled) contentColor else scheme.onSurfaceVariant
+            if (icon != null) Icon(icon, contentDescription = null, tint = ink, modifier = Modifier.padding(end = 8.dp).size(20.dp))
+            Text(text, color = ink, fontSize = 16.sp, fontWeight = FontWeight.SemiBold, letterSpacing = 0.4.sp)
+        }
     }
 }
 

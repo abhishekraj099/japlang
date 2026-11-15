@@ -1,5 +1,10 @@
 package com.example.jap.ui
 
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.material3.TextButton
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -103,7 +108,7 @@ fun PracticeScreen(
                 }
                 if (items.isNotEmpty()) {
                     Text(
-                        "Memory strength · ${items.size} items",
+                        "Memory strength · ${items.size} item${if (items.size == 1) "" else "s"}",
                         style = MaterialTheme.typography.labelLarge, color = scheme.onSurfaceVariant,
                         modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
                     )
@@ -187,11 +192,15 @@ fun PracticeScreen(
     }
 }
 
-/** The guide's spoken mini-conversations: each unlocked one is listed so it starts in one tap. */
+/**
+ * The guide's spoken mini-conversations. Unfinished talks come first and only the next few show, so the card stays
+ * short as more unlock; "Show all" lists the rest in place.
+ */
 @Composable
 private fun TalkCard(done: Set<String>, onTalk: (GuideTalk) -> Unit) {
     val scheme = MaterialTheme.colorScheme
-    val open = Talks.unlocked(done)
+    val open = Talks.unlocked(done).sortedBy { it.id in done }
+    var all by rememberSaveable { mutableStateOf(false) }
     Panel(Modifier.fillMaxWidth()) {
         Column(Modifier.fillMaxWidth().padding(14.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -207,7 +216,7 @@ private fun TalkCard(done: Set<String>, onTalk: (GuideTalk) -> Unit) {
                     )
                 }
             }
-            open.forEach { talk ->
+            (if (all) open else open.take(TALKS_SHOWN)).forEach { talk ->
                 Row(
                     Modifier.fillMaxWidth().padding(top = 8.dp).clip(CircleShape).clickable(role = Role.Button) { onTalk(talk) }.padding(horizontal = 12.dp, vertical = 10.dp),
                     verticalAlignment = Alignment.CenterVertically
@@ -217,9 +226,16 @@ private fun TalkCard(done: Set<String>, onTalk: (GuideTalk) -> Unit) {
                     Icon(Icons.Rounded.ChevronRight, contentDescription = null, tint = scheme.onSurfaceVariant)
                 }
             }
+            if (open.size > TALKS_SHOWN) {
+                TextButton(onClick = { all = !all }, modifier = Modifier.align(Alignment.CenterHorizontally)) {
+                    Text(if (all) "Show fewer" else "Show all ${open.size}")
+                }
+            }
         }
     }
 }
+
+private const val TALKS_SHOWN = 3
 
 @Composable
 private fun Activity(icon: ImageVector, title: String, body: String, onClick: () -> Unit) {

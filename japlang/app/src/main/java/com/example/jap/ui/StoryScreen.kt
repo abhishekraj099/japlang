@@ -1,5 +1,6 @@
 package com.example.jap.ui
 
+import com.example.jap.ui.theme.keepWords
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -105,7 +106,7 @@ fun StoryScreen(story: Story, onQuiz: () -> Unit, onBack: () -> Unit) {
                         if (line.speaker.isNotEmpty()) {
                             Text(line.speaker, style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold, color = scheme.primary)
                         }
-                        Text(line.tokens.joinToString(" "), fontSize = 20.sp, color = scheme.onSurface)
+                        Text(keepWords(line.tokens.joinToString(" ")), fontSize = 20.sp, color = scheme.onSurface)
                         if (romaji) Text(line.romaji, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant)
                         if (english) Text(line.en, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurface, modifier = Modifier.padding(top = 4.dp))
                     }

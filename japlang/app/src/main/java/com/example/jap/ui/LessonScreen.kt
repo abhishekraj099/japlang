@@ -1,5 +1,6 @@
 package com.example.jap.ui
 
+import com.example.jap.ui.theme.keepWords
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.speech.RecognizerIntent
@@ -632,7 +633,7 @@ private fun NoteView(card: NoteCard, accent: Color, done: (Boolean?) -> Unit) {
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Column(Modifier.weight(1f)) {
-                            Text(s.tokens.joinToString(" "), fontSize = 20.sp, color = scheme.onSurface)
+                            Text(keepWords(s.tokens.joinToString(" ")), fontSize = 20.sp, color = scheme.onSurface)
                             Text(s.romaji, color = accent)
                             Text(s.en, color = scheme.onSurfaceVariant)
                         }
@@ -673,7 +674,7 @@ private fun DialogueView(card: DialogueCard, accent: Color, done: (Boolean?) -> 
                             .clickable { speaker.speak(line.jp.replace(" ", "")) }
                             .padding(14.dp)
                     ) {
-                        Text(line.jp, fontSize = 19.sp, color = scheme.onSurface)
+                        Text(keepWords(line.jp), fontSize = 19.sp, color = scheme.onSurface)
                         Text(line.romaji, color = accent)
                         Text(line.en, color = scheme.onSurfaceVariant)
                     }
