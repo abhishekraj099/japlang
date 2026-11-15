@@ -38,22 +38,22 @@ class WritingTest {
     fun everyItemOnThePathIsWritten() {
         val all = Course.lessons.flatMap { it.items }.distinctBy { it.id }
         val byKind = all.groupBy { it.kind }.mapValues { (_, v) -> v.map { it.id }.toSet() }
-        assertEquals(607, byKind.getValue(Kind.WORD).size)
+        assertEquals(918, byKind.getValue(Kind.WORD).size)
         assertEquals(46, byKind.getValue(Kind.HIRAGANA).size)
         assertEquals(46, byKind.getValue(Kind.KATAKANA).size)
         assertEquals(270, byKind.getValue(Kind.KANJI).size)
         byKind.values.forEach { ids -> assertTrue((ids - written).toString(), written.containsAll(ids)) }
-        assertEquals(969, written.size)
+        assertEquals(1280, written.size)
     }
 
     @Test
     fun wordsSplitIntoKanjiAndKanaOnly() {
-        // 12 words are taught in kana first and with kanji later under the same id (がくせい, then 学生).
+        // 19 words are taught in kana first and with kanji later under the same id (がくせい, then 学生).
         val versions = Course.lessons.flatMap { it.items }.filter { it.kind == Kind.WORD }.groupBy { it.id }
-        assertEquals(607, versions.size)
-        assertEquals(12, versions.count { (_, v) -> v.map { it.jp }.distinct().size > 1 })
-        assertEquals(335, versions.count { (_, v) -> v.any(Writing::hasKanji) })
-        assertEquals(272, versions.count { (_, v) -> v.none(Writing::hasKanji) })
+        assertEquals(918, versions.size)
+        assertEquals(19, versions.count { (_, v) -> v.map { it.jp }.distinct().size > 1 })
+        assertEquals(421, versions.count { (_, v) -> v.any(Writing::hasKanji) })
+        assertEquals(497, versions.count { (_, v) -> v.none(Writing::hasKanji) })
         // Every kanji spelling can also be written in kana.
         assertTrue(versions.values.flatten().filter(Writing::hasKanji).all { Writing.spellings(it).size == 2 })
     }
