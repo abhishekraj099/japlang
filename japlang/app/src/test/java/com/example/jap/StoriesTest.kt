@@ -44,9 +44,10 @@ class StoriesTest {
     @Test
     fun storiesLoad() {
         val every3rd = KnownWords.basicUnits.filterIndexed { i, _ -> (i + 1) % 3 == 0 }
-        assertEquals(19, every3rd.size)
+        assertEquals(21, every3rd.size)
         assertTrue(Stories.all.size >= 19)
-        assertEquals(every3rd, Stories.all.map { it.unlockAfter })
+        // The N4 level has no stories yet, so they cover every third unit up to the end of Intermediate.
+        assertEquals(every3rd.take(19), Stories.all.map { it.unlockAfter })
         Stories.all.forEach { assertEquals("st-${it.unlockAfter}", it.id) }
     }
 

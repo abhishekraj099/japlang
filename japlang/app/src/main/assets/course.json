@@ -33336,6 +33336,2326 @@
       ]
     },
     {
+      "id": "vol",
+      "title": "Volitional",
+      "subtitle": "Let's…, and I'm thinking of…",
+      "color": "#2E8A99",
+      "dark": "#1F6672",
+      "tags": [
+        "plans",
+        "verbs",
+        "volitional"
+      ],
+      "practices": [
+        {
+          "title": "Let's (casual)",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "しゅうまつ",
+              "romaji": "shuumatsu",
+              "meaning": "weekend",
+              "emoji": "🗓️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "始めます",
+              "romaji": "hajimemasu",
+              "meaning": "start (something)",
+              "emoji": "🏁",
+              "reading": "はじめます"
+            },
+            {
+              "kind": "WORD",
+              "jp": "きめます",
+              "romaji": "kimemasu",
+              "meaning": "decide",
+              "emoji": "✅"
+            },
+            {
+              "kind": "WORD",
+              "jp": "そろそろ",
+              "romaji": "sorosoro",
+              "meaning": "it's about time",
+              "emoji": "⏳"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "そろそろ",
+                "かえろう"
+              ],
+              "romaji": "sorosoro kaerou",
+              "en": "It's about time we went home.",
+              "blank": 1,
+              "distract": [
+                "かえった",
+                "かえらない"
+              ]
+            },
+            {
+              "tokens": [
+                "しゅうまつ",
+                "に",
+                "うみ",
+                "へ",
+                "いこう"
+              ],
+              "romaji": "shuumatsu ni umi e ikou",
+              "en": "Let's go to the sea at the weekend.",
+              "blank": 4,
+              "distract": [
+                "いった",
+                "いかない"
+              ]
+            },
+            {
+              "tokens": [
+                "ちょっと",
+                "つかれた",
+                "から、",
+                "やすもう"
+              ],
+              "romaji": "chotto tsukareta kara, yasumou",
+              "en": "I'm a bit tired, so let's take a break.",
+              "distract": [
+                "やすんだ",
+                "やすまない"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "から",
+                "にほんご",
+                "の",
+                "べんきょう",
+                "を",
+                "はじめよう"
+              ],
+              "romaji": "ashita kara nihongo no benkyou o hajimeyou",
+              "en": "Let's start studying Japanese tomorrow.",
+              "blank": 6,
+              "distract": [
+                "はじめた",
+                "はじめない"
+              ]
+            },
+            {
+              "tokens": [
+                "パーティー",
+                "の",
+                "じかん",
+                "を",
+                "きめよう"
+              ],
+              "romaji": "paatii no jikan o kimeyou",
+              "en": "Let's decide on a time for the party.",
+              "distract": [
+                "きめた",
+                "きめない"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "また",
+                "こよう"
+              ],
+              "romaji": "ashita mata koyou",
+              "en": "Let's come again tomorrow.",
+              "blank": 2,
+              "distract": [
+                "きた",
+                "こない"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Let's (casual)",
+            "pattern": "Verb volitional form: いこう・たべよう・しよう",
+            "body": "The volitional form is the casual let's, used with friends and family. Group 1 verbs change the final -u to -ou: いく → いこう, のむ → のもう. Group 2 verbs swap る for よう: たべる → たべよう. する → しよう, くる → こよう. It is the plain partner of ～ましょう.",
+            "id": "g-vol-1"
+          }
+        },
+        {
+          "title": "I'm thinking of…",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "ひっこします",
+              "romaji": "hikkoshimasu",
+              "meaning": "move (house)",
+              "emoji": "📦"
+            },
+            {
+              "kind": "WORD",
+              "jp": "りゅうがくします",
+              "romaji": "ryuugaku shimasu",
+              "meaning": "study abroad",
+              "emoji": "🎓"
+            },
+            {
+              "kind": "WORD",
+              "jp": "運転",
+              "romaji": "unten",
+              "meaning": "driving",
+              "emoji": "🚗",
+              "reading": "うんてん"
+            },
+            {
+              "kind": "WORD",
+              "jp": "やせます",
+              "romaji": "yasemasu",
+              "meaning": "lose weight",
+              "emoji": "🏃"
+            },
+            {
+              "kind": "WORD",
+              "jp": "海外",
+              "romaji": "kaigai",
+              "meaning": "overseas",
+              "emoji": "🌏",
+              "reading": "かいがい"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "らいげつ",
+                "おおさか",
+                "に",
+                "ひっこそう",
+                "と",
+                "おもって",
+                "います"
+              ],
+              "romaji": "raigetsu oosaka ni hikkosou to omotte imasu",
+              "en": "I'm thinking of moving to Osaka next month.",
+              "blank": 3,
+              "distract": [
+                "ひっこした",
+                "ひっこさない"
+              ]
+            },
+            {
+              "tokens": [
+                "なつやすみ",
+                "に",
+                "かいがい",
+                "へ",
+                "いこう",
+                "と",
+                "おもいます"
+              ],
+              "romaji": "natsuyasumi ni kaigai e ikou to omoimasu",
+              "en": "I think I'll go abroad in the summer holidays.",
+              "blank": 4,
+              "distract": [
+                "いった",
+                "いかない"
+              ]
+            },
+            {
+              "tokens": [
+                "にほん",
+                "に",
+                "りゅうがく",
+                "しよう",
+                "と",
+                "おもって",
+                "います"
+              ],
+              "romaji": "nihon ni ryuugaku shiyou to omotte imasu",
+              "en": "I'm thinking of studying in Japan.",
+              "blank": 3,
+              "distract": [
+                "した",
+                "しない"
+              ]
+            },
+            {
+              "tokens": [
+                "あに",
+                "は",
+                "くるま",
+                "の",
+                "うんてん",
+                "を",
+                "ならおう",
+                "と",
+                "おもって",
+                "います"
+              ],
+              "romaji": "ani wa kuruma no unten o naraou to omotte imasu",
+              "en": "My older brother is thinking of learning to drive.",
+              "distract": [
+                "ならった",
+                "ならいます"
+              ]
+            },
+            {
+              "tokens": [
+                "すこし",
+                "やせよう",
+                "と",
+                "おもって",
+                "います"
+              ],
+              "romaji": "sukoshi yaseyou to omotte imasu",
+              "en": "I'm thinking of losing a bit of weight.",
+              "blank": 1,
+              "distract": [
+                "やせた",
+                "やせない"
+              ]
+            },
+            {
+              "tokens": [
+                "こんばん",
+                "は",
+                "はやく",
+                "ねよう",
+                "と",
+                "おもいます"
+              ],
+              "romaji": "konban wa hayaku neyou to omoimasu",
+              "en": "I think I'll go to bed early tonight.",
+              "distract": [
+                "ねた",
+                "ねない"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Thinking of doing",
+            "pattern": "Verb volitional + と おもって います",
+            "body": "Volitional + と おもいます says what you have just decided to do: こんばん は はやく ねよう と おもいます. と おもって います is a plan you have held for a while, and it is the form to use for other people's plans: あに は くるま を かおう と おもって います.",
+            "id": "g-vol-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Summer holiday plans",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん、なつやすみ は なに を しますか。",
+            "romaji": "Ken-san, natsuyasumi wa nani o shimasu ka.",
+            "en": "Ken, what are you doing in the summer holidays?",
+            "heard": [
+              "ケンさん夏休みは何をしますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "かいがい へ いこう と おもって います。",
+            "romaji": "kaigai e ikou to omotte imasu.",
+            "en": "I'm thinking of going abroad.",
+            "heard": [
+              "海外へ行こうと思っています",
+              "海外に行こうと思っています"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いい ですね。どこ へ いきますか。",
+            "romaji": "ii desu ne. doko e ikimasu ka.",
+            "en": "Nice. Where will you go?",
+            "heard": [
+              "いいですねどこへ行きますか",
+              "いいですねどこに行きますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "イタリア へ いこう と おもって います。ゆきさん は？",
+            "romaji": "itaria e ikou to omotte imasu. Yuki-san wa?",
+            "en": "I'm thinking of Italy. What about you, Yuki?",
+            "heard": [
+              "イタリアへ行こうと思っていますゆきさんは",
+              "イタリアに行こうと思っていますユキさんは"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし は くるま の うんてん を ならおう と おもって います。",
+            "romaji": "watashi wa kuruma no unten o naraou to omotte imasu.",
+            "en": "I'm thinking of learning to drive.",
+            "heard": [
+              "私は車の運転を習おうと思っています"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "そう ですか。がんばって ください。",
+            "romaji": "sou desu ka. ganbatte kudasai.",
+            "en": "Really? Good luck with it.",
+            "heard": [
+              "そうですか頑張ってください"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ありがとうございます。じゃあ、そろそろ かえりましょう。",
+            "romaji": "arigatou gozaimasu. jaa, sorosoro kaerimashou.",
+            "en": "Thank you. Well, it's about time we headed home.",
+            "heard": [
+              "ありがとうございますじゃあそろそろ帰りましょう"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "いっしょにいこう",
+          "romaji": "issho ni ikou",
+          "en": "Let's go together.",
+          "heard": [
+            "一緒に行こう"
+          ]
+        },
+        {
+          "jp": "そろそろかえろう",
+          "romaji": "sorosoro kaerou",
+          "en": "Time to head home.",
+          "heard": [
+            "そろそろ帰ろう"
+          ]
+        },
+        {
+          "jp": "にほんへいこうとおもっています",
+          "romaji": "nihon e ikou to omotte imasu",
+          "en": "I'm thinking of going to Japan.",
+          "heard": [
+            "日本へ行こうと思っています",
+            "日本に行こうと思っています"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "title": "Intentions and plans",
+      "subtitle": "I intend to…, it's scheduled to…",
+      "color": "#B5562B",
+      "dark": "#8A3E1C",
+      "tags": [
+        "plans",
+        "schedule",
+        "work"
+      ],
+      "practices": [
+        {
+          "title": "I intend to",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "そつぎょうします",
+              "romaji": "sotsugyou shimasu",
+              "meaning": "graduate",
+              "emoji": "🎓"
+            },
+            {
+              "kind": "WORD",
+              "jp": "しゅうしょくします",
+              "romaji": "shuushoku shimasu",
+              "meaning": "get a job",
+              "emoji": "💼"
+            },
+            {
+              "kind": "WORD",
+              "jp": "しょうらい",
+              "romaji": "shourai",
+              "meaning": "the future",
+              "emoji": "🔭"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ちょきん",
+              "romaji": "chokin",
+              "meaning": "savings",
+              "emoji": "🐷"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "だいがく",
+                "を",
+                "そつぎょう",
+                "したら、",
+                "にほん",
+                "で",
+                "はたらく",
+                "つもりです"
+              ],
+              "romaji": "daigaku o sotsugyou shitara, nihon de hataraku tsumori desu",
+              "en": "After I graduate, I intend to work in Japan.",
+              "blank": 6,
+              "distract": [
+                "はたらいて",
+                "はたらきます"
+              ]
+            },
+            {
+              "tokens": [
+                "しょうらい",
+                "は",
+                "せんせい",
+                "に",
+                "なる",
+                "つもりです"
+              ],
+              "romaji": "shourai wa sensei ni naru tsumori desu",
+              "en": "In the future, I intend to become a teacher.",
+              "blank": 4,
+              "distract": [
+                "なって",
+                "なります"
+              ]
+            },
+            {
+              "tokens": [
+                "もう",
+                "たばこ",
+                "は",
+                "すわない",
+                "つもりです"
+              ],
+              "romaji": "mou tabako wa suwanai tsumori desu",
+              "en": "I don't intend to smoke any more.",
+              "blank": 3,
+              "distract": [
+                "すって",
+                "すいます"
+              ]
+            },
+            {
+              "tokens": [
+                "らいねん",
+                "しゅうしょく",
+                "する",
+                "つもりです"
+              ],
+              "romaji": "rainen shuushoku suru tsumori desu",
+              "en": "I intend to get a job next year.",
+              "distract": [
+                "して",
+                "します"
+              ]
+            },
+            {
+              "tokens": [
+                "まいつき",
+                "すこし",
+                "ちょきん",
+                "する",
+                "つもりです"
+              ],
+              "romaji": "maitsuki sukoshi chokin suru tsumori desu",
+              "en": "I intend to save a little every month.",
+              "distract": [
+                "して",
+                "します"
+              ]
+            },
+            {
+              "tokens": [
+                "なつやすみ",
+                "に",
+                "なに",
+                "を",
+                "する",
+                "つもりですか"
+              ],
+              "romaji": "natsuyasumi ni nani o suru tsumori desu ka",
+              "en": "What do you intend to do in the summer holidays?",
+              "blank": 4,
+              "distract": [
+                "して",
+                "します"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Intending to",
+            "pattern": "Verb dictionary form / ない-form + つもりです",
+            "body": "Dictionary form + つもりです states a firm intention: しょうらい は せんせい に なる つもりです. To say you intend not to, use the ない-form: もう たばこ は すわない つもりです. It sounds more decided than ～よう と おもって います.",
+            "id": "g-plan-1"
+          }
+        },
+        {
+          "title": "It's scheduled",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "よてい",
+              "romaji": "yotei",
+              "meaning": "plan / schedule",
+              "emoji": "📅"
+            },
+            {
+              "kind": "WORD",
+              "jp": "出発します",
+              "romaji": "shuppatsu shimasu",
+              "meaning": "depart",
+              "emoji": "🛫",
+              "reading": "しゅっぱつします"
+            },
+            {
+              "kind": "WORD",
+              "jp": "けっこんしき",
+              "romaji": "kekkonshiki",
+              "meaning": "wedding",
+              "emoji": "💒"
+            },
+            {
+              "kind": "WORD",
+              "jp": "今度",
+              "romaji": "kondo",
+              "meaning": "this coming / next time",
+              "emoji": "🔜",
+              "reading": "こんど"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "ひこうき",
+                "は",
+                "10じ",
+                "に",
+                "しゅっぱつ",
+                "する",
+                "よていです"
+              ],
+              "romaji": "hikouki wa juuji ni shuppatsu suru yotei desu",
+              "en": "The plane is due to leave at ten.",
+              "blank": 6,
+              "distract": [
+                "つもりです",
+                "たいです"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "は",
+                "かいぎ",
+                "の",
+                "よていです"
+              ],
+              "romaji": "ashita wa kaigi no yotei desu",
+              "en": "There's a meeting scheduled for tomorrow.",
+              "blank": 3,
+              "distract": [
+                "が",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "こんど",
+                "の",
+                "にちようび",
+                "は",
+                "あね",
+                "の",
+                "けっこんしき",
+                "に",
+                "いく",
+                "よていです"
+              ],
+              "romaji": "kondo no nichiyoubi wa ane no kekkonshiki ni iku yotei desu",
+              "en": "This Sunday I'm going to my sister's wedding.",
+              "distract": [
+                "いって",
+                "いきます"
+              ]
+            },
+            {
+              "tokens": [
+                "らいしゅう",
+                "の",
+                "よてい",
+                "は",
+                "どう",
+                "ですか"
+              ],
+              "romaji": "raishuu no yotei wa dou desu ka",
+              "en": "How does your schedule look next week?",
+              "distract": [
+                "が",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "でんしゃ",
+                "は",
+                "3じ",
+                "に",
+                "つく",
+                "よていです"
+              ],
+              "romaji": "densha wa sanji ni tsuku yotei desu",
+              "en": "The train is due to arrive at three.",
+              "blank": 4,
+              "distract": [
+                "ついて",
+                "つきます"
+              ]
+            },
+            {
+              "tokens": [
+                "こんしゅう",
+                "は",
+                "よてい",
+                "が",
+                "たくさん",
+                "あります"
+              ],
+              "romaji": "konshuu wa yotei ga takusan arimasu",
+              "en": "I have a lot of plans this week.",
+              "distract": [
+                "を",
+                "の"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Scheduled plans",
+            "pattern": "Verb dictionary form / Noun の + よていです",
+            "body": "よてい is a plan fixed with others or a timetable: でんしゃ は 3じ に つく よていです (The train is due at three). Nouns take の: あした は かいぎ の よていです. Use つもり for what you yourself intend, and よてい for what has been arranged.",
+            "id": "g-plan-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Plans after graduation",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん、だいがく を そつぎょう したら、どう する つもりですか。",
+            "romaji": "Ken-san, daigaku o sotsugyou shitara, dou suru tsumori desu ka.",
+            "en": "Ken, what do you plan to do after you graduate?",
+            "heard": [
+              "ケンさん大学を卒業したらどうするつもりですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "にほん の かいしゃ に しゅうしょく する つもりです。",
+            "romaji": "nihon no kaisha ni shuushoku suru tsumori desu.",
+            "en": "I intend to get a job at a Japanese company.",
+            "heard": [
+              "日本の会社に就職するつもりです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いい ですね。いつ にほん へ いきますか。",
+            "romaji": "ii desu ne. itsu nihon e ikimasu ka.",
+            "en": "Great. When will you go to Japan?",
+            "heard": [
+              "いいですねいつ日本へ行きますか",
+              "いいですねいつ日本に行きますか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "らいねん の 4がつ に いく よていです。",
+            "romaji": "rainen no shigatsu ni iku yotei desu.",
+            "en": "I'm due to go next April.",
+            "heard": [
+              "来年の4月に行く予定です",
+              "来年の四月に行く予定です"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "にほんご は だいじょうぶ ですか。",
+            "romaji": "nihongo wa daijoubu desu ka.",
+            "en": "Is your Japanese all right?",
+            "heard": [
+              "日本語は大丈夫ですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "まだ へた です から、まいにち べんきょう する つもりです。",
+            "romaji": "mada heta desu kara, mainichi benkyou suru tsumori desu.",
+            "en": "It's still poor, so I intend to study every day.",
+            "heard": [
+              "まだ下手ですから毎日勉強するつもりです"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "そう ですか。がんばって ください ね。",
+            "romaji": "sou desu ka. ganbatte kudasai ne.",
+            "en": "I see. Good luck!",
+            "heard": [
+              "そうですか頑張ってくださいね"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "なにをするつもりですか",
+          "romaji": "nani o suru tsumori desu ka",
+          "en": "What are you planning to do?",
+          "heard": [
+            "何をするつもりですか"
+          ]
+        },
+        {
+          "jp": "よていがあります",
+          "romaji": "yotei ga arimasu",
+          "en": "I have plans.",
+          "heard": [
+            "予定があります"
+          ]
+        },
+        {
+          "jp": "そのつもりです",
+          "romaji": "sono tsumori desu",
+          "en": "That's what I intend.",
+          "heard": [
+            "そのつもりです"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maybe",
+      "title": "Maybe and probably",
+      "subtitle": "It might…, it will probably…",
+      "color": "#6B4E8C",
+      "dark": "#4E3768",
+      "tags": [
+        "guessing",
+        "weather",
+        "plans"
+      ],
+      "practices": [
+        {
+          "title": "It might",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "台風",
+              "romaji": "taifuu",
+              "meaning": "typhoon",
+              "emoji": "🌀",
+              "reading": "たいふう"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ちこくします",
+              "romaji": "chikoku shimasu",
+              "meaning": "be late (for class or work)",
+              "emoji": "⏰"
+            },
+            {
+              "kind": "WORD",
+              "jp": "こみます",
+              "romaji": "komimasu",
+              "meaning": "get crowded",
+              "emoji": "👥"
+            },
+            {
+              "kind": "WORD",
+              "jp": "間に合います",
+              "romaji": "maniaimasu",
+              "meaning": "be in time",
+              "emoji": "🏃",
+              "reading": "まにあいます"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "あした",
+                "は",
+                "あめ",
+                "が",
+                "ふる",
+                "かもしれません"
+              ],
+              "romaji": "ashita wa ame ga furu kamoshiremasen",
+              "en": "It might rain tomorrow.",
+              "blank": 4,
+              "distract": [
+                "ふります",
+                "ふって"
+              ]
+            },
+            {
+              "tokens": [
+                "たいふう",
+                "が",
+                "くる",
+                "かもしれません"
+              ],
+              "romaji": "taifuu ga kuru kamoshiremasen",
+              "en": "A typhoon might come.",
+              "blank": 2,
+              "distract": [
+                "きます",
+                "きて"
+              ]
+            },
+            {
+              "tokens": [
+                "でんしゃ",
+                "が",
+                "こんで",
+                "いる",
+                "かもしれません"
+              ],
+              "romaji": "densha ga konde iru kamoshiremasen",
+              "en": "The train might be crowded.",
+              "distract": [
+                "こみます",
+                "います"
+              ]
+            },
+            {
+              "tokens": [
+                "もう",
+                "9じ",
+                "です",
+                "から、",
+                "まにあわない",
+                "かもしれません"
+              ],
+              "romaji": "mou kuji desu kara, maniawanai kamoshiremasen",
+              "en": "It's already nine, so we might not make it.",
+              "blank": 4,
+              "distract": [
+                "まにあいません",
+                "まにあって"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "びょうき",
+                "かもしれません"
+              ],
+              "romaji": "kare wa byouki kamoshiremasen",
+              "en": "He might be ill.",
+              "distract": [
+                "です",
+                "の"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "は",
+                "ちこく",
+                "する",
+                "かもしれません"
+              ],
+              "romaji": "ashita wa chikoku suru kamoshiremasen",
+              "en": "I might be late tomorrow.",
+              "blank": 3,
+              "distract": [
+                "します",
+                "して"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Might",
+            "pattern": "Plain form + かもしれません",
+            "body": "かもしれません means might or maybe, a guess you are not sure of: あした は あめ が ふる かもしれません. It follows the plain form; nouns and な-adjectives take it directly, with no だ: びょうき かもしれません, ひま かもしれません. Among friends it is かもしれない, or just かも.",
+            "id": "g-maybe-1"
+          }
+        },
+        {
+          "title": "Probably",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "てんきよほう",
+              "romaji": "tenkiyohou",
+              "meaning": "weather forecast",
+              "emoji": "📺"
+            },
+            {
+              "kind": "WORD",
+              "jp": "きっと",
+              "romaji": "kitto",
+              "meaning": "surely",
+              "emoji": "👍"
+            },
+            {
+              "kind": "WORD",
+              "jp": "はれ",
+              "romaji": "hare",
+              "meaning": "sunny weather",
+              "emoji": "☀️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "くもり",
+              "romaji": "kumori",
+              "meaning": "cloudy weather",
+              "emoji": "☁️"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "あした",
+                "は",
+                "たぶん",
+                "はれる",
+                "でしょう"
+              ],
+              "romaji": "ashita wa tabun hareru deshou",
+              "en": "It will probably be sunny tomorrow.",
+              "blank": 4,
+              "distract": [
+                "つもりです",
+                "ましょう"
+              ]
+            },
+            {
+              "tokens": [
+                "ごご",
+                "から",
+                "くもり",
+                "でしょう"
+              ],
+              "romaji": "gogo kara kumori deshou",
+              "en": "It will probably be cloudy from the afternoon.",
+              "distract": [
+                "を",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "みせ",
+                "は",
+                "きっと",
+                "たかい",
+                "でしょう"
+              ],
+              "romaji": "ano mise wa kitto takai deshou",
+              "en": "That shop is surely expensive.",
+              "blank": 5,
+              "distract": [
+                "つもりです",
+                "ましょう"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "きっと",
+                "くる",
+                "でしょう"
+              ],
+              "romaji": "kare wa kitto kuru deshou",
+              "en": "He'll surely come.",
+              "distract": [
+                "きます",
+                "きて"
+              ]
+            },
+            {
+              "tokens": [
+                "その",
+                "えいが、",
+                "おもしろかった",
+                "でしょう？"
+              ],
+              "romaji": "sono eiga, omoshirokatta deshou?",
+              "en": "That film was good, wasn't it?",
+              "blank": 2,
+              "distract": [
+                "おもしろくて",
+                "おもしろく"
+              ]
+            },
+            {
+              "tokens": [
+                "てんきよほう",
+                "を",
+                "みて",
+                "から",
+                "でかけましょう"
+              ],
+              "romaji": "tenkiyohou o mite kara dekakemashou",
+              "en": "Let's check the weather forecast before we go out.",
+              "distract": [
+                "みます",
+                "みる"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Probably",
+            "pattern": "Plain form + でしょう",
+            "body": "でしょう means probably, a more confident guess than かもしれません, and it is how weather forecasts speak: あした は はれる でしょう. Nouns and な-adjectives take it directly: くもり でしょう. Said with a rising tone, でしょう？ asks the listener to agree: おもしろかった でしょう？ (It was good, wasn't it?).",
+            "id": "g-maybe-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Will it rain on Sunday?",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "にちようび、うみ へ いきませんか。",
+            "romaji": "nichiyoubi, umi e ikimasen ka.",
+            "en": "Shall we go to the sea on Sunday?",
+            "heard": [
+              "日曜日海へ行きませんか",
+              "日曜日海に行きませんか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いい ですね。でも、たいふう が くる かもしれません よ。",
+            "romaji": "ii desu ne. demo, taifuu ga kuru kamoshiremasen yo.",
+            "en": "Sounds good. But a typhoon might come, you know.",
+            "heard": [
+              "いいですねでも台風が来るかもしれませんよ"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ほんとう ですか。",
+            "romaji": "hontou desu ka.",
+            "en": "Really?",
+            "heard": [
+              "本当ですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい。どようび は たぶん あめ でしょう。",
+            "romaji": "hai. doyoubi wa tabun ame deshou.",
+            "en": "Yes. It will probably rain on Saturday.",
+            "heard": [
+              "はい土曜日は多分雨でしょう",
+              "はい土曜日はたぶん雨でしょう"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "にちようび は どう でしょうか。",
+            "romaji": "nichiyoubi wa dou deshou ka.",
+            "en": "What about Sunday?",
+            "heard": [
+              "日曜日はどうでしょうか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "にちようび は はれる かもしれません。",
+            "romaji": "nichiyoubi wa hareru kamoshiremasen.",
+            "en": "Sunday might be sunny.",
+            "heard": [
+              "日曜日は晴れるかもしれません"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "じゃあ、にちようび の あさ、てんきよほう を みて から きめましょう。",
+            "romaji": "jaa, nichiyoubi no asa, tenkiyohou o mite kara kimemashou.",
+            "en": "Then let's check the forecast on Sunday morning and decide.",
+            "heard": [
+              "じゃあ日曜日の朝天気予報を見てから決めましょう"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "あめがふるかもしれません",
+          "romaji": "ame ga furu kamoshiremasen",
+          "en": "It might rain.",
+          "heard": [
+            "雨が降るかもしれません"
+          ]
+        },
+        {
+          "jp": "たぶんだいじょうぶでしょう",
+          "romaji": "tabun daijoubu deshou",
+          "en": "It'll probably be fine.",
+          "heard": [
+            "多分大丈夫でしょう",
+            "たぶん大丈夫でしょう"
+          ]
+        },
+        {
+          "jp": "そうかもしれません",
+          "romaji": "sou kamoshiremasen",
+          "en": "That may be so.",
+          "heard": [
+            "そうかもしれません"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "looks",
+      "title": "Looks like, I hear",
+      "subtitle": "It looks…, they say…",
+      "color": "#3F6E8C",
+      "dark": "#2B4F66",
+      "tags": [
+        "describing",
+        "news",
+        "food"
+      ],
+      "practices": [
+        {
+          "title": "It looks…",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "うれしい",
+              "romaji": "ureshii",
+              "meaning": "happy / glad",
+              "emoji": "😊"
+            },
+            {
+              "kind": "WORD",
+              "jp": "こわい",
+              "romaji": "kowai",
+              "meaning": "scary",
+              "emoji": "😱"
+            },
+            {
+              "kind": "WORD",
+              "jp": "やわらかい",
+              "romaji": "yawarakai",
+              "meaning": "soft",
+              "emoji": "🧸"
+            },
+            {
+              "kind": "WORD",
+              "jp": "こわれます",
+              "romaji": "kowaremasu",
+              "meaning": "break (by itself)",
+              "emoji": "💥"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "この",
+                "ケーキ",
+                "は",
+                "おいしそう",
+                "です",
+                "ね"
+              ],
+              "romaji": "kono keeki wa oishisou desu ne",
+              "en": "This cake looks delicious.",
+              "blank": 3,
+              "distract": [
+                "おいしいそう",
+                "おいしくて"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "いす",
+                "は",
+                "こわれそう",
+                "です"
+              ],
+              "romaji": "ano isu wa kowaresou desu",
+              "en": "That chair looks like it's about to break.",
+              "blank": 3,
+              "distract": [
+                "こわれる",
+                "こわれて"
+              ]
+            },
+            {
+              "tokens": [
+                "ゆきさん",
+                "は",
+                "うれしそう",
+                "です"
+              ],
+              "romaji": "Yuki-san wa ureshisou desu",
+              "en": "Yuki looks happy.",
+              "distract": [
+                "うれしい",
+                "うれしく"
+              ]
+            },
+            {
+              "tokens": [
+                "やわらかそう",
+                "な",
+                "パン",
+                "です",
+                "ね"
+              ],
+              "romaji": "yawarakasou na pan desu ne",
+              "en": "That bread looks soft.",
+              "blank": 1,
+              "distract": [
+                "の",
+                "に"
+              ]
+            },
+            {
+              "tokens": [
+                "その",
+                "えいが",
+                "は",
+                "こわそう",
+                "です",
+                "ね"
+              ],
+              "romaji": "sono eiga wa kowasou desu ne",
+              "en": "That film looks scary.",
+              "distract": [
+                "こわいそう",
+                "こわくて"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "かばん",
+                "は",
+                "よさそう",
+                "です",
+                "ね"
+              ],
+              "romaji": "kono kaban wa yosasou desu ne",
+              "en": "This bag looks good.",
+              "blank": 3,
+              "distract": [
+                "いいそう",
+                "よくて"
+              ]
+            },
+            {
+              "tokens": [
+                "あめ",
+                "が",
+                "ふりそう",
+                "です"
+              ],
+              "romaji": "ame ga furisou desu",
+              "en": "It looks like it's going to rain.",
+              "blank": 2,
+              "distract": [
+                "ふる",
+                "ふって"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Looks like",
+            "pattern": "Adjective stem / Verb ます-stem + そうです",
+            "body": "そう after a stem says how something looks: おいしそう (looks tasty), げんき そう (looks well). い-adjectives drop the い: たかい → たかそう, and いい becomes よさそう. A verb's ます-stem + そう means about to happen: あめ が ふりそう です. Before a noun it is そうな: おいしそうな ケーキ. Don't use it for what you can plainly see (say きれい です, not きれいそう), and かわいそう means poor thing, not looks cute.",
+            "id": "g-looks-1"
+          }
+        },
+        {
+          "title": "I hear…",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "じしん",
+              "romaji": "jishin",
+              "meaning": "earthquake",
+              "emoji": "🌋"
+            },
+            {
+              "kind": "WORD",
+              "jp": "じこ",
+              "romaji": "jiko",
+              "meaning": "accident",
+              "emoji": "🚑"
+            },
+            {
+              "kind": "WORD",
+              "jp": "けしき",
+              "romaji": "keshiki",
+              "meaning": "scenery / view",
+              "emoji": "🏞️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "入院します",
+              "romaji": "nyuuin shimasu",
+              "meaning": "go into hospital",
+              "emoji": "🏥",
+              "reading": "にゅういんします"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "てんきよほう",
+                "に",
+                "よると、",
+                "あした",
+                "は",
+                "ゆき",
+                "だ",
+                "そうです"
+              ],
+              "romaji": "tenkiyohou ni yoru to, ashita wa yuki da sou desu",
+              "en": "According to the forecast, it will snow tomorrow.",
+              "blank": 6,
+              "distract": [
+                "です",
+                "な"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "おおさか",
+                "で",
+                "じしん",
+                "が",
+                "あった",
+                "そうです"
+              ],
+              "romaji": "kinou oosaka de jishin ga atta sou desu",
+              "en": "I hear there was an earthquake in Osaka yesterday.",
+              "blank": 5,
+              "distract": [
+                "ありました",
+                "あって"
+              ]
+            },
+            {
+              "tokens": [
+                "せんせい",
+                "は",
+                "にゅういん",
+                "した",
+                "そうです"
+              ],
+              "romaji": "sensei wa nyuuin shita sou desu",
+              "en": "I hear our teacher has gone into hospital.",
+              "blank": 3,
+              "distract": [
+                "しました",
+                "して"
+              ]
+            },
+            {
+              "tokens": [
+                "ふじさん",
+                "の",
+                "うえ",
+                "から",
+                "の",
+                "けしき",
+                "は",
+                "きれい",
+                "だ",
+                "そうです"
+              ],
+              "romaji": "fujisan no ue kara no keshiki wa kirei da sou desu",
+              "en": "I hear the view from the top of Mt Fuji is beautiful.",
+              "distract": [
+                "です",
+                "な"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "レストラン",
+                "は",
+                "おいしい",
+                "そうです"
+              ],
+              "romaji": "ano resutoran wa oishii sou desu",
+              "en": "I hear that restaurant is good.",
+              "blank": 3,
+              "distract": [
+                "おいしそう",
+                "おいしくて"
+              ]
+            },
+            {
+              "tokens": [
+                "えき",
+                "の",
+                "ちかく",
+                "で",
+                "じこ",
+                "が",
+                "あった",
+                "そうです"
+              ],
+              "romaji": "eki no chikaku de jiko ga atta sou desu",
+              "en": "I hear there was an accident near the station.",
+              "distract": [
+                "ありました",
+                "あって"
+              ]
+            }
+          ],
+          "note": {
+            "title": "I hear",
+            "pattern": "Plain form + そうです",
+            "body": "After a plain form, そうです passes on what you heard or read: じしん が あった そうです (I hear there was an earthquake). Nouns and な-adjectives take だ: ゆき だ そうです, きれい だ そうです. Say where it came from with ～に よると: てんきよほう に よると…. Compare たかそう です (looks expensive) with たかい そうです (I hear it's expensive).",
+            "id": "g-looks-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "The new cake shop",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "あの みせ、あたらしい ですね。",
+            "romaji": "ano mise, atarashii desu ne.",
+            "en": "That shop is new, isn't it?",
+            "heard": [
+              "あの店新しいですね"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ええ。とても おいしい そうです よ。",
+            "romaji": "ee. totemo oishii sou desu yo.",
+            "en": "Yes. I hear it's really good.",
+            "heard": [
+              "ええとても美味しいそうですよ",
+              "ええとてもおいしいそうですよ"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "そう ですか。まど の ケーキ も おいしそう です ね。",
+            "romaji": "sou desu ka. mado no keeki mo oishisou desu ne.",
+            "en": "Really? The cakes in the window look delicious too.",
+            "heard": [
+              "そうですか窓のケーキも美味しそうですね",
+              "そうですか窓のケーキもおいしそうですね"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "でも、ちょっと たかそう です ね。",
+            "romaji": "demo, chotto takasou desu ne.",
+            "en": "But they look a bit expensive.",
+            "heard": [
+              "でもちょっと高そうですね"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ともだち の はなし で は、やすい そうです よ。",
+            "romaji": "tomodachi no hanashi de wa, yasui sou desu yo.",
+            "en": "My friend says they're cheap.",
+            "heard": [
+              "友達の話では安いそうですよ"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "じゃあ、はいりましょう。",
+            "romaji": "jaa, hairimashou.",
+            "en": "Then let's go in.",
+            "heard": [
+              "じゃあ入りましょう"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "おいしそうですね",
+          "romaji": "oishisou desu ne",
+          "en": "That looks delicious.",
+          "heard": [
+            "美味しそうですね",
+            "おいしそうですね"
+          ]
+        },
+        {
+          "jp": "あめがふりそうです",
+          "romaji": "ame ga furisou desu",
+          "en": "It looks like rain.",
+          "heard": [
+            "雨が降りそうです"
+          ]
+        },
+        {
+          "jp": "げんきそうですね",
+          "romaji": "genki sou desu ne",
+          "en": "You look well.",
+          "heard": [
+            "元気そうですね"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seems",
+      "title": "It seems",
+      "subtitle": "Guessing from what you notice",
+      "color": "#2B4C7E",
+      "dark": "#1D365C",
+      "tags": [
+        "guessing",
+        "health",
+        "daily life"
+      ],
+      "practices": [
+        {
+          "title": "It seems",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "るす",
+              "romaji": "rusu",
+              "meaning": "out / not at home",
+              "emoji": "🏠"
+            },
+            {
+              "kind": "WORD",
+              "jp": "せき",
+              "romaji": "seki",
+              "meaning": "cough",
+              "emoji": "😷"
+            },
+            {
+              "kind": "WORD",
+              "jp": "のど",
+              "romaji": "nodo",
+              "meaning": "throat",
+              "emoji": "🗣️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "まちがえます",
+              "romaji": "machigaemasu",
+              "meaning": "get wrong / make a mistake",
+              "emoji": "❌"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "でんき",
+                "が",
+                "きえて",
+                "います",
+                "から、",
+                "るす",
+                "の",
+                "ようです"
+              ],
+              "romaji": "denki ga kiete imasu kara, rusu no you desu",
+              "en": "The lights are off, so it seems nobody's home.",
+              "blank": 6,
+              "distract": [
+                "が",
+                "を"
+              ]
+            },
+            {
+              "tokens": [
+                "せき",
+                "が",
+                "でます",
+                "から、",
+                "かぜ",
+                "の",
+                "ようです"
+              ],
+              "romaji": "seki ga demasu kara, kaze no you desu",
+              "en": "I've got a cough, so it seems I have a cold.",
+              "distract": [
+                "つもりです",
+                "よていです"
+              ]
+            },
+            {
+              "tokens": [
+                "ねつ",
+                "が",
+                "ある",
+                "ようです"
+              ],
+              "romaji": "netsu ga aru you desu",
+              "en": "It seems I have a fever.",
+              "blank": 2,
+              "distract": [
+                "あります",
+                "あって"
+              ]
+            },
+            {
+              "tokens": [
+                "こども",
+                "は",
+                "のど",
+                "が",
+                "いたい",
+                "ようです"
+              ],
+              "romaji": "kodomo wa nodo ga itai you desu",
+              "en": "My child seems to have a sore throat.",
+              "distract": [
+                "いたくて",
+                "いたく"
+              ]
+            },
+            {
+              "tokens": [
+                "みち",
+                "を",
+                "まちがえた",
+                "ようです"
+              ],
+              "romaji": "michi o machigaeta you desu",
+              "en": "It seems we've taken the wrong road.",
+              "blank": 2,
+              "distract": [
+                "まちがえます",
+                "まちがえて"
+              ]
+            },
+            {
+              "tokens": [
+                "あの",
+                "みせ",
+                "は",
+                "いつも",
+                "ひま",
+                "な",
+                "ようです"
+              ],
+              "romaji": "ano mise wa itsumo hima na you desu",
+              "en": "That shop never seems to be busy.",
+              "blank": 5,
+              "distract": [
+                "の",
+                "だ"
+              ]
+            }
+          ],
+          "note": {
+            "title": "It seems",
+            "pattern": "Plain form + ようです (Noun の, な-adjective な)",
+            "body": "ようです is a careful guess from what you have noticed yourself: でんき が きえて います から、るす の ようです. It follows the plain form; nouns take の and な-adjectives keep な: かぜ の ようです, ひま な ようです. Unlike そう, which is only how things look, ようです weighs everything you know.",
+            "id": "g-seems-1"
+          }
+        },
+        {
+          "title": "Seems (casual)",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "ゆめ",
+              "romaji": "yume",
+              "meaning": "dream",
+              "emoji": "💭"
+            },
+            {
+              "kind": "WORD",
+              "jp": "本物",
+              "romaji": "honmono",
+              "meaning": "the real thing",
+              "emoji": "💎",
+              "reading": "ほんもの"
+            },
+            {
+              "kind": "WORD",
+              "jp": "人気",
+              "romaji": "ninki",
+              "meaning": "popularity",
+              "emoji": "🌟",
+              "reading": "にんき"
+            },
+            {
+              "kind": "WORD",
+              "jp": "急に",
+              "romaji": "kyuu ni",
+              "meaning": "suddenly",
+              "emoji": "⚡",
+              "reading": "きゅうに"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "あの",
+                "みせ",
+                "は",
+                "にんき",
+                "が",
+                "ある",
+                "みたいです"
+              ],
+              "romaji": "ano mise wa ninki ga aru mitai desu",
+              "en": "That shop seems to be popular.",
+              "blank": 5,
+              "distract": [
+                "あります",
+                "あって"
+              ]
+            },
+            {
+              "tokens": [
+                "ケンさん",
+                "は",
+                "かぜ",
+                "みたいです"
+              ],
+              "romaji": "Ken-san wa kaze mitai desu",
+              "en": "Ken seems to have a cold.",
+              "distract": [
+                "の",
+                "な"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "とけい",
+                "は",
+                "ほんもの",
+                "みたいです"
+              ],
+              "romaji": "kono tokei wa honmono mitai desu",
+              "en": "This watch seems to be the real thing.",
+              "distract": [
+                "の",
+                "な"
+              ]
+            },
+            {
+              "tokens": [
+                "ゆめ",
+                "みたい",
+                "です"
+              ],
+              "romaji": "yume mitai desu",
+              "en": "It's like a dream.",
+              "blank": 1,
+              "distract": [
+                "よう",
+                "そう"
+              ]
+            },
+            {
+              "tokens": [
+                "きゅうに",
+                "さむく",
+                "なった",
+                "みたいです"
+              ],
+              "romaji": "kyuu ni samuku natta mitai desu",
+              "en": "It seems to have suddenly turned cold.",
+              "blank": 2,
+              "distract": [
+                "なります",
+                "なって"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "は",
+                "やくそく",
+                "を",
+                "わすれた",
+                "みたいです"
+              ],
+              "romaji": "kare wa yakusoku o wasureta mitai desu",
+              "en": "He seems to have forgotten our appointment.",
+              "blank": 4,
+              "distract": [
+                "わすれます",
+                "わすれて"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Seems (casual)",
+            "pattern": "Plain form / Noun + みたいです",
+            "body": "みたいです means the same as ようです but is more casual, the everyday spoken choice. It follows the plain form, and nouns and な-adjectives take it directly, with no の or な: かぜ みたいです, ひま みたいです. After a noun it can also mean like: ゆめ みたい (like a dream). In writing and formal speech, use ようです.",
+            "id": "g-seems-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Nobody home",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "ゆきさん の うち、でんき が きえて います ね。",
+            "romaji": "Yuki-san no uchi, denki ga kiete imasu ne.",
+            "en": "The lights are off at Yuki's house.",
+            "heard": [
+              "ゆきさんの家電気が消えていますね",
+              "ユキさんのうち電気が消えていますね"
+            ]
+          },
+          {
+            "speaker": "Mai",
+            "jp": "ええ。るす の ようです。",
+            "romaji": "ee. rusu no you desu.",
+            "en": "Yes. It seems she's out.",
+            "heard": [
+              "ええ留守のようです"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "でんわ しましょうか。",
+            "romaji": "denwa shimashou ka.",
+            "en": "Shall I call her?",
+            "heard": [
+              "電話しましょうか"
+            ]
+          },
+          {
+            "speaker": "Mai",
+            "jp": "はい、おねがいします。",
+            "romaji": "hai, onegaishimasu.",
+            "en": "Yes, please.",
+            "heard": [
+              "はいお願いします"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "でません ね。いそがしい みたいです。",
+            "romaji": "demasen ne. isogashii mitai desu.",
+            "en": "She's not answering. She seems busy.",
+            "heard": [
+              "出ませんね忙しいみたいです"
+            ]
+          },
+          {
+            "speaker": "Mai",
+            "jp": "じゃあ、あした また きましょう。",
+            "romaji": "jaa, ashita mata kimashou.",
+            "en": "Then let's come again tomorrow.",
+            "heard": [
+              "じゃあ明日また来ましょう"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "だれもいないようです",
+          "romaji": "dare mo inai you desu",
+          "en": "It seems nobody's here.",
+          "heard": [
+            "誰もいないようです"
+          ]
+        },
+        {
+          "jp": "かぜのようです",
+          "romaji": "kaze no you desu",
+          "en": "I seem to have a cold.",
+          "heard": [
+            "風邪のようです"
+          ]
+        },
+        {
+          "jp": "ほんものみたいですね",
+          "romaji": "honmono mitai desu ne",
+          "en": "It looks just like the real thing.",
+          "heard": [
+            "本物みたいですね"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trydo",
+      "title": "Try and regret",
+      "subtitle": "Trying things, and things gone wrong",
+      "color": "#4F7A4A",
+      "dark": "#3A5C36",
+      "tags": [
+        "experience",
+        "verbs",
+        "mistakes"
+      ],
+      "practices": [
+        {
+          "title": "Try doing",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "着物",
+              "romaji": "kimono",
+              "meaning": "kimono",
+              "emoji": "👘",
+              "reading": "きもの"
+            },
+            {
+              "kind": "WORD",
+              "jp": "おんせん",
+              "romaji": "onsen",
+              "meaning": "hot spring",
+              "emoji": "♨️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "なっとう",
+              "romaji": "nattou",
+              "meaning": "natto (fermented soybeans)",
+              "emoji": "🫘"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "なっとう",
+                "を",
+                "たべて",
+                "みます"
+              ],
+              "romaji": "nattou o tabete mimasu",
+              "en": "I'll try eating natto.",
+              "blank": 2,
+              "distract": [
+                "たべる",
+                "たべた"
+              ]
+            },
+            {
+              "tokens": [
+                "いちど",
+                "きもの",
+                "を",
+                "きて",
+                "みたいです"
+              ],
+              "romaji": "ichido kimono o kite mitai desu",
+              "en": "I'd like to try wearing a kimono once.",
+              "blank": 3,
+              "distract": [
+                "きる",
+                "きた"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "くつ",
+                "を",
+                "はいて",
+                "みて",
+                "も",
+                "いいですか"
+              ],
+              "romaji": "kono kutsu o haite mite mo ii desu ka",
+              "en": "May I try these shoes on?",
+              "blank": 4,
+              "distract": [
+                "みる",
+                "みた"
+              ]
+            },
+            {
+              "tokens": [
+                "おんせん",
+                "に",
+                "はいって",
+                "みました"
+              ],
+              "romaji": "onsen ni haitte mimashita",
+              "en": "I tried bathing in a hot spring.",
+              "distract": [
+                "はいる",
+                "はいった"
+              ]
+            },
+            {
+              "tokens": [
+                "おいしい",
+                "です",
+                "よ。",
+                "たべて",
+                "みて",
+                "ください"
+              ],
+              "romaji": "oishii desu yo. tabete mite kudasai",
+              "en": "It's delicious. Please try some.",
+              "distract": [
+                "たべる",
+                "たべた"
+              ]
+            },
+            {
+              "tokens": [
+                "にほん",
+                "の",
+                "うた",
+                "を",
+                "うたって",
+                "みましょう"
+              ],
+              "romaji": "nihon no uta o utatte mimashou",
+              "en": "Let's try singing a Japanese song.",
+              "blank": 4,
+              "distract": [
+                "うたう",
+                "うたった"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Try doing",
+            "pattern": "Verb て-form + みます",
+            "body": "て-form + みます means try doing something to see what it is like: なっとう を たべて みます. Invite someone with て みて ください, and say what you'd like to try with て みたいです: きもの を きて みたいです.",
+            "id": "g-trydo-1"
+          }
+        },
+        {
+          "title": "Done, or done by mistake",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "おとします",
+              "romaji": "otoshimasu",
+              "meaning": "drop",
+              "emoji": "⬇️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "わります",
+              "romaji": "warimasu",
+              "meaning": "break (glass, plates)",
+              "emoji": "🍽️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ねぼうします",
+              "romaji": "nebou shimasu",
+              "meaning": "oversleep",
+              "emoji": "😴"
+            },
+            {
+              "kind": "WORD",
+              "jp": "のりおくれます",
+              "romaji": "noriokuremasu",
+              "meaning": "miss (a train or bus)",
+              "emoji": "🚉"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "さいふ",
+                "を",
+                "おとして",
+                "しまいました"
+              ],
+              "romaji": "saifu o otoshite shimaimashita",
+              "en": "I've gone and dropped my wallet.",
+              "blank": 3,
+              "distract": [
+                "みました",
+                "ください"
+              ]
+            },
+            {
+              "tokens": [
+                "コップ",
+                "を",
+                "わって",
+                "しまいました"
+              ],
+              "romaji": "koppu o watte shimaimashita",
+              "en": "I broke a glass by mistake.",
+              "blank": 2,
+              "distract": [
+                "わる",
+                "わった"
+              ]
+            },
+            {
+              "tokens": [
+                "けさ",
+                "ねぼう",
+                "して",
+                "しまいました"
+              ],
+              "romaji": "kesa nebou shite shimaimashita",
+              "en": "I overslept this morning.",
+              "distract": [
+                "した",
+                "します"
+              ]
+            },
+            {
+              "tokens": [
+                "でんしゃ",
+                "に",
+                "のりおくれて",
+                "しまいました"
+              ],
+              "romaji": "densha ni noriokurete shimaimashita",
+              "en": "I've missed the train.",
+              "blank": 2,
+              "distract": [
+                "のりおくれる",
+                "のりおくれた"
+              ]
+            },
+            {
+              "tokens": [
+                "しゅくだい",
+                "は",
+                "ぜんぶ",
+                "やって",
+                "しまいました"
+              ],
+              "romaji": "shukudai wa zenbu yatte shimaimashita",
+              "en": "I've finished all my homework.",
+              "distract": [
+                "やる",
+                "やった"
+              ]
+            },
+            {
+              "tokens": [
+                "かさ",
+                "を",
+                "でんしゃ",
+                "に",
+                "わすれて",
+                "しまいました"
+              ],
+              "romaji": "kasa o densha ni wasurete shimaimashita",
+              "en": "I left my umbrella on the train.",
+              "blank": 5,
+              "distract": [
+                "みました",
+                "ください"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Done, or done by mistake",
+            "pattern": "Verb て-form + しまいました",
+            "body": "て-form + しまいます has two uses. It can mean finish completely: しゅくだい は ぜんぶ やって しまいました. More often it shows regret that something happened: さいふ を おとして しまいました (I've gone and dropped my wallet). In casual speech ～て しまった becomes ～ちゃった: おとしちゃった.",
+            "id": "g-trydo-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "A day at the hot spring",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "きのう、はじめて おんせん に はいって みました。",
+            "romaji": "kinou, hajimete onsen ni haitte mimashita.",
+            "en": "Yesterday I tried a hot spring for the first time.",
+            "heard": [
+              "昨日初めて温泉に入ってみました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "どう でしたか。",
+            "romaji": "dou deshita ka.",
+            "en": "How was it?",
+            "heard": [
+              "どうでしたか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "とても よかった です。でも、カメラ を わすれて しまいました。",
+            "romaji": "totemo yokatta desu. demo, kamera o wasurete shimaimashita.",
+            "en": "It was great. But I left my camera behind.",
+            "heard": [
+              "とても良かったですでもカメラを忘れてしまいました",
+              "とてもよかったですでもカメラを忘れてしまいました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "それ は こまりました ね。",
+            "romaji": "sore wa komarimashita ne.",
+            "en": "Oh dear.",
+            "heard": [
+              "それは困りましたね"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ケンさん も いちど いって みて ください。",
+            "romaji": "Ken-san mo ichido itte mite kudasai.",
+            "en": "You should try going once too, Ken.",
+            "heard": [
+              "ケンさんも一度行ってみてください"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "はい、らいげつ いって みます。",
+            "romaji": "hai, raigetsu itte mimasu.",
+            "en": "OK, I'll try going next month.",
+            "heard": [
+              "はい来月行ってみます"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "たべてみてください",
+          "romaji": "tabete mite kudasai",
+          "en": "Please try it.",
+          "heard": [
+            "食べてみてください"
+          ]
+        },
+        {
+          "jp": "やってみます",
+          "romaji": "yatte mimasu",
+          "en": "I'll give it a try.",
+          "heard": [
+            "やってみます"
+          ]
+        },
+        {
+          "jp": "わすれてしまいました",
+          "romaji": "wasurete shimaimashita",
+          "en": "I completely forgot.",
+          "heard": [
+            "忘れてしまいました"
+          ]
+        }
+      ]
+    },
+    {
       "id": "tr-air",
       "title": "At the airport",
       "subtitle": "Check-in, passports and gates",
@@ -44625,6 +46945,18 @@
             "advice",
             "cap2",
             "cond"
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Intermediate 2 (N4)",
+          "units": [
+            "vol",
+            "plan",
+            "maybe",
+            "looks",
+            "seems",
+            "trydo"
           ],
           "rank": 3
         }

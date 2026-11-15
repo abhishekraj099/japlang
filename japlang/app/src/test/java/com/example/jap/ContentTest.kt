@@ -68,9 +68,9 @@ class ContentTest {
 
     @Test
     fun placementCoversTheWholeMainCourse() {
-        // Clearing every level skips all 59 units of the Basic course, so there is no next unit in it.
+        // Clearing every level skips the 59 units up to the end of Intermediate; the N4 level comes next.
         assertEquals(59, Placement.unitsCleared(Placement.levels.size))
-        assertEquals(Course.courses.first().unitIds, Course.units.take(59).map { it.id })
+        assertEquals(Course.courses.first().unitIds.take(59), Course.units.take(59).map { it.id })
     }
 
     @Test
@@ -112,7 +112,7 @@ class ContentTest {
     @Test
     fun aRevisionFollowsEveryTwoLessons() {
         val revisions = Course.lessons.filter { it.id.contains("-rev") }
-        assertEquals(125, revisions.size)
+        assertEquals(131, revisions.size)
         Course.units.forEach { unit ->
             val lessons = unit.lessons
             lessons.forEachIndexed { i, lesson ->
@@ -149,6 +149,51 @@ class ContentTest {
                 assertTrue("${lesson.id} has ${lesson.sentences.size} sentences", lesson.sentences.size >= 6)
                 assertTrue("${lesson.id} has too few gap sentences", lesson.sentences.count { it.blank >= 0 } >= 2)
             }
+        }
+    }
+
+    /** N4 grammar is a level of its own after Intermediate, so earlier units, their order and placement never move. */
+    @Test
+    fun n4LevelExists() {
+        val levels = Course.courses.first { it.id == "basic" }.levels
+        val before = listOf(
+            listOf("hira", "kata"),
+            listOf(
+                "b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time", "time2", "dir", "traf", "days", "life1",
+                "rel1", "sport", "life2", "rel2",
+            ),
+            listOf(
+                "colors", "look", "clothes", "comp2", "adj", "taste", "ability", "travel", "reason", "location", "countobj",
+                "counttime", "pastadj", "compare", "verbs", "desire", "purpose", "groups", "teform",
+            ),
+            listOf(
+                "cont", "perm", "conn", "seq", "nai", "oblig", "cap1", "hobby", "ta", "listing", "indirect", "nounmod", "when",
+                "givetake", "even", "ndesu", "advice", "cap2", "cond",
+            ),
+        )
+        assertEquals(listOf("Alphabet", "Beginner", "Basic", "Intermediate"), levels.take(4).map { it.name })
+        assertEquals(before, levels.take(4).map { it.units })
+        // Placement and progress index units by file order, so the first 59 must still be these.
+        assertEquals(before.flatten(), Course.units.take(59).map { it.id })
+        val n4 = levels[4]
+        assertEquals("Intermediate 2 (N4)", n4.name)
+        assertEquals(3, n4.rank)
+        assertEquals(listOf("vol", "plan", "maybe", "looks", "seems", "trydo"), n4.units.take(6))
+        val raw = asset("course.json").getJSONArray("units").let { a -> List(a.length()) { a.getJSONObject(it) } }.associateBy { it.getString("id") }
+        n4.units.forEach { id ->
+            val unit = raw.getValue(id)
+            val sets = unit.getJSONArray("practices").let { a -> List(a.length()) { a.getJSONObject(it) } }
+            assertTrue("$id has ${sets.size} sets", sets.size in 2..3)
+            sets.forEach { set ->
+                assertTrue("$id set without a note", set.has("note"))
+                val words = set.getJSONArray("items").let { a -> List(a.length()) { a.getJSONObject(it) } }.filter { it.getString("kind") == "WORD" }
+                assertTrue("$id set has ${words.size} words", words.size in 3..5)
+                val sentences = set.getJSONArray("sentences").let { a -> List(a.length()) { a.getJSONObject(it) } }
+                assertTrue("$id set has ${sentences.size} sentences", sentences.size >= 6)
+                assertTrue("$id set has too few gaps", sentences.count { it.has("blank") } >= 2)
+            }
+            assertTrue("$id has too few phrases", unit.getJSONArray("phrases").length() >= 3)
+            assertTrue("$id dialogue length", unit.getJSONObject("dialogue").getJSONArray("lines").length() in 6..8)
         }
     }
 
