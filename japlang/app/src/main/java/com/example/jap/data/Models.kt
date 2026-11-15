@@ -45,7 +45,11 @@ data class Sentence(
 /** One line of a dialogue. [heard] lists other spellings a speech recogniser may return for it. */
 data class Line(val speaker: String, val jp: String, val romaji: String, val en: String, val heard: List<String> = emptyList())
 
-data class Note(val title: String, val pattern: String, val body: String)
+/** [id] is set for a practice set's grammar point, which then has its own memory; it is fixed in course.json so memories survive edits. */
+data class Note(val title: String, val pattern: String, val body: String, val id: String = "")
+
+/** A practice set's grammar point, reviewed on its own like an item: [sentences] are the set's, [unitId] its unit. */
+data class GrammarPoint(val id: String, val note: Note, val sentences: List<Sentence>, val unitId: String)
 
 /** A line to say aloud. [heard] lists other spellings a speech recogniser may return for it. */
 data class Phrase(val jp: String, val romaji: String, val en: String, val heard: List<String> = emptyList())

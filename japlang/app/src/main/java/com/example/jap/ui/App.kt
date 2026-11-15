@@ -141,6 +141,9 @@ fun JapApp(progress: Progress) {
 }
 
 /** The first lesson on the path the learner has not finished. */
+/** Due grammar points added to one revision session, on top of its items. */
+internal const val GRAMMAR_PER_SESSION = 3
+
 private fun nextLesson(progress: Progress): Lesson? = Course.lessons.firstOrNull { it.id !in progress.done }
 
 /** A run through one course lesson, in its unit's colour. */
@@ -168,12 +171,14 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         val entries = items.map { it to Memory.level(progress.srs[it.id]) }
         return Session(
             if (due) "Revision" else "Practice", null, scheme.secondary, Config.practiceXp, SessionKind.PRACTICE,
-            Exercises.forRevision(entries), review = if (due) "reading" else "practice",
+            // A due revision also brings back a few due grammar points, graded and saved like items.
+            Exercises.forRevision(entries) + if (due) Exercises.forGrammar(Review.dueGrammar(progress.srs).take(GRAMMAR_PER_SESSION)) else emptyList(),
+            review = if (due) "reading" else "practice",
             next = {
                 val plan = Review.plan(progress.dueSchedule(writing = false, System.currentTimeMillis()), progress.reviewedToday(writing = false), progress.daysAway)
                 val more = Review.pick(due, plan, progress.srs, SESSION_SIZE)
                 // Nothing left due: carry on with the weakest words instead.
-                if (more.isNotEmpty()) revision(due, more)
+                if (more.isNotEmpty() || (due && Review.dueGrammar(progress.srs).isNotEmpty())) revision(due, more)
                 else if (due) Review.pick(false, plan, progress.srs, SESSION_SIZE).takeIf { it.isNotEmpty() }?.let { revision(false, it) }
                 else null
             }

@@ -110,10 +110,13 @@ fun PracticeScreen(
                     color = scheme.onSurfaceVariant,
                     modifier = Modifier.padding(top = 14.dp, bottom = 16.dp)
                 )
+                // Grammar points come back inside a revision, so they alone are enough to start one.
+                val grammarDue = minOf(Review.dueGrammar(srs).size, GRAMMAR_PER_SESSION)
+                val count = minOf(plan.today.size, SESSION_SIZE) + grammarDue
                 PushButton(
-                    if (plan.today.isEmpty()) "Nothing due" else "Start revision · ${minOf(plan.today.size, SESSION_SIZE)}",
+                    if (count == 0) "Nothing due" else "Start revision · $count",
                     onClick = { onReview("Revision", Review.pick(true, plan, srs, SESSION_SIZE), true) },
-                    enabled = plan.today.isNotEmpty()
+                    enabled = count > 0
                 )
                 PushButton(
                     "Practise weakest words",

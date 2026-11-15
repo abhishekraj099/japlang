@@ -1527,7 +1527,8 @@
           "note": {
             "title": "Saying who someone is",
             "pattern": "A は B です",
-            "body": "は marks the topic and is read \"wa\". です ends a polite sentence: \"A is B\". Add か to the end to ask a question."
+            "body": "は marks the topic and is read \"wa\". です ends a polite sentence: \"A is B\". Add か to the end to ask a question.",
+            "id": "g-b1-1"
           }
         },
         {
@@ -2068,7 +2069,8 @@
           "note": {
             "title": "Saying what is not",
             "pattern": "A は B じゃありません",
-            "body": "Swap です for じゃありません to make it negative. In writing you will also see ではありません, which is more formal."
+            "body": "Swap です for じゃありません to make it negative. In writing you will also see ではありません, which is more formal.",
+            "id": "g-b2-1"
           }
         },
         {
@@ -2208,7 +2210,8 @@
           "note": {
             "title": "Saying what you like",
             "pattern": "A は B が すき です",
-            "body": "すき means \"liked\". The thing you like takes が."
+            "body": "すき means \"liked\". The thing you like takes が.",
+            "id": "g-b2-2"
           }
         },
         {
@@ -2329,7 +2332,8 @@
           "note": {
             "title": "Also",
             "pattern": "A も B です",
-            "body": "も replaces は to mean \"too\" or \"also\": かれ も がくせい です."
+            "body": "も replaces は to mean \"too\" or \"also\": かれ も がくせい です.",
+            "id": "g-b2-3"
           }
         }
       ],
@@ -2575,7 +2579,8 @@
           "note": {
             "title": "Having family and things",
             "pattern": "N が います / あります",
-            "body": "います is for people and animals, あります for things. The negatives are いません and ありません."
+            "body": "います is for people and animals, あります for things. The negatives are いません and ありません.",
+            "id": "g-fam-1"
           }
         },
         {
@@ -2706,7 +2711,8 @@
           "note": {
             "title": "Whose?",
             "pattern": "A の B",
-            "body": "の links an owner to what they own, like 's in English: わたし の あに is my older brother."
+            "body": "の links an owner to what they own, like 's in English: わたし の あに is my older brother.",
+            "id": "g-fam-2"
           }
         }
       ],
@@ -2949,7 +2955,8 @@
           "note": {
             "title": "This, that, that over there",
             "pattern": "これ / それ / あれ",
-            "body": "これ is near me, それ is near you, あれ is far from both of us."
+            "body": "これ is near me, それ is near you, あれ is far from both of us.",
+            "id": "g-ani-1"
           }
         },
         {
@@ -3071,7 +3078,8 @@
           "note": {
             "title": "Yes-no questions",
             "pattern": "～ですか → はい / いいえ",
-            "body": "Add か to ask. Answer はい、そうです (yes, it is) or いいえ、ちがいます (no, it isn't)."
+            "body": "Add か to ask. Answer はい、そうです (yes, it is) or いいえ、ちがいます (no, it isn't).",
+            "id": "g-ani-2"
           }
         },
         {
@@ -3433,7 +3441,8 @@
           "note": {
             "title": "And, and what you eat",
             "pattern": "A と B を たべます",
-            "body": "と joins two nouns (\"and\"). を marks the thing the action is done to and is read \"o\". The verb comes last."
+            "body": "と joins two nouns (\"and\"). を marks the thing the action is done to and is read \"o\". The verb comes last.",
+            "id": "g-dish-1"
           }
         },
         {
@@ -3576,7 +3585,8 @@
           "note": {
             "title": "The polite お",
             "pattern": "お～",
-            "body": "Some words take お in front to sound polite or gentle: おちゃ, おさけ, おみず. It doesn't change the meaning."
+            "body": "Some words take お in front to sound polite or gentle: おちゃ, おさけ, おみず. It doesn't change the meaning.",
+            "id": "g-dish-2"
           }
         }
       ],
@@ -3834,7 +3844,8 @@
           "note": {
             "title": "This book, that bag",
             "pattern": "この / その / あの + noun",
-            "body": "これ, それ and あれ stand alone. Before a noun use この, その and あの: この ほん is this book."
+            "body": "これ, それ and あれ stand alone. Before a noun use この, その and あの: この ほん is this book.",
+            "id": "g-comp-1"
           }
         },
         {
@@ -3973,7 +3984,8 @@
           "note": {
             "title": "Leaving the noun out",
             "pattern": "A の です",
-            "body": "When it's clear what you mean, drop the second noun: わたし の です means \"it's mine\"."
+            "body": "When it's clear what you mean, drop the second noun: わたし の です means \"it's mine\".",
+            "id": "g-comp-2"
           }
         }
       ],
@@ -4209,7 +4221,8 @@
           "note": {
             "title": "That's right, that's not right",
             "pattern": "はい、そうです / いいえ、そうじゃありません",
-            "body": "Answer a question about what something is with そうです or そうじゃありません."
+            "body": "Answer a question about what something is with そうです or そうじゃありません.",
+            "id": "g-ask-1"
           }
         },
         {
@@ -4309,7 +4322,8 @@
           "note": {
             "title": "This or that?",
             "pattern": "A ですか、B ですか",
-            "body": "Two questions in a row offer a choice: ペン ですか、えんぴつ ですか means \"Is it a pen or a pencil?\" Answer with the right one + です."
+            "body": "Two questions in a row offer a choice: ペン ですか、えんぴつ ですか means \"Is it a pen or a pencil?\" Answer with the right one + です.",
+            "id": "g-ask-2"
           }
         },
         {
@@ -4688,7 +4702,8 @@
           "note": {
             "title": "Where something is",
             "pattern": "A は Place です",
-            "body": "ここ, そこ and あそこ work like これ, それ and あれ but for places. こちら, そちら and あちら are the politer forms."
+            "body": "ここ, そこ and あそこ work like これ, それ and あれ but for places. こちら, そちら and あちら are the politer forms.",
+            "id": "g-place-1"
           }
         },
         {
@@ -4826,7 +4841,8 @@
           "note": {
             "title": "Asking where",
             "pattern": "～は どこ ですか",
-            "body": "どこ asks where. The politer どちら is used by staff and in formal speech."
+            "body": "どこ asks where. The politer どちら is used by staff and in formal speech.",
+            "id": "g-place-2"
           }
         }
       ],
@@ -5174,7 +5190,8 @@
           "note": {
             "title": "Counting to ten",
             "pattern": "いち、に、さん…",
-            "body": "四 is usually read よん and 七 なな, because し also sounds like the word for death. Bigger numbers are built from these: じゅういち (11), にじゅう (20)."
+            "body": "四 is usually read よん and 七 なな, because し also sounds like the word for death. Bigger numbers are built from these: じゅういち (11), にじゅう (20).",
+            "id": "g-num-1"
           }
         },
         {
@@ -5636,7 +5653,8 @@
           "note": {
             "title": "Telling the time",
             "pattern": "いま ～じ ～ふん です",
-            "body": "じ is o'clock and ふん (sometimes ぷん) is minutes: いま 3じ 10ぷん です. Four o'clock is よじ, seven is しちじ and nine is くじ."
+            "body": "じ is o'clock and ふん (sometimes ぷん) is minutes: いま 3じ 10ぷん です. Four o'clock is よじ, seven is しちじ and nine is くじ.",
+            "id": "g-time-1"
           }
         },
         {
@@ -5765,7 +5783,8 @@
           "note": {
             "title": "Now and later",
             "pattern": "Verb ます / Verb ません",
-            "body": "～ます covers what you usually do and what you will do. ～ません is the negative."
+            "body": "～ます covers what you usually do and what you will do. ～ません is the negative.",
+            "id": "g-time-2"
           }
         },
         {
@@ -5882,7 +5901,8 @@
           "note": {
             "title": "The past",
             "pattern": "Verb ました / Verb ませんでした",
-            "body": "～ました is \"did\" and ～ませんでした is \"didn't\": きのう べんきょうしました."
+            "body": "～ました is \"did\" and ～ませんでした is \"didn't\": きのう べんきょうしました.",
+            "id": "g-time-3"
           }
         }
       ],
@@ -6130,7 +6150,8 @@
           "note": {
             "title": "At a time",
             "pattern": "Time に Verb",
-            "body": "Put に after a clock time: 6じ に おきます. Words like あさ, きょう and まいにち don't take に."
+            "body": "Put に after a clock time: 6じ に おきます. Words like あさ, きょう and まいにち don't take に.",
+            "id": "g-time2-1"
           }
         },
         {
@@ -6276,7 +6297,8 @@
           "note": {
             "title": "From… until",
             "pattern": "A から B まで",
-            "body": "から is \"from\" and まで is \"until\" or \"as far as\": 9じ から 5じ まで."
+            "body": "から is \"from\" and まで is \"until\" or \"as far as\": 9じ から 5じ まで.",
+            "id": "g-time2-2"
           }
         }
       ],
@@ -6508,7 +6530,8 @@
           "note": {
             "title": "Going somewhere",
             "pattern": "Place へ いきます",
-            "body": "へ (read \"e\") marks the direction you go; に also works. いきます is go, きます is come, かえります is go back home."
+            "body": "へ (read \"e\") marks the direction you go; に also works. いきます is go, きます is come, かえります is go back home.",
+            "id": "g-dir-1"
           }
         },
         {
@@ -6634,7 +6657,8 @@
           "note": {
             "title": "Nothing, nowhere",
             "pattern": "どこ(へ)も ～ません",
-            "body": "With a negative verb, a question word + も means \"no…\": どこ へ も いきません is \"I'm not going anywhere\"."
+            "body": "With a negative verb, a question word + も means \"no…\": どこ へ も いきません is \"I'm not going anywhere\".",
+            "id": "g-dir-2"
           }
         }
       ],
@@ -6894,7 +6918,8 @@
           "note": {
             "title": "By train, by taxi",
             "pattern": "Vehicle で いきます",
-            "body": "で marks how you get there: でんしゃ で いきます is \"I go by train\". On foot is あるいて, without で."
+            "body": "で marks how you get there: でんしゃ で いきます is \"I go by train\". On foot is あるいて, without で.",
+            "id": "g-traf-1"
           }
         },
         {
@@ -7017,7 +7042,8 @@
           "note": {
             "title": "With someone",
             "pattern": "Person と いきます",
-            "body": "と after a person means \"with\": ともだち と いきます. Alone is ひとりで."
+            "body": "と after a person means \"with\": ともだち と いきます. Alone is ひとりで.",
+            "id": "g-traf-2"
           }
         }
       ],
@@ -7287,7 +7313,8 @@
           "note": {
             "title": "Days of the week",
             "pattern": "～曜日",
-            "body": "Each weekday is a kanji + ようび: 月 (moon) Monday, 火 (fire) Tuesday, 水 (water) Wednesday, 木 (tree) Thursday, 金 (gold) Friday, 土 (earth) Saturday, 日 (sun) Sunday. なんようび asks which day."
+            "body": "Each weekday is a kanji + ようび: 月 (moon) Monday, 火 (fire) Tuesday, 水 (water) Wednesday, 木 (tree) Thursday, 金 (gold) Friday, 土 (earth) Saturday, 日 (sun) Sunday. なんようび asks which day.",
+            "id": "g-days-1"
           }
         },
         {
@@ -7435,7 +7462,8 @@
           "note": {
             "title": "Months and dates",
             "pattern": "～月 ～日",
-            "body": "Months are a number + がつ: いちがつ is January. Dates are a number + にち, but the 1st to 10th have their own names: ついたち (1st), ふつか (2nd), みっか (3rd)… とおか (10th)."
+            "body": "Months are a number + がつ: いちがつ is January. Dates are a number + にち, but the 1st to 10th have their own names: ついたち (1st), ふつか (2nd), みっか (3rd)… とおか (10th).",
+            "id": "g-days-2"
           }
         },
         {
@@ -7572,7 +7600,8 @@
           "note": {
             "title": "Asking the date",
             "pattern": "何月 何日 ですか",
-            "body": "なんがつ asks the month and なんにち the date. Last, this and next week are せんしゅう, こんしゅう and らいしゅう; they need no particle."
+            "body": "なんがつ asks the month and なんにち the date. Last, this and next week are せんしゅう, こんしゅう and らいしゅう; they need no particle.",
+            "id": "g-days-3"
           }
         }
       ],
@@ -7804,7 +7833,8 @@
           "note": {
             "title": "Doing an activity",
             "pattern": "Noun を します",
-            "body": "します turns many nouns into actions: しゅくだい を します is \"do homework\"."
+            "body": "します turns many nouns into actions: しゅくだい を します is \"do homework\".",
+            "id": "g-life1-1"
           }
         },
         {
@@ -7927,7 +7957,8 @@
           "note": {
             "title": "What do you do?",
             "pattern": "なに を ～ますか",
-            "body": "なに を ～ますか asks what someone does: なに を ききますか is \"What do you listen to?\""
+            "body": "なに を ～ますか asks what someone does: なに を ききますか is \"What do you listen to?\"",
+            "id": "g-life1-2"
           }
         }
       ],
@@ -8162,7 +8193,8 @@
           "note": {
             "title": "Inviting",
             "pattern": "いっしょに Verb ませんか",
-            "body": "～ませんか is a soft invitation: \"won't you…?\" Accept with ええ、いいですね."
+            "body": "～ませんか is a soft invitation: \"won't you…?\" Accept with ええ、いいですね.",
+            "id": "g-rel1-1"
           }
         },
         {
@@ -8267,7 +8299,8 @@
           "note": {
             "title": "Let's",
             "pattern": "Verb ましょう",
-            "body": "～ましょう is \"let's\": いきましょう. To turn down an invitation politely, say ちょっと… and let the sentence trail off."
+            "body": "～ましょう is \"let's\": いきましょう. To turn down an invitation politely, say ちょっと… and let the sentence trail off.",
+            "id": "g-rel1-2"
           }
         }
       ],
@@ -8511,7 +8544,8 @@
           "note": {
             "title": "Playing sports",
             "pattern": "Sport を します",
-            "body": "Most sports use します: テニス を します. Watching is みます: すもう を みます."
+            "body": "Most sports use します: テニス を します. Watching is みます: すもう を みます.",
+            "id": "g-sport-1"
           }
         }
       ],
@@ -8740,7 +8774,8 @@
           "note": {
             "title": "With a tool",
             "pattern": "Tool で Verb",
-            "body": "で also marks what you use to do something: はし で たべます (eat with chopsticks), ナイフ で きります (cut with a knife)."
+            "body": "で also marks what you use to do something: はし で たべます (eat with chopsticks), ナイフ で きります (cut with a knife).",
+            "id": "g-life2-1"
           }
         },
         {
@@ -8873,7 +8908,8 @@
           "note": {
             "title": "In another language",
             "pattern": "「word」 は ～語 で 何 ですか",
-            "body": "Ask how to say something with ～ご で なん ですか: 「thank you」 は にほんご で なん ですか。…「ありがとう」 です. Add ご to a country for its language: にほん → にほんご."
+            "body": "Ask how to say something with ～ご で なん ですか: 「thank you」 は にほんご で なん ですか。…「ありがとう」 です. Add ご to a country for its language: にほん → にほんご.",
+            "id": "g-life2-2"
           }
         }
       ],
@@ -9144,7 +9180,8 @@
           "note": {
             "title": "Giving",
             "pattern": "Person に Thing を あげます",
-            "body": "に marks the person who receives. あげます is give, かします is lend and おしえます is teach."
+            "body": "に marks the person who receives. あげます is give, かします is lend and おしえます is teach.",
+            "id": "g-rel2-1"
           }
         },
         {
@@ -9298,7 +9335,8 @@
           "note": {
             "title": "Receiving",
             "pattern": "Person に Thing を もらいます",
-            "body": "With もらいます (receive), かります (borrow) and ならいます (learn), に marks the person it comes from."
+            "body": "With もらいます (receive), かります (borrow) and ならいます (learn), に marks the person it comes from.",
+            "id": "g-rel2-2"
           }
         }
       ],
@@ -9536,7 +9574,8 @@
           "note": {
             "title": "Colour adjectives",
             "pattern": "赤い + Noun",
-            "body": "Many colour words end in い and work like adjectives: put them straight before a noun (赤い りんご, a red apple) or before です (りんご は 赤い です)."
+            "body": "Many colour words end in い and work like adjectives: put them straight before a noun (赤い りんご, a red apple) or before です (りんご は 赤い です).",
+            "id": "g-colors-1"
           }
         },
         {
@@ -9676,7 +9715,8 @@
           "note": {
             "title": "Colour nouns",
             "pattern": "緑 の + Noun",
-            "body": "Some colours are nouns rather than い-adjectives, including 緑, 紫 and borrowed words like ピンク. Join them to a noun with の: 緑 の かさ."
+            "body": "Some colours are nouns rather than い-adjectives, including 緑, 紫 and borrowed words like ピンク. Join them to a noun with の: 緑 の かさ.",
+            "id": "g-colors-2"
           }
         }
       ],
@@ -9924,7 +9964,8 @@
           "note": {
             "title": "Describing someone",
             "pattern": "Person は Part が Adjective です",
-            "body": "To describe a feature, the person takes は and the body part takes が: ゆきさん は 目 が 大きい です (Yuki has big eyes)."
+            "body": "To describe a feature, the person takes は and the body part takes が: ゆきさん は 目 が 大きい です (Yuki has big eyes).",
+            "id": "g-look-1"
           }
         },
         {
@@ -10065,7 +10106,8 @@
           "note": {
             "title": "Tall and short",
             "pattern": "背 が 高い / 低い",
-            "body": "Height uses 背 (stature): 背 が 高い is tall and 背 が 低い is short. For length, use 長い and 短い."
+            "body": "Height uses 背 (stature): 背 が 高い is tall and 背 が 低い is short. For length, use 長い and 短い.",
+            "id": "g-look-2"
           }
         }
       ],
@@ -10284,7 +10326,8 @@
           "note": {
             "title": "Wearing",
             "pattern": "シャツ を きます / くつ を はきます",
-            "body": "Japanese uses a different verb for each kind of clothing: きます for the upper body, はきます for shoes and trousers, かぶります for hats and かけます for glasses."
+            "body": "Japanese uses a different verb for each kind of clothing: きます for the upper body, はきます for shoes and trousers, かぶります for hats and かけます for glasses.",
+            "id": "g-clothes-1"
           }
         },
         {
@@ -10427,7 +10470,8 @@
           "note": {
             "title": "Describing clothes",
             "pattern": "長い スカート",
-            "body": "い-adjectives go right before the noun (長い コート, a long coat) or before です: この スカート は 短い です."
+            "body": "い-adjectives go right before the noun (長い コート, a long coat) or before です: この スカート は 短い です.",
+            "id": "g-clothes-2"
           }
         }
       ],
@@ -10682,7 +10726,8 @@
           "note": {
             "title": "い-adjectives",
             "pattern": "Noun は い-adj です",
-            "body": "い-adjectives end in い. Use them before a noun (安い カメラ) or before です. For the negative, swap い for くないです: 高い → 高くないです. いい is irregular: よくないです."
+            "body": "い-adjectives end in い. Use them before a noun (安い カメラ) or before です. For the negative, swap い for くないです: 高い → 高くないです. いい is irregular: よくないです.",
+            "id": "g-comp2-1"
           }
         },
         {
@@ -10818,7 +10863,8 @@
           "note": {
             "title": "な-adjectives",
             "pattern": "な-adj + な + Noun",
-            "body": "Some adjectives need な before a noun: 親切 な 人 (a kind person). Before です they stand alone: あの 人 は 親切 です. Their negative is じゃありません."
+            "body": "Some adjectives need な before a noun: 親切 な 人 (a kind person). Before です they stand alone: あの 人 は 親切 です. Their negative is じゃありません.",
+            "id": "g-comp2-2"
           }
         }
       ],
@@ -11057,7 +11103,8 @@
           "note": {
             "title": "Very",
             "pattern": "とても + Adjective",
-            "body": "とても before an adjective makes it stronger: とても 暑い です (It's very hot)."
+            "body": "とても before an adjective makes it stronger: とても 暑い です (It's very hot).",
+            "id": "g-adj-1"
           }
         },
         {
@@ -11197,7 +11244,8 @@
           "note": {
             "title": "Not very",
             "pattern": "あまり + negative",
-            "body": "あまり with a negative means not very: あまり 寒くないです (It's not very cold), あまり ひま じゃありません (I'm not very free)."
+            "body": "あまり with a negative means not very: あまり 寒くないです (It's not very cold), あまり ひま じゃありません (I'm not very free).",
+            "id": "g-adj-2"
           }
         },
         {
@@ -11342,7 +11390,8 @@
           "note": {
             "title": "Likes and skills",
             "pattern": "Person は Noun が 好き / 上手 です",
-            "body": "The thing you like, dislike, or are good or bad at takes が: わたし は テニス が 下手 です (I'm bad at tennis)."
+            "body": "The thing you like, dislike, or are good or bad at takes が: わたし は テニス が 下手 です (I'm bad at tennis).",
+            "id": "g-adj-3"
           }
         }
       ],
@@ -11598,7 +11647,8 @@
           "note": {
             "title": "How is it?",
             "pattern": "～は どうですか",
-            "body": "どうですか asks for an opinion: タイ りょうり は どうですか (How is Thai food?). Answer with an adjective: 辛い です."
+            "body": "どうですか asks for an opinion: タイ りょうり は どうですか (How is Thai food?). Answer with an adjective: 辛い です.",
+            "id": "g-taste-1"
           }
         },
         {
@@ -11762,7 +11812,8 @@
           "note": {
             "title": "Tastes",
             "pattern": "～は 甘い です",
-            "body": "Taste words are い-adjectives: 甘い (sweet), 酸っぱい (sour), 辛い (spicy), 苦い (bitter). 濃い and 薄い describe strong and weak drinks or flavours."
+            "body": "Taste words are い-adjectives: 甘い (sweet), 酸っぱい (sour), 辛い (spicy), 苦い (bitter). 濃い and 薄い describe strong and weak drinks or flavours.",
+            "id": "g-taste-2"
           }
         }
       ],
@@ -12006,7 +12057,8 @@
           "note": {
             "title": "Understanding",
             "pattern": "Noun が わかります",
-            "body": "わかります takes が: 中国語 が わかります. Say how well with よく (well), だいたい (mostly) or 少し (a little)."
+            "body": "わかります takes が: 中国語 が わかります. Say how well with よく (well), だいたい (mostly) or 少し (a little).",
+            "id": "g-ability-1"
           }
         },
         {
@@ -12144,7 +12196,8 @@
           "note": {
             "title": "Not at all",
             "pattern": "全然 + negative",
-            "body": "あまり and 全然 go with a negative verb: かんじ が あまり わかりません (not very well), 全然 わかりません (not at all)."
+            "body": "あまり and 全然 go with a negative verb: かんじ が あまり わかりません (not very well), 全然 わかりません (not at all).",
+            "id": "g-ability-2"
           }
         }
       ],
@@ -12381,7 +12434,8 @@
           "note": {
             "title": "What kind of?",
             "pattern": "Noun は どんな Noun ですか",
-            "body": "どんな asks what something is like: イタリア は どんな 国 ですか (What kind of country is Italy?)."
+            "body": "どんな asks what something is like: イタリア は どんな 国 ですか (What kind of country is Italy?).",
+            "id": "g-travel-1"
           }
         },
         {
@@ -12534,7 +12588,8 @@
           "note": {
             "title": "But",
             "pattern": "Sentence 1 が、Sentence 2",
-            "body": "が between two sentences means but: イタリア の たべもの は おいしい です が、高い です."
+            "body": "が between two sentences means but: イタリア の たべもの は おいしい です が、高い です.",
+            "id": "g-travel-2"
           }
         }
       ],
@@ -12795,7 +12850,8 @@
           "note": {
             "title": "Because",
             "pattern": "Sentence 1 から、Sentence 2",
-            "body": "から after a sentence gives the reason for what follows: 時間 が ありません から、タクシー で いきます."
+            "body": "から after a sentence gives the reason for what follows: 時間 が ありません から、タクシー で いきます.",
+            "id": "g-reason-1"
           }
         },
         {
@@ -12941,7 +12997,8 @@
           "note": {
             "title": "Why?",
             "pattern": "どうして ～か → ～から です",
-            "body": "どうして asks why. Answer with the reason followed by から です: どうして 早く かえりますか。…こども の たんじょうび です から."
+            "body": "どうして asks why. Answer with the reason followed by から です: どうして 早く かえりますか。…こども の たんじょうび です から.",
+            "id": "g-reason-2"
           }
         }
       ],
@@ -13187,7 +13244,8 @@
           "note": {
             "title": "Where it happens",
             "pattern": "Place で Verb",
-            "body": "で marks the place where you do something: レストラン で ばんごはん を たべます."
+            "body": "で marks the place where you do something: レストラン で ばんごはん を たべます.",
+            "id": "g-location-1"
           }
         },
         {
@@ -13350,7 +13408,8 @@
           "note": {
             "title": "There is…",
             "pattern": "Place に Noun が あります / います",
-            "body": "To say what is somewhere, start with the place and に: つくえ の 上 に ほん が あります. Use います for people and animals."
+            "body": "To say what is somewhere, start with the place and に: つくえ の 上 に ほん が あります. Use います for people and animals.",
+            "id": "g-location-2"
           }
         },
         {
@@ -13496,7 +13555,8 @@
           "note": {
             "title": "Where is it?",
             "pattern": "Noun は Place に あります / います",
-            "body": "To say where something you already mentioned is, start with it: ほん は かばん の 中 に あります (The book is in the bag)."
+            "body": "To say where something you already mentioned is, start with it: ほん は かばん の 中 に あります (The book is in the bag).",
+            "id": "g-location-3"
           }
         }
       ],
@@ -13796,7 +13856,8 @@
           "note": {
             "title": "Counting things",
             "pattern": "Noun を ～つ ください",
-            "body": "For most objects, count ひとつ, ふたつ, みっつ… up to とお (10). The number comes after the particle: りんご を みっつ ください."
+            "body": "For most objects, count ひとつ, ふたつ, みっつ… up to とお (10). The number comes after the particle: りんご を みっつ ください.",
+            "id": "g-countobj-1"
           }
         },
         {
@@ -13943,7 +14004,8 @@
           "note": {
             "title": "Counters",
             "pattern": "～枚 / ～台",
-            "body": "Flat things such as stamps, paper and shirts use まい: きって を 2まい ください. Machines and vehicles use だい: れいぞうこ が 1だい あります."
+            "body": "Flat things such as stamps, paper and shirts use まい: きって を 2まい ください. Machines and vehicles use だい: れいぞうこ が 1だい あります.",
+            "id": "g-countobj-2"
           }
         },
         {
@@ -14066,7 +14128,8 @@
           "note": {
             "title": "Only",
             "pattern": "Quantity / Noun だけ",
-            "body": "だけ means only: ひとつ だけ ください (just one, please), せんせい だけ きました (only the teacher came)."
+            "body": "だけ means only: ひとつ だけ ください (just one, please), せんせい だけ きました (only the teacher came).",
+            "id": "g-countobj-3"
           }
         }
       ],
@@ -14307,7 +14370,8 @@
           "note": {
             "title": "How long it takes",
             "pattern": "～時間 ぐらい かかります",
-            "body": "かかります means it takes (time or money): でんしゃ で 1じかん ぐらい かかります. ぐらい after a number means about."
+            "body": "かかります means it takes (time or money): でんしゃ で 1じかん ぐらい かかります. ぐらい after a number means about.",
+            "id": "g-counttime-1"
           }
         },
         {
@@ -14442,7 +14506,8 @@
           "note": {
             "title": "How long?",
             "pattern": "どのくらい ～ますか",
-            "body": "どのくらい asks how long: どのくらい にほん に いますか。…1か月 ぐらい います."
+            "body": "どのくらい asks how long: どのくらい にほん に いますか。…1か月 ぐらい います.",
+            "id": "g-counttime-2"
           }
         },
         {
@@ -14569,7 +14634,8 @@
           "note": {
             "title": "How often",
             "pattern": "Period に ～回 Verb",
-            "body": "Period + に + number of times says how often: 1しゅうかん に 2かい テニス を します (I play tennis twice a week)."
+            "body": "Period + に + number of times says how often: 1しゅうかん に 2かい テニス を します (I play tennis twice a week).",
+            "id": "g-counttime-3"
           }
         }
       ],
@@ -14807,7 +14873,8 @@
           "note": {
             "title": "Was, wasn't",
             "pattern": "Noun / な-adj + でした",
-            "body": "For nouns and な-adjectives, です becomes でした in the past: しけん は かんたん でした. The negative past is じゃありませんでした."
+            "body": "For nouns and な-adjectives, です becomes でした in the past: しけん は かんたん でした. The negative past is じゃありませんでした.",
+            "id": "g-pastadj-1"
           }
         },
         {
@@ -14951,7 +15018,8 @@
           "note": {
             "title": "Past of い-adjectives",
             "pattern": "い → かったです",
-            "body": "Swap the final い for かったです: たのしい → たのしかったです. The negative past is くなかったです. いい becomes よかったです."
+            "body": "Swap the final い for かったです: たのしい → たのしかったです. The negative past is くなかったです. いい becomes よかったです.",
+            "id": "g-pastadj-2"
           }
         }
       ],
@@ -15193,7 +15261,8 @@
           "note": {
             "title": "Comparing two",
             "pattern": "A は B より Adj です",
-            "body": "より means than: でんしゃ は バス より 速い です (The train is faster than the bus)."
+            "body": "より means than: でんしゃ は バス より 速い です (The train is faster than the bus).",
+            "id": "g-compare-1"
           }
         },
         {
@@ -15343,7 +15412,8 @@
           "note": {
             "title": "Which of the two?",
             "pattern": "A と B と どちら が Adj ですか",
-            "body": "Ask with A と B と どちら が … ですか and answer with B の ほう が … です: なつ と ふゆ と どちら が 好き ですか。…ふゆ の ほう が 好き です."
+            "body": "Ask with A と B と どちら が … ですか and answer with B の ほう が … です: なつ と ふゆ と どちら が 好き ですか。…ふゆ の ほう が 好き です.",
+            "id": "g-compare-2"
           }
         },
         {
@@ -15494,7 +15564,8 @@
           "note": {
             "title": "The most",
             "pattern": "A の 中 で 何 が いちばん Adj ですか",
-            "body": "To pick one from a group: くだもの の 中 で 何 が いちばん 好き ですか。…いちご が いちばん 好き です. Use だれ for people, どこ for places and いつ for times."
+            "body": "To pick one from a group: くだもの の 中 で 何 が いちばん 好き ですか。…いちご が いちばん 好き です. Use だれ for people, どこ for places and いつ for times.",
+            "id": "g-compare-3"
           }
         }
       ],
@@ -15708,7 +15779,8 @@
           "note": {
             "title": "Four polite forms",
             "pattern": "～ます / ～ました / ～ません / ～ませんでした",
-            "body": "Every polite verb has four forms: およぎます (swim, will swim), およぎました (swam), およぎません (don't swim) and およぎませんでした (didn't swim)."
+            "body": "Every polite verb has four forms: およぎます (swim, will swim), およぎました (swam), およぎません (don't swim) and およぎませんでした (didn't swim).",
+            "id": "g-verbs-1"
           }
         },
         {
@@ -15843,7 +15915,8 @@
           "note": {
             "title": "Verbs with their own particle",
             "pattern": "ともだち に あいます / しゃしん を とります",
-            "body": "Some verbs come with a fixed particle: あいます (meet) uses に, while とります (take) and さんぽします (walk through) use を. Learn the particle together with the verb."
+            "body": "Some verbs come with a fixed particle: あいます (meet) uses に, while とります (take) and さんぽします (walk through) use を. Learn the particle together with the verb.",
+            "id": "g-verbs-2"
           }
         },
         {
@@ -15978,7 +16051,8 @@
           "note": {
             "title": "Going in and out",
             "pattern": "Place に 入ります / Place を 出ます",
-            "body": "Going into a place takes に: きっさてん に はいります. Leaving a place takes を: うち を でます."
+            "body": "Going into a place takes に: きっさてん に はいります. Leaving a place takes を: うち を でます.",
+            "id": "g-verbs-3"
           }
         }
       ],
@@ -16216,7 +16290,8 @@
           "note": {
             "title": "Wanting things",
             "pattern": "Noun が 欲しい です",
-            "body": "欲しい is an い-adjective meaning wanted. The thing you want takes が: あたらしい くるま が ほしい です."
+            "body": "欲しい is an い-adjective meaning wanted. The thing you want takes が: あたらしい くるま が ほしい です.",
+            "id": "g-desire-1"
           }
         },
         {
@@ -16346,7 +16421,8 @@
           "note": {
             "title": "Wanting to do",
             "pattern": "Verb (～ます) → ～たいです",
-            "body": "Drop ます and add たいです to say what you want to do: のみます → のみたいです. The negative is たくないです. どこか and なにか mean somewhere and something."
+            "body": "Drop ます and add たいです to say what you want to do: のみます → のみたいです. The negative is たくないです. どこか and なにか mean somewhere and something.",
+            "id": "g-desire-2"
           }
         }
       ],
@@ -16574,7 +16650,8 @@
           "note": {
             "title": "Going to do something",
             "pattern": "Place へ Verb(～ます) に 行きます",
-            "body": "To say why you go somewhere, drop ます from the verb and add に before いきます, きます or かえります: くうこう へ ともだち を むかえ に いきます."
+            "body": "To say why you go somewhere, drop ます from the verb and add に before いきます, きます or かえります: くうこう へ ともだち を むかえ に いきます.",
+            "id": "g-purpose-1"
           }
         },
         {
@@ -16704,7 +16781,8 @@
           "note": {
             "title": "Going for an activity",
             "pattern": "Place へ Noun に 行きます",
-            "body": "With activity nouns, に goes straight after the noun: デパート へ かいもの に いきます (I'm going shopping)."
+            "body": "With activity nouns, に goes straight after the noun: デパート へ かいもの に いきます (I'm going shopping).",
+            "id": "g-purpose-2"
           }
         }
       ],
@@ -16939,7 +17017,8 @@
           "note": {
             "title": "Group 1",
             "pattern": "～います・～きます・～します…",
-            "body": "Group 1 verbs have an i-sound just before ます: かきます, のみます, けします, まがります. Their other forms change the most."
+            "body": "Group 1 verbs have an i-sound just before ます: かきます, のみます, けします, まがります. Their other forms change the most.",
+            "id": "g-groups-1"
           }
         },
         {
@@ -17079,7 +17158,8 @@
           "note": {
             "title": "Group 2",
             "pattern": "～えます",
-            "body": "Most verbs with an e-sound before ます are Group 2: つけます, あけます, しめます, たべます. A few with i belong here too, such as みます and おきます."
+            "body": "Most verbs with an e-sound before ます are Group 2: つけます, あけます, しめます, たべます. A few with i belong here too, such as みます and おきます.",
+            "id": "g-groups-2"
           }
         },
         {
@@ -17206,7 +17286,8 @@
           "note": {
             "title": "Group 3",
             "pattern": "Noun + します / きます",
-            "body": "Group 3 is just します and きます, plus the many nouns that take します: そうじ します, けっこん します. They are the easiest to learn."
+            "body": "Group 3 is just します and きます, plus the many nouns that take します: そうじ します, けっこん します. They are the easiest to learn.",
+            "id": "g-groups-3"
           }
         }
       ],
@@ -17450,7 +17531,8 @@
           "note": {
             "title": "Making the て-form",
             "pattern": "～ます → ～て",
-            "body": "Group 2: drop ます and add て (みます → みて). Group 3: します → して, きます → きて. Group 1 depends on the sound before ます: き → いて (かきます → かいて), み・び・に → んで (のみます → のんで), い・ち・り → って (まちます → まって)."
+            "body": "Group 2: drop ます and add て (みます → みて). Group 3: します → して, きます → きて. Group 1 depends on the sound before ます: き → いて (かきます → かいて), み・び・に → んで (のみます → のんで), い・ち・り → って (まちます → まって).",
+            "id": "g-teform-1"
           }
         },
         {
@@ -17571,7 +17653,8 @@
           "note": {
             "title": "Asking politely",
             "pattern": "Verb て-form + ください",
-            "body": "て-form + ください makes a polite request: ここ に なまえ を かいて ください (Please write your name here)."
+            "body": "て-form + ください makes a polite request: ここ に なまえ を かいて ください (Please write your name here).",
+            "id": "g-teform-2"
           }
         }
       ],
@@ -17802,7 +17885,8 @@
           "note": {
             "title": "Doing right now",
             "pattern": "Verb て-form + います",
-            "body": "て-form + います describes an action in progress: ラジオ を きいて います (I'm listening to the radio)."
+            "body": "て-form + います describes an action in progress: ラジオ を きいて います (I'm listening to the radio).",
+            "id": "g-cont-1"
           }
         },
         {
@@ -17955,7 +18039,8 @@
           "note": {
             "title": "States",
             "pattern": "しって います / すんで います / もって います",
-            "body": "Some verbs use ～ています for a lasting state: しって います (know), すんで います (live), もって います (have). \"I don't know\" is しりません, not しって いません."
+            "body": "Some verbs use ～ています for a lasting state: しって います (know), すんで います (live), もって います (have). \"I don't know\" is しりません, not しって いません.",
+            "id": "g-cont-2"
           }
         },
         {
@@ -18109,7 +18194,8 @@
           "note": {
             "title": "Jobs and habits",
             "pattern": "～ています for what someone does",
-            "body": "～ています also describes a job or ongoing activity: ちち は くるま を つくって います (My father makes cars)."
+            "body": "～ています also describes a job or ongoing activity: ちち は くるま を つくって います (My father makes cars).",
+            "id": "g-cont-3"
           }
         }
       ],
@@ -18340,7 +18426,8 @@
           "note": {
             "title": "May I?",
             "pattern": "Verb て-form + も いいです",
-            "body": "て-form + も いいです gives permission; add か to ask for it: しゃしん を とって も いいですか (May I take a photo?)."
+            "body": "て-form + も いいです gives permission; add か to ask for it: しゃしん を とって も いいですか (May I take a photo?).",
+            "id": "g-perm-1"
           }
         },
         {
@@ -18480,7 +18567,8 @@
           "note": {
             "title": "Must not",
             "pattern": "Verb て-form + は いけません",
-            "body": "て-form + は いけません forbids something: ここ で たばこ を すって は いけません."
+            "body": "て-form + は いけません forbids something: ここ で たばこ を すって は いけません.",
+            "id": "g-perm-2"
           }
         }
       ],
@@ -18703,7 +18791,8 @@
           "note": {
             "title": "One action after another",
             "pattern": "Verb て-form、Verb",
-            "body": "Join actions with the て-form; they happen in that order. Only the last verb shows the tense."
+            "body": "Join actions with the て-form; they happen in that order. Only the last verb shows the tense.",
+            "id": "g-conn-1"
           }
         },
         {
@@ -18849,7 +18938,8 @@
           "note": {
             "title": "Joining い-adjectives",
             "pattern": "い-adjective → ～くて、～",
-            "body": "Drop the final い and add くて to link an い-adjective to what follows: やすくて、おいしい (cheap and tasty). いい becomes よくて."
+            "body": "Drop the final い and add くて to link an い-adjective to what follows: やすくて、おいしい (cheap and tasty). いい becomes よくて.",
+            "id": "g-conn-2"
           }
         },
         {
@@ -18999,7 +19089,8 @@
           "note": {
             "title": "Joining nouns and な-adjectives",
             "pattern": "Noun / な-adjective + で、～",
-            "body": "Nouns and な-adjectives link with で: しずか で、きれい な おてら (a quiet, beautiful temple)."
+            "body": "Nouns and な-adjectives link with で: しずか で、きれい な おてら (a quiet, beautiful temple).",
+            "id": "g-conn-3"
           }
         }
       ],
@@ -19229,7 +19320,8 @@
           "note": {
             "title": "After doing",
             "pattern": "Verb 1 て-form から、Verb 2",
-            "body": "て-form + から means after: てがみ を かいて から、ねます (I'll go to bed after writing the letter)."
+            "body": "て-form + から means after: てがみ を かいて から、ねます (I'll go to bed after writing the letter).",
+            "id": "g-seq-1"
           }
         },
         {
@@ -19377,7 +19469,8 @@
           "note": {
             "title": "Getting on and off",
             "pattern": "Vehicle に のります / Vehicle を おります",
-            "body": "You get on (のります) a vehicle with に and get off (おります) with を. どうやって asks how to get somewhere."
+            "body": "You get on (のります) a vehicle with に and get off (おります) with を. どうやって asks how to get somewhere.",
+            "id": "g-seq-2"
           }
         }
       ],
@@ -19625,7 +19718,8 @@
           "note": {
             "title": "Making the ない form",
             "pattern": "～ます → ～ない",
-            "body": "Group 1: the i-sound before ます becomes a, then add ない (のみます → のまない; い becomes わ: かいます → かわない). Group 2: drop ます, add ない (たべない). Group 3: しない, こない."
+            "body": "Group 1: the i-sound before ます becomes a, then add ない (のみます → のまない; い becomes わ: かいます → かわない). Group 2: drop ます, add ない (たべない). Group 3: しない, こない.",
+            "id": "g-nai-1"
           }
         },
         {
@@ -19773,7 +19867,8 @@
           "note": {
             "title": "Please don't",
             "pattern": "Verb ない-form + で ください",
-            "body": "ない-form + で ください asks someone not to do something: あぶない です から、さわらないで ください."
+            "body": "ない-form + で ください asks someone not to do something: あぶない です から、さわらないで ください.",
+            "id": "g-nai-2"
           }
         }
       ],
@@ -19990,7 +20085,8 @@
           "note": {
             "title": "Must",
             "pattern": "Verb ない-form (no い) + ければ なりません",
-            "body": "Swap the final い of the ない-form for ければ なりません: のまない → のまなければ なりません (must drink). Time + までに means by that time."
+            "body": "Swap the final い of the ない-form for ければ なりません: のまない → のまなければ なりません (must drink). Time + までに means by that time.",
+            "id": "g-oblig-1"
           }
         },
         {
@@ -20104,7 +20200,8 @@
           "note": {
             "title": "Don't have to",
             "pattern": "Verb ない-form (no い) + くても いいです",
-            "body": "Swap the final い for くても いいです: いかない → いかなくても いいです (you don't have to go)."
+            "body": "Swap the final い for くても いいです: いかない → いかなくても いいです (you don't have to go).",
+            "id": "g-oblig-2"
           }
         }
       ],
@@ -20332,7 +20429,8 @@
           "note": {
             "title": "The plain (dictionary) form",
             "pattern": "～ます → dictionary form",
-            "body": "Group 1: the i-sound before ます becomes u (かきます → かく, のみます → のむ). Group 2: drop ます, add る (たべる). Group 3: する, くる. Dictionaries list verbs in this form."
+            "body": "Group 1: the i-sound before ます becomes u (かきます → かく, のみます → のむ). Group 2: drop ます, add る (たべる). Group 3: する, くる. Dictionaries list verbs in this form.",
+            "id": "g-cap1-1"
           }
         },
         {
@@ -20471,7 +20569,8 @@
           "note": {
             "title": "Can do",
             "pattern": "Noun / Verb (dictionary form) こと が できます",
-            "body": "Noun + が できます or dictionary form + こと が できます means can: かんじ を かく こと が できます (I can write kanji)."
+            "body": "Noun + が できます or dictionary form + こと が できます means can: かんじ を かく こと が できます (I can write kanji).",
+            "id": "g-cap1-2"
           }
         }
       ],
@@ -20721,7 +20820,8 @@
           "note": {
             "title": "My hobby is…",
             "pattern": "わたし の しゅみ は Noun / Verb (dictionary form) こと です",
-            "body": "Name a hobby with a noun, or turn a verb into one with dictionary form + こと: しゅみ は うた を うたう こと です."
+            "body": "Name a hobby with a noun, or turn a verb into one with dictionary form + こと: しゅみ は うた を うたう こと です.",
+            "id": "g-hobby-1"
           }
         },
         {
@@ -20874,7 +20974,8 @@
           "note": {
             "title": "Before",
             "pattern": "Verb (dictionary form) / Noun の + まえに",
-            "body": "Dictionary form + まえに means before doing: ねる まえに. With a noun use の: しょくじ の まえに."
+            "body": "Dictionary form + まえに means before doing: ねる まえに. With a noun use の: しょくじ の まえに.",
+            "id": "g-hobby-2"
           }
         }
       ],
@@ -21111,7 +21212,8 @@
           "note": {
             "title": "Making the た-form",
             "pattern": "て-form → た-form",
-            "body": "The た-form is the plain past. Make it like the て-form, with た for て and だ for で: かいて → かいた, のんで → のんだ."
+            "body": "The た-form is the plain past. Make it like the て-form, with た for て and だ for で: かいて → かいた, のんで → のんだ.",
+            "id": "g-ta-1"
           }
         },
         {
@@ -21274,7 +21376,8 @@
           "note": {
             "title": "Have done",
             "pattern": "Verb た-form + こと が あります",
-            "body": "た-form + こと が あります says you have had that experience: すし を たべた こと が あります. With ありません it means you never have."
+            "body": "た-form + こと が あります says you have had that experience: すし を たべた こと が あります. With ありません it means you never have.",
+            "id": "g-ta-2"
           }
         }
       ],
@@ -21517,7 +21620,8 @@
           "note": {
             "title": "Things like…",
             "pattern": "Verb た-form + り、Verb た-form + り します",
-            "body": "Add り to two or more た-forms and end with します to give examples of what you do: そうじ したり、せんたく したり します."
+            "body": "Add り to two or more た-forms and end with します to give examples of what you do: そうじ したり、せんたく したり します.",
+            "id": "g-listing-1"
           }
         },
         {
@@ -21647,7 +21751,8 @@
           "note": {
             "title": "Becoming",
             "pattern": "～く / ～に なります",
-            "body": "い-adjective: swap い for く + なります (あかるく なります). Nouns and な-adjectives take に: はる に なります, きれい に なります."
+            "body": "い-adjective: swap い for く + なります (あかるく なります). Nouns and な-adjectives take に: はる に なります, きれい に なります.",
+            "id": "g-listing-2"
           }
         }
       ],
@@ -21884,7 +21989,8 @@
           "note": {
             "title": "I think",
             "pattern": "Plain form + と おもいます",
-            "body": "Give an opinion with plain form + と おもいます. Nouns and な-adjectives add だ: ふべん だ と おもいます."
+            "body": "Give an opinion with plain form + と おもいます. Nouns and な-adjectives add だ: ふべん だ と おもいます.",
+            "id": "g-indirect-1"
           }
         },
         {
@@ -22021,7 +22127,8 @@
           "note": {
             "title": "Quoting",
             "pattern": "「…」 と いいます",
-            "body": "Put exact words in 「」 followed by と いいます to say what someone says: ゆきさん は 「いきます」 と いいました."
+            "body": "Put exact words in 「」 followed by と いいます to say what someone says: ゆきさん は 「いきます」 と いいました.",
+            "id": "g-indirect-2"
           }
         }
       ],
@@ -22256,7 +22363,8 @@
           "note": {
             "title": "Verb before a noun",
             "pattern": "Verb (plain form) + Noun",
-            "body": "A plain-form clause placed before a noun describes it: きのう かった ほん (the book I bought yesterday). The doer in the clause takes が."
+            "body": "A plain-form clause placed before a noun describes it: きのう かった ほん (the book I bought yesterday). The doer in the clause takes が.",
+            "id": "g-nounmod-1"
           }
         },
         {
@@ -22396,7 +22504,8 @@
           "note": {
             "title": "Time, plans and errands",
             "pattern": "Verb (dictionary form) + じかん / やくそく / ようじ",
-            "body": "Dictionary form before じかん, やくそく or ようじ says what the time, appointment or errand is for: でんわ する じかん が ありません."
+            "body": "Dictionary form before じかん, やくそく or ようじ says what the time, appointment or errand is for: でんわ する じかん が ありません.",
+            "id": "g-nounmod-2"
           }
         }
       ],
@@ -22632,7 +22741,8 @@
           "note": {
             "title": "When",
             "pattern": "Plain form / Noun の + とき、～",
-            "body": "とき means when: よる ねる とき、まど を しめます. With nouns use の: こども の とき (when I was a child)."
+            "body": "とき means when: よる ねる とき、まど を しめます. With nouns use の: こども の とき (when I was a child).",
+            "id": "g-when-1"
           }
         },
         {
@@ -22780,7 +22890,8 @@
           "note": {
             "title": "Whenever / and then",
             "pattern": "Plain form + と、～",
-            "body": "Dictionary form + と describes something that always follows: この ボタン を おす と、ドア が あきます."
+            "body": "Dictionary form + と describes something that always follows: この ボタン を おす と、ドア が あきます.",
+            "id": "g-when-2"
           }
         }
       ],
@@ -23010,7 +23121,8 @@
           "note": {
             "title": "Someone gives me",
             "pattern": "Person が わたし に Thing を くれます",
-            "body": "あげます is giving away from you; くれます is someone giving to you or your family: ちち が とけい を くれました."
+            "body": "あげます is giving away from you; くれます is someone giving to you or your family: ちち が とけい を くれました.",
+            "id": "g-givetake-1"
           }
         },
         {
@@ -23147,7 +23259,8 @@
           "note": {
             "title": "Doing favours",
             "pattern": "Verb て-form + あげます / もらいます / くれます",
-            "body": "Add あげます, もらいます or くれます after a て-form to show who does a favour for whom: ちち が くるま で おくって くれました (my father kindly drove me)."
+            "body": "Add あげます, もらいます or くれます after a て-form to show who does a favour for whom: ちち が くるま で おくって くれました (my father kindly drove me).",
+            "id": "g-givetake-2"
           }
         }
       ],
@@ -23359,7 +23472,8 @@
           "note": {
             "title": "Even if",
             "pattern": "Verb て-form + も、～",
-            "body": "て-form + も means even if: たかくて も、かいます (I'll buy it even if it's expensive). Nouns and な-adjectives use でも."
+            "body": "て-form + も means even if: たかくて も、かいます (I'll buy it even if it's expensive). Nouns and な-adjectives use でも.",
+            "id": "g-even-1"
           }
         },
         {
@@ -23501,7 +23615,8 @@
           "note": {
             "title": "No matter how",
             "pattern": "いくら ～ても",
-            "body": "いくら with ～ても means no matter how much: いくら れんしゅう して も、むだ でした."
+            "body": "いくら with ～ても means no matter how much: いくら れんしゅう して も、むだ でした.",
+            "id": "g-even-2"
           }
         }
       ],
@@ -23728,7 +23843,8 @@
           "note": {
             "title": "Asking for an explanation",
             "pattern": "Plain form + んですか",
-            "body": "～んですか asks about something you've noticed and want explained: おおさか べん を はなす んですか (Oh, you speak Osaka dialect?)."
+            "body": "～んですか asks about something you've noticed and want explained: おおさか べん を はなす んですか (Oh, you speak Osaka dialect?).",
+            "id": "g-ndesu-1"
           }
         },
         {
@@ -23857,7 +23973,8 @@
           "note": {
             "title": "Giving the reason",
             "pattern": "Plain form + んです",
-            "body": "～んです explains a situation or gives a reason in a soft way: すみません、バス が こなかった んです."
+            "body": "～んです explains a situation or gives a reason in a soft way: すみません、バス が こなかった んです.",
+            "id": "g-ndesu-2"
           }
         }
       ],
@@ -24072,7 +24189,8 @@
           "note": {
             "title": "A polite request",
             "pattern": "～んですが、Verb て-form + いただけませんか",
-            "body": "Set up the situation with ～んですが, then ask with て-form + いただけませんか (could you please…?)."
+            "body": "Set up the situation with ～んですが, then ask with て-form + いただけませんか (could you please…?).",
+            "id": "g-advice-1"
           }
         },
         {
@@ -24198,7 +24316,8 @@
           "note": {
             "title": "What should I do?",
             "pattern": "Question word + Verb た-form + ら いいですか",
-            "body": "Ask for advice with a question word + た-form + ら いいですか: だれ に きいたら いいですか (Who should I ask?). どの + noun asks which one."
+            "body": "Ask for advice with a question word + た-form + ら いいですか: だれ に きいたら いいですか (Who should I ask?). どの + noun asks which one.",
+            "id": "g-advice-2"
           }
         }
       ],
@@ -24420,7 +24539,8 @@
           "note": {
             "title": "Making the potential form",
             "pattern": "Verb → can-do form",
-            "body": "Group 1: the i-sound before ます becomes e (かきます → かけます). Group 2: ます → られます (たべられます). Group 3: できます, こられます. The object usually takes が."
+            "body": "Group 1: the i-sound before ます becomes e (かきます → かけます). Group 2: ます → られます (たべられます). Group 3: できます, こられます. The object usually takes が.",
+            "id": "g-cap2-1"
           }
         },
         {
@@ -24527,7 +24647,8 @@
           "note": {
             "title": "Only",
             "pattern": "Noun しか + negative",
-            "body": "しか with a negative verb means only, stressing that it's not much: 100えん しか ありません (I only have 100 yen)."
+            "body": "しか with a negative verb means only, stressing that it's not much: 100えん しか ありません (I only have 100 yen).",
+            "id": "g-cap2-2"
           }
         }
       ],
@@ -24739,7 +24860,8 @@
           "note": {
             "title": "If / when",
             "pattern": "Verb た-form + ら、～",
-            "body": "た-form + ら means if or once: ついたら (when you arrive). Nouns and な-adjectives use だったら. Noun + でも means even: こども でも (even a child)."
+            "body": "た-form + ら means if or once: ついたら (when you arrive). Nouns and な-adjectives use だったら. Noun + でも means even: こども でも (even a child).",
+            "id": "g-cond-1"
           }
         },
         {
@@ -24893,7 +25015,8 @@
           "note": {
             "title": "Supposing",
             "pattern": "もし ～たら",
-            "body": "もし at the start makes it clear the sentence is an if: もし あめ だったら、いきません."
+            "body": "もし at the start makes it clear the sentence is an if: もし あめ だったら、いきません.",
+            "id": "g-cond-2"
           }
         }
       ],
@@ -25058,7 +25181,8 @@
           "note": {
             "title": "Showing documents",
             "pattern": "Noun を みせて ください",
-            "body": "Staff ask for things with ～を みせて ください (please show me…). Answer はい、どうぞ (here you are)."
+            "body": "Staff ask for things with ～を みせて ください (please show me…). Answer はい、どうぞ (here you are).",
+            "id": "g-tr-air-1"
           }
         },
         {
@@ -25129,7 +25253,8 @@
           "note": {
             "title": "Which number?",
             "pattern": "なんばん ですか",
-            "body": "なんばん asks for a number: なんばん ゲート ですか (which gate?). 5ばん ゲート is gate 5."
+            "body": "なんばん asks for a number: なんばん ゲート ですか (which gate?). 5ばん ゲート is gate 5.",
+            "id": "g-tr-air-2"
           }
         }
       ],
@@ -25293,7 +25418,8 @@
           "note": {
             "title": "I have a booking",
             "pattern": "よやく を して います",
-            "body": "Check in with よやく を して います, then give your name with ～と いいます (I'm called…)."
+            "body": "Check in with よやく を して います, then give your name with ～と いいます (I'm called…).",
+            "id": "g-tr-hotel-1"
           }
         },
         {
@@ -25367,7 +25493,8 @@
           "note": {
             "title": "Asking for more",
             "pattern": "Noun を もう ～ ください",
-            "body": "もう + counter + ください asks for one more: もう いちまい ください, もう ひとつ ください."
+            "body": "もう + counter + ください asks for one more: もう いちまい ください, もう ひとつ ください.",
+            "id": "g-tr-hotel-2"
           }
         }
       ],
@@ -25474,7 +25601,8 @@
           "note": {
             "title": "Giving directions",
             "pattern": "Place を みぎ / ひだり に まがって ください",
-            "body": "The place where you turn takes を: かど を ひだり に まがって ください (turn left at the corner)."
+            "body": "The place where you turn takes を: かど を ひだり に まがって ください (turn left at the corner).",
+            "id": "g-tr-way-1"
           }
         },
         {
@@ -25542,7 +25670,8 @@
           "note": {
             "title": "Is there one nearby?",
             "pattern": "この へん に ～は ありますか",
-            "body": "Ask if something is nearby with この へん に ～は ありますか."
+            "body": "Ask if something is nearby with この へん に ～は ありますか.",
+            "id": "g-tr-way-2"
           }
         }
       ],
@@ -25639,7 +25768,8 @@
           "note": {
             "title": "Casual reactions",
             "pattern": "すごい！/ やった！/ うそ！",
-            "body": "Characters in shows speak casually. すごい praises, やった celebrates and うそ or まさか show disbelief. With strangers, stay polite: すごい です ね."
+            "body": "Characters in shows speak casually. すごい praises, やった celebrates and うそ or まさか show disbelief. With strangers, stay polite: すごい です ね.",
+            "id": "g-an-react-1"
           }
         },
         {
@@ -25707,7 +25837,8 @@
           "note": {
             "title": "Friends' Japanese",
             "pattern": "Casual vs polite",
-            "body": "Between friends ごめん replaces すみません and ありがとう drops ございます. がんばれ cheers someone on; がんばって is softer."
+            "body": "Between friends ごめん replaces すみません and ありがとう drops ございます. がんばれ cheers someone on; がんばって is softer.",
+            "id": "g-an-react-2"
           }
         }
       ],
@@ -25818,7 +25949,8 @@
           "note": {
             "title": "Let's (casual)",
             "pattern": "～ましょう → ～よう / ～おう",
-            "body": "Among friends ～ましょう becomes the volitional form: いきましょう → いこう, たべましょう → たべよう."
+            "body": "Among friends ～ましょう becomes the volitional form: いきましょう → いこう, たべましょう → たべよう.",
+            "id": "g-an-friends-1"
           }
         },
         {
@@ -25888,7 +26020,8 @@
           "note": {
             "title": "Ways to say I",
             "pattern": "わたし / ぼく / おれ",
-            "body": "わたし is neutral and safe anywhere. ぼく sounds young and gentle; おれ is rough and familiar. Use them only with friends."
+            "body": "わたし is neutral and safe anywhere. ぼく sounds young and gentle; おれ is rough and familiar. Use them only with friends.",
+            "id": "g-an-friends-2"
           }
         }
       ],
@@ -25991,7 +26124,8 @@
           "note": {
             "title": "Humble self-introduction",
             "pattern": "Name と もうします",
-            "body": "In interviews use もうします (humble) instead of です or いいます: ケン と もうします. Start with しつれい します as you enter."
+            "body": "In interviews use もうします (humble) instead of です or いいます: ケン と もうします. Start with しつれい します as you enter.",
+            "id": "g-job-intro-1"
           }
         },
         {
@@ -26059,7 +26193,8 @@
           "note": {
             "title": "Talking about strengths",
             "pattern": "わたし の ちょうしょ は ～ところ です",
-            "body": "～ところ means the side of you that is…: まじめ な ところ (that I'm hard-working), あかるい ところ (that I'm cheerful)."
+            "body": "～ところ means the side of you that is…: まじめ な ところ (that I'm hard-working), あかるい ところ (that I'm cheerful).",
+            "id": "g-job-intro-2"
           }
         }
       ],
@@ -26219,7 +26354,8 @@
           "note": {
             "title": "Office greetings",
             "pattern": "おつかれさま です / おさき に しつれい します",
-            "body": "Colleagues greet each other with おつかれさま です. Leaving before others, say おさき に しつれい します."
+            "body": "Colleagues greet each other with おつかれさま です. Leaving before others, say おさき に しつれい します.",
+            "id": "g-job-polite-1"
           }
         },
         {
@@ -26286,7 +26422,8 @@
           "note": {
             "title": "Requests at work",
             "pattern": "～て いただけませんか",
-            "body": "At work, ask politely with ～て いただけませんか rather than ～て ください."
+            "body": "At work, ask politely with ～て いただけませんか rather than ～て ください.",
+            "id": "g-job-polite-2"
           }
         }
       ],
@@ -26388,7 +26525,8 @@
           "note": {
             "title": "Choosing",
             "pattern": "Noun に します",
-            "body": "Noun + に します is how you decide or order: わたし は すし に します (I'll have sushi)."
+            "body": "Noun + に します is how you decide or order: わたし は すし に します (I'll have sushi).",
+            "id": "g-cu-order-1"
           }
         },
         {
@@ -26451,7 +26589,8 @@
           "note": {
             "title": "Paying",
             "pattern": "おかいけい を おねがいします",
-            "body": "Ask for the bill with おかいけい を おねがいします. On the way out say ごちそうさま でした."
+            "body": "Ask for the bill with おかいけい を おねがいします. On the way out say ごちそうさま でした.",
+            "id": "g-cu-order-2"
           }
         }
       ],
@@ -26612,7 +26751,8 @@
           "note": {
             "title": "Naming dishes",
             "pattern": "A と B を ください",
-            "body": "List dishes with と and order them with を ください."
+            "body": "List dishes with と and order them with を ください.",
+            "id": "g-cu-dishes-1"
           }
         },
         {
@@ -26677,7 +26817,8 @@
           "note": {
             "title": "At the table",
             "pattern": "～を とって ください",
-            "body": "とって ください (please pass) works for anything at the table: はし を とって ください."
+            "body": "とって ください (please pass) works for anything at the table: はし を とって ください.",
+            "id": "g-cu-dishes-2"
           }
         }
       ],
@@ -26785,7 +26926,8 @@
           "note": {
             "title": "Japanese New Year",
             "pattern": "おしょうがつ",
-            "body": "New Year is Japan's biggest holiday. People visit a shrine (はつもうで) and children get おとしだま."
+            "body": "New Year is Japan's biggest holiday. People visit a shrine (はつもうで) and children get おとしだま.",
+            "id": "g-fe-new-1"
           }
         },
         {
@@ -26828,7 +26970,8 @@
           "note": {
             "title": "New Year greetings",
             "pattern": "あけまして おめでとう ございます。ことし も よろしく",
-            "body": "Say あけまして おめでとう ございます from January 1st, followed by ことし も よろしく おねがいします."
+            "body": "Say あけまして おめでとう ございます from January 1st, followed by ことし も よろしく おねがいします.",
+            "id": "g-fe-new-2"
           }
         }
       ],
@@ -26926,7 +27069,8 @@
           "note": {
             "title": "Summer nights",
             "pattern": "おまつり と はなび",
-            "body": "Summer festivals have food stalls (やたい), people in ゆかた and fireworks (はなび) after dark."
+            "body": "Summer festivals have food stalls (やたい), people in ゆかた and fireworks (はなび) after dark.",
+            "id": "g-fe-summer-1"
           }
         },
         {
@@ -26991,7 +27135,8 @@
           "note": {
             "title": "Looking forward",
             "pattern": "Noun が たのしみ です",
-            "body": "たのしみ です says you're looking forward to something: なつやすみ が たのしみ です."
+            "body": "たのしみ です says you're looking forward to something: なつやすみ が たのしみ です.",
+            "id": "g-fe-summer-2"
           }
         }
       ],

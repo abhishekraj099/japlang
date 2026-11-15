@@ -29,12 +29,19 @@ object Course {
     var conversations: List<Lesson> = emptyList()
         private set
 
+    /** Every practice set's grammar point that has an id; sets without a note have none. */
+    var grammar: List<GrammarPoint> = emptyList()
+        private set
+    private var grammarById: Map<String, GrammarPoint> = emptyMap()
+
     private var byId: Map<String, Item> = emptyMap()
     private var unitById: Map<String, CourseUnit> = emptyMap()
     private val talks = mutableListOf<Pair<String, Lesson>>()
     private var chart: List<Pair<String, List<String>>> = emptyList()
 
     fun item(id: String): Item? = byId[id]
+
+    fun grammarPoint(id: String): GrammarPoint? = grammarById[id]
 
     fun unitsOf(level: Level): List<CourseUnit> = level.units.mapNotNull { id -> units.firstOrNull { it.id == id } }
 
@@ -133,6 +140,11 @@ object Course {
             )
         }
         lessons = units.flatMap { it.lessons }
+        grammar = units.flatMap { unit ->
+            unit.lessons.filter { it.type == LessonType.PRACTICE }
+                .mapNotNull { l -> l.note?.takeIf { it.id.isNotEmpty() }?.let { GrammarPoint(it.id, it, l.sentences, unit.id) } }
+        }
+        grammarById = grammar.associateBy { it.id }
         conversations = talks.map { it.second }
         unitById = units.flatMap { unit -> unit.lessons.map { it.id to unit } }.toMap() +
             talks.associate { (unitId, talk) -> talk.id to units.first { it.id == unitId } }
@@ -253,7 +265,7 @@ object Course {
     /** 復, as in 復習 (review). */
     private const val REVISION_ICON = "復"
 
-    private fun note(json: JSONObject) = Note(json.getString("title"), json.getString("pattern"), json.getString("body"))
+    private fun note(json: JSONObject) = Note(json.getString("title"), json.getString("pattern"), json.getString("body"), json.optString("id"))
 
     private fun sentences(json: JSONObject, key: String = "sentences") = json.optJSONArray(key)?.objects().orEmpty().map {
         Sentence(

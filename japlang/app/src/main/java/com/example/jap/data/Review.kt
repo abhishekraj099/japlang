@@ -45,4 +45,8 @@ object Review {
     fun pick(due: Boolean, plan: Plan, srs: Map<String, Srs>, size: Int, now: Long = System.currentTimeMillis()): List<Item> =
         if (due) plan.today.take(size)
         else srs.entries.sortedBy { Memory.retrievability(it.value, now) }.mapNotNull { Course.item(it.key) }.filter(Course::quizzable).take(size)
+
+    /** Grammar points due by [now], most overdue first; item and unknown ids are left out. */
+    fun dueGrammar(srs: Map<String, Srs>, now: Long = System.currentTimeMillis()): List<GrammarPoint> =
+        srs.entries.filter { it.value.due <= now }.sortedBy { it.value.due }.mapNotNull { Course.grammarPoint(it.key) }
 }

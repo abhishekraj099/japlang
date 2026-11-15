@@ -52,6 +52,19 @@ object Exercises {
         return out
     }
 
+    /**
+     * One question per grammar point, graded under the point's id: a fill-in-the-blank when the point has one (it tests the
+     * pattern itself), else reading one of its sentences against the other meanings of its unit.
+     */
+    fun forGrammar(points: List<GrammarPoint>): List<Exercise> = points.mapNotNull { p ->
+        val s = p.sentences.filter { it.blank >= 0 }.randomOrNull() ?: p.sentences.randomOrNull() ?: return@mapNotNull null
+        val choice = if (s.blank >= 0) fillBlank(s) else {
+            val meanings = Course.units.firstOrNull { it.id == p.unitId }?.lessons.orEmpty().flatMap { it.sentences }.map { it.en }
+            translate(s.tokens.joinToString(" "), s.romaji, s.en, meanings)
+        }
+        choice.copy(itemId = p.id)
+    }
+
     fun forSpeaking(phrases: List<Phrase>): List<Exercise> = phrases.shuffled().take(8).map { Speak(it) }
 
     fun forDictation(items: List<Item>): List<Exercise> = dictations(items, 8)
@@ -175,11 +188,13 @@ object Exercises {
         lesson.note?.let { out += NoteCard(it, lesson.sentences.take(2)) }
         // Each sentence is understood before it is built: read or heard first, then put together.
         val meanings = (Course.unitFor(lesson.id)?.lessons ?: listOf(lesson)).flatMap { it.sentences }.map { it.en }
+        // These checks grade the set's grammar point, so finishing the lesson starts its memory.
+        val point = lesson.note?.id?.ifEmpty { null }
         lesson.sentences.shuffled().forEachIndexed { i, s ->
-            val read = translate(s.tokens.joinToString(" "), s.romaji, s.en, meanings)
+            val read = translate(s.tokens.joinToString(" "), s.romaji, s.en, meanings).copy(itemId = point)
             out += if (i % 2 == 0) read else read.copy(instruction = "What do you hear?", listen = true)
         }
-        lesson.sentences.filter { it.blank >= 0 }.forEach { out += fillBlank(it) }
+        lesson.sentences.filter { it.blank >= 0 }.forEach { out += fillBlank(it).copy(itemId = point) }
         lesson.sentences.shuffled().forEach { out += build(it) }
         items.shuffled().take(1).forEach { out += typeIn(it) }
         return out
