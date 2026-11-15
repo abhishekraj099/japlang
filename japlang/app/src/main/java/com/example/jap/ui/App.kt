@@ -37,11 +37,13 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.jap.data.Analytics
 import com.example.jap.data.Config
 import com.example.jap.audio.LocalVoice
 import com.example.jap.data.Course
 import com.example.jap.data.Daily
 import com.example.jap.data.Exercises
+import com.example.jap.data.Guide
 import com.example.jap.data.Item
 import com.example.jap.data.Kind
 import com.example.jap.data.Lesson
@@ -70,8 +72,9 @@ private val tabs = listOf<Pair<ImageVector?, String>>(
 private enum class Stage { SPLASH, DEMO, SIGN_IN, SETUP, STREAK_INTRO, MAIN }
 
 /** A full-screen page shown on top of the tabs. */
-private sealed interface Page {
-    class Run(val session: Session) : Page
+internal sealed interface Page {
+    /** [back] is where leaving or finishing returns to when the run did not start from the tabs. */
+    class Run(val session: Session, val back: Page? = null) : Page
     class RolePlay(val scene: Lesson) : Page
     class Cards(val items: List<Item>) : Page
     data object Words : Page
@@ -164,9 +167,9 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
 
     fun run(
         title: String, kind: SessionKind, xp: Int, exercises: List<com.example.jap.data.Exercise>,
-        lessonId: String? = null, color: Color = scheme.secondary, review: String? = null
+        lessonId: String? = null, color: Color = scheme.secondary, review: String? = null, back: Page? = null
     ) {
-        go(Page.Run(Session(title, lessonId, color, xp, kind, exercises, review = review)))
+        go(Page.Run(Session(title, lessonId, color, xp, kind, exercises, review = review), back))
     }
 
     /** A practice run over [items]; its "Keep going" builds the next one from the memory as saved by then. */
@@ -213,13 +216,13 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         is Page.Run -> key(page.session) { LessonScreen(
             session = page.session,
             progress = progress,
-            onExit = { go(null) },
-            onFinish = { o -> go(finish(page.session, o)) },
+            onExit = { go(page.back) },
+            onFinish = { o -> go(finish(page.session, o) ?: page.back) },
             onKeepGoing = { o ->
                 // Saved first, so the next session is built from the updated memory.
                 val streak = finish(page.session, o)
                 val next = page.session.next?.invoke()
-                go(if (next != null && next.exercises.isNotEmpty()) Page.Run(next) else streak)
+                go(if (next != null && next.exercises.isNotEmpty()) Page.Run(next, page.back) else streak ?: page.back)
             }
         ) }
         is Page.RolePlay -> RolePlayScreen(page.scene, progress, onBack = { go(null) })
@@ -251,9 +254,14 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
             val s = page.story
             // Finishing the quiz saves the story's id as done and awards practice XP.
             run(s.title, SessionKind.PRACTICE, Config.practiceXp, Exercises.forStory(s), lessonId = s.id,
-                color = Course.units.firstOrNull { it.id == s.unlockAfter }?.let { Color(it.color) } ?: scheme.secondary)
+                color = Course.units.firstOrNull { it.id == s.unlockAfter }?.let { Color(it.color) } ?: scheme.secondary, back = page.back)
         })
-        is Page.TalkWith -> TalkWithGuideScreen(page.talk, progress, onDone = { go(Page.Practice) })
+        is Page.TalkWith -> TalkWithGuideScreen(page.talk, progress, onFinished = {
+            // Same path as any session: XP once, the streak page on the day's first activity, and the finish event.
+            val s = Session("Talk with ${Guide.name}", page.talk.id, scheme.secondary, Config.practiceXp, SessionKind.PRACTICE, emptyList())
+            Analytics.log(Analytics.LESSON_FINISH, "title" to s.title, "lesson_id" to s.lessonId, "kind" to s.kind.name, "xp" to s.baseXp)
+            finish(s, Outcome(s.baseXp, emptyMap(), emptyMap(), false, 0, 0, 0))
+        }, onDone = { go(it ?: Page.Practice) })
         Page.Ranking -> SubScreen("Ranking", onBack = { go(null) }) { LeagueScreen(progress) }
         Page.Practice -> SubScreen("Practice", onBack = { go(null) }, action = { GuideHelpButton("practice") }) {
             PracticeScreen(

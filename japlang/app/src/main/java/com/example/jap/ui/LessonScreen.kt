@@ -70,6 +70,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
@@ -178,6 +179,8 @@ fun LessonScreen(
     var explaining by remember { mutableStateOf(false) }
     var tuning by remember { mutableStateOf(false) }
     speaker.muted = !progress.lessonAudio
+    // The mute is for lessons only; the speaker is shared with Talk, stories and the guide.
+    DisposableEffect(Unit) { onDispose { speaker.muted = false } }
     LocalChime.current.enabled = progress.soundEffects
     val display = Display(progress.showKanji, progress.showReading, progress.showRomaji, progress.showTitle, FontScales[progress.fontStep.coerceIn(0, 5)])
     val queue = remember { mutableStateListOf<Exercise>().also { it.addAll(session.exercises) } }

@@ -23525,7 +23525,7 @@
               "blank": 0,
               "distract": [
                 "どうして",
-                "いつ"
+                "どこ"
               ]
             },
             {
@@ -31926,8 +31926,8 @@
               "id": "j-野",
               "kind": "KANJI",
               "jp": "野",
-              "reading": "の",
-              "romaji": "no",
+              "reading": "や",
+              "romaji": "ya",
               "meaning": "field; plain",
               "on": "ヤ",
               "kun": "の",

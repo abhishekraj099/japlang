@@ -44,16 +44,15 @@ import com.example.jap.data.Config
 import com.example.jap.data.Guide
 import com.example.jap.data.GuideTalk
 import com.example.jap.data.Progress
-import com.example.jap.data.SessionKind
 import com.example.jap.data.TalkAnswer
 import com.example.jap.data.Talks
 
 /**
- * The guide asks short questions aloud in their own voice and the learner answers by speaking. Answers are matched
- * offline; after two misses, or without a microphone, the answers can be tapped instead so a talk always finishes.
+ * The guide asks short questions aloud in their own voice and the learner answers by speaking. Answers are matched on the
+ * phone, though the system speech recogniser may send audio to its provider (as in speaking practice); after two misses, or without a microphone, the answers can be tapped instead so a talk always finishes.
  */
 @Composable
-fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onDone: () -> Unit) {
+internal fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onFinished: () -> Page?, onDone: (Page?) -> Unit) {
     val scheme = MaterialTheme.colorScheme
     val speaker = LocalSpeaker.current
     val context = LocalContext.current
@@ -120,15 +119,17 @@ fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onDone: () -> Unit)
         if (said.isNotEmpty()) list.animateScrollToItem(asked.size + said.size - 1)
         turn?.let { speaker.speak(it.jp.replace(" ", "")) }
     }
+    // Where to go once done; saved exactly once when the talk ends.
+    var next by remember { mutableStateOf<Page?>(null) }
     var recorded by remember { mutableStateOf(false) }
     LaunchedEffect(turn) {
         if (turn == null && !recorded) {
             recorded = true
-            progress.finish(talk.id, Config.practiceXp, emptyMap(), SessionKind.PRACTICE)
+            next = onFinished()
         }
     }
 
-    SubScreen("Talk with ${Guide.name}", onDone) {
+    SubScreen("Talk with ${Guide.name}", { onDone(next) }) {
         Row(Modifier.padding(horizontal = 20.dp), verticalAlignment = Alignment.CenterVertically) {
             GuideCharacter(
                 when {
@@ -162,7 +163,7 @@ fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onDone: () -> Unit)
             if (turn == null) {
                 Text("上手！ Great talk.", style = MaterialTheme.typography.headlineSmall, color = scheme.onBackground)
                 Text("+${Config.practiceXp} XP", color = scheme.onSurfaceVariant, modifier = Modifier.padding(top = 4.dp, bottom = 16.dp))
-                PushButton("Done", onDone)
+                PushButton("Done", { onDone(next) })
                 return@Column
             }
             note?.let { Text(it, color = scheme.error, textAlign = TextAlign.Center, modifier = Modifier.padding(bottom = 8.dp)) }
