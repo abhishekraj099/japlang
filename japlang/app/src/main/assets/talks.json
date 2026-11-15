@@ -194,11 +194,12 @@
               "next": "t3"
             },
             {
-              "jp": "ちゅうごく が すき です。",
-              "romaji": "chuugoku ga suki desu",
-              "en": "I like China.",
+              "jp": "すき じゃありません。",
+              "romaji": "suki ja arimasen",
+              "en": "No, I don't.",
               "heard": [
-                "中国が好きです"
+                "好きじゃありません",
+                "好きじゃないです"
               ],
               "next": "t3"
             }
@@ -284,15 +285,15 @@
     },
     {
       "id": "talk-ani",
-      "title": "Family and pets",
+      "title": "Pets and animals",
       "unlockAfter": "ani",
       "start": "t1",
       "turns": [
         {
           "id": "t1",
-          "jp": "いもうと は いますか。",
-          "romaji": "imouto wa imasu ka",
-          "en": "Do you have a younger sister?",
+          "jp": "いぬ は いますか。",
+          "romaji": "inu wa imasu ka",
+          "en": "Do you have a dog?",
           "answers": [
             {
               "jp": "はい、います。",
@@ -302,6 +303,15 @@
                 "はいいます"
               ],
               "next": "t2"
+            },
+            {
+              "jp": "いいえ、ねこ が います。",
+              "romaji": "iie, neko ga imasu",
+              "en": "No, I have a cat.",
+              "heard": [
+                "いいえ猫がいます"
+              ],
+              "next": "t3"
             },
             {
               "jp": "いいえ、いません。",
@@ -316,70 +326,9 @@
         },
         {
           "id": "t2",
-          "jp": "いもうと は がくせい ですか。",
-          "romaji": "imouto wa gakusei desu ka",
-          "en": "Is your younger sister a student?",
-          "answers": [
-            {
-              "jp": "はい、がくせい です。",
-              "romaji": "hai, gakusei desu",
-              "en": "Yes, she's a student.",
-              "heard": [
-                "はい学生です"
-              ],
-              "next": "t3"
-            },
-            {
-              "jp": "いいえ、せんせい です。",
-              "romaji": "iie, sensei desu",
-              "en": "No, she's a teacher.",
-              "heard": [
-                "いいえ先生です"
-              ],
-              "next": "t3"
-            }
-          ]
-        },
-        {
-          "id": "t3",
-          "jp": "いぬ は いますか。",
-          "romaji": "inu wa imasu ka",
-          "en": "Do you have a dog?",
-          "answers": [
-            {
-              "jp": "はい、います。",
-              "romaji": "hai, imasu",
-              "en": "Yes, I do.",
-              "heard": [
-                "はいいます"
-              ],
-              "next": "t4"
-            },
-            {
-              "jp": "いいえ、ねこ が います。",
-              "romaji": "iie, neko ga imasu",
-              "en": "No, I have a cat.",
-              "heard": [
-                "いいえ猫がいます"
-              ],
-              "next": "t5"
-            },
-            {
-              "jp": "いいえ、いません。",
-              "romaji": "iie, imasen",
-              "en": "No, I don't.",
-              "heard": [
-                "いいえいません"
-              ],
-              "next": "t5"
-            }
-          ]
-        },
-        {
-          "id": "t4",
-          "jp": "わたし も いぬ が すき です。ねこ も すき ですか。",
-          "romaji": "watashi mo inu ga suki desu. neko mo suki desu ka.",
-          "en": "I like dogs too. Do you like cats as well?",
+          "jp": "ねこ は すき ですか。",
+          "romaji": "neko wa suki desu ka",
+          "en": "Do you like cats?",
           "answers": [
             {
               "jp": "はい、すき です。",
@@ -388,7 +337,7 @@
               "heard": [
                 "はい好きです"
               ],
-              "next": null
+              "next": "t4"
             },
             {
               "jp": "いいえ、すき じゃありません。",
@@ -398,31 +347,58 @@
                 "いいえ好きじゃありません",
                 "いいえ好きじゃないです"
               ],
-              "next": null
+              "next": "t4"
             }
           ]
         },
         {
-          "id": "t5",
-          "jp": "わたし は ねこ が すき です。あなた は？",
-          "romaji": "watashi wa neko ga suki desu. anata wa?",
-          "en": "I like cats. How about you?",
+          "id": "t3",
+          "jp": "いぬ は すき ですか。",
+          "romaji": "inu wa suki desu ka",
+          "en": "Do you like dogs?",
           "answers": [
             {
-              "jp": "わたし も ねこ が すき です。",
-              "romaji": "watashi mo neko ga suki desu",
-              "en": "I like cats too.",
+              "jp": "はい、すき です。",
+              "romaji": "hai, suki desu",
+              "en": "Yes, I do.",
               "heard": [
-                "私も猫が好きです"
+                "はい好きです"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "いいえ、すき じゃありません。",
+              "romaji": "iie, suki ja arimasen",
+              "en": "No, I don't.",
+              "heard": [
+                "いいえ好きじゃありません",
+                "いいえ好きじゃないです"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "わたし は パンダ が すき です。あなた は？",
+          "romaji": "watashi wa panda ga suki desu. anata wa?",
+          "en": "I like pandas. How about you?",
+          "answers": [
+            {
+              "jp": "わたし も パンダ が すき です。",
+              "romaji": "watashi mo panda ga suki desu",
+              "en": "I like pandas too.",
+              "heard": [
+                "私もパンダが好きです"
               ],
               "next": null
             },
             {
-              "jp": "わたし は いぬ が すき です。",
-              "romaji": "watashi wa inu ga suki desu",
-              "en": "I like dogs.",
+              "jp": "わたし は とり が すき です。",
+              "romaji": "watashi wa tori ga suki desu",
+              "en": "I like birds.",
               "heard": [
-                "私は犬が好きです"
+                "私は鳥が好きです"
               ],
               "next": null
             }
@@ -792,11 +768,11 @@
               "next": "t3"
             },
             {
-              "jp": "いいえ、じどうしゃ で いきます。",
-              "romaji": "iie, jidousha de ikimasu",
-              "en": "No, I'm going by car.",
+              "jp": "いいえ、タクシー で いきます。",
+              "romaji": "iie, takushii de ikimasu",
+              "en": "No, I'm going by taxi.",
               "heard": [
-                "いいえ自動車で行きます"
+                "いいえタクシーで行きます"
               ],
               "next": "t3"
             }
@@ -941,7 +917,7 @@
               "heard": [
                 "すみません明日もちょっと"
               ],
-              "next": null
+              "next": "t6"
             }
           ]
         },
@@ -1017,6 +993,33 @@
               "romaji": "arigatou gozaimasu",
               "en": "Thank you very much.",
               "heard": [],
+              "next": null
+            }
+          ]
+        },
+        {
+          "id": "t6",
+          "jp": "さようなら。",
+          "romaji": "sayounara.",
+          "en": "Goodbye.",
+          "answers": [
+            {
+              "jp": "さようなら。",
+              "romaji": "sayounara",
+              "en": "Goodbye.",
+              "heard": [
+                "さよなら"
+              ],
+              "next": null
+            },
+            {
+              "jp": "すみません。さようなら。",
+              "romaji": "sumimasen. sayounara.",
+              "en": "Sorry. Goodbye.",
+              "heard": [
+                "すみませんさようなら",
+                "すみませんさよなら"
+              ],
               "next": null
             }
           ]
@@ -1379,8 +1382,8 @@
               "next": "t4"
             },
             {
-              "jp": "いいえ、どこ も いきたくない です。",
-              "romaji": "iie, doko mo ikitakunai desu",
+              "jp": "いいえ、どこも いきたくない です。",
+              "romaji": "iie, dokomo ikitakunai desu",
               "en": "No, I don't want to go anywhere.",
               "heard": [
                 "いいえどこも行きたくないです",

@@ -98,6 +98,13 @@ class Speaker(context: Context) {
         if (available) tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, "jap")
     }
 
+    /** Silences whatever is playing, so the microphone does not pick up the app's own voice. */
+    fun stop() {
+        player?.release()
+        player = null
+        if (ready) tts.stop()
+    }
+
     /** True when there is a recording of [text], so the voice is a person rather than the device's engine. */
     fun recorded(text: String) = key(text) in recordings
 

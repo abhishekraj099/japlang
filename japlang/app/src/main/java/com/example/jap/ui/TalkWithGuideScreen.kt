@@ -64,6 +64,8 @@ fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onDone: () -> Unit)
     var tapping by remember { mutableStateOf(false) }
     var note by remember { mutableStateOf<String?>(null) }
     var hint by remember { mutableStateOf(false) }
+    // The turn being listened for; a result that arrives after the learner tapped an answer is dropped.
+    var listeningFor by remember { mutableStateOf<String?>(null) }
     var romaji by rememberSaveable { mutableStateOf(true) }
     var english by rememberSaveable { mutableStateOf(false) }
     val list = rememberLazyListState()
@@ -82,7 +84,7 @@ fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onDone: () -> Unit)
 
     val speech = rememberSpeechInput(
         onResult = { heard ->
-            val t = turn ?: return@rememberSpeechInput
+            val t = turn?.takeIf { it.id == listeningFor } ?: return@rememberSpeechInput
             val a = Talks.match(heard, t.answers)
             if (a != null) answer(a) else {
                 misses++
@@ -90,16 +92,21 @@ fun TalkWithGuideScreen(talk: GuideTalk, progress: Progress, onDone: () -> Unit)
             }
         },
         onError = {
-            misses++
-            note = it
+            if (turn?.id == listeningFor) {
+                misses++
+                note = it
+            }
         }
     )
     val mic = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
-        if (granted) turn?.let { speech.start(it.jp.replace(" ", "")) } else tapping = true
+        val t = turn
+        if (granted && t != null && t.id == listeningFor) speech.start(t.jp.replace(" ", "")) else if (!granted) tapping = true
     }
 
     fun listen() {
         val t = turn ?: return
+        speaker.stop()
+        listeningFor = t.id
         val granted = ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED
         if (granted) speech.start(t.jp.replace(" ", "")) else mic.launch(Manifest.permission.RECORD_AUDIO)
     }
