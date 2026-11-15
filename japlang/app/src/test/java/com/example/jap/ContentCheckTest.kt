@@ -93,6 +93,17 @@ class ContentCheckTest {
         }
     }
 
+    /** Two practice sentences with one English line in a unit make the meaning question ambiguous. */
+    @Test
+    fun practiceEnglishIsUniqueWithinAUnit() {
+        course.getJSONArray("units").objects().forEach { u ->
+            val en = u.optJSONArray("practices")?.objects().orEmpty().flatMap { it.optJSONArray("sentences")?.objects().orEmpty() }
+                .map { it.getString("en").lowercase().filter(Char::isLetterOrDigit) }
+            val repeated = en.groupingBy { it }.eachCount().filterValues { it > 1 }.keys
+            assertTrue("${u.getString("id")} repeats English: $repeated", repeated.isEmpty())
+        }
+    }
+
     @Test
     fun mockTestQuestionsHaveOneAnswerAndDistinctOptions() {
         val exam = ContentTest.asset("exam.json")

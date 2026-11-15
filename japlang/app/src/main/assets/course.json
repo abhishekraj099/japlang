@@ -5659,7 +5659,7 @@
               "blank": 2,
               "distract": [
                 "どっち",
-                "けっこう"
+                "だれ"
               ]
             },
             {
@@ -5690,7 +5690,7 @@
               "blank": 0,
               "distract": [
                 "どう",
-                "けっこう"
+                "だれ"
               ]
             },
             {
@@ -5703,7 +5703,7 @@
               "blank": 0,
               "distract": [
                 "どっち",
-                "けっこう"
+                "だれ"
               ]
             },
             {
@@ -6488,13 +6488,13 @@
             },
             {
               "tokens": [
-                "トイレ",
+                "かいだん",
                 "は",
                 "あちら",
                 "です"
               ],
-              "romaji": "toire wa achira desu",
-              "en": "The toilet is over there.",
+              "romaji": "kaidan wa achira desu",
+              "en": "The stairs are over there.",
               "blank": 2,
               "distract": [
                 "こちら",
@@ -13872,13 +13872,14 @@
             },
             {
               "tokens": [
+                "赤い",
                 "ぼうし",
                 "を",
                 "かぶります"
               ],
-              "romaji": "boushi o kaburimasu",
-              "en": "I put on a hat.",
-              "blank": 2,
+              "romaji": "akai boushi o kaburimasu",
+              "en": "I wear a red hat.",
+              "blank": 3,
               "distract": [
                 "はきます",
                 "ぬぎます"
@@ -17348,8 +17349,8 @@
               "en": "The station is near, but the bank is far.",
               "blank": 2,
               "distract": [
-                "ちず",
-                "みち"
+                "おもい",
+                "ふとい"
               ]
             },
             {
@@ -17366,7 +17367,7 @@
               "blank": 4,
               "distract": [
                 "ちかい",
-                "まっすぐ"
+                "おもい"
               ]
             },
             {
@@ -17381,8 +17382,8 @@
               "en": "I go straight along this road.",
               "blank": 3,
               "distract": [
-                "ちず",
-                "とおい"
+                "すぐ",
+                "まだ"
               ]
             },
             {
@@ -17395,8 +17396,8 @@
               "en": "Do you have a map?",
               "blank": 0,
               "distract": [
-                "みち",
-                "まっすぐ"
+                "かさ",
+                "みち"
               ]
             },
             {
@@ -17974,14 +17975,15 @@
             {
               "tokens": [
                 "かぜ",
-                "です",
+                "を",
+                "ひきました",
                 "から、",
                 "がっこう",
                 "を",
                 "やすみます"
               ],
-              "romaji": "kaze desu kara, gakkou o yasumimasu",
-              "en": "I have a cold, so I'm staying home from school.",
+              "romaji": "kaze o hikimashita kara, gakkou o yasumimasu",
+              "en": "I caught a cold, so I'm staying home from school.",
               "distract": [
                 "あめ",
                 "に"
@@ -21514,7 +21516,7 @@
                 "なきます"
               ],
               "romaji": "neko ga nakimasu",
-              "en": "The cat is meowing.",
+              "en": "Cats meow.",
               "blank": 2,
               "distract": [
                 "とびます",
@@ -23671,8 +23673,8 @@
               "en": "I'll call a taxi.",
               "blank": 2,
               "distract": [
-                "たのみます",
-                "こたえます"
+                "こたえます",
+                "あいます"
               ]
             },
             {
@@ -23700,8 +23702,8 @@
               "en": "My name is Ken.",
               "blank": 4,
               "distract": [
-                "いいます",
-                "よびます"
+                "よびます",
+                "あいます"
               ]
             }
           ]
