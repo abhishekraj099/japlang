@@ -1,5 +1,15 @@
 package com.example.jap.ui
 
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.ui.draw.drawWithContent
+import androidx.compose.ui.graphics.BlendMode
+import androidx.compose.ui.graphics.CompositingStrategy
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.foundation.layout.windowInsetsTopHeight
+import androidx.compose.foundation.layout.statusBars
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.tween
@@ -223,7 +233,9 @@ fun StreakScreen(progress: Progress, onBack: () -> Unit, onStudy: () -> Unit) {
 
     BackHandler(onBack = onBack)
     Surface(Modifier.fillMaxSize(), color = scheme.background) {
-        Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+        val scroll = rememberScrollState()
+        Box(Modifier.fillMaxSize()) {
+        Column(Modifier.fillMaxSize().verticalScroll(scroll)) {
             Box {
                 // Sky behind the top of the page; it scrolls away with the header. A day sky in light mode and a
                 // night sky in dark mode, so the theme's text always reads against it.
@@ -232,7 +244,8 @@ fun StreakScreen(progress: Progress, onBack: () -> Unit, onStudy: () -> Unit) {
                     if (night) nightSky(scheme.background) else {
                         drawRect(Brush.verticalGradient(listOf(Sky, SkyFade, scheme.background)))
                         cloud(size.width * 0.06f, size.height * 0.26f, 1.1f)
-                        cloud(size.width * 0.55f, size.height * 0.10f, 1.3f)
+                        // Kept below the title row so it never sits on top of "Streak".
+                        cloud(size.width * 0.66f, size.height * 0.19f, 1.3f)
                         cloud(size.width * 0.70f, size.height * 0.48f, 1.0f)
                     }
                 }
@@ -266,15 +279,22 @@ fun StreakScreen(progress: Progress, onBack: () -> Unit, onStudy: () -> Unit) {
             }
             }
                 Column(Modifier.navigationBarsPadding().padding(start = 20.dp, end = 20.dp, bottom = 20.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                    Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {
-                        StatTile(Modifier.weight(1f), "$studiedThisMonth", "Days studied this month") { SakuraIcon(30.dp) }
-                        StatTile(Modifier.weight(1f), "$savedThisMonth", "Days saved") { OmamoriIcon(30.dp) }
+                    Row(Modifier.height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+                        StatTile(Modifier.weight(1f).fillMaxHeight(), "$studiedThisMonth", "Days studied this month") { SakuraIcon(30.dp) }
+                        StatTile(Modifier.weight(1f).fillMaxHeight(), "$savedThisMonth", "Days saved") { OmamoriIcon(30.dp) }
                     }
                     JourneyCard(progress)
                     GoalCard(progress)
                     CalendarCard(progress, month, firstDay, length, monthsBack, onMonth = { monthsBack = it })
                     WalletCard(progress)
                 }
+        }
+        // Once the page scrolls, a strip under the status bar keeps the clock from sitting on the cards.
+        val scrim by animateFloatAsState(if (scroll.value > 0) 1f else 0f, label = "statusScrim")
+        Box(
+            Modifier.fillMaxWidth().windowInsetsTopHeight(WindowInsets.statusBars)
+                .graphicsLayer { alpha = scrim }.background(scheme.background)
+        )
         }
     }
 }
@@ -363,7 +383,14 @@ private fun JourneyCard(progress: Progress) {
             Text("Water it each day you study. Here's how it grows over a year.", style = MaterialTheme.typography.bodyMedium,
                 color = scheme.onSurfaceVariant, modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp))
             Row(
-                Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()).padding(horizontal = 10.dp, vertical = 10.dp),
+                Modifier.fillMaxWidth()
+                    // The right edge fades out, so stages beyond it read as "scroll for more" rather than cut off.
+                    .graphicsLayer(compositingStrategy = CompositingStrategy.Offscreen)
+                    .drawWithContent {
+                        drawContent()
+                        drawRect(Brush.horizontalGradient(0.8f to Color.Black, 1f to Color.Transparent), blendMode = BlendMode.DstIn)
+                    }
+                    .horizontalScroll(rememberScrollState()).padding(horizontal = 10.dp, vertical = 10.dp),
                 horizontalArrangement = Arrangement.spacedBy(6.dp)
             ) {
                 Tree.Stage.entries.forEachIndexed { i, stage ->
@@ -475,7 +502,7 @@ private fun Card(modifier: Modifier = Modifier, content: @Composable () -> Unit)
 private fun StatTile(modifier: Modifier, value: String, label: String, icon: @Composable () -> Unit) {
     val scheme = MaterialTheme.colorScheme
     Card(modifier) {
-        Column(Modifier.fillMaxWidth().padding(16.dp)) {
+        Column(Modifier.fillMaxSize().padding(16.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 icon()
                 Text(value, fontSize = 26.sp, fontWeight = FontWeight.Bold, color = scheme.onSurface, modifier = Modifier.padding(start = 8.dp))
@@ -563,10 +590,10 @@ private fun CalendarCard(progress: Progress, month: Calendar, firstDay: Long, le
                                 Text(
                                     "$date",
                                     style = MaterialTheme.typography.bodyLarge,
-                                    fontWeight = if (studied || day == today) FontWeight.Bold else FontWeight.Normal,
+                                    fontWeight = if (studied || saved || day == today) FontWeight.Bold else FontWeight.Normal,
+                                    // The blossom carries the colour; the number stays in the text colour so it reads on top of it.
                                     color = when {
-                                        studied -> Pink
-                                        saved -> Blue
+                                        studied || saved -> scheme.onSurface
                                         day > today -> scheme.onSurfaceVariant.copy(alpha = 0.55f)
                                         else -> scheme.onSurfaceVariant
                                     }
