@@ -14056,10 +14056,10 @@
               ],
               "romaji": "tomodachi ga hitori dake kimashita",
               "en": "Only one friend came.",
-              "blank": 2,
+              "blank": 3,
               "distract": [
-                "ふたり",
-                "ひとつ"
+                "しか",
+                "ぐらい"
               ]
             }
           ],
@@ -15303,6 +15303,8 @@
             },
             {
               "tokens": [
+                "ケンさん",
+                "は",
                 "にほんご",
                 "と",
                 "えいご",
@@ -15312,8 +15314,8 @@
                 "上手",
                 "ですか"
               ],
-              "romaji": "nihongo to eigo to dochira ga jouzu desu ka",
-              "en": "Which are you better at, Japanese or English?",
+              "romaji": "Ken-san wa nihongo to eigo to dochira ga jouzu desu ka",
+              "en": "Which is Ken better at, Japanese or English?",
               "distract": [
                 "どれ",
                 "を"
@@ -15321,6 +15323,8 @@
             },
             {
               "tokens": [
+                "ケンさん",
+                "は",
                 "えいご",
                 "の",
                 "ほう",
@@ -15328,8 +15332,8 @@
                 "上手",
                 "です"
               ],
-              "romaji": "eigo no hou ga jouzu desu",
-              "en": "I'm better at English.",
+              "romaji": "Ken-san wa eigo no hou ga jouzu desu",
+              "en": "Ken is better at English.",
               "distract": [
                 "より",
                 "を"
@@ -15547,7 +15551,7 @@
           },
           {
             "speaker": "Ken",
-            "jp": "すし は 高い です が、おいしいですね。",
+            "jp": "すし は 高い です が、おいしい ですね。",
             "romaji": "sushi wa takai desu ga, oishii desu ne.",
             "en": "Sushi is expensive, but it's delicious, isn't it?",
             "heard": [
@@ -16381,7 +16385,7 @@
             "speaker": "Ken",
             "jp": "いいえ、なにも たべたくない です。",
             "romaji": "iie, nanimo tabetakunai desu.",
-            "en": "No, I don't want anything to eat.",
+            "en": "No, I don't feel like eating anything.",
             "heard": [
               "いいえ何も食べたくないです"
             ]
@@ -17597,7 +17601,7 @@
             "speaker": "Yuki",
             "jp": "あした、9じ に きて ください。",
             "romaji": "ashita, kuji ni kite kudasai.",
-            "en": "Tomorrow, please come at nine.",
+            "en": "Nine o'clock tomorrow, please.",
             "heard": [
               "明日9時に来てください",
               "明日九時に来てください"
