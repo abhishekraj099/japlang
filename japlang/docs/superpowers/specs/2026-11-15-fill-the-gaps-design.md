@@ -57,3 +57,21 @@ guard tests, Kotlin style, commits). Existing ids never change. Pre-release, no 
 ## Order
 
 N5 vocabulary → N4 grammar (2 tasks of 6 units) → N4 mock test → stories & talks → adaptive learning → review sheet.
+
+## Decisions after the builder check (controller's calls; the owner can overrule)
+
+1. **N4 units teach their own words.** Like every existing unit, each practice set has 3–5 new word items (common N4
+   vocabulary that the grammar needs); sentences may use them plus everything earlier. This also grows vocabulary
+   toward N4. Kanji in new words only if taught (N5/N4 kanji) — otherwise kana.
+2. **Verb forms are already taught**: て (teform), ない (nai), た (ta), dictionary (cap1), potential (cap2). Passive and
+   causative teach their own forms in their first set's note, the way cap2 teaches the potential form.
+3. **Exams.** exam.json stays the N5 paper (unchanged id/content); new exam_n4.json in the same format. Exam becomes
+   a list of papers loaded at start (`Exams.papers`, each with `id` "n5"/"n4"); best score is kept per paper
+   (`bestExam` stays N5 so existing progress/trophies keep working; N4 has its own key). N4 is open to everyone,
+   passPercent 60 like N5, ~60 questions in N5's section ratio, no new certificate.
+4. **Skill mapping (one skill per exercise):** listen-mode Choice → LISTENING; fill-in Choice, Build and grammar-point
+   exercises → GRAMMAR; other Choice, Match and TypeIn → READING; Write and Dictate → WRITING; Speak → SPEAKING.
+   Each skill keeps its last 50 graded answers (rolling); a percentage is shown only after 10 answers; Smart practice
+   picks the lowest-percentage skill among those with ≥10 answers, else the least-practised skill.
+5. **N5 word list.** No official list exists; the writer reproduces a standard community JLPT N5 list (~700 common
+   words) into a test fixture, and the coverage test pins it. The owner can replace the fixture with a list they trust.
