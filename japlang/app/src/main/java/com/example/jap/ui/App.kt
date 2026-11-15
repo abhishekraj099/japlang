@@ -95,6 +95,7 @@ private sealed interface Page {
     data object Stories : Page
     /** [back] is where leaving the story returns: the story list or the tabs. */
     class Story(val story: com.example.jap.data.Story, val back: Page?) : Page
+    class TalkWith(val talk: com.example.jap.data.GuideTalk) : Page
 }
 
 @Composable
@@ -252,6 +253,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
             run(s.title, SessionKind.PRACTICE, Config.practiceXp, Exercises.forStory(s), lessonId = s.id,
                 color = Course.units.firstOrNull { it.id == s.unlockAfter }?.let { Color(it.color) } ?: scheme.secondary)
         })
+        is Page.TalkWith -> TalkWithGuideScreen(page.talk, progress, onDone = { go(Page.Practice) })
         Page.Ranking -> SubScreen("Ranking", onBack = { go(null) }) { LeagueScreen(progress) }
         Page.Practice -> SubScreen("Practice", onBack = { go(null) }, action = { GuideHelpButton("practice") }) {
             PracticeScreen(
@@ -269,7 +271,8 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                 onWriting = { items -> run("Writing practice", SessionKind.PRACTICE, Config.practiceXp, Exercises.forWriting(items), review = "writing") },
                 onGame = { go(Page.Game()) },
                 onExam = { go(Page.Test) },
-                onStories = { go(Page.Stories) }
+                onStories = { go(Page.Stories) },
+                onTalk = { go(Page.TalkWith(it)) }
             )
         }
         null -> Scaffold(

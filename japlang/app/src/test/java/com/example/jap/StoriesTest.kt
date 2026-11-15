@@ -4,7 +4,6 @@ import com.example.jap.data.Choice
 import com.example.jap.data.Course
 import com.example.jap.data.Exercises
 import com.example.jap.data.Stories
-import org.json.JSONArray
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -40,45 +39,11 @@ class StoriesTest {
             "しましょう", // します + ～ましょう (rel1)
             "たべられません", // たべられます, can-do form, + ～ません (cap2)
         )
-
-        private fun JSONArray.objects() = List(length()) { getJSONObject(it) }
-
-        /** Words of a token or line: punctuation splits words and punctuation alone is not a word. */
-        private fun words(text: String) = text.split(Regex("[、。！？「」『』…（）()?!,.・〜～\\s]+")).filter { it.isNotEmpty() }
-    }
-
-    private val course: JSONObject = ContentTest.asset("course.json")
-
-    private val basicUnits: List<String> by lazy {
-        Course.courses.first().unitIds.filterNot { id -> Course.units.first { it.id == id }.alphabet }
-    }
-
-    /** Sentence tokens, dialogue words and item spellings and readings anywhere in [unit]. */
-    private fun collect(node: Any?, out: MutableSet<String>) {
-        when (node) {
-            is JSONObject -> {
-                node.optJSONArray("tokens")?.let { t -> (0 until t.length()).forEach { out += words(t.getString(it)) } }
-                if (node.has("speaker") && node.has("jp")) out += words(node.getString("jp"))
-                if (node.has("kind") && node.has("jp")) {
-                    out += words(node.getString("jp"))
-                    out += words(node.optString("reading"))
-                }
-                node.keys().forEach { collect(node.get(it), out) }
-            }
-            is JSONArray -> (0 until node.length()).forEach { collect(node.get(it), out) }
-        }
-    }
-
-    /** Everything taught in the Basic course up to and including [unitId], alphabet first. */
-    private fun known(unitId: String): Set<String> {
-        val order = Course.courses.first().unitIds
-        val byId = course.getJSONArray("units").objects().associateBy { it.getString("id") }
-        return mutableSetOf<String>().also { out -> order.take(order.indexOf(unitId) + 1).forEach { collect(byId[it], out) } }
     }
 
     @Test
     fun storiesLoad() {
-        val every3rd = basicUnits.filterIndexed { i, _ -> (i + 1) % 3 == 0 }
+        val every3rd = KnownWords.basicUnits.filterIndexed { i, _ -> (i + 1) % 3 == 0 }
         assertEquals(19, every3rd.size)
         assertTrue(Stories.all.size >= 19)
         assertEquals(every3rd, Stories.all.map { it.unlockAfter })
@@ -100,8 +65,8 @@ class StoriesTest {
     @Test
     fun storiesUseOnlyKnownWords() {
         val unknown = Stories.all.flatMap { s ->
-            val known = known(s.unlockAfter)
-            s.lines.flatMap { l -> l.tokens.flatMap(::words) }.filter { it !in known && it !in allowedForms }.map { "${s.id}: $it" }
+            val known = KnownWords.known(s.unlockAfter)
+            s.lines.flatMap { l -> l.tokens.flatMap(KnownWords::words) }.filter { it !in known && it !in allowedForms }.map { "${s.id}: $it" }
         }
         assertTrue("Not taught yet: $unknown", unknown.isEmpty())
     }

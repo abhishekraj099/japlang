@@ -16,6 +16,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.MenuBook
 import androidx.compose.material.icons.rounded.Bolt
+import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material.icons.rounded.ChevronRight
 import androidx.compose.material.icons.rounded.Draw
 import androidx.compose.material.icons.rounded.Edit
@@ -38,11 +39,14 @@ import androidx.compose.ui.unit.sp
 import com.example.jap.data.Config
 import com.example.jap.data.Course
 import com.example.jap.data.Exam
+import com.example.jap.data.Guide
+import com.example.jap.data.GuideTalk
 import com.example.jap.data.Item
 import com.example.jap.data.Memory
 import com.example.jap.data.Progress
 import com.example.jap.data.Review
 import com.example.jap.data.Stories
+import com.example.jap.data.Talks
 
 internal const val SESSION_SIZE = 12
 
@@ -58,6 +62,7 @@ fun PracticeScreen(
     onGame: () -> Unit,
     onExam: () -> Unit,
     onStories: () -> Unit,
+    onTalk: (GuideTalk) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val scheme = MaterialTheme.colorScheme
@@ -146,6 +151,7 @@ fun PracticeScreen(
             "Short stories written with the words you know. Unlocked: ${Stories.unlocked(progress.done).size} of ${Stories.all.size}.",
             onStories
         )
+        TalkCard(progress.done, onTalk)
         Activity(Icons.Rounded.Mic, "Speaking", "Say everyday phrases aloud and get them checked.", onSpeak)
         Box(Modifier.guideTarget("writing-practice")) {
             Activity(
@@ -178,6 +184,40 @@ fun PracticeScreen(
             "A timed practice test with explanations." + if (progress.bestExam >= 0) " Best: ${progress.bestExam}%." else "",
             onExam
         )
+    }
+}
+
+/** The guide's spoken mini-conversations: each unlocked one is listed so it starts in one tap. */
+@Composable
+private fun TalkCard(done: Set<String>, onTalk: (GuideTalk) -> Unit) {
+    val scheme = MaterialTheme.colorScheme
+    val open = Talks.unlocked(done)
+    Panel(Modifier.fillMaxWidth()) {
+        Column(Modifier.fillMaxWidth().padding(14.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Box(Modifier.size(52.dp).clip(CircleShape).background(scheme.primaryContainer), contentAlignment = Alignment.Center) {
+                    GuideCharacter("wave", 36.dp)
+                }
+                Column(Modifier.weight(1f).padding(start = 14.dp)) {
+                    Text("Talk with ${Guide.name}", fontSize = 17.sp, fontWeight = FontWeight.Bold, color = scheme.onSurface)
+                    Text(
+                        if (open.isEmpty()) "Finish ${Course.units.firstOrNull { it.id == Talks.all.firstOrNull()?.unlockAfter }?.title.orEmpty()} to unlock your first talk."
+                        else "Answer ${Guide.name}'s questions out loud. Unlocked: ${open.size} of ${Talks.all.size}.",
+                        style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant
+                    )
+                }
+            }
+            open.forEach { talk ->
+                Row(
+                    Modifier.fillMaxWidth().padding(top = 8.dp).clip(CircleShape).clickable(role = Role.Button) { onTalk(talk) }.padding(horizontal = 12.dp, vertical = 10.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(talk.title, Modifier.weight(1f), color = scheme.onSurface, fontWeight = FontWeight.SemiBold)
+                    if (talk.id in done) Icon(Icons.Rounded.CheckCircle, contentDescription = "Finished", tint = scheme.tertiary)
+                    Icon(Icons.Rounded.ChevronRight, contentDescription = null, tint = scheme.onSurfaceVariant)
+                }
+            }
+        }
     }
 }
 
