@@ -145,7 +145,8 @@ fun LearnScreen(
         if (target > 0) list.scrollToItem(starts[target])
     }
     val scope = rememberCoroutineScope()
-    val label = if (track.levels.size > 1) "${track.title} · ${track.levels[visible].name}" else track.title
+    // The level name alone ("Alphabet", "Kanji N4") fits the top bar and already says which course it is.
+    val label = if (track.levels.size > 1) track.levels[visible].name else track.title
 
     GuideTour("learn")
     Column(modifier.fillMaxSize()) {

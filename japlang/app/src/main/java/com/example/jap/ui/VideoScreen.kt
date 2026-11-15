@@ -1,5 +1,15 @@
 package com.example.jap.ui
 
+import androidx.compose.material.icons.rounded.Label
+import androidx.compose.material.icons.rounded.Podcasts
+import androidx.compose.material.icons.rounded.Flight
+import androidx.compose.material.icons.rounded.Restaurant
+import androidx.compose.material.icons.rounded.School
+import androidx.compose.material.icons.rounded.Forum
+import androidx.compose.material.icons.rounded.WbSunny
+import androidx.compose.material.icons.rounded.Movie
+import androidx.compose.material.icons.rounded.AutoAwesome
+import androidx.compose.ui.graphics.vector.ImageVector
 import android.text.format.DateUtils
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
@@ -172,8 +182,8 @@ fun VideoScreen(
 
         // Topic chips.
         LazyRow(contentPadding = PaddingValues(horizontal = 20.dp, vertical = 16.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-            item { TopicChip("✨", "All", topic == null) { topic = null } }
-            items(source.topics(), key = { it.id }) { t -> TopicChip(t.icon, t.name, topic == t.id) { topic = t.id } }
+            item { TopicChip(Icons.Rounded.AutoAwesome, "All", topic == null) { topic = null } }
+            items(source.topics(), key = { it.id }) { t -> TopicChip(topicIcon(t.id), t.name, topic == t.id) { topic = t.id } }
         }
 
         when {
@@ -256,19 +266,31 @@ fun VideoScreen(
 }
 
 @Composable
-private fun TopicChip(icon: String, name: String, selected: Boolean, onClick: () -> Unit) {
+private fun TopicChip(icon: ImageVector, name: String, selected: Boolean, onClick: () -> Unit) {
     val scheme = MaterialTheme.colorScheme
     Row(
         Modifier.clip(CircleShape).background(if (selected) scheme.primaryContainer else scheme.surfaceVariant)
             .clickable(role = Role.Tab, onClick = onClick).padding(horizontal = 16.dp, vertical = 10.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text(icon, fontSize = 16.sp)
+        Icon(icon, contentDescription = null, tint = if (selected) scheme.onPrimaryContainer else scheme.onSurfaceVariant, modifier = Modifier.size(18.dp))
         Text(
             name, color = if (selected) scheme.onPrimaryContainer else scheme.onSurface,
             fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium, modifier = Modifier.padding(start = 6.dp)
         )
     }
+}
+
+/** Vector icons for the topic chips: emoji render differently on every phone and can't follow the theme. */
+private fun topicIcon(id: String): ImageVector = when (id) {
+    "anime" -> Icons.Rounded.Movie
+    "daily" -> Icons.Rounded.WbSunny
+    "conversation" -> Icons.Rounded.Forum
+    "education" -> Icons.Rounded.School
+    "food" -> Icons.Rounded.Restaurant
+    "travel" -> Icons.Rounded.Flight
+    "podcast" -> Icons.Rounded.Podcasts
+    else -> Icons.Rounded.Label
 }
 
 @Composable
