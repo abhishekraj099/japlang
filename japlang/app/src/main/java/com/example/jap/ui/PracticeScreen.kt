@@ -67,6 +67,10 @@ fun PracticeScreen(
         Review.plan(progress.dueSchedule(writing = true, System.currentTimeMillis()), progress.reviewedToday(writing = true), progress.daysAway)
     }
     val writeNew = remember(srs, progress.writeSrs) { progress.writeNew() }
+    // Grammar points come back inside a revision, a few per session, and are not part of the daily cap.
+    val grammarDue = remember(srs) { minOf(Review.dueGrammar(srs).size, GRAMMAR_PER_SESSION) }
+    val dueToday = plan.today.size + grammarDue
+    val items = remember(srs) { Review.itemsOnly(srs) }
 
     GuideTour("practice")
     Column(
@@ -79,39 +83,42 @@ fun PracticeScreen(
                     Column(Modifier.weight(1f)) {
                         Text("Revision", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold, color = scheme.onSurface)
                         Text(
-                            if (plan.today.isEmpty()) "Your memory is up to date" else "≈ ${minutesFor(plan.today.size)} min · weakest first",
+                            if (dueToday == 0) "Your memory is up to date" else "≈ ${minutesFor(dueToday)} min · weakest first",
                             style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant
                         )
                     }
                     // Only today's share is shown, never the whole backlog.
                     Column(horizontalAlignment = Alignment.End) {
-                        Text("${plan.today.size}", fontSize = 36.sp, fontWeight = FontWeight.Bold, color = scheme.primary, lineHeight = 38.sp)
+                        Text("$dueToday", fontSize = 36.sp, fontWeight = FontWeight.Bold, color = scheme.primary, lineHeight = 38.sp)
                         Text("due today", style = MaterialTheme.typography.labelMedium, color = scheme.onSurfaceVariant)
                     }
                 }
-                if (srs.isNotEmpty()) {
+                if (items.isNotEmpty()) {
                     Text(
-                        "Memory strength · ${srs.size} items",
+                        "Memory strength · ${items.size} items",
                         style = MaterialTheme.typography.labelLarge, color = scheme.onSurfaceVariant,
                         modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
                     )
-                    MemoryStrength(srs)
+                    MemoryStrength(items)
                 }
                 Text(
                     when {
                         learned.isEmpty() -> "Finish a lesson and what you learn will come back here for review."
+                        plan.capReached && grammarDue > 0 ->
+                            "You've done today's ${Config.reviewDailyCap} word reviews. $grammarDue grammar ${if (grammarDue == 1) "point is" else "points are"} still due."
                         plan.capReached -> "You've done today's ${Config.reviewDailyCap} reviews. Great work! The rest will be here tomorrow."
                         plan.welcomeBack -> "Welcome back! Catch-up mode: these are today's reviews, weakest words first. " +
                             "The rest are spread over the next ${plan.daysToClear - 1} days."
                         plan.catchUp -> "Catch-up mode: weakest words first. About ${plan.daysToClear} days to catch up."
+                        plan.backlog == 0 && grammarDue > 0 ->
+                            "Some grammar points are starting to fade. Reviewing them now makes each one last longer."
                         plan.backlog == 0 -> "Nothing is due. Each word comes back just before you'd forget it."
                         else -> "These words are starting to fade. Reviewing them now makes each memory last longer."
                     },
                     color = scheme.onSurfaceVariant,
                     modifier = Modifier.padding(top = 14.dp, bottom = 16.dp)
                 )
-                // Grammar points come back inside a revision, so they alone are enough to start one.
-                val grammarDue = minOf(Review.dueGrammar(srs).size, GRAMMAR_PER_SESSION)
+                // Due grammar alone is enough to start a revision.
                 val count = minOf(plan.today.size, SESSION_SIZE) + grammarDue
                 PushButton(
                     if (count == 0) "Nothing due" else "Start revision · $count",

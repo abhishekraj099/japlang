@@ -140,10 +140,10 @@ fun JapApp(progress: Progress) {
     }
 }
 
-/** The first lesson on the path the learner has not finished. */
 /** Due grammar points added to one revision session, on top of its items. */
 internal const val GRAMMAR_PER_SESSION = 3
 
+/** The first lesson on the path the learner has not finished. */
 private fun nextLesson(progress: Progress): Lesson? = Course.lessons.firstOrNull { it.id !in progress.done }
 
 /** A run through one course lesson, in its unit's colour. */
@@ -194,7 +194,8 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         val firstToday = !progress.studiedToday
         progress.finish(session.lessonId, o.xp, o.results, session.kind, o.perfect, o.answered, o.correct, o.bestRun, o.writeResults)
         when (session.review) {
-            "reading" -> progress.addReviewed(writing = false, count = o.results.size)
+            // Grammar points are limited per session instead, so only items count toward the daily cap.
+            "reading" -> progress.addReviewed(writing = false, count = Review.itemsOnly(o.results).size)
             "writing" -> progress.addReviewed(writing = true, count = o.writeResults.size)
         }
         val unit = session.testOut

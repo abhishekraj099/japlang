@@ -122,13 +122,7 @@ fun RevisionSummary(
     val memories = if (writing) progress.writeSrs else progress.srs
     // The change each answer makes, worked out before the progress is saved.
     val now = remember { System.currentTimeMillis() }
-    val changes = remember(grades) {
-        grades.mapNotNull { (id, grade) ->
-            val item = Course.item(id) ?: return@mapNotNull null
-            val before = memories[id]
-            Change(item.jp, item.label, before, Memory.next(before, grade, now), grade)
-        }.sortedByDescending { it.after.stability / (it.before?.stability ?: 0.1f) }
-    }
+    val changes = remember(grades) { memoryChanges(grades, memories, now) }
     val stronger = changes.count { it.grew }
     val slipped = changes.count { it.grade == Memory.Grade.AGAIN }
     // Reviewing long before an item is due adds little: memory grows most when recall has started to fade.
@@ -217,7 +211,20 @@ fun RevisionSummary(
 }
 
 /** What one answer did to one memory. */
-private class Change(val jp: String, val meaning: String, val before: Srs?, val after: Srs, val grade: Memory.Grade) {
+/**
+ * What each graded answer does to its memory, the biggest gains first. Items show their Japanese and label; grammar points
+ * show their pattern and title. Ids the course no longer has are left out.
+ */
+internal fun memoryChanges(grades: Map<String, Memory.Grade>, memories: Map<String, Srs>, now: Long): List<Change> =
+    grades.mapNotNull { (id, grade) ->
+        val (jp, meaning) = Course.item(id)?.let { it.jp to it.label }
+            ?: Course.grammarPoint(id)?.let { it.note.pattern to it.note.title }
+            ?: return@mapNotNull null
+        val before = memories[id]
+        Change(jp, meaning, before, Memory.next(before, grade, now), grade)
+    }.sortedByDescending { it.after.stability / (it.before?.stability ?: 0.1f) }
+
+internal class Change(val jp: String, val meaning: String, val before: Srs?, val after: Srs, val grade: Memory.Grade) {
     /** Grew by a meaningful amount: at least 5% longer-lasting, or newly learned. */
     val grew: Boolean get() = grade != Memory.Grade.AGAIN && after.stability >= (before?.stability ?: 0f) * 1.05f
 }

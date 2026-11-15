@@ -4,8 +4,10 @@ import com.example.jap.data.Choice
 import com.example.jap.data.Course
 import com.example.jap.data.Exercises
 import com.example.jap.data.LessonType
+import com.example.jap.data.Memory
 import com.example.jap.data.Review
 import com.example.jap.data.Srs
+import com.example.jap.ui.memoryChanges
 import org.json.JSONArray
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
@@ -91,5 +93,24 @@ class GrammarReviewTest {
         )
         assertEquals(listOf(overdue.id, due.id), Review.dueGrammar(srs, now).map { it.id })
         assertFalse(Review.dueGrammar(srs, now).any { it.id == later.id })
+    }
+
+    @Test
+    fun grammarDoesNotCountAsItems() {
+        val point = Course.grammar.first()
+        val results = mapOf("h-a" to Memory.Grade.GOOD, point.id to Memory.Grade.GOOD)
+        // The daily cap, the learned badge and memory strength count only words and characters.
+        assertEquals(setOf("h-a"), Review.itemsOnly(results).keys)
+    }
+
+    @Test
+    fun revisionSummaryShowsGrammarLikeItems() {
+        val point = Course.grammar.first()
+        val grades = mapOf("h-a" to Memory.Grade.GOOD, point.id to Memory.Grade.AGAIN, "g-nope-9" to Memory.Grade.GOOD)
+        val changes = memoryChanges(grades, emptyMap(), 100 * DAY)
+        assertEquals(2, changes.size)
+        val g = changes.single { it.jp == point.note.pattern }
+        assertEquals(point.note.title, g.meaning)
+        assertEquals(Memory.Grade.AGAIN, g.grade)
     }
 }

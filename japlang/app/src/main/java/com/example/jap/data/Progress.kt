@@ -540,7 +540,7 @@ class Progress(context: Context) {
         val value = when (rule.metric) {
             BadgeMetric.XP -> xp
             BadgeMetric.STREAK -> streak
-            BadgeMetric.LEARNED -> srs.keys.count { Course.grammarPoint(it) == null } // words and characters, not grammar points
+            BadgeMetric.LEARNED -> Review.itemsOnly(srs).size
             BadgeMetric.EXAM -> bestExam
             BadgeMetric.RUN -> bestRun
             BadgeMetric.PROTECTED -> protectedDays.size

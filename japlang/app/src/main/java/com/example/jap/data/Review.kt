@@ -46,6 +46,9 @@ object Review {
         if (due) plan.today.take(size)
         else srs.entries.sortedBy { Memory.retrievability(it.value, now) }.mapNotNull { Course.item(it.key) }.filter(Course::quizzable).take(size)
 
+    /** [memories] without grammar points: what counts as words and characters, for the daily cap, badges and memory strength. */
+    fun <V> itemsOnly(memories: Map<String, V>): Map<String, V> = memories.filterKeys { Course.grammarPoint(it) == null }
+
     /** Grammar points due by [now], most overdue first; item and unknown ids are left out. */
     fun dueGrammar(srs: Map<String, Srs>, now: Long = System.currentTimeMillis()): List<GrammarPoint> =
         srs.entries.filter { it.value.due <= now }.sortedBy { it.value.due }.mapNotNull { Course.grammarPoint(it.key) }
