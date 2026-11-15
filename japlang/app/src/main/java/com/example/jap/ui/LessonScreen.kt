@@ -178,9 +178,9 @@ fun LessonScreen(
     var paused by remember { mutableStateOf(false) }
     var explaining by remember { mutableStateOf(false) }
     var tuning by remember { mutableStateOf(false) }
-    speaker.muted = !progress.lessonAudio
     // The mute is for lessons only; the speaker is shared with Talk, stories and the guide.
-    DisposableEffect(Unit) { onDispose { speaker.muted = false } }
+    // Set in the effect, not during composition: on "Keep going" the old screen's dispose runs before the new one's start.
+    DisposableEffect(progress.lessonAudio) { speaker.muted = !progress.lessonAudio; onDispose { speaker.muted = false } }
     LocalChime.current.enabled = progress.soundEffects
     val display = Display(progress.showKanji, progress.showReading, progress.showRomaji, progress.showTitle, FontScales[progress.fontStep.coerceIn(0, 5)])
     val queue = remember { mutableStateListOf<Exercise>().also { it.addAll(session.exercises) } }
