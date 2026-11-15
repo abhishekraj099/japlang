@@ -2,7 +2,7 @@
   "talks": [
     {
       "id": "talk-b1",
-      "title": "Nice to meet you",
+      "title": "Meet your guide",
       "unlockAfter": "b1",
       "start": "t1",
       "turns": [
@@ -138,7 +138,7 @@
     },
     {
       "id": "talk-b2",
-      "title": "Do you like Japan?",
+      "title": "Where are you from?",
       "unlockAfter": "b2",
       "start": "t1",
       "turns": [
@@ -408,7 +408,7 @@
     },
     {
       "id": "talk-num",
-      "title": "At the café",
+      "title": "Ordering drinks",
       "unlockAfter": "num",
       "start": "t1",
       "turns": [
@@ -701,7 +701,7 @@
     },
     {
       "id": "talk-traf",
-      "title": "Where are you going?",
+      "title": "Getting around town",
       "unlockAfter": "traf",
       "start": "t1",
       "turns": [
@@ -863,7 +863,7 @@
     },
     {
       "id": "talk-rel1",
-      "title": "Lunch together?",
+      "title": "Making a plan",
       "unlockAfter": "rel1",
       "start": "t1",
       "turns": [

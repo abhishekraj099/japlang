@@ -107,14 +107,9 @@ import java.util.Date
 import java.util.Locale
 
 /** Where the shortcuts on the Me tab lead. */
-enum class MeLink { PRACTICE, TALK, WORDS, GAME, EXAM, TROPHIES, TIPS, RANKING, SETTINGS }
+enum class MeLink { TROPHIES, TIPS, RANKING, SETTINGS }
 
 private val links = listOf(
-    Triple(MeLink.PRACTICE, Icons.Rounded.FitnessCenter, "Practice"),
-    Triple(MeLink.TALK, Icons.Rounded.RecordVoiceOver, "Role-play"),
-    Triple(MeLink.WORDS, Icons.Rounded.Style, "Words"),
-    Triple(MeLink.GAME, Icons.Rounded.Bolt, "Speed round"),
-    Triple(MeLink.EXAM, Icons.Rounded.Quiz, "JLPT test"),
     Triple(MeLink.TROPHIES, Icons.Rounded.EmojiEvents, "Trophies"),
     Triple(MeLink.TIPS, Icons.Rounded.Lightbulb, "Tips"),
     Triple(MeLink.RANKING, Icons.Rounded.Leaderboard, "Ranking"),
@@ -135,7 +130,7 @@ fun MeScreen(progress: Progress, onLink: (MeLink) -> Unit, modifier: Modifier = 
         }
         Panel(Modifier.fillMaxWidth().guideTarget("me-links")) {
             Column(Modifier.fillMaxWidth().padding(vertical = 12.dp)) {
-                links.filter { it.first != MeLink.RANKING || progress.rankingOn }.chunked(3).forEach { row ->
+                links.filter { it.first != MeLink.RANKING || progress.rankingOn }.chunked(4).forEach { row ->
                     Row(Modifier.fillMaxWidth()) {
                         row.forEach { (link, icon, label) ->
                             Column(

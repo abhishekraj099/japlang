@@ -1,5 +1,9 @@
 package com.example.jap.ui
 
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material.icons.rounded.FitnessCenter
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.offset
 import androidx.compose.animation.Crossfade
@@ -63,7 +67,7 @@ private const val MIN_LEARNED = 5
 private val tabs = listOf<Pair<ImageVector?, String>>(
     Icons.AutoMirrored.Rounded.MenuBook to "Learn",
     null to "Alphabet",
-    Icons.Rounded.AutoAwesome to "Lesson+",
+    Icons.Rounded.FitnessCenter to "Practice",
     Icons.Rounded.SmartDisplay to "Video",
     Icons.Rounded.Person to "Me"
 )
@@ -82,7 +86,7 @@ internal sealed interface Page {
     data object Test : Page
     data object Placement : Page
     data object Streak : Page
-    data object Practice : Page
+    data object Topics : Page
     data object Trophies : Page
     data object Tips : Page
     data object Ranking : Page
@@ -243,13 +247,13 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
             run("${s.title} · ${s.parts[i].title}", SessionKind.LESSON, Config.lessonXp, Exercises.forLesson(Scenarios.lesson(s, i)), lessonId = s.partId(i), color = Color(s.color))
         })
         Page.Situations -> AllScenariosScreen(progress, onScenario = { go(Page.Situation(it)) }, onBack = { go(null) })
-        Page.Talk -> SubScreen("Role-play", onBack = { go(null) }) { TalkScreen(onScene = { go(Page.RolePlay(it)) }) }
+        Page.Talk -> SubScreen("Conversations", onBack = { go(null) }) { TalkScreen(progress.done, onScene = { go(Page.RolePlay(it)) }) }
         is Page.Watch -> VideoPlayerScreen(page.video, progress, page.speaking, onBack = { go(back.value) })
         is Page.VideoList -> VideoListScreen(page.section, progress, onOpen = { v, s -> back.value = page; go(Page.Watch(v, s)) }, onBack = { go(null) })
         Page.VideoHistory -> VideoHistoryScreen(progress, onOpen = { v, s -> back.value = page; go(Page.Watch(v, s)) }, onBack = { go(null) })
         Page.Settings -> SettingsScreen(progress, onRetakeTest = { go(Page.Placement) }, onLegal = { go(Page.Legal(it)) }, onBack = { go(null) })
         is Page.Legal -> LegalScreen(page.doc, onBack = { go(Page.Settings) })
-        Page.Stories -> StoriesScreen(progress.done, onStory = { go(Page.Story(it, Page.Stories)) }, onBack = { go(Page.Practice) })
+        Page.Stories -> StoriesScreen(progress.done, onStory = { go(Page.Story(it, Page.Stories)) }, onBack = { tab = 2; go(null) })
         is Page.Story -> StoryScreen(page.story, onBack = { go(page.back) }, onQuiz = {
             val s = page.story
             // Finishing the quiz saves the story's id as done and awards practice XP.
@@ -261,26 +265,16 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
             val s = Session("Talk with ${Guide.name}", page.talk.id, scheme.secondary, Config.practiceXp, SessionKind.PRACTICE, emptyList())
             Analytics.log(Analytics.LESSON_FINISH, "title" to s.title, "lesson_id" to s.lessonId, "kind" to s.kind.name, "xp" to s.baseXp)
             finish(s, Outcome(s.baseXp, emptyMap(), emptyMap(), false, 0, 0, 0))
-        }, onDone = { go(it ?: Page.Practice) })
+        }, onDone = { if (it != null) go(it) else { tab = 2; go(null) } })
         Page.Ranking -> SubScreen("Ranking", onBack = { go(null) }) { LeagueScreen(progress) }
-        Page.Practice -> SubScreen("Practice", onBack = { go(null) }, action = { GuideHelpButton("practice") }) {
-            PracticeScreen(
+        Page.Topics -> SubScreen("Lesson on any topic", onBack = { go(null) }) {
+            TopicsScreen(
                 progress,
-                onReview = { _, items, due -> go(Page.Run(revision(due, items))) },
-                onWords = { go(Page.Words) },
-                onSpeak = { run("Speaking", SessionKind.PRACTICE, Config.practiceXp, Exercises.forSpeaking(Course.phrases)) },
-                onDictate = {
-                    // Characters the learner has met; beginners start with the basic hiragana.
-                    val learned = progress.srs.keys.mapNotNull(Course::item).filter { it.kind != Kind.WORD }
-                    val pool = if (learned.size >= MIN_LEARNED) learned
-                    else Course.kanaChart(Kind.HIRAGANA).first().second.flatten().filterNotNull()
-                    run("Listen & write", SessionKind.PRACTICE, Config.practiceXp, Exercises.forDictation(pool))
-                },
-                onWriting = { items -> run("Writing practice", SessionKind.PRACTICE, Config.practiceXp, Exercises.forWriting(items), review = "writing") },
-                onGame = { go(Page.Game()) },
-                onExam = { go(Page.Test) },
-                onStories = { go(Page.Stories) },
-                onTalk = { go(Page.TalkWith(it)) }
+                onScenario = { go(Page.Situation(it)) },
+                onAll = { go(Page.Situations) },
+                onCourseTopic = { title, lessons ->
+                    run(title, SessionKind.PRACTICE, Config.practiceXp, Exercises.forTopic(lessons))
+                }
             )
         }
         null -> Scaffold(
@@ -352,15 +346,35 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                     onCertificate = { key, course -> go(Page.Cert(key, course)) },
                     modifier = modifier
                 )
-                2 -> TopicsScreen(
-                    progress,
-                    onScenario = { go(Page.Situation(it)) },
-                    onAll = { go(Page.Situations) },
-                    onCourseTopic = { title, lessons ->
-                        run(title, SessionKind.PRACTICE, Config.practiceXp, Exercises.forTopic(lessons))
-                    },
-                    modifier = modifier
-                )
+                // Review, speaking and reading in one tab, one tap from anywhere: the daily habit lives here.
+                2 -> Column(modifier.fillMaxSize()) {
+                    Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 12.dp, top = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Text("Practice", style = MaterialTheme.typography.headlineMedium, color = scheme.onBackground, modifier = Modifier.weight(1f))
+                        GuideHelpButton("practice")
+                    }
+                    PracticeScreen(
+                        progress,
+                        onReview = { _, items, due -> go(Page.Run(revision(due, items))) },
+                        onWords = { go(Page.Words) },
+                        onSpeak = { run("Speaking", SessionKind.PRACTICE, Config.practiceXp, Exercises.forSpeaking(Course.phrases)) },
+                        onDictate = {
+                            // Characters the learner has met; beginners start with the basic hiragana.
+                            val learned = progress.srs.keys.mapNotNull(Course::item).filter { it.kind != Kind.WORD }
+                            val pool = if (learned.size >= MIN_LEARNED) learned
+                            else Course.kanaChart(Kind.HIRAGANA).first().second.flatten().filterNotNull()
+                            run("Listen & write", SessionKind.PRACTICE, Config.practiceXp, Exercises.forDictation(pool))
+                        },
+                        onWriting = { items -> run("Writing practice", SessionKind.PRACTICE, Config.practiceXp, Exercises.forWriting(items), review = "writing") },
+                        onGame = { go(Page.Game()) },
+                        onExam = { go(Page.Test) },
+                        onStories = { go(Page.Stories) },
+                        onTalk = { go(Page.TalkWith(it)) },
+                        onConversations = { go(Page.Talk) },
+                        onSituations = { go(Page.Situations) },
+                        onTopics = { go(Page.Topics) },
+                        modifier = Modifier.weight(1f)
+                    )
+                }
                 3 -> VideoScreen(
                     progress,
                     onOpen = { v, s -> back.value = null; go(Page.Watch(v, s)) },
@@ -373,11 +387,6 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                     onLink = { link ->
                         go(
                             when (link) {
-                                MeLink.PRACTICE -> Page.Practice
-                                MeLink.TALK -> Page.Talk
-                                MeLink.WORDS -> Page.Words
-                                MeLink.GAME -> Page.Game()
-                                MeLink.EXAM -> Page.Test
                                 MeLink.TROPHIES -> Page.Trophies
                                 MeLink.TIPS -> Page.Tips
                                 MeLink.RANKING -> Page.Ranking
@@ -391,7 +400,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
             // The guide's helper button, in the same corner on every main tab.
             if (progress.guideOn) {
                 GuideHelperButton(
-                    listOf("learn", "alphabet", "lessonplus", "video", "me")[tab],
+                    listOf("learn", "alphabet", "practice", "video", "me")[tab],
                     // Peeks in from the right edge, so it never sits on top of cards and labels.
                     Modifier.align(Alignment.BottomEnd).padding(padding).padding(bottom = 12.dp).offset(x = 18.dp)
                 )

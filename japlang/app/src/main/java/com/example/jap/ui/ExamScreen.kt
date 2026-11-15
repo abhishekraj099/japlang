@@ -77,13 +77,14 @@ fun ExamScreen(progress: Progress, onBack: () -> Unit) {
     SubScreen(Exam.title, onBack = { if (phase == ExamPhase.RUNNING) confirmLeave = true else onBack() }) {
         when (phase) {
             ExamPhase.INTRO -> Column(Modifier.fillMaxSize().padding(20.dp)) {
-                Column(Modifier.weight(1f), verticalArrangement = Arrangement.Center) {
+                Column(Modifier.weight(1f).fillMaxWidth(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
                     Icon(Icons.Rounded.Quiz, contentDescription = null, tint = scheme.primary, modifier = Modifier.size(72.dp))
                     Text(
                         "${questions.size} questions · ${Exam.minutes} minutes",
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold,
                         color = scheme.onBackground,
+                        textAlign = TextAlign.Center,
                         modifier = Modifier.padding(top = 12.dp)
                     )
                     Text(
@@ -91,6 +92,7 @@ fun ExamScreen(progress: Progress, onBack: () -> Unit) {
                             "You see the answers and explanations at the end. " +
                             "${Exam.passPercent}% or more is a pass.",
                         color = scheme.onSurfaceVariant,
+                        textAlign = TextAlign.Center,
                         modifier = Modifier.padding(top = 8.dp)
                     )
                     if (progress.bestExam >= 0) {

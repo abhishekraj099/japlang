@@ -1,5 +1,8 @@
 package com.example.jap.ui
 
+import androidx.compose.material.icons.rounded.TravelExplore
+import androidx.compose.material.icons.rounded.Storefront
+import androidx.compose.material.icons.rounded.RecordVoiceOver
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -68,6 +71,9 @@ fun PracticeScreen(
     onExam: () -> Unit,
     onStories: () -> Unit,
     onTalk: (GuideTalk) -> Unit,
+    onConversations: () -> Unit,
+    onSituations: () -> Unit,
+    onTopics: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val scheme = MaterialTheme.colorScheme
@@ -150,14 +156,8 @@ fun PracticeScreen(
                 )
             }
         }
+        Heading("Review")
         Activity(Icons.Rounded.Style, "Words & flashcards", "Look up every word in the course and flip through cards.", onWords)
-        Activity(
-            Icons.AutoMirrored.Rounded.MenuBook, "Stories",
-            "Short stories written with the words you know. Unlocked: ${Stories.unlocked(progress.done).size} of ${Stories.all.size}.",
-            onStories
-        )
-        TalkCard(progress.done, onTalk)
-        Activity(Icons.Rounded.Mic, "Speaking", "Say everyday phrases aloud and get them checked.", onSpeak)
         Box(Modifier.guideTarget("writing-practice")) {
             Activity(
                 Icons.Rounded.Edit, "Writing practice",
@@ -179,6 +179,19 @@ fun PracticeScreen(
             }
         }
         Activity(Icons.Rounded.Draw, "Listen & write", "Hear a character, write it by hand and have it checked.", onDictate)
+
+        Heading("Speak")
+        TalkCard(progress.done, onTalk)
+        Activity(Icons.Rounded.RecordVoiceOver, "Conversations", "Act out each unit's conversation: listen, then say your lines.", onConversations)
+        Activity(Icons.Rounded.Storefront, "Everyday situations", "Real scenes like ordering food or asking the way.", onSituations)
+        Activity(Icons.Rounded.Mic, "Speaking", "Say everyday phrases aloud and get them checked.", onSpeak)
+
+        Heading("Read & play")
+        Activity(
+            Icons.AutoMirrored.Rounded.MenuBook, "Stories",
+            "Short stories written with the words you know. Unlocked: ${Stories.unlocked(progress.done).size} of ${Stories.all.size}.",
+            onStories
+        )
         Activity(
             Icons.Rounded.Bolt, "Speed round",
             "Answer as many as you can in ${Config.gameSeconds} seconds." + if (progress.bestGame > 0) " Best: ${progress.bestGame}." else "",
@@ -189,6 +202,7 @@ fun PracticeScreen(
             "A timed practice test with explanations." + if (progress.bestExam >= 0) " Best: ${progress.bestExam}%." else "",
             onExam
         )
+        Activity(Icons.Rounded.TravelExplore, "Lesson on any topic", "Type a situation, like \"restaurant\" or \"train\", and get a lesson for it.", onTopics)
     }
 }
 
@@ -262,3 +276,12 @@ private fun Activity(icon: ImageVector, title: String, body: String, onClick: ()
 
 /** About eight seconds an answer, rounded up to whole minutes. */
 private fun minutesFor(items: Int) = ((items.coerceAtMost(SESSION_SIZE) * 8 + 59) / 60).coerceAtLeast(1)
+
+/** A section title inside the Practice tab. */
+@Composable
+private fun Heading(text: String) {
+    Text(
+        text, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold,
+        color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.padding(top = 14.dp, start = 4.dp)
+    )
+}

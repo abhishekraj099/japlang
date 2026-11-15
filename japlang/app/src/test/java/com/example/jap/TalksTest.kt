@@ -89,4 +89,12 @@ class TalksTest {
         val t = Talks.all.first()
         assertEquals(listOf(t), Talks.unlocked(setOf("${t.unlockAfter}-check")))
     }
+
+    @Test
+    fun titlesAreUniqueAcrossTalksConversationsAndStories() {
+        // Talks, unit conversations and stories sit side by side on the Practice tab; two with one title confuse learners.
+        val titles = Talks.all.map { it.title } + com.example.jap.data.Course.conversations.map { it.title } +
+            com.example.jap.data.Stories.all.map { it.title }
+        assertEquals(titles.groupBy { it }.filterValues { it.size > 1 }.keys, emptySet<String>())
+    }
 }

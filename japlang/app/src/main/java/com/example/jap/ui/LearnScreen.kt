@@ -298,7 +298,7 @@ private fun AlphabetHeader(
                 ) {
                     Icon(Icons.Rounded.Bolt, contentDescription = null, tint = Color.White, modifier = Modifier.size(18.dp))
                     Text(
-                        "Kana game",
+                        "Speed round",
                         style = MaterialTheme.typography.labelMedium,
                         fontWeight = FontWeight.Bold,
                         color = Color.White,

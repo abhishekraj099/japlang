@@ -1,5 +1,6 @@
 package com.example.jap.ui
 
+import androidx.compose.material.icons.rounded.Lock
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.speech.RecognizerIntent
@@ -69,7 +70,7 @@ private fun said(line: Line, heard: List<String>): Boolean {
 
 /** The conversations in the course, to act out by voice. */
 @Composable
-fun TalkScreen(onScene: (Lesson) -> Unit, modifier: Modifier = Modifier) {
+fun TalkScreen(done: Set<String>, onScene: (Lesson) -> Unit, modifier: Modifier = Modifier) {
     val scheme = MaterialTheme.colorScheme
     val scenes = Course.conversations
     LazyColumn(
@@ -78,7 +79,6 @@ fun TalkScreen(onScene: (Lesson) -> Unit, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         item {
-            Text("Talk", style = MaterialTheme.typography.headlineSmall, color = scheme.onBackground)
             Text(
                 "Act out real conversations. Listen to your partner, then say your lines aloud.",
                 style = MaterialTheme.typography.bodyLarge,
@@ -88,26 +88,31 @@ fun TalkScreen(onScene: (Lesson) -> Unit, modifier: Modifier = Modifier) {
         }
         items(scenes, key = { it.id }) { scene ->
             val unit = Course.unitOf(scene)
+            // Open once the learner has started its unit, like stories and talks unlock with progress.
+            val open = unit.lessons.any { it.id in done }
             Panel(Modifier.fillMaxWidth()) {
                 Row(
-                    Modifier.fillMaxWidth().clickable(role = Role.Button) { onScene(scene) }.padding(14.dp),
+                    Modifier.fillMaxWidth().clickable(enabled = open, role = Role.Button) { onScene(scene) }.padding(14.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Box(
-                        Modifier.size(56.dp).clip(RoundedCornerShape(16.dp)).background(Color(unit.color)).waves(Color.White.copy(alpha = 0.15f), 14.dp),
+                        Modifier.size(56.dp).clip(RoundedCornerShape(16.dp))
+                            .background(if (open) Color(unit.color) else scheme.surfaceVariant).waves(Color.White.copy(alpha = 0.15f), 14.dp),
                         contentAlignment = Alignment.Center
                     ) {
-                        Text(scene.icon, fontFamily = FontFamily.Serif, fontSize = 26.sp, color = Color.White)
+                        if (open) Text(scene.icon, fontFamily = FontFamily.Serif, fontSize = 26.sp, color = Color.White)
+                        else Icon(Icons.Rounded.Lock, contentDescription = "Locked", tint = scheme.onSurfaceVariant)
                     }
                     Column(Modifier.weight(1f).padding(horizontal = 14.dp)) {
-                        Text(scene.title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = scheme.onSurface)
+                        Text(scene.title, fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = if (open) scheme.onSurface else scheme.onSurfaceVariant)
                         Text(
-                            "${scene.dialogue.size} lines · ${scene.dialogue.map { it.speaker }.distinct().joinToString(" & ")}",
+                            if (open) "${scene.dialogue.size} lines · ${scene.dialogue.map { it.speaker }.distinct().joinToString(" & ")}"
+                            else "Start ${unit.title} to unlock",
                             style = MaterialTheme.typography.bodyMedium,
                             color = scheme.onSurfaceVariant
                         )
                     }
-                    Icon(Icons.Rounded.ChevronRight, contentDescription = null, tint = scheme.onSurfaceVariant)
+                    if (open) Icon(Icons.Rounded.ChevronRight, contentDescription = null, tint = scheme.onSurfaceVariant)
                 }
             }
         }

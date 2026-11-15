@@ -3046,7 +3046,7 @@
     },
     {
       "id": "st-cond",
-      "title": "If it rains",
+      "title": "A rainy-day plan",
       "unlockAfter": "cond",
       "lines": [
         {
