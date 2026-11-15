@@ -14,6 +14,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.MenuBook
 import androidx.compose.material.icons.rounded.Bolt
 import androidx.compose.material.icons.rounded.ChevronRight
 import androidx.compose.material.icons.rounded.Draw
@@ -41,6 +42,7 @@ import com.example.jap.data.Item
 import com.example.jap.data.Memory
 import com.example.jap.data.Progress
 import com.example.jap.data.Review
+import com.example.jap.data.Stories
 
 internal const val SESSION_SIZE = 12
 
@@ -55,6 +57,7 @@ fun PracticeScreen(
     onWriting: (items: List<Item>) -> Unit,
     onGame: () -> Unit,
     onExam: () -> Unit,
+    onStories: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val scheme = MaterialTheme.colorScheme
@@ -138,6 +141,11 @@ fun PracticeScreen(
             }
         }
         Activity(Icons.Rounded.Style, "Words & flashcards", "Look up every word in the course and flip through cards.", onWords)
+        Activity(
+            Icons.AutoMirrored.Rounded.MenuBook, "Stories",
+            "Short stories written with the words you know. Unlocked: ${Stories.unlocked(progress.done).size} of ${Stories.all.size}.",
+            onStories
+        )
         Activity(Icons.Rounded.Mic, "Speaking", "Say everyday phrases aloud and get them checked.", onSpeak)
         Box(Modifier.guideTarget("writing-practice")) {
             Activity(

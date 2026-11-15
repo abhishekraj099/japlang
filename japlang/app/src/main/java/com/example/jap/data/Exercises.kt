@@ -72,6 +72,12 @@ object Exercises {
     /** Writing practice: each item written from its meaning and sound. */
     fun forWriting(items: List<Item>): List<Exercise> = items.map { Write(it) }
 
+    /** A story's comprehension questions; the file lists the right answer first, so the options are shuffled. */
+    fun forStory(story: Story): List<Exercise> = story.questions.map { q ->
+        val options = q.options.shuffled()
+        Choice(instruction = "About the story", prompt = q.prompt, options = options, answer = options.indexOf(q.options.first()), explain = q.explain)
+    }
+
     /** A short lesson on one character: meet it, trace it, then recognise, hear and write it. */
     fun forCharacter(item: Item, neighbours: List<Item>): List<Exercise> {
         val out = mutableListOf<Exercise>(Teach(item), Write(item), recognise(item, neighbours), listen(item, neighbours))

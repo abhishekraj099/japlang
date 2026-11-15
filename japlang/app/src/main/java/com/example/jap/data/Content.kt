@@ -21,6 +21,7 @@ object Content {
         Videos.load(read(context, "videos.json"))
         Guide.load(read(context, "guide.json"))
         Strokes.load(read(context, "strokes.json"))
+        Stories.load(read(context, "stories.json"))
         loaded = true
     }
 

@@ -78,6 +78,9 @@ import com.example.jap.data.CourseUnit
 import com.example.jap.data.Daily
 import com.example.jap.data.Lesson
 import com.example.jap.data.Progress
+import com.example.jap.data.Stories
+import com.example.jap.data.Story
+import androidx.compose.material.icons.automirrored.rounded.MenuBook
 
 private val CardShape = RoundedCornerShape(20.dp)
 private const val KANJI_DIGITS = "一二三四五六七八九"
@@ -101,6 +104,7 @@ private fun stopShape(lesson: Lesson): Shape =
 fun LearnScreen(
     progress: Progress,
     onOpen: (Lesson) -> Unit,
+    onStory: (Story) -> Unit,
     onTestOut: (CourseUnit) -> Unit,
     onChallenge: () -> Unit,
     onStreak: () -> Unit,
@@ -207,6 +211,9 @@ fun LearnScreen(
         UnitSheet(unit, progress.done, onDismiss = { sheet = null }, onOpen = { lesson ->
             sheet = null
             onOpen(lesson)
+        }, onStory = { story ->
+            sheet = null
+            onStory(story)
         })
     }
 }
@@ -305,7 +312,7 @@ private fun AlphabetHeader(
 /** Every lesson of a unit with what it covers; opened from the unit header. */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun UnitSheet(unit: CourseUnit, done: Set<String>, onDismiss: () -> Unit, onOpen: (Lesson) -> Unit) {
+private fun UnitSheet(unit: CourseUnit, done: Set<String>, onDismiss: () -> Unit, onOpen: (Lesson) -> Unit, onStory: (Story) -> Unit) {
     val scheme = MaterialTheme.colorScheme
     ModalBottomSheet(onDismissRequest = onDismiss, containerColor = scheme.surface) {
         Text(
@@ -324,6 +331,7 @@ private fun UnitSheet(unit: CourseUnit, done: Set<String>, onDismiss: () -> Unit
         )
         HorizontalDivider(color = scheme.outlineVariant)
         val goals = remember(unit) { Course.goals(unit) }
+        val story = Stories.unlocked(done).firstOrNull { it.unlockAfter == unit.id }
         LazyColumn(contentPadding = PaddingValues(bottom = 32.dp)) {
             if (goals.isNotEmpty()) item(key = "goals") {
                 GoalsCard("By the end you can…", goals, Color(unit.color), Modifier.padding(start = 20.dp, end = 20.dp, top = 12.dp, bottom = 4.dp))
@@ -357,6 +365,24 @@ private fun UnitSheet(unit: CourseUnit, done: Set<String>, onDismiss: () -> Unit
                         }
                     }
                     if (lesson.id in done) Icon(Icons.Rounded.CheckCircle, contentDescription = "Finished", tint = scheme.tertiary)
+                }
+            }
+            if (story != null) item(key = "story") {
+                Row(
+                    Modifier.fillMaxWidth().clickable(role = Role.Button) { onStory(story) }.padding(horizontal = 20.dp, vertical = 12.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Box(
+                        Modifier.size(52.dp).clip(RoundedCornerShape(24.dp)).background(Color(unit.color).copy(alpha = 0.15f)),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(Icons.AutoMirrored.Rounded.MenuBook, contentDescription = null, tint = Color(unit.color))
+                    }
+                    Column(Modifier.weight(1f).padding(horizontal = 16.dp)) {
+                        Text("Read the story", fontSize = 17.sp, fontWeight = FontWeight.SemiBold, color = scheme.onSurface)
+                        Text(story.title, style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant, modifier = Modifier.padding(top = 2.dp))
+                    }
+                    if (story.id in done) Icon(Icons.Rounded.CheckCircle, contentDescription = "Finished", tint = scheme.tertiary)
                 }
             }
         }

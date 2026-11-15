@@ -92,6 +92,9 @@ private sealed interface Page {
     class Watch(val video: Video, val speaking: Boolean) : Page
     class VideoList(val section: VideoSection) : Page
     data object VideoHistory : Page
+    data object Stories : Page
+    /** [back] is where leaving the story returns: the story list or the tabs. */
+    class Story(val story: com.example.jap.data.Story, val back: Page?) : Page
 }
 
 @Composable
@@ -242,6 +245,13 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         Page.VideoHistory -> VideoHistoryScreen(progress, onOpen = { v, s -> back.value = page; go(Page.Watch(v, s)) }, onBack = { go(null) })
         Page.Settings -> SettingsScreen(progress, onRetakeTest = { go(Page.Placement) }, onLegal = { go(Page.Legal(it)) }, onBack = { go(null) })
         is Page.Legal -> LegalScreen(page.doc, onBack = { go(Page.Settings) })
+        Page.Stories -> StoriesScreen(progress.done, onStory = { go(Page.Story(it, Page.Stories)) }, onBack = { go(Page.Practice) })
+        is Page.Story -> StoryScreen(page.story, onBack = { go(page.back) }, onQuiz = {
+            val s = page.story
+            // Finishing the quiz saves the story's id as done and awards practice XP.
+            run(s.title, SessionKind.PRACTICE, Config.practiceXp, Exercises.forStory(s), lessonId = s.id,
+                color = Course.units.firstOrNull { it.id == s.unlockAfter }?.let { Color(it.color) } ?: scheme.secondary)
+        })
         Page.Ranking -> SubScreen("Ranking", onBack = { go(null) }) { LeagueScreen(progress) }
         Page.Practice -> SubScreen("Practice", onBack = { go(null) }, action = { GuideHelpButton("practice") }) {
             PracticeScreen(
@@ -258,7 +268,8 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                 },
                 onWriting = { items -> run("Writing practice", SessionKind.PRACTICE, Config.practiceXp, Exercises.forWriting(items), review = "writing") },
                 onGame = { go(Page.Game()) },
-                onExam = { go(Page.Test) }
+                onExam = { go(Page.Test) },
+                onStories = { go(Page.Stories) }
             )
         }
         null -> Scaffold(
@@ -295,6 +306,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                 0 -> LearnScreen(
                     progress,
                     onOpen = ::lesson,
+                    onStory = { go(Page.Story(it, null)) },
                     onTestOut = { unit ->
                         go(
                             Page.Run(
