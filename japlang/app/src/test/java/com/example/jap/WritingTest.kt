@@ -41,9 +41,9 @@ class WritingTest {
         assertEquals(607, byKind.getValue(Kind.WORD).size)
         assertEquals(46, byKind.getValue(Kind.HIRAGANA).size)
         assertEquals(46, byKind.getValue(Kind.KATAKANA).size)
-        assertEquals(100, byKind.getValue(Kind.KANJI).size)
+        assertEquals(270, byKind.getValue(Kind.KANJI).size)
         byKind.values.forEach { ids -> assertTrue((ids - written).toString(), written.containsAll(ids)) }
-        assertEquals(799, written.size)
+        assertEquals(969, written.size)
     }
 
     @Test
@@ -117,9 +117,33 @@ class WritingTest {
     }
 
     @Test
+    fun kanjiN4IsComplete() {
+        val track = Course.courses.first { it.id == "kanji" }
+        val kanjiOf = { name: String ->
+            Course.unitsOf(track.levels.first { it.name == name }).map { unit ->
+                unit.lessons.filter { it.type == LessonType.KANJI }.flatMap { it.items }
+            }
+        }
+        val n5 = kanjiOf("Kanji N5").flatten().map { it.jp }.toSet()
+        val units = kanjiOf("Kanji N4")
+        assertTrue(units.dropLast(1).all { it.size == 10 } && units.last().size in 1..10)
+        val n4 = units.flatten()
+        assertTrue(n4.size.toString(), n4.size >= 160)
+        assertEquals(n4.size, n4.map { it.jp }.distinct().size)
+        assertTrue((n4.map { it.jp }.toSet() intersect n5).toString(), n4.none { it.jp in n5 })
+        n4.forEach { kanji ->
+            assertTrue("No meaning: ${kanji.jp}", kanji.meaning.isNotBlank())
+            assertTrue("No readings: ${kanji.jp}", kanji.on.isNotEmpty() || kanji.kun.isNotEmpty())
+            assertTrue("No words: ${kanji.jp}", kanji.words.size >= 2)
+            kanji.words.forEach { w -> assertTrue("Bad word: $w", listOf(w.jp, w.reading, w.romaji, w.en).all { it.isNotBlank() }) }
+            assertTrue("No strokes: ${kanji.jp}", Strokes.of(kanji.jp).isNotEmpty())
+        }
+    }
+
+    @Test
     fun kanjiLessonsWriteEveryKanjiAndHaveStrokes() {
         val lessons = Course.lessons.filter { it.type == LessonType.KANJI }
-        assertEquals(20, lessons.size)
+        assertEquals(54, lessons.size)
         lessons.forEach { lesson ->
             val writes = Exercises.forLesson(lesson).filterIsInstance<Write>().map { it.item.id }
             assertEquals(lesson.items.map { it.id }, writes)

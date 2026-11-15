@@ -30462,6 +30462,5599 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kj11",
+      "title": "Family & self",
+      "subtitle": "兄 姉 弟 妹 親 · 族 家 私 自 者",
+      "color": "#C8452F",
+      "dark": "#9E3220",
+      "tags": [
+        "kanji",
+        "n4",
+        "older brother",
+        "older sister",
+        "younger brother",
+        "younger sister",
+        "parent",
+        "family",
+        "house",
+        "i",
+        "self",
+        "person"
+      ],
+      "lessons": [
+        {
+          "id": "kj11-1",
+          "title": "兄〜親",
+          "type": "KANJI",
+          "icon": "兄",
+          "items": [
+            {
+              "id": "j-兄",
+              "kind": "KANJI",
+              "jp": "兄",
+              "reading": "あに",
+              "romaji": "ani",
+              "meaning": "older brother",
+              "on": "キョウ・ケイ",
+              "kun": "あに",
+              "words": [
+                {
+                  "jp": "兄",
+                  "reading": "あに",
+                  "romaji": "ani",
+                  "en": "(my) older brother"
+                },
+                {
+                  "jp": "お兄さん",
+                  "reading": "おにいさん",
+                  "romaji": "oniisan",
+                  "en": "older brother"
+                }
+              ],
+              "example": {
+                "jp": "兄",
+                "romaji": "ani",
+                "en": "(my) older brother"
+              }
+            },
+            {
+              "id": "j-姉",
+              "kind": "KANJI",
+              "jp": "姉",
+              "reading": "あね",
+              "romaji": "ane",
+              "meaning": "older sister",
+              "on": "シ",
+              "kun": "あね",
+              "words": [
+                {
+                  "jp": "姉",
+                  "reading": "あね",
+                  "romaji": "ane",
+                  "en": "(my) older sister"
+                },
+                {
+                  "jp": "お姉さん",
+                  "reading": "おねえさん",
+                  "romaji": "oneesan",
+                  "en": "older sister"
+                }
+              ],
+              "example": {
+                "jp": "姉",
+                "romaji": "ane",
+                "en": "(my) older sister"
+              }
+            },
+            {
+              "id": "j-弟",
+              "kind": "KANJI",
+              "jp": "弟",
+              "reading": "おとうと",
+              "romaji": "otouto",
+              "meaning": "younger brother",
+              "on": "テイ・ダイ・デ",
+              "kun": "おとうと",
+              "words": [
+                {
+                  "jp": "弟",
+                  "reading": "おとうと",
+                  "romaji": "otouto",
+                  "en": "younger brother"
+                },
+                {
+                  "jp": "兄弟",
+                  "reading": "きょうだい",
+                  "romaji": "kyoudai",
+                  "en": "siblings"
+                }
+              ],
+              "example": {
+                "jp": "弟",
+                "romaji": "otouto",
+                "en": "younger brother"
+              }
+            },
+            {
+              "id": "j-妹",
+              "kind": "KANJI",
+              "jp": "妹",
+              "reading": "いもうと",
+              "romaji": "imouto",
+              "meaning": "younger sister",
+              "on": "マイ",
+              "kun": "いもうと",
+              "words": [
+                {
+                  "jp": "妹",
+                  "reading": "いもうと",
+                  "romaji": "imouto",
+                  "en": "younger sister"
+                },
+                {
+                  "jp": "姉妹",
+                  "reading": "しまい",
+                  "romaji": "shimai",
+                  "en": "sisters"
+                }
+              ],
+              "example": {
+                "jp": "妹",
+                "romaji": "imouto",
+                "en": "younger sister"
+              }
+            },
+            {
+              "id": "j-親",
+              "kind": "KANJI",
+              "jp": "親",
+              "reading": "おや",
+              "romaji": "oya",
+              "meaning": "parent; intimate",
+              "on": "シン",
+              "kun": "おや・した(しい)",
+              "words": [
+                {
+                  "jp": "親",
+                  "reading": "おや",
+                  "romaji": "oya",
+                  "en": "parent"
+                },
+                {
+                  "jp": "両親",
+                  "reading": "りょうしん",
+                  "romaji": "ryoushin",
+                  "en": "parents"
+                }
+              ],
+              "example": {
+                "jp": "親",
+                "romaji": "oya",
+                "en": "parent"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj11-2",
+          "title": "族〜者",
+          "type": "KANJI",
+          "icon": "族",
+          "items": [
+            {
+              "id": "j-族",
+              "kind": "KANJI",
+              "jp": "族",
+              "reading": "ぞく",
+              "romaji": "zoku",
+              "meaning": "family; tribe",
+              "on": "ゾク",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "家族",
+                  "reading": "かぞく",
+                  "romaji": "kazoku",
+                  "en": "family"
+                },
+                {
+                  "jp": "水族館",
+                  "reading": "すいぞくかん",
+                  "romaji": "suizokukan",
+                  "en": "aquarium"
+                }
+              ],
+              "example": {
+                "jp": "家族",
+                "romaji": "kazoku",
+                "en": "family"
+              }
+            },
+            {
+              "id": "j-家",
+              "kind": "KANJI",
+              "jp": "家",
+              "reading": "いえ",
+              "romaji": "ie",
+              "meaning": "house; home",
+              "on": "カ・ケ",
+              "kun": "いえ・や",
+              "words": [
+                {
+                  "jp": "家",
+                  "reading": "いえ",
+                  "romaji": "ie",
+                  "en": "house, home"
+                },
+                {
+                  "jp": "家内",
+                  "reading": "かない",
+                  "romaji": "kanai",
+                  "en": "(my) wife"
+                }
+              ],
+              "example": {
+                "jp": "家",
+                "romaji": "ie",
+                "en": "house, home"
+              }
+            },
+            {
+              "id": "j-私",
+              "kind": "KANJI",
+              "jp": "私",
+              "reading": "わたし",
+              "romaji": "watashi",
+              "meaning": "I; private",
+              "on": "シ",
+              "kun": "わたし・わたくし",
+              "words": [
+                {
+                  "jp": "私",
+                  "reading": "わたし",
+                  "romaji": "watashi",
+                  "en": "I, me"
+                },
+                {
+                  "jp": "私立",
+                  "reading": "しりつ",
+                  "romaji": "shiritsu",
+                  "en": "private (school)"
+                }
+              ],
+              "example": {
+                "jp": "私",
+                "romaji": "watashi",
+                "en": "I, me"
+              }
+            },
+            {
+              "id": "j-自",
+              "kind": "KANJI",
+              "jp": "自",
+              "reading": "じ",
+              "romaji": "ji",
+              "meaning": "self",
+              "on": "ジ・シ",
+              "kun": "みずか(ら)",
+              "words": [
+                {
+                  "jp": "自分",
+                  "reading": "じぶん",
+                  "romaji": "jibun",
+                  "en": "oneself"
+                },
+                {
+                  "jp": "自転車",
+                  "reading": "じてんしゃ",
+                  "romaji": "jitensha",
+                  "en": "bicycle"
+                }
+              ],
+              "example": {
+                "jp": "自分",
+                "romaji": "jibun",
+                "en": "oneself"
+              }
+            },
+            {
+              "id": "j-者",
+              "kind": "KANJI",
+              "jp": "者",
+              "reading": "しゃ",
+              "romaji": "sha",
+              "meaning": "person (who does)",
+              "on": "シャ",
+              "kun": "もの",
+              "words": [
+                {
+                  "jp": "医者",
+                  "reading": "いしゃ",
+                  "romaji": "isha",
+                  "en": "doctor"
+                },
+                {
+                  "jp": "学者",
+                  "reading": "がくしゃ",
+                  "romaji": "gakusha",
+                  "en": "scholar"
+                }
+              ],
+              "example": {
+                "jp": "医者",
+                "romaji": "isha",
+                "en": "doctor"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj12",
+      "title": "Seasons & times",
+      "subtitle": "春 夏 秋 冬 朝 · 昼 夜 夕 曜 早",
+      "color": "#B7791F",
+      "dark": "#8A5A12",
+      "tags": [
+        "kanji",
+        "n4",
+        "spring",
+        "summer",
+        "autumn",
+        "winter",
+        "morning",
+        "daytime",
+        "night",
+        "evening",
+        "weekday",
+        "early"
+      ],
+      "lessons": [
+        {
+          "id": "kj12-1",
+          "title": "春〜朝",
+          "type": "KANJI",
+          "icon": "春",
+          "items": [
+            {
+              "id": "j-春",
+              "kind": "KANJI",
+              "jp": "春",
+              "reading": "はる",
+              "romaji": "haru",
+              "meaning": "spring",
+              "on": "シュン",
+              "kun": "はる",
+              "words": [
+                {
+                  "jp": "春",
+                  "reading": "はる",
+                  "romaji": "haru",
+                  "en": "spring"
+                },
+                {
+                  "jp": "春休み",
+                  "reading": "はるやすみ",
+                  "romaji": "haruyasumi",
+                  "en": "spring break"
+                }
+              ],
+              "example": {
+                "jp": "春",
+                "romaji": "haru",
+                "en": "spring"
+              }
+            },
+            {
+              "id": "j-夏",
+              "kind": "KANJI",
+              "jp": "夏",
+              "reading": "なつ",
+              "romaji": "natsu",
+              "meaning": "summer",
+              "on": "カ・ゲ",
+              "kun": "なつ",
+              "words": [
+                {
+                  "jp": "夏",
+                  "reading": "なつ",
+                  "romaji": "natsu",
+                  "en": "summer"
+                },
+                {
+                  "jp": "夏休み",
+                  "reading": "なつやすみ",
+                  "romaji": "natsuyasumi",
+                  "en": "summer vacation"
+                }
+              ],
+              "example": {
+                "jp": "夏",
+                "romaji": "natsu",
+                "en": "summer"
+              }
+            },
+            {
+              "id": "j-秋",
+              "kind": "KANJI",
+              "jp": "秋",
+              "reading": "あき",
+              "romaji": "aki",
+              "meaning": "autumn",
+              "on": "シュウ",
+              "kun": "あき",
+              "words": [
+                {
+                  "jp": "秋",
+                  "reading": "あき",
+                  "romaji": "aki",
+                  "en": "autumn"
+                },
+                {
+                  "jp": "秋田",
+                  "reading": "あきた",
+                  "romaji": "akita",
+                  "en": "Akita (a prefecture)"
+                }
+              ],
+              "example": {
+                "jp": "秋",
+                "romaji": "aki",
+                "en": "autumn"
+              }
+            },
+            {
+              "id": "j-冬",
+              "kind": "KANJI",
+              "jp": "冬",
+              "reading": "ふゆ",
+              "romaji": "fuyu",
+              "meaning": "winter",
+              "on": "トウ",
+              "kun": "ふゆ",
+              "words": [
+                {
+                  "jp": "冬",
+                  "reading": "ふゆ",
+                  "romaji": "fuyu",
+                  "en": "winter"
+                },
+                {
+                  "jp": "冬休み",
+                  "reading": "ふゆやすみ",
+                  "romaji": "fuyuyasumi",
+                  "en": "winter break"
+                }
+              ],
+              "example": {
+                "jp": "冬",
+                "romaji": "fuyu",
+                "en": "winter"
+              }
+            },
+            {
+              "id": "j-朝",
+              "kind": "KANJI",
+              "jp": "朝",
+              "reading": "あさ",
+              "romaji": "asa",
+              "meaning": "morning",
+              "on": "チョウ",
+              "kun": "あさ",
+              "words": [
+                {
+                  "jp": "朝",
+                  "reading": "あさ",
+                  "romaji": "asa",
+                  "en": "morning"
+                },
+                {
+                  "jp": "朝ご飯",
+                  "reading": "あさごはん",
+                  "romaji": "asagohan",
+                  "en": "breakfast"
+                }
+              ],
+              "example": {
+                "jp": "朝",
+                "romaji": "asa",
+                "en": "morning"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj12-2",
+          "title": "昼〜早",
+          "type": "KANJI",
+          "icon": "昼",
+          "items": [
+            {
+              "id": "j-昼",
+              "kind": "KANJI",
+              "jp": "昼",
+              "reading": "ひる",
+              "romaji": "hiru",
+              "meaning": "daytime",
+              "on": "チュウ",
+              "kun": "ひる",
+              "words": [
+                {
+                  "jp": "昼",
+                  "reading": "ひる",
+                  "romaji": "hiru",
+                  "en": "noon, daytime"
+                },
+                {
+                  "jp": "昼ご飯",
+                  "reading": "ひるごはん",
+                  "romaji": "hirugohan",
+                  "en": "lunch"
+                }
+              ],
+              "example": {
+                "jp": "昼",
+                "romaji": "hiru",
+                "en": "noon, daytime"
+              }
+            },
+            {
+              "id": "j-夜",
+              "kind": "KANJI",
+              "jp": "夜",
+              "reading": "よる",
+              "romaji": "yoru",
+              "meaning": "night",
+              "on": "ヤ",
+              "kun": "よる・よ",
+              "words": [
+                {
+                  "jp": "夜",
+                  "reading": "よる",
+                  "romaji": "yoru",
+                  "en": "night"
+                },
+                {
+                  "jp": "今夜",
+                  "reading": "こんや",
+                  "romaji": "kon'ya",
+                  "en": "tonight"
+                }
+              ],
+              "example": {
+                "jp": "夜",
+                "romaji": "yoru",
+                "en": "night"
+              }
+            },
+            {
+              "id": "j-夕",
+              "kind": "KANJI",
+              "jp": "夕",
+              "reading": "ゆう",
+              "romaji": "yuu",
+              "meaning": "evening",
+              "on": "セキ",
+              "kun": "ゆう",
+              "words": [
+                {
+                  "jp": "夕方",
+                  "reading": "ゆうがた",
+                  "romaji": "yuugata",
+                  "en": "evening"
+                },
+                {
+                  "jp": "夕ご飯",
+                  "reading": "ゆうごはん",
+                  "romaji": "yuugohan",
+                  "en": "dinner"
+                }
+              ],
+              "example": {
+                "jp": "夕方",
+                "romaji": "yuugata",
+                "en": "evening"
+              }
+            },
+            {
+              "id": "j-曜",
+              "kind": "KANJI",
+              "jp": "曜",
+              "reading": "よう",
+              "romaji": "you",
+              "meaning": "weekday",
+              "on": "ヨウ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "日曜日",
+                  "reading": "にちようび",
+                  "romaji": "nichiyoubi",
+                  "en": "Sunday"
+                },
+                {
+                  "jp": "何曜日",
+                  "reading": "なんようび",
+                  "romaji": "nan'youbi",
+                  "en": "what day of the week"
+                }
+              ],
+              "example": {
+                "jp": "日曜日",
+                "romaji": "nichiyoubi",
+                "en": "Sunday"
+              }
+            },
+            {
+              "id": "j-早",
+              "kind": "KANJI",
+              "jp": "早",
+              "reading": "はや",
+              "romaji": "haya",
+              "meaning": "early",
+              "on": "ソウ・サッ",
+              "kun": "はや(い)",
+              "words": [
+                {
+                  "jp": "早い",
+                  "reading": "はやい",
+                  "romaji": "hayai",
+                  "en": "early"
+                },
+                {
+                  "jp": "早く",
+                  "reading": "はやく",
+                  "romaji": "hayaku",
+                  "en": "early, quickly"
+                }
+              ],
+              "example": {
+                "jp": "早い",
+                "romaji": "hayai",
+                "en": "early"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj13",
+      "title": "Food & animals",
+      "subtitle": "牛 犬 鳥 魚 肉 · 茶 飯 菜 料 味",
+      "color": "#2E7D6B",
+      "dark": "#1E5A4D",
+      "tags": [
+        "kanji",
+        "n4",
+        "cow",
+        "dog",
+        "bird",
+        "fish",
+        "meat",
+        "tea",
+        "cooked rice",
+        "vegetables",
+        "fee",
+        "taste"
+      ],
+      "lessons": [
+        {
+          "id": "kj13-1",
+          "title": "牛〜肉",
+          "type": "KANJI",
+          "icon": "牛",
+          "items": [
+            {
+              "id": "j-牛",
+              "kind": "KANJI",
+              "jp": "牛",
+              "reading": "うし",
+              "romaji": "ushi",
+              "meaning": "cow",
+              "on": "ギュウ",
+              "kun": "うし",
+              "words": [
+                {
+                  "jp": "牛",
+                  "reading": "うし",
+                  "romaji": "ushi",
+                  "en": "cow"
+                },
+                {
+                  "jp": "牛乳",
+                  "reading": "ぎゅうにゅう",
+                  "romaji": "gyuunyuu",
+                  "en": "milk"
+                }
+              ],
+              "example": {
+                "jp": "牛",
+                "romaji": "ushi",
+                "en": "cow"
+              }
+            },
+            {
+              "id": "j-犬",
+              "kind": "KANJI",
+              "jp": "犬",
+              "reading": "いぬ",
+              "romaji": "inu",
+              "meaning": "dog",
+              "on": "ケン",
+              "kun": "いぬ",
+              "words": [
+                {
+                  "jp": "犬",
+                  "reading": "いぬ",
+                  "romaji": "inu",
+                  "en": "dog"
+                },
+                {
+                  "jp": "子犬",
+                  "reading": "こいぬ",
+                  "romaji": "koinu",
+                  "en": "puppy"
+                }
+              ],
+              "example": {
+                "jp": "犬",
+                "romaji": "inu",
+                "en": "dog"
+              }
+            },
+            {
+              "id": "j-鳥",
+              "kind": "KANJI",
+              "jp": "鳥",
+              "reading": "とり",
+              "romaji": "tori",
+              "meaning": "bird",
+              "on": "チョウ",
+              "kun": "とり",
+              "words": [
+                {
+                  "jp": "鳥",
+                  "reading": "とり",
+                  "romaji": "tori",
+                  "en": "bird"
+                },
+                {
+                  "jp": "焼き鳥",
+                  "reading": "やきとり",
+                  "romaji": "yakitori",
+                  "en": "grilled chicken skewers"
+                }
+              ],
+              "example": {
+                "jp": "鳥",
+                "romaji": "tori",
+                "en": "bird"
+              }
+            },
+            {
+              "id": "j-魚",
+              "kind": "KANJI",
+              "jp": "魚",
+              "reading": "さかな",
+              "romaji": "sakana",
+              "meaning": "fish",
+              "on": "ギョ",
+              "kun": "さかな・うお",
+              "words": [
+                {
+                  "jp": "魚",
+                  "reading": "さかな",
+                  "romaji": "sakana",
+                  "en": "fish"
+                },
+                {
+                  "jp": "金魚",
+                  "reading": "きんぎょ",
+                  "romaji": "kingyo",
+                  "en": "goldfish"
+                }
+              ],
+              "example": {
+                "jp": "魚",
+                "romaji": "sakana",
+                "en": "fish"
+              }
+            },
+            {
+              "id": "j-肉",
+              "kind": "KANJI",
+              "jp": "肉",
+              "reading": "にく",
+              "romaji": "niku",
+              "meaning": "meat",
+              "on": "ニク",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "肉",
+                  "reading": "にく",
+                  "romaji": "niku",
+                  "en": "meat"
+                },
+                {
+                  "jp": "牛肉",
+                  "reading": "ぎゅうにく",
+                  "romaji": "gyuuniku",
+                  "en": "beef"
+                }
+              ],
+              "example": {
+                "jp": "肉",
+                "romaji": "niku",
+                "en": "meat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj13-2",
+          "title": "茶〜味",
+          "type": "KANJI",
+          "icon": "茶",
+          "items": [
+            {
+              "id": "j-茶",
+              "kind": "KANJI",
+              "jp": "茶",
+              "reading": "ちゃ",
+              "romaji": "cha",
+              "meaning": "tea",
+              "on": "チャ・サ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "お茶",
+                  "reading": "おちゃ",
+                  "romaji": "ocha",
+                  "en": "(green) tea"
+                },
+                {
+                  "jp": "喫茶店",
+                  "reading": "きっさてん",
+                  "romaji": "kissaten",
+                  "en": "café"
+                }
+              ],
+              "example": {
+                "jp": "お茶",
+                "romaji": "ocha",
+                "en": "(green) tea"
+              }
+            },
+            {
+              "id": "j-飯",
+              "kind": "KANJI",
+              "jp": "飯",
+              "reading": "はん",
+              "romaji": "han",
+              "meaning": "cooked rice; meal",
+              "on": "ハン",
+              "kun": "めし",
+              "words": [
+                {
+                  "jp": "ご飯",
+                  "reading": "ごはん",
+                  "romaji": "gohan",
+                  "en": "rice, meal"
+                },
+                {
+                  "jp": "晩ご飯",
+                  "reading": "ばんごはん",
+                  "romaji": "bangohan",
+                  "en": "dinner"
+                }
+              ],
+              "example": {
+                "jp": "ご飯",
+                "romaji": "gohan",
+                "en": "rice, meal"
+              }
+            },
+            {
+              "id": "j-菜",
+              "kind": "KANJI",
+              "jp": "菜",
+              "reading": "さい",
+              "romaji": "sai",
+              "meaning": "vegetables; greens",
+              "on": "サイ",
+              "kun": "な",
+              "words": [
+                {
+                  "jp": "野菜",
+                  "reading": "やさい",
+                  "romaji": "yasai",
+                  "en": "vegetable"
+                },
+                {
+                  "jp": "菜の花",
+                  "reading": "なのはな",
+                  "romaji": "nanohana",
+                  "en": "rapeseed blossoms"
+                }
+              ],
+              "example": {
+                "jp": "野菜",
+                "romaji": "yasai",
+                "en": "vegetable"
+              }
+            },
+            {
+              "id": "j-料",
+              "kind": "KANJI",
+              "jp": "料",
+              "reading": "りょう",
+              "romaji": "ryou",
+              "meaning": "fee; ingredients",
+              "on": "リョウ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "料理",
+                  "reading": "りょうり",
+                  "romaji": "ryouri",
+                  "en": "cooking, dish"
+                },
+                {
+                  "jp": "料金",
+                  "reading": "りょうきん",
+                  "romaji": "ryoukin",
+                  "en": "fee, charge"
+                }
+              ],
+              "example": {
+                "jp": "料理",
+                "romaji": "ryouri",
+                "en": "cooking, dish"
+              }
+            },
+            {
+              "id": "j-味",
+              "kind": "KANJI",
+              "jp": "味",
+              "reading": "あじ",
+              "romaji": "aji",
+              "meaning": "taste",
+              "on": "ミ",
+              "kun": "あじ・あじ(わう)",
+              "words": [
+                {
+                  "jp": "味",
+                  "reading": "あじ",
+                  "romaji": "aji",
+                  "en": "taste, flavour"
+                },
+                {
+                  "jp": "意味",
+                  "reading": "いみ",
+                  "romaji": "imi",
+                  "en": "meaning"
+                }
+              ],
+              "example": {
+                "jp": "味",
+                "romaji": "aji",
+                "en": "taste, flavour"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj14",
+      "title": "Colours & weather",
+      "subtitle": "赤 青 黒 色 明 · 暗 暑 寒 風 光",
+      "color": "#3B5BA9",
+      "dark": "#24386B",
+      "tags": [
+        "kanji",
+        "n4",
+        "red",
+        "blue",
+        "black",
+        "colour",
+        "bright",
+        "dark",
+        "hot",
+        "cold",
+        "wind",
+        "light"
+      ],
+      "lessons": [
+        {
+          "id": "kj14-1",
+          "title": "赤〜明",
+          "type": "KANJI",
+          "icon": "赤",
+          "items": [
+            {
+              "id": "j-赤",
+              "kind": "KANJI",
+              "jp": "赤",
+              "reading": "あか",
+              "romaji": "aka",
+              "meaning": "red",
+              "on": "セキ・シャク",
+              "kun": "あか・あか(い)",
+              "words": [
+                {
+                  "jp": "赤い",
+                  "reading": "あかい",
+                  "romaji": "akai",
+                  "en": "red"
+                },
+                {
+                  "jp": "赤ちゃん",
+                  "reading": "あかちゃん",
+                  "romaji": "akachan",
+                  "en": "baby"
+                }
+              ],
+              "example": {
+                "jp": "赤い",
+                "romaji": "akai",
+                "en": "red"
+              }
+            },
+            {
+              "id": "j-青",
+              "kind": "KANJI",
+              "jp": "青",
+              "reading": "あお",
+              "romaji": "ao",
+              "meaning": "blue",
+              "on": "セイ・ショウ",
+              "kun": "あお・あお(い)",
+              "words": [
+                {
+                  "jp": "青い",
+                  "reading": "あおい",
+                  "romaji": "aoi",
+                  "en": "blue"
+                },
+                {
+                  "jp": "青空",
+                  "reading": "あおぞら",
+                  "romaji": "aozora",
+                  "en": "blue sky"
+                }
+              ],
+              "example": {
+                "jp": "青い",
+                "romaji": "aoi",
+                "en": "blue"
+              }
+            },
+            {
+              "id": "j-黒",
+              "kind": "KANJI",
+              "jp": "黒",
+              "reading": "くろ",
+              "romaji": "kuro",
+              "meaning": "black",
+              "on": "コク",
+              "kun": "くろ・くろ(い)",
+              "words": [
+                {
+                  "jp": "黒い",
+                  "reading": "くろい",
+                  "romaji": "kuroi",
+                  "en": "black"
+                },
+                {
+                  "jp": "黒板",
+                  "reading": "こくばん",
+                  "romaji": "kokuban",
+                  "en": "blackboard"
+                }
+              ],
+              "example": {
+                "jp": "黒い",
+                "romaji": "kuroi",
+                "en": "black"
+              }
+            },
+            {
+              "id": "j-色",
+              "kind": "KANJI",
+              "jp": "色",
+              "reading": "いろ",
+              "romaji": "iro",
+              "meaning": "colour",
+              "on": "ショク・シキ",
+              "kun": "いろ",
+              "words": [
+                {
+                  "jp": "色",
+                  "reading": "いろ",
+                  "romaji": "iro",
+                  "en": "colour"
+                },
+                {
+                  "jp": "景色",
+                  "reading": "けしき",
+                  "romaji": "keshiki",
+                  "en": "scenery"
+                }
+              ],
+              "example": {
+                "jp": "色",
+                "romaji": "iro",
+                "en": "colour"
+              }
+            },
+            {
+              "id": "j-明",
+              "kind": "KANJI",
+              "jp": "明",
+              "reading": "めい",
+              "romaji": "mei",
+              "meaning": "bright; clear",
+              "on": "メイ・ミョウ",
+              "kun": "あか(るい)・あ(ける)",
+              "words": [
+                {
+                  "jp": "明るい",
+                  "reading": "あかるい",
+                  "romaji": "akarui",
+                  "en": "bright"
+                },
+                {
+                  "jp": "明日",
+                  "reading": "あした",
+                  "romaji": "ashita",
+                  "en": "tomorrow"
+                }
+              ],
+              "example": {
+                "jp": "明るい",
+                "romaji": "akarui",
+                "en": "bright"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj14-2",
+          "title": "暗〜光",
+          "type": "KANJI",
+          "icon": "暗",
+          "items": [
+            {
+              "id": "j-暗",
+              "kind": "KANJI",
+              "jp": "暗",
+              "reading": "くら",
+              "romaji": "kura",
+              "meaning": "dark",
+              "on": "アン",
+              "kun": "くら(い)",
+              "words": [
+                {
+                  "jp": "暗い",
+                  "reading": "くらい",
+                  "romaji": "kurai",
+                  "en": "dark"
+                },
+                {
+                  "jp": "暗記",
+                  "reading": "あんき",
+                  "romaji": "anki",
+                  "en": "memorization"
+                }
+              ],
+              "example": {
+                "jp": "暗い",
+                "romaji": "kurai",
+                "en": "dark"
+              }
+            },
+            {
+              "id": "j-暑",
+              "kind": "KANJI",
+              "jp": "暑",
+              "reading": "あつ",
+              "romaji": "atsu",
+              "meaning": "hot (weather)",
+              "on": "ショ",
+              "kun": "あつ(い)",
+              "words": [
+                {
+                  "jp": "暑い",
+                  "reading": "あつい",
+                  "romaji": "atsui",
+                  "en": "hot"
+                },
+                {
+                  "jp": "暑さ",
+                  "reading": "あつさ",
+                  "romaji": "atsusa",
+                  "en": "the heat"
+                }
+              ],
+              "example": {
+                "jp": "暑い",
+                "romaji": "atsui",
+                "en": "hot"
+              }
+            },
+            {
+              "id": "j-寒",
+              "kind": "KANJI",
+              "jp": "寒",
+              "reading": "さむ",
+              "romaji": "samu",
+              "meaning": "cold (weather)",
+              "on": "カン",
+              "kun": "さむ(い)",
+              "words": [
+                {
+                  "jp": "寒い",
+                  "reading": "さむい",
+                  "romaji": "samui",
+                  "en": "cold"
+                },
+                {
+                  "jp": "寒さ",
+                  "reading": "さむさ",
+                  "romaji": "samusa",
+                  "en": "the cold"
+                }
+              ],
+              "example": {
+                "jp": "寒い",
+                "romaji": "samui",
+                "en": "cold"
+              }
+            },
+            {
+              "id": "j-風",
+              "kind": "KANJI",
+              "jp": "風",
+              "reading": "かぜ",
+              "romaji": "kaze",
+              "meaning": "wind",
+              "on": "フウ・フ",
+              "kun": "かぜ",
+              "words": [
+                {
+                  "jp": "風",
+                  "reading": "かぜ",
+                  "romaji": "kaze",
+                  "en": "wind"
+                },
+                {
+                  "jp": "台風",
+                  "reading": "たいふう",
+                  "romaji": "taifuu",
+                  "en": "typhoon"
+                }
+              ],
+              "example": {
+                "jp": "風",
+                "romaji": "kaze",
+                "en": "wind"
+              }
+            },
+            {
+              "id": "j-光",
+              "kind": "KANJI",
+              "jp": "光",
+              "reading": "ひかり",
+              "romaji": "hikari",
+              "meaning": "light",
+              "on": "コウ",
+              "kun": "ひか(る)・ひかり",
+              "words": [
+                {
+                  "jp": "光",
+                  "reading": "ひかり",
+                  "romaji": "hikari",
+                  "en": "light"
+                },
+                {
+                  "jp": "光る",
+                  "reading": "ひかる",
+                  "romaji": "hikaru",
+                  "en": "shine"
+                }
+              ],
+              "example": {
+                "jp": "光",
+                "romaji": "hikari",
+                "en": "light"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj15",
+      "title": "Town & nature",
+      "subtitle": "町 村 京 地 野 · 海 池 林 森 世",
+      "color": "#4F8A3A",
+      "dark": "#355F26",
+      "tags": [
+        "kanji",
+        "n4",
+        "town",
+        "village",
+        "capital",
+        "ground",
+        "field",
+        "sea",
+        "pond",
+        "woods",
+        "forest",
+        "world"
+      ],
+      "lessons": [
+        {
+          "id": "kj15-1",
+          "title": "町〜野",
+          "type": "KANJI",
+          "icon": "町",
+          "items": [
+            {
+              "id": "j-町",
+              "kind": "KANJI",
+              "jp": "町",
+              "reading": "まち",
+              "romaji": "machi",
+              "meaning": "town",
+              "on": "チョウ",
+              "kun": "まち",
+              "words": [
+                {
+                  "jp": "町",
+                  "reading": "まち",
+                  "romaji": "machi",
+                  "en": "town"
+                },
+                {
+                  "jp": "下町",
+                  "reading": "したまち",
+                  "romaji": "shitamachi",
+                  "en": "old downtown"
+                }
+              ],
+              "example": {
+                "jp": "町",
+                "romaji": "machi",
+                "en": "town"
+              }
+            },
+            {
+              "id": "j-村",
+              "kind": "KANJI",
+              "jp": "村",
+              "reading": "むら",
+              "romaji": "mura",
+              "meaning": "village",
+              "on": "ソン",
+              "kun": "むら",
+              "words": [
+                {
+                  "jp": "村",
+                  "reading": "むら",
+                  "romaji": "mura",
+                  "en": "village"
+                },
+                {
+                  "jp": "村人",
+                  "reading": "むらびと",
+                  "romaji": "murabito",
+                  "en": "villager"
+                }
+              ],
+              "example": {
+                "jp": "村",
+                "romaji": "mura",
+                "en": "village"
+              }
+            },
+            {
+              "id": "j-京",
+              "kind": "KANJI",
+              "jp": "京",
+              "reading": "きょう",
+              "romaji": "kyou",
+              "meaning": "capital",
+              "on": "キョウ・ケイ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "東京",
+                  "reading": "とうきょう",
+                  "romaji": "toukyou",
+                  "en": "Tokyo"
+                },
+                {
+                  "jp": "京都",
+                  "reading": "きょうと",
+                  "romaji": "kyouto",
+                  "en": "Kyoto"
+                }
+              ],
+              "example": {
+                "jp": "東京",
+                "romaji": "toukyou",
+                "en": "Tokyo"
+              }
+            },
+            {
+              "id": "j-地",
+              "kind": "KANJI",
+              "jp": "地",
+              "reading": "ち",
+              "romaji": "chi",
+              "meaning": "ground; land",
+              "on": "チ・ジ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "地図",
+                  "reading": "ちず",
+                  "romaji": "chizu",
+                  "en": "map"
+                },
+                {
+                  "jp": "地下鉄",
+                  "reading": "ちかてつ",
+                  "romaji": "chikatetsu",
+                  "en": "subway"
+                }
+              ],
+              "example": {
+                "jp": "地図",
+                "romaji": "chizu",
+                "en": "map"
+              }
+            },
+            {
+              "id": "j-野",
+              "kind": "KANJI",
+              "jp": "野",
+              "reading": "の",
+              "romaji": "no",
+              "meaning": "field; plain",
+              "on": "ヤ",
+              "kun": "の",
+              "words": [
+                {
+                  "jp": "野菜",
+                  "reading": "やさい",
+                  "romaji": "yasai",
+                  "en": "vegetable"
+                },
+                {
+                  "jp": "野球",
+                  "reading": "やきゅう",
+                  "romaji": "yakyuu",
+                  "en": "baseball"
+                }
+              ],
+              "example": {
+                "jp": "野菜",
+                "romaji": "yasai",
+                "en": "vegetable"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj15-2",
+          "title": "海〜世",
+          "type": "KANJI",
+          "icon": "海",
+          "items": [
+            {
+              "id": "j-海",
+              "kind": "KANJI",
+              "jp": "海",
+              "reading": "うみ",
+              "romaji": "umi",
+              "meaning": "sea",
+              "on": "カイ",
+              "kun": "うみ",
+              "words": [
+                {
+                  "jp": "海",
+                  "reading": "うみ",
+                  "romaji": "umi",
+                  "en": "sea"
+                },
+                {
+                  "jp": "海外",
+                  "reading": "かいがい",
+                  "romaji": "kaigai",
+                  "en": "overseas"
+                }
+              ],
+              "example": {
+                "jp": "海",
+                "romaji": "umi",
+                "en": "sea"
+              }
+            },
+            {
+              "id": "j-池",
+              "kind": "KANJI",
+              "jp": "池",
+              "reading": "いけ",
+              "romaji": "ike",
+              "meaning": "pond",
+              "on": "チ",
+              "kun": "いけ",
+              "words": [
+                {
+                  "jp": "池",
+                  "reading": "いけ",
+                  "romaji": "ike",
+                  "en": "pond"
+                },
+                {
+                  "jp": "電池",
+                  "reading": "でんち",
+                  "romaji": "denchi",
+                  "en": "battery"
+                }
+              ],
+              "example": {
+                "jp": "池",
+                "romaji": "ike",
+                "en": "pond"
+              }
+            },
+            {
+              "id": "j-林",
+              "kind": "KANJI",
+              "jp": "林",
+              "reading": "はやし",
+              "romaji": "hayashi",
+              "meaning": "woods; grove",
+              "on": "リン",
+              "kun": "はやし",
+              "words": [
+                {
+                  "jp": "林",
+                  "reading": "はやし",
+                  "romaji": "hayashi",
+                  "en": "woods"
+                },
+                {
+                  "jp": "森林",
+                  "reading": "しんりん",
+                  "romaji": "shinrin",
+                  "en": "forest"
+                }
+              ],
+              "example": {
+                "jp": "林",
+                "romaji": "hayashi",
+                "en": "woods"
+              }
+            },
+            {
+              "id": "j-森",
+              "kind": "KANJI",
+              "jp": "森",
+              "reading": "もり",
+              "romaji": "mori",
+              "meaning": "forest",
+              "on": "シン",
+              "kun": "もり",
+              "words": [
+                {
+                  "jp": "森",
+                  "reading": "もり",
+                  "romaji": "mori",
+                  "en": "forest"
+                },
+                {
+                  "jp": "青森",
+                  "reading": "あおもり",
+                  "romaji": "aomori",
+                  "en": "Aomori (a prefecture)"
+                }
+              ],
+              "example": {
+                "jp": "森",
+                "romaji": "mori",
+                "en": "forest"
+              }
+            },
+            {
+              "id": "j-世",
+              "kind": "KANJI",
+              "jp": "世",
+              "reading": "せ",
+              "romaji": "se",
+              "meaning": "world; generation",
+              "on": "セイ・セ",
+              "kun": "よ",
+              "words": [
+                {
+                  "jp": "世界",
+                  "reading": "せかい",
+                  "romaji": "sekai",
+                  "en": "world"
+                },
+                {
+                  "jp": "世話",
+                  "reading": "せわ",
+                  "romaji": "sewa",
+                  "en": "care, looking after"
+                }
+              ],
+              "example": {
+                "jp": "世界",
+                "romaji": "sekai",
+                "en": "world"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj16",
+      "title": "Buildings",
+      "subtitle": "館 屋 室 堂 院 · 場 台 図 銀 工",
+      "color": "#B04A72",
+      "dark": "#82304F",
+      "tags": [
+        "kanji",
+        "n4",
+        "large building",
+        "shop",
+        "room",
+        "hall",
+        "institution",
+        "place",
+        "stand",
+        "drawing",
+        "silver",
+        "craft"
+      ],
+      "lessons": [
+        {
+          "id": "kj16-1",
+          "title": "館〜院",
+          "type": "KANJI",
+          "icon": "館",
+          "items": [
+            {
+              "id": "j-館",
+              "kind": "KANJI",
+              "jp": "館",
+              "reading": "かん",
+              "romaji": "kan",
+              "meaning": "large building",
+              "on": "カン",
+              "kun": "やかた",
+              "words": [
+                {
+                  "jp": "図書館",
+                  "reading": "としょかん",
+                  "romaji": "toshokan",
+                  "en": "library"
+                },
+                {
+                  "jp": "映画館",
+                  "reading": "えいがかん",
+                  "romaji": "eigakan",
+                  "en": "cinema"
+                }
+              ],
+              "example": {
+                "jp": "図書館",
+                "romaji": "toshokan",
+                "en": "library"
+              }
+            },
+            {
+              "id": "j-屋",
+              "kind": "KANJI",
+              "jp": "屋",
+              "reading": "や",
+              "romaji": "ya",
+              "meaning": "shop; roof",
+              "on": "オク",
+              "kun": "や",
+              "words": [
+                {
+                  "jp": "部屋",
+                  "reading": "へや",
+                  "romaji": "heya",
+                  "en": "room"
+                },
+                {
+                  "jp": "本屋",
+                  "reading": "ほんや",
+                  "romaji": "hon'ya",
+                  "en": "bookshop"
+                }
+              ],
+              "example": {
+                "jp": "部屋",
+                "romaji": "heya",
+                "en": "room"
+              }
+            },
+            {
+              "id": "j-室",
+              "kind": "KANJI",
+              "jp": "室",
+              "reading": "しつ",
+              "romaji": "shitsu",
+              "meaning": "room",
+              "on": "シツ",
+              "kun": "むろ",
+              "words": [
+                {
+                  "jp": "教室",
+                  "reading": "きょうしつ",
+                  "romaji": "kyoushitsu",
+                  "en": "classroom"
+                },
+                {
+                  "jp": "会議室",
+                  "reading": "かいぎしつ",
+                  "romaji": "kaigishitsu",
+                  "en": "meeting room"
+                }
+              ],
+              "example": {
+                "jp": "教室",
+                "romaji": "kyoushitsu",
+                "en": "classroom"
+              }
+            },
+            {
+              "id": "j-堂",
+              "kind": "KANJI",
+              "jp": "堂",
+              "reading": "どう",
+              "romaji": "dou",
+              "meaning": "hall",
+              "on": "ドウ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "食堂",
+                  "reading": "しょくどう",
+                  "romaji": "shokudou",
+                  "en": "cafeteria"
+                },
+                {
+                  "jp": "講堂",
+                  "reading": "こうどう",
+                  "romaji": "koudou",
+                  "en": "auditorium"
+                }
+              ],
+              "example": {
+                "jp": "食堂",
+                "romaji": "shokudou",
+                "en": "cafeteria"
+              }
+            },
+            {
+              "id": "j-院",
+              "kind": "KANJI",
+              "jp": "院",
+              "reading": "いん",
+              "romaji": "in",
+              "meaning": "institution",
+              "on": "イン",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "病院",
+                  "reading": "びょういん",
+                  "romaji": "byouin",
+                  "en": "hospital"
+                },
+                {
+                  "jp": "大学院",
+                  "reading": "だいがくいん",
+                  "romaji": "daigakuin",
+                  "en": "graduate school"
+                }
+              ],
+              "example": {
+                "jp": "病院",
+                "romaji": "byouin",
+                "en": "hospital"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj16-2",
+          "title": "場〜工",
+          "type": "KANJI",
+          "icon": "場",
+          "items": [
+            {
+              "id": "j-場",
+              "kind": "KANJI",
+              "jp": "場",
+              "reading": "ば",
+              "romaji": "ba",
+              "meaning": "place",
+              "on": "ジョウ",
+              "kun": "ば",
+              "words": [
+                {
+                  "jp": "場所",
+                  "reading": "ばしょ",
+                  "romaji": "basho",
+                  "en": "place"
+                },
+                {
+                  "jp": "会場",
+                  "reading": "かいじょう",
+                  "romaji": "kaijou",
+                  "en": "venue"
+                }
+              ],
+              "example": {
+                "jp": "場所",
+                "romaji": "basho",
+                "en": "place"
+              }
+            },
+            {
+              "id": "j-台",
+              "kind": "KANJI",
+              "jp": "台",
+              "reading": "だい",
+              "romaji": "dai",
+              "meaning": "stand; platform",
+              "on": "ダイ・タイ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "台所",
+                  "reading": "だいどころ",
+                  "romaji": "daidokoro",
+                  "en": "kitchen"
+                },
+                {
+                  "jp": "一台",
+                  "reading": "いちだい",
+                  "romaji": "ichidai",
+                  "en": "one (machine or car)"
+                }
+              ],
+              "example": {
+                "jp": "台所",
+                "romaji": "daidokoro",
+                "en": "kitchen"
+              }
+            },
+            {
+              "id": "j-図",
+              "kind": "KANJI",
+              "jp": "図",
+              "reading": "ず",
+              "romaji": "zu",
+              "meaning": "drawing; plan",
+              "on": "ズ・ト",
+              "kun": "はか(る)",
+              "words": [
+                {
+                  "jp": "地図",
+                  "reading": "ちず",
+                  "romaji": "chizu",
+                  "en": "map"
+                },
+                {
+                  "jp": "図書館",
+                  "reading": "としょかん",
+                  "romaji": "toshokan",
+                  "en": "library"
+                }
+              ],
+              "example": {
+                "jp": "地図",
+                "romaji": "chizu",
+                "en": "map"
+              }
+            },
+            {
+              "id": "j-銀",
+              "kind": "KANJI",
+              "jp": "銀",
+              "reading": "ぎん",
+              "romaji": "gin",
+              "meaning": "silver",
+              "on": "ギン",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "銀行",
+                  "reading": "ぎんこう",
+                  "romaji": "ginkou",
+                  "en": "bank"
+                },
+                {
+                  "jp": "銀色",
+                  "reading": "ぎんいろ",
+                  "romaji": "gin'iro",
+                  "en": "silver (colour)"
+                }
+              ],
+              "example": {
+                "jp": "銀行",
+                "romaji": "ginkou",
+                "en": "bank"
+              }
+            },
+            {
+              "id": "j-工",
+              "kind": "KANJI",
+              "jp": "工",
+              "reading": "こう",
+              "romaji": "kou",
+              "meaning": "craft; construction",
+              "on": "コウ・ク",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "工場",
+                  "reading": "こうじょう",
+                  "romaji": "koujou",
+                  "en": "factory"
+                },
+                {
+                  "jp": "工事",
+                  "reading": "こうじ",
+                  "romaji": "kouji",
+                  "en": "construction work"
+                }
+              ],
+              "example": {
+                "jp": "工場",
+                "romaji": "koujou",
+                "en": "factory"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj17",
+      "title": "Body & health",
+      "subtitle": "体 頭 顔 心 病 · 医 薬 死 力 元",
+      "color": "#7A55B5",
+      "dark": "#573A88",
+      "tags": [
+        "kanji",
+        "n4",
+        "body",
+        "head",
+        "face",
+        "heart",
+        "illness",
+        "doctor",
+        "medicine",
+        "death",
+        "power",
+        "origin"
+      ],
+      "lessons": [
+        {
+          "id": "kj17-1",
+          "title": "体〜病",
+          "type": "KANJI",
+          "icon": "体",
+          "items": [
+            {
+              "id": "j-体",
+              "kind": "KANJI",
+              "jp": "体",
+              "reading": "からだ",
+              "romaji": "karada",
+              "meaning": "body",
+              "on": "タイ・テイ",
+              "kun": "からだ",
+              "words": [
+                {
+                  "jp": "体",
+                  "reading": "からだ",
+                  "romaji": "karada",
+                  "en": "body"
+                },
+                {
+                  "jp": "体育",
+                  "reading": "たいいく",
+                  "romaji": "taiiku",
+                  "en": "physical education"
+                }
+              ],
+              "example": {
+                "jp": "体",
+                "romaji": "karada",
+                "en": "body"
+              }
+            },
+            {
+              "id": "j-頭",
+              "kind": "KANJI",
+              "jp": "頭",
+              "reading": "あたま",
+              "romaji": "atama",
+              "meaning": "head",
+              "on": "トウ・ズ",
+              "kun": "あたま",
+              "words": [
+                {
+                  "jp": "頭",
+                  "reading": "あたま",
+                  "romaji": "atama",
+                  "en": "head"
+                },
+                {
+                  "jp": "頭痛",
+                  "reading": "ずつう",
+                  "romaji": "zutsuu",
+                  "en": "headache"
+                }
+              ],
+              "example": {
+                "jp": "頭",
+                "romaji": "atama",
+                "en": "head"
+              }
+            },
+            {
+              "id": "j-顔",
+              "kind": "KANJI",
+              "jp": "顔",
+              "reading": "かお",
+              "romaji": "kao",
+              "meaning": "face",
+              "on": "ガン",
+              "kun": "かお",
+              "words": [
+                {
+                  "jp": "顔",
+                  "reading": "かお",
+                  "romaji": "kao",
+                  "en": "face"
+                },
+                {
+                  "jp": "笑顔",
+                  "reading": "えがお",
+                  "romaji": "egao",
+                  "en": "smiling face"
+                }
+              ],
+              "example": {
+                "jp": "顔",
+                "romaji": "kao",
+                "en": "face"
+              }
+            },
+            {
+              "id": "j-心",
+              "kind": "KANJI",
+              "jp": "心",
+              "reading": "こころ",
+              "romaji": "kokoro",
+              "meaning": "heart; mind",
+              "on": "シン",
+              "kun": "こころ",
+              "words": [
+                {
+                  "jp": "心",
+                  "reading": "こころ",
+                  "romaji": "kokoro",
+                  "en": "heart, mind"
+                },
+                {
+                  "jp": "安心",
+                  "reading": "あんしん",
+                  "romaji": "anshin",
+                  "en": "relief"
+                }
+              ],
+              "example": {
+                "jp": "心",
+                "romaji": "kokoro",
+                "en": "heart, mind"
+              }
+            },
+            {
+              "id": "j-病",
+              "kind": "KANJI",
+              "jp": "病",
+              "reading": "びょう",
+              "romaji": "byou",
+              "meaning": "illness",
+              "on": "ビョウ・ヘイ",
+              "kun": "やまい・や(む)",
+              "words": [
+                {
+                  "jp": "病気",
+                  "reading": "びょうき",
+                  "romaji": "byouki",
+                  "en": "illness"
+                },
+                {
+                  "jp": "病院",
+                  "reading": "びょういん",
+                  "romaji": "byouin",
+                  "en": "hospital"
+                }
+              ],
+              "example": {
+                "jp": "病気",
+                "romaji": "byouki",
+                "en": "illness"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj17-2",
+          "title": "医〜元",
+          "type": "KANJI",
+          "icon": "医",
+          "items": [
+            {
+              "id": "j-医",
+              "kind": "KANJI",
+              "jp": "医",
+              "reading": "い",
+              "romaji": "i",
+              "meaning": "doctor; healing",
+              "on": "イ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "医者",
+                  "reading": "いしゃ",
+                  "romaji": "isha",
+                  "en": "doctor"
+                },
+                {
+                  "jp": "医学",
+                  "reading": "いがく",
+                  "romaji": "igaku",
+                  "en": "medical science"
+                }
+              ],
+              "example": {
+                "jp": "医者",
+                "romaji": "isha",
+                "en": "doctor"
+              }
+            },
+            {
+              "id": "j-薬",
+              "kind": "KANJI",
+              "jp": "薬",
+              "reading": "くすり",
+              "romaji": "kusuri",
+              "meaning": "medicine",
+              "on": "ヤク",
+              "kun": "くすり",
+              "words": [
+                {
+                  "jp": "薬",
+                  "reading": "くすり",
+                  "romaji": "kusuri",
+                  "en": "medicine"
+                },
+                {
+                  "jp": "薬局",
+                  "reading": "やっきょく",
+                  "romaji": "yakkyoku",
+                  "en": "pharmacy"
+                }
+              ],
+              "example": {
+                "jp": "薬",
+                "romaji": "kusuri",
+                "en": "medicine"
+              }
+            },
+            {
+              "id": "j-死",
+              "kind": "KANJI",
+              "jp": "死",
+              "reading": "し",
+              "romaji": "shi",
+              "meaning": "death",
+              "on": "シ",
+              "kun": "し(ぬ)",
+              "words": [
+                {
+                  "jp": "死ぬ",
+                  "reading": "しぬ",
+                  "romaji": "shinu",
+                  "en": "die"
+                },
+                {
+                  "jp": "必死",
+                  "reading": "ひっし",
+                  "romaji": "hisshi",
+                  "en": "desperate, frantic"
+                }
+              ],
+              "example": {
+                "jp": "死ぬ",
+                "romaji": "shinu",
+                "en": "die"
+              }
+            },
+            {
+              "id": "j-力",
+              "kind": "KANJI",
+              "jp": "力",
+              "reading": "ちから",
+              "romaji": "chikara",
+              "meaning": "power; strength",
+              "on": "リョク・リキ",
+              "kun": "ちから",
+              "words": [
+                {
+                  "jp": "力",
+                  "reading": "ちから",
+                  "romaji": "chikara",
+                  "en": "strength"
+                },
+                {
+                  "jp": "協力",
+                  "reading": "きょうりょく",
+                  "romaji": "kyouryoku",
+                  "en": "cooperation"
+                }
+              ],
+              "example": {
+                "jp": "力",
+                "romaji": "chikara",
+                "en": "strength"
+              }
+            },
+            {
+              "id": "j-元",
+              "kind": "KANJI",
+              "jp": "元",
+              "reading": "げん",
+              "romaji": "gen",
+              "meaning": "origin; source",
+              "on": "ゲン・ガン",
+              "kun": "もと",
+              "words": [
+                {
+                  "jp": "元気",
+                  "reading": "げんき",
+                  "romaji": "genki",
+                  "en": "well, healthy"
+                },
+                {
+                  "jp": "元日",
+                  "reading": "がんじつ",
+                  "romaji": "ganjitsu",
+                  "en": "New Year's Day"
+                }
+              ],
+              "example": {
+                "jp": "元気",
+                "romaji": "genki",
+                "en": "well, healthy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj18",
+      "title": "School",
+      "subtitle": "教 習 勉 研 究 · 試 験 質 問 答",
+      "color": "#C2602E",
+      "dark": "#8E4420",
+      "tags": [
+        "kanji",
+        "n4",
+        "teach",
+        "learn",
+        "effort",
+        "polish",
+        "research",
+        "try",
+        "examination",
+        "quality",
+        "question",
+        "answer"
+      ],
+      "lessons": [
+        {
+          "id": "kj18-1",
+          "title": "教〜究",
+          "type": "KANJI",
+          "icon": "教",
+          "items": [
+            {
+              "id": "j-教",
+              "kind": "KANJI",
+              "jp": "教",
+              "reading": "きょう",
+              "romaji": "kyou",
+              "meaning": "teach",
+              "on": "キョウ",
+              "kun": "おし(える)",
+              "words": [
+                {
+                  "jp": "教える",
+                  "reading": "おしえる",
+                  "romaji": "oshieru",
+                  "en": "teach"
+                },
+                {
+                  "jp": "教室",
+                  "reading": "きょうしつ",
+                  "romaji": "kyoushitsu",
+                  "en": "classroom"
+                }
+              ],
+              "example": {
+                "jp": "教える",
+                "romaji": "oshieru",
+                "en": "teach"
+              }
+            },
+            {
+              "id": "j-習",
+              "kind": "KANJI",
+              "jp": "習",
+              "reading": "なら",
+              "romaji": "nara",
+              "meaning": "learn",
+              "on": "シュウ",
+              "kun": "なら(う)",
+              "words": [
+                {
+                  "jp": "習う",
+                  "reading": "ならう",
+                  "romaji": "narau",
+                  "en": "learn"
+                },
+                {
+                  "jp": "練習",
+                  "reading": "れんしゅう",
+                  "romaji": "renshuu",
+                  "en": "practice"
+                }
+              ],
+              "example": {
+                "jp": "習う",
+                "romaji": "narau",
+                "en": "learn"
+              }
+            },
+            {
+              "id": "j-勉",
+              "kind": "KANJI",
+              "jp": "勉",
+              "reading": "べん",
+              "romaji": "ben",
+              "meaning": "effort",
+              "on": "ベン",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "勉強",
+                  "reading": "べんきょう",
+                  "romaji": "benkyou",
+                  "en": "study"
+                },
+                {
+                  "jp": "勉強会",
+                  "reading": "べんきょうかい",
+                  "romaji": "benkyoukai",
+                  "en": "study group"
+                }
+              ],
+              "example": {
+                "jp": "勉強",
+                "romaji": "benkyou",
+                "en": "study"
+              }
+            },
+            {
+              "id": "j-研",
+              "kind": "KANJI",
+              "jp": "研",
+              "reading": "けん",
+              "romaji": "ken",
+              "meaning": "polish; sharpen",
+              "on": "ケン",
+              "kun": "と(ぐ)",
+              "words": [
+                {
+                  "jp": "研究",
+                  "reading": "けんきゅう",
+                  "romaji": "kenkyuu",
+                  "en": "research"
+                },
+                {
+                  "jp": "研修",
+                  "reading": "けんしゅう",
+                  "romaji": "kenshuu",
+                  "en": "training"
+                }
+              ],
+              "example": {
+                "jp": "研究",
+                "romaji": "kenkyuu",
+                "en": "research"
+              }
+            },
+            {
+              "id": "j-究",
+              "kind": "KANJI",
+              "jp": "究",
+              "reading": "きゅう",
+              "romaji": "kyuu",
+              "meaning": "research",
+              "on": "キュウ",
+              "kun": "きわ(める)",
+              "words": [
+                {
+                  "jp": "研究",
+                  "reading": "けんきゅう",
+                  "romaji": "kenkyuu",
+                  "en": "research"
+                },
+                {
+                  "jp": "研究者",
+                  "reading": "けんきゅうしゃ",
+                  "romaji": "kenkyuusha",
+                  "en": "researcher"
+                }
+              ],
+              "example": {
+                "jp": "研究",
+                "romaji": "kenkyuu",
+                "en": "research"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj18-2",
+          "title": "試〜答",
+          "type": "KANJI",
+          "icon": "試",
+          "items": [
+            {
+              "id": "j-試",
+              "kind": "KANJI",
+              "jp": "試",
+              "reading": "し",
+              "romaji": "shi",
+              "meaning": "try",
+              "on": "シ",
+              "kun": "ため(す)・こころ(みる)",
+              "words": [
+                {
+                  "jp": "試験",
+                  "reading": "しけん",
+                  "romaji": "shiken",
+                  "en": "exam"
+                },
+                {
+                  "jp": "試合",
+                  "reading": "しあい",
+                  "romaji": "shiai",
+                  "en": "match, game"
+                }
+              ],
+              "example": {
+                "jp": "試験",
+                "romaji": "shiken",
+                "en": "exam"
+              }
+            },
+            {
+              "id": "j-験",
+              "kind": "KANJI",
+              "jp": "験",
+              "reading": "けん",
+              "romaji": "ken",
+              "meaning": "examination",
+              "on": "ケン・ゲン",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "試験",
+                  "reading": "しけん",
+                  "romaji": "shiken",
+                  "en": "exam"
+                },
+                {
+                  "jp": "経験",
+                  "reading": "けいけん",
+                  "romaji": "keiken",
+                  "en": "experience"
+                }
+              ],
+              "example": {
+                "jp": "試験",
+                "romaji": "shiken",
+                "en": "exam"
+              }
+            },
+            {
+              "id": "j-質",
+              "kind": "KANJI",
+              "jp": "質",
+              "reading": "しつ",
+              "romaji": "shitsu",
+              "meaning": "quality; nature",
+              "on": "シツ・シチ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "質問",
+                  "reading": "しつもん",
+                  "romaji": "shitsumon",
+                  "en": "question"
+                },
+                {
+                  "jp": "品質",
+                  "reading": "ひんしつ",
+                  "romaji": "hinshitsu",
+                  "en": "quality"
+                }
+              ],
+              "example": {
+                "jp": "質問",
+                "romaji": "shitsumon",
+                "en": "question"
+              }
+            },
+            {
+              "id": "j-問",
+              "kind": "KANJI",
+              "jp": "問",
+              "reading": "もん",
+              "romaji": "mon",
+              "meaning": "question; problem",
+              "on": "モン",
+              "kun": "と(う)",
+              "words": [
+                {
+                  "jp": "問題",
+                  "reading": "もんだい",
+                  "romaji": "mondai",
+                  "en": "problem, question"
+                },
+                {
+                  "jp": "学問",
+                  "reading": "がくもん",
+                  "romaji": "gakumon",
+                  "en": "learning, scholarship"
+                }
+              ],
+              "example": {
+                "jp": "問題",
+                "romaji": "mondai",
+                "en": "problem, question"
+              }
+            },
+            {
+              "id": "j-答",
+              "kind": "KANJI",
+              "jp": "答",
+              "reading": "こた",
+              "romaji": "kota",
+              "meaning": "answer",
+              "on": "トウ",
+              "kun": "こた(える)・こた(え)",
+              "words": [
+                {
+                  "jp": "答え",
+                  "reading": "こたえ",
+                  "romaji": "kotae",
+                  "en": "answer"
+                },
+                {
+                  "jp": "回答",
+                  "reading": "かいとう",
+                  "romaji": "kaitou",
+                  "en": "reply"
+                }
+              ],
+              "example": {
+                "jp": "答え",
+                "romaji": "kotae",
+                "en": "answer"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj19",
+      "title": "Writing & media",
+      "subtitle": "字 漢 英 文 題 · 紙 写 画 映 声",
+      "color": "#2F7FA8",
+      "dark": "#1F5A79",
+      "tags": [
+        "kanji",
+        "n4",
+        "character",
+        "china",
+        "england",
+        "sentence",
+        "topic",
+        "paper",
+        "copy",
+        "picture",
+        "reflect",
+        "voice"
+      ],
+      "lessons": [
+        {
+          "id": "kj19-1",
+          "title": "字〜題",
+          "type": "KANJI",
+          "icon": "字",
+          "items": [
+            {
+              "id": "j-字",
+              "kind": "KANJI",
+              "jp": "字",
+              "reading": "じ",
+              "romaji": "ji",
+              "meaning": "character; letter",
+              "on": "ジ",
+              "kun": "あざ",
+              "words": [
+                {
+                  "jp": "漢字",
+                  "reading": "かんじ",
+                  "romaji": "kanji",
+                  "en": "kanji"
+                },
+                {
+                  "jp": "文字",
+                  "reading": "もじ",
+                  "romaji": "moji",
+                  "en": "letter, character"
+                }
+              ],
+              "example": {
+                "jp": "漢字",
+                "romaji": "kanji",
+                "en": "kanji"
+              }
+            },
+            {
+              "id": "j-漢",
+              "kind": "KANJI",
+              "jp": "漢",
+              "reading": "かん",
+              "romaji": "kan",
+              "meaning": "China (Han)",
+              "on": "カン",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "漢字",
+                  "reading": "かんじ",
+                  "romaji": "kanji",
+                  "en": "kanji"
+                },
+                {
+                  "jp": "漢方",
+                  "reading": "かんぽう",
+                  "romaji": "kanpou",
+                  "en": "Chinese herbal medicine"
+                }
+              ],
+              "example": {
+                "jp": "漢字",
+                "romaji": "kanji",
+                "en": "kanji"
+              }
+            },
+            {
+              "id": "j-英",
+              "kind": "KANJI",
+              "jp": "英",
+              "reading": "えい",
+              "romaji": "ei",
+              "meaning": "England; excellent",
+              "on": "エイ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "英語",
+                  "reading": "えいご",
+                  "romaji": "eigo",
+                  "en": "English"
+                },
+                {
+                  "jp": "英国",
+                  "reading": "えいこく",
+                  "romaji": "eikoku",
+                  "en": "Britain"
+                }
+              ],
+              "example": {
+                "jp": "英語",
+                "romaji": "eigo",
+                "en": "English"
+              }
+            },
+            {
+              "id": "j-文",
+              "kind": "KANJI",
+              "jp": "文",
+              "reading": "ぶん",
+              "romaji": "bun",
+              "meaning": "sentence; writing",
+              "on": "ブン・モン",
+              "kun": "ふみ",
+              "words": [
+                {
+                  "jp": "文",
+                  "reading": "ぶん",
+                  "romaji": "bun",
+                  "en": "sentence"
+                },
+                {
+                  "jp": "文化",
+                  "reading": "ぶんか",
+                  "romaji": "bunka",
+                  "en": "culture"
+                }
+              ],
+              "example": {
+                "jp": "文",
+                "romaji": "bun",
+                "en": "sentence"
+              }
+            },
+            {
+              "id": "j-題",
+              "kind": "KANJI",
+              "jp": "題",
+              "reading": "だい",
+              "romaji": "dai",
+              "meaning": "topic; title",
+              "on": "ダイ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "問題",
+                  "reading": "もんだい",
+                  "romaji": "mondai",
+                  "en": "problem, question"
+                },
+                {
+                  "jp": "宿題",
+                  "reading": "しゅくだい",
+                  "romaji": "shukudai",
+                  "en": "homework"
+                }
+              ],
+              "example": {
+                "jp": "問題",
+                "romaji": "mondai",
+                "en": "problem, question"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj19-2",
+          "title": "紙〜声",
+          "type": "KANJI",
+          "icon": "紙",
+          "items": [
+            {
+              "id": "j-紙",
+              "kind": "KANJI",
+              "jp": "紙",
+              "reading": "かみ",
+              "romaji": "kami",
+              "meaning": "paper",
+              "on": "シ",
+              "kun": "かみ",
+              "words": [
+                {
+                  "jp": "紙",
+                  "reading": "かみ",
+                  "romaji": "kami",
+                  "en": "paper"
+                },
+                {
+                  "jp": "手紙",
+                  "reading": "てがみ",
+                  "romaji": "tegami",
+                  "en": "letter"
+                }
+              ],
+              "example": {
+                "jp": "紙",
+                "romaji": "kami",
+                "en": "paper"
+              }
+            },
+            {
+              "id": "j-写",
+              "kind": "KANJI",
+              "jp": "写",
+              "reading": "しゃ",
+              "romaji": "sha",
+              "meaning": "copy; photograph",
+              "on": "シャ",
+              "kun": "うつ(す)",
+              "words": [
+                {
+                  "jp": "写真",
+                  "reading": "しゃしん",
+                  "romaji": "shashin",
+                  "en": "photograph"
+                },
+                {
+                  "jp": "写す",
+                  "reading": "うつす",
+                  "romaji": "utsusu",
+                  "en": "copy"
+                }
+              ],
+              "example": {
+                "jp": "写真",
+                "romaji": "shashin",
+                "en": "photograph"
+              }
+            },
+            {
+              "id": "j-画",
+              "kind": "KANJI",
+              "jp": "画",
+              "reading": "が",
+              "romaji": "ga",
+              "meaning": "picture; stroke",
+              "on": "ガ・カク",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "映画",
+                  "reading": "えいが",
+                  "romaji": "eiga",
+                  "en": "movie"
+                },
+                {
+                  "jp": "画家",
+                  "reading": "がか",
+                  "romaji": "gaka",
+                  "en": "painter"
+                }
+              ],
+              "example": {
+                "jp": "映画",
+                "romaji": "eiga",
+                "en": "movie"
+              }
+            },
+            {
+              "id": "j-映",
+              "kind": "KANJI",
+              "jp": "映",
+              "reading": "えい",
+              "romaji": "ei",
+              "meaning": "reflect; project",
+              "on": "エイ",
+              "kun": "うつ(る)・は(える)",
+              "words": [
+                {
+                  "jp": "映画",
+                  "reading": "えいが",
+                  "romaji": "eiga",
+                  "en": "movie"
+                },
+                {
+                  "jp": "映る",
+                  "reading": "うつる",
+                  "romaji": "utsuru",
+                  "en": "be reflected"
+                }
+              ],
+              "example": {
+                "jp": "映画",
+                "romaji": "eiga",
+                "en": "movie"
+              }
+            },
+            {
+              "id": "j-声",
+              "kind": "KANJI",
+              "jp": "声",
+              "reading": "こえ",
+              "romaji": "koe",
+              "meaning": "voice",
+              "on": "セイ・ショウ",
+              "kun": "こえ",
+              "words": [
+                {
+                  "jp": "声",
+                  "reading": "こえ",
+                  "romaji": "koe",
+                  "en": "voice"
+                },
+                {
+                  "jp": "大声",
+                  "reading": "おおごえ",
+                  "romaji": "oogoe",
+                  "en": "loud voice"
+                }
+              ],
+              "example": {
+                "jp": "声",
+                "romaji": "koe",
+                "en": "voice"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj20",
+      "title": "Getting around",
+      "subtitle": "旅 乗 運 転 走 · 歩 止 通 送 遠",
+      "color": "#8C5A3C",
+      "dark": "#643E28",
+      "tags": [
+        "kanji",
+        "n4",
+        "trip",
+        "ride",
+        "carry",
+        "turn",
+        "run",
+        "walk",
+        "stop",
+        "pass through",
+        "send",
+        "far"
+      ],
+      "lessons": [
+        {
+          "id": "kj20-1",
+          "title": "旅〜走",
+          "type": "KANJI",
+          "icon": "旅",
+          "items": [
+            {
+              "id": "j-旅",
+              "kind": "KANJI",
+              "jp": "旅",
+              "reading": "たび",
+              "romaji": "tabi",
+              "meaning": "trip; travel",
+              "on": "リョ",
+              "kun": "たび",
+              "words": [
+                {
+                  "jp": "旅行",
+                  "reading": "りょこう",
+                  "romaji": "ryokou",
+                  "en": "trip"
+                },
+                {
+                  "jp": "旅館",
+                  "reading": "りょかん",
+                  "romaji": "ryokan",
+                  "en": "Japanese inn"
+                }
+              ],
+              "example": {
+                "jp": "旅行",
+                "romaji": "ryokou",
+                "en": "trip"
+              }
+            },
+            {
+              "id": "j-乗",
+              "kind": "KANJI",
+              "jp": "乗",
+              "reading": "の",
+              "romaji": "no",
+              "meaning": "ride",
+              "on": "ジョウ",
+              "kun": "の(る)・の(せる)",
+              "words": [
+                {
+                  "jp": "乗る",
+                  "reading": "のる",
+                  "romaji": "noru",
+                  "en": "ride, get on"
+                },
+                {
+                  "jp": "乗り物",
+                  "reading": "のりもの",
+                  "romaji": "norimono",
+                  "en": "vehicle"
+                }
+              ],
+              "example": {
+                "jp": "乗る",
+                "romaji": "noru",
+                "en": "ride, get on"
+              }
+            },
+            {
+              "id": "j-運",
+              "kind": "KANJI",
+              "jp": "運",
+              "reading": "うん",
+              "romaji": "un",
+              "meaning": "carry; luck",
+              "on": "ウン",
+              "kun": "はこ(ぶ)",
+              "words": [
+                {
+                  "jp": "運転",
+                  "reading": "うんてん",
+                  "romaji": "unten",
+                  "en": "driving"
+                },
+                {
+                  "jp": "運動",
+                  "reading": "うんどう",
+                  "romaji": "undou",
+                  "en": "exercise"
+                }
+              ],
+              "example": {
+                "jp": "運転",
+                "romaji": "unten",
+                "en": "driving"
+              }
+            },
+            {
+              "id": "j-転",
+              "kind": "KANJI",
+              "jp": "転",
+              "reading": "てん",
+              "romaji": "ten",
+              "meaning": "turn; roll",
+              "on": "テン",
+              "kun": "ころ(ぶ)",
+              "words": [
+                {
+                  "jp": "自転車",
+                  "reading": "じてんしゃ",
+                  "romaji": "jitensha",
+                  "en": "bicycle"
+                },
+                {
+                  "jp": "運転手",
+                  "reading": "うんてんしゅ",
+                  "romaji": "untenshu",
+                  "en": "driver"
+                }
+              ],
+              "example": {
+                "jp": "自転車",
+                "romaji": "jitensha",
+                "en": "bicycle"
+              }
+            },
+            {
+              "id": "j-走",
+              "kind": "KANJI",
+              "jp": "走",
+              "reading": "はし",
+              "romaji": "hashi",
+              "meaning": "run",
+              "on": "ソウ",
+              "kun": "はし(る)",
+              "words": [
+                {
+                  "jp": "走る",
+                  "reading": "はしる",
+                  "romaji": "hashiru",
+                  "en": "run"
+                },
+                {
+                  "jp": "走者",
+                  "reading": "そうしゃ",
+                  "romaji": "sousha",
+                  "en": "runner"
+                }
+              ],
+              "example": {
+                "jp": "走る",
+                "romaji": "hashiru",
+                "en": "run"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj20-2",
+          "title": "歩〜遠",
+          "type": "KANJI",
+          "icon": "歩",
+          "items": [
+            {
+              "id": "j-歩",
+              "kind": "KANJI",
+              "jp": "歩",
+              "reading": "ある",
+              "romaji": "aru",
+              "meaning": "walk",
+              "on": "ホ・ブ",
+              "kun": "ある(く)",
+              "words": [
+                {
+                  "jp": "歩く",
+                  "reading": "あるく",
+                  "romaji": "aruku",
+                  "en": "walk"
+                },
+                {
+                  "jp": "歩道",
+                  "reading": "ほどう",
+                  "romaji": "hodou",
+                  "en": "sidewalk"
+                }
+              ],
+              "example": {
+                "jp": "歩く",
+                "romaji": "aruku",
+                "en": "walk"
+              }
+            },
+            {
+              "id": "j-止",
+              "kind": "KANJI",
+              "jp": "止",
+              "reading": "と",
+              "romaji": "to",
+              "meaning": "stop",
+              "on": "シ",
+              "kun": "と(まる)・と(める)",
+              "words": [
+                {
+                  "jp": "止まる",
+                  "reading": "とまる",
+                  "romaji": "tomaru",
+                  "en": "stop"
+                },
+                {
+                  "jp": "中止",
+                  "reading": "ちゅうし",
+                  "romaji": "chuushi",
+                  "en": "cancellation"
+                }
+              ],
+              "example": {
+                "jp": "止まる",
+                "romaji": "tomaru",
+                "en": "stop"
+              }
+            },
+            {
+              "id": "j-通",
+              "kind": "KANJI",
+              "jp": "通",
+              "reading": "つう",
+              "romaji": "tsuu",
+              "meaning": "pass through; commute",
+              "on": "ツウ",
+              "kun": "とお(る)・かよ(う)",
+              "words": [
+                {
+                  "jp": "通る",
+                  "reading": "とおる",
+                  "romaji": "tooru",
+                  "en": "pass through"
+                },
+                {
+                  "jp": "通う",
+                  "reading": "かよう",
+                  "romaji": "kayou",
+                  "en": "commute"
+                }
+              ],
+              "example": {
+                "jp": "通る",
+                "romaji": "tooru",
+                "en": "pass through"
+              }
+            },
+            {
+              "id": "j-送",
+              "kind": "KANJI",
+              "jp": "送",
+              "reading": "おく",
+              "romaji": "oku",
+              "meaning": "send",
+              "on": "ソウ",
+              "kun": "おく(る)",
+              "words": [
+                {
+                  "jp": "送る",
+                  "reading": "おくる",
+                  "romaji": "okuru",
+                  "en": "send"
+                },
+                {
+                  "jp": "放送",
+                  "reading": "ほうそう",
+                  "romaji": "housou",
+                  "en": "broadcast"
+                }
+              ],
+              "example": {
+                "jp": "送る",
+                "romaji": "okuru",
+                "en": "send"
+              }
+            },
+            {
+              "id": "j-遠",
+              "kind": "KANJI",
+              "jp": "遠",
+              "reading": "とお",
+              "romaji": "too",
+              "meaning": "far",
+              "on": "エン",
+              "kun": "とお(い)",
+              "words": [
+                {
+                  "jp": "遠い",
+                  "reading": "とおい",
+                  "romaji": "tooi",
+                  "en": "far"
+                },
+                {
+                  "jp": "遠足",
+                  "reading": "えんそく",
+                  "romaji": "ensoku",
+                  "en": "school excursion"
+                }
+              ],
+              "example": {
+                "jp": "遠い",
+                "romaji": "tooi",
+                "en": "far"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj21",
+      "title": "Daily actions",
+      "subtitle": "帰 起 着 開 始 · 終 去 待 急 近",
+      "color": "#C8452F",
+      "dark": "#9E3220",
+      "tags": [
+        "kanji",
+        "n4",
+        "return home",
+        "get up",
+        "wear",
+        "open",
+        "begin",
+        "end",
+        "leave",
+        "wait",
+        "hurry",
+        "near"
+      ],
+      "lessons": [
+        {
+          "id": "kj21-1",
+          "title": "帰〜始",
+          "type": "KANJI",
+          "icon": "帰",
+          "items": [
+            {
+              "id": "j-帰",
+              "kind": "KANJI",
+              "jp": "帰",
+              "reading": "かえ",
+              "romaji": "kae",
+              "meaning": "return home",
+              "on": "キ",
+              "kun": "かえ(る)",
+              "words": [
+                {
+                  "jp": "帰る",
+                  "reading": "かえる",
+                  "romaji": "kaeru",
+                  "en": "go home"
+                },
+                {
+                  "jp": "帰国",
+                  "reading": "きこく",
+                  "romaji": "kikoku",
+                  "en": "returning to one's country"
+                }
+              ],
+              "example": {
+                "jp": "帰る",
+                "romaji": "kaeru",
+                "en": "go home"
+              }
+            },
+            {
+              "id": "j-起",
+              "kind": "KANJI",
+              "jp": "起",
+              "reading": "お",
+              "romaji": "o",
+              "meaning": "get up; wake",
+              "on": "キ",
+              "kun": "お(きる)・お(こす)",
+              "words": [
+                {
+                  "jp": "起きる",
+                  "reading": "おきる",
+                  "romaji": "okiru",
+                  "en": "get up"
+                },
+                {
+                  "jp": "起こす",
+                  "reading": "おこす",
+                  "romaji": "okosu",
+                  "en": "wake (someone) up"
+                }
+              ],
+              "example": {
+                "jp": "起きる",
+                "romaji": "okiru",
+                "en": "get up"
+              }
+            },
+            {
+              "id": "j-着",
+              "kind": "KANJI",
+              "jp": "着",
+              "reading": "き",
+              "romaji": "ki",
+              "meaning": "wear; arrive",
+              "on": "チャク",
+              "kun": "き(る)・つ(く)",
+              "words": [
+                {
+                  "jp": "着る",
+                  "reading": "きる",
+                  "romaji": "kiru",
+                  "en": "wear"
+                },
+                {
+                  "jp": "着く",
+                  "reading": "つく",
+                  "romaji": "tsuku",
+                  "en": "arrive"
+                }
+              ],
+              "example": {
+                "jp": "着る",
+                "romaji": "kiru",
+                "en": "wear"
+              }
+            },
+            {
+              "id": "j-開",
+              "kind": "KANJI",
+              "jp": "開",
+              "reading": "あ",
+              "romaji": "a",
+              "meaning": "open",
+              "on": "カイ",
+              "kun": "あ(ける)・ひら(く)",
+              "words": [
+                {
+                  "jp": "開ける",
+                  "reading": "あける",
+                  "romaji": "akeru",
+                  "en": "open"
+                },
+                {
+                  "jp": "開く",
+                  "reading": "ひらく",
+                  "romaji": "hiraku",
+                  "en": "open (up)"
+                }
+              ],
+              "example": {
+                "jp": "開ける",
+                "romaji": "akeru",
+                "en": "open"
+              }
+            },
+            {
+              "id": "j-始",
+              "kind": "KANJI",
+              "jp": "始",
+              "reading": "はじ",
+              "romaji": "haji",
+              "meaning": "begin",
+              "on": "シ",
+              "kun": "はじ(まる)・はじ(める)",
+              "words": [
+                {
+                  "jp": "始まる",
+                  "reading": "はじまる",
+                  "romaji": "hajimaru",
+                  "en": "begin"
+                },
+                {
+                  "jp": "開始",
+                  "reading": "かいし",
+                  "romaji": "kaishi",
+                  "en": "start"
+                }
+              ],
+              "example": {
+                "jp": "始まる",
+                "romaji": "hajimaru",
+                "en": "begin"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj21-2",
+          "title": "終〜近",
+          "type": "KANJI",
+          "icon": "終",
+          "items": [
+            {
+              "id": "j-終",
+              "kind": "KANJI",
+              "jp": "終",
+              "reading": "お",
+              "romaji": "o",
+              "meaning": "end",
+              "on": "シュウ",
+              "kun": "お(わる)",
+              "words": [
+                {
+                  "jp": "終わる",
+                  "reading": "おわる",
+                  "romaji": "owaru",
+                  "en": "end"
+                },
+                {
+                  "jp": "終点",
+                  "reading": "しゅうてん",
+                  "romaji": "shuuten",
+                  "en": "last stop"
+                }
+              ],
+              "example": {
+                "jp": "終わる",
+                "romaji": "owaru",
+                "en": "end"
+              }
+            },
+            {
+              "id": "j-去",
+              "kind": "KANJI",
+              "jp": "去",
+              "reading": "きょ",
+              "romaji": "kyo",
+              "meaning": "leave; past",
+              "on": "キョ・コ",
+              "kun": "さ(る)",
+              "words": [
+                {
+                  "jp": "去年",
+                  "reading": "きょねん",
+                  "romaji": "kyonen",
+                  "en": "last year"
+                },
+                {
+                  "jp": "過去",
+                  "reading": "かこ",
+                  "romaji": "kako",
+                  "en": "the past"
+                }
+              ],
+              "example": {
+                "jp": "去年",
+                "romaji": "kyonen",
+                "en": "last year"
+              }
+            },
+            {
+              "id": "j-待",
+              "kind": "KANJI",
+              "jp": "待",
+              "reading": "ま",
+              "romaji": "ma",
+              "meaning": "wait",
+              "on": "タイ",
+              "kun": "ま(つ)",
+              "words": [
+                {
+                  "jp": "待つ",
+                  "reading": "まつ",
+                  "romaji": "matsu",
+                  "en": "wait"
+                },
+                {
+                  "jp": "招待",
+                  "reading": "しょうたい",
+                  "romaji": "shoutai",
+                  "en": "invitation"
+                }
+              ],
+              "example": {
+                "jp": "待つ",
+                "romaji": "matsu",
+                "en": "wait"
+              }
+            },
+            {
+              "id": "j-急",
+              "kind": "KANJI",
+              "jp": "急",
+              "reading": "きゅう",
+              "romaji": "kyuu",
+              "meaning": "hurry; sudden",
+              "on": "キュウ",
+              "kun": "いそ(ぐ)",
+              "words": [
+                {
+                  "jp": "急ぐ",
+                  "reading": "いそぐ",
+                  "romaji": "isogu",
+                  "en": "hurry"
+                },
+                {
+                  "jp": "急行",
+                  "reading": "きゅうこう",
+                  "romaji": "kyuukou",
+                  "en": "express (train)"
+                }
+              ],
+              "example": {
+                "jp": "急ぐ",
+                "romaji": "isogu",
+                "en": "hurry"
+              }
+            },
+            {
+              "id": "j-近",
+              "kind": "KANJI",
+              "jp": "近",
+              "reading": "ちか",
+              "romaji": "chika",
+              "meaning": "near",
+              "on": "キン",
+              "kun": "ちか(い)",
+              "words": [
+                {
+                  "jp": "近い",
+                  "reading": "ちかい",
+                  "romaji": "chikai",
+                  "en": "near"
+                },
+                {
+                  "jp": "近所",
+                  "reading": "きんじょ",
+                  "romaji": "kinjo",
+                  "en": "neighbourhood"
+                }
+              ],
+              "example": {
+                "jp": "近い",
+                "romaji": "chikai",
+                "en": "near"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj22",
+      "title": "Work & money",
+      "subtitle": "仕 事 働 社 業 · 員 売 品 借 貸",
+      "color": "#B7791F",
+      "dark": "#8A5A12",
+      "tags": [
+        "kanji",
+        "n4",
+        "serve",
+        "thing",
+        "work",
+        "company",
+        "business",
+        "member",
+        "sell",
+        "goods",
+        "borrow",
+        "lend"
+      ],
+      "lessons": [
+        {
+          "id": "kj22-1",
+          "title": "仕〜業",
+          "type": "KANJI",
+          "icon": "仕",
+          "items": [
+            {
+              "id": "j-仕",
+              "kind": "KANJI",
+              "jp": "仕",
+              "reading": "し",
+              "romaji": "shi",
+              "meaning": "serve; do",
+              "on": "シ・ジ",
+              "kun": "つか(える)",
+              "words": [
+                {
+                  "jp": "仕事",
+                  "reading": "しごと",
+                  "romaji": "shigoto",
+                  "en": "work, job"
+                },
+                {
+                  "jp": "仕方",
+                  "reading": "しかた",
+                  "romaji": "shikata",
+                  "en": "way of doing"
+                }
+              ],
+              "example": {
+                "jp": "仕事",
+                "romaji": "shigoto",
+                "en": "work, job"
+              }
+            },
+            {
+              "id": "j-事",
+              "kind": "KANJI",
+              "jp": "事",
+              "reading": "こと",
+              "romaji": "koto",
+              "meaning": "thing; matter",
+              "on": "ジ",
+              "kun": "こと",
+              "words": [
+                {
+                  "jp": "事",
+                  "reading": "こと",
+                  "romaji": "koto",
+                  "en": "thing, matter"
+                },
+                {
+                  "jp": "食事",
+                  "reading": "しょくじ",
+                  "romaji": "shokuji",
+                  "en": "meal"
+                }
+              ],
+              "example": {
+                "jp": "事",
+                "romaji": "koto",
+                "en": "thing, matter"
+              }
+            },
+            {
+              "id": "j-働",
+              "kind": "KANJI",
+              "jp": "働",
+              "reading": "はたら",
+              "romaji": "hatara",
+              "meaning": "work",
+              "on": "ドウ",
+              "kun": "はたら(く)",
+              "words": [
+                {
+                  "jp": "働く",
+                  "reading": "はたらく",
+                  "romaji": "hataraku",
+                  "en": "work"
+                },
+                {
+                  "jp": "労働",
+                  "reading": "ろうどう",
+                  "romaji": "roudou",
+                  "en": "labour"
+                }
+              ],
+              "example": {
+                "jp": "働く",
+                "romaji": "hataraku",
+                "en": "work"
+              }
+            },
+            {
+              "id": "j-社",
+              "kind": "KANJI",
+              "jp": "社",
+              "reading": "しゃ",
+              "romaji": "sha",
+              "meaning": "company; shrine",
+              "on": "シャ",
+              "kun": "やしろ",
+              "words": [
+                {
+                  "jp": "会社",
+                  "reading": "かいしゃ",
+                  "romaji": "kaisha",
+                  "en": "company"
+                },
+                {
+                  "jp": "神社",
+                  "reading": "じんじゃ",
+                  "romaji": "jinja",
+                  "en": "shrine"
+                }
+              ],
+              "example": {
+                "jp": "会社",
+                "romaji": "kaisha",
+                "en": "company"
+              }
+            },
+            {
+              "id": "j-業",
+              "kind": "KANJI",
+              "jp": "業",
+              "reading": "ぎょう",
+              "romaji": "gyou",
+              "meaning": "business; industry",
+              "on": "ギョウ・ゴウ",
+              "kun": "わざ",
+              "words": [
+                {
+                  "jp": "授業",
+                  "reading": "じゅぎょう",
+                  "romaji": "jugyou",
+                  "en": "class, lesson"
+                },
+                {
+                  "jp": "工業",
+                  "reading": "こうぎょう",
+                  "romaji": "kougyou",
+                  "en": "industry"
+                }
+              ],
+              "example": {
+                "jp": "授業",
+                "romaji": "jugyou",
+                "en": "class, lesson"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj22-2",
+          "title": "員〜貸",
+          "type": "KANJI",
+          "icon": "員",
+          "items": [
+            {
+              "id": "j-員",
+              "kind": "KANJI",
+              "jp": "員",
+              "reading": "いん",
+              "romaji": "in",
+              "meaning": "member",
+              "on": "イン",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "会社員",
+                  "reading": "かいしゃいん",
+                  "romaji": "kaishain",
+                  "en": "office worker"
+                },
+                {
+                  "jp": "店員",
+                  "reading": "てんいん",
+                  "romaji": "ten'in",
+                  "en": "shop assistant"
+                }
+              ],
+              "example": {
+                "jp": "会社員",
+                "romaji": "kaishain",
+                "en": "office worker"
+              }
+            },
+            {
+              "id": "j-売",
+              "kind": "KANJI",
+              "jp": "売",
+              "reading": "う",
+              "romaji": "u",
+              "meaning": "sell",
+              "on": "バイ",
+              "kun": "う(る)",
+              "words": [
+                {
+                  "jp": "売る",
+                  "reading": "うる",
+                  "romaji": "uru",
+                  "en": "sell"
+                },
+                {
+                  "jp": "売り場",
+                  "reading": "うりば",
+                  "romaji": "uriba",
+                  "en": "sales floor"
+                }
+              ],
+              "example": {
+                "jp": "売る",
+                "romaji": "uru",
+                "en": "sell"
+              }
+            },
+            {
+              "id": "j-品",
+              "kind": "KANJI",
+              "jp": "品",
+              "reading": "しな",
+              "romaji": "shina",
+              "meaning": "goods; article",
+              "on": "ヒン",
+              "kun": "しな",
+              "words": [
+                {
+                  "jp": "品物",
+                  "reading": "しなもの",
+                  "romaji": "shinamono",
+                  "en": "goods"
+                },
+                {
+                  "jp": "食品",
+                  "reading": "しょくひん",
+                  "romaji": "shokuhin",
+                  "en": "food products"
+                }
+              ],
+              "example": {
+                "jp": "品物",
+                "romaji": "shinamono",
+                "en": "goods"
+              }
+            },
+            {
+              "id": "j-借",
+              "kind": "KANJI",
+              "jp": "借",
+              "reading": "か",
+              "romaji": "ka",
+              "meaning": "borrow",
+              "on": "シャク",
+              "kun": "か(りる)",
+              "words": [
+                {
+                  "jp": "借りる",
+                  "reading": "かりる",
+                  "romaji": "kariru",
+                  "en": "borrow"
+                },
+                {
+                  "jp": "借金",
+                  "reading": "しゃっきん",
+                  "romaji": "shakkin",
+                  "en": "debt"
+                }
+              ],
+              "example": {
+                "jp": "借りる",
+                "romaji": "kariru",
+                "en": "borrow"
+              }
+            },
+            {
+              "id": "j-貸",
+              "kind": "KANJI",
+              "jp": "貸",
+              "reading": "か",
+              "romaji": "ka",
+              "meaning": "lend",
+              "on": "タイ",
+              "kun": "か(す)",
+              "words": [
+                {
+                  "jp": "貸す",
+                  "reading": "かす",
+                  "romaji": "kasu",
+                  "en": "lend"
+                },
+                {
+                  "jp": "貸し出し",
+                  "reading": "かしだし",
+                  "romaji": "kashidashi",
+                  "en": "lending out"
+                }
+              ],
+              "example": {
+                "jp": "貸す",
+                "romaji": "kasu",
+                "en": "lend"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj23",
+      "title": "Thinking & feeling",
+      "subtitle": "思 考 知 意 楽 · 悪 好 真 正 特",
+      "color": "#2E7D6B",
+      "dark": "#1E5A4D",
+      "tags": [
+        "kanji",
+        "n4",
+        "think",
+        "consider",
+        "know",
+        "mind",
+        "fun",
+        "bad",
+        "like",
+        "true",
+        "correct",
+        "special"
+      ],
+      "lessons": [
+        {
+          "id": "kj23-1",
+          "title": "思〜楽",
+          "type": "KANJI",
+          "icon": "思",
+          "items": [
+            {
+              "id": "j-思",
+              "kind": "KANJI",
+              "jp": "思",
+              "reading": "おも",
+              "romaji": "omo",
+              "meaning": "think",
+              "on": "シ",
+              "kun": "おも(う)",
+              "words": [
+                {
+                  "jp": "思う",
+                  "reading": "おもう",
+                  "romaji": "omou",
+                  "en": "think"
+                },
+                {
+                  "jp": "思い出",
+                  "reading": "おもいで",
+                  "romaji": "omoide",
+                  "en": "memory"
+                }
+              ],
+              "example": {
+                "jp": "思う",
+                "romaji": "omou",
+                "en": "think"
+              }
+            },
+            {
+              "id": "j-考",
+              "kind": "KANJI",
+              "jp": "考",
+              "reading": "かんが",
+              "romaji": "kanga",
+              "meaning": "consider",
+              "on": "コウ",
+              "kun": "かんが(える)",
+              "words": [
+                {
+                  "jp": "考える",
+                  "reading": "かんがえる",
+                  "romaji": "kangaeru",
+                  "en": "think about, consider"
+                },
+                {
+                  "jp": "考え",
+                  "reading": "かんがえ",
+                  "romaji": "kangae",
+                  "en": "idea"
+                }
+              ],
+              "example": {
+                "jp": "考える",
+                "romaji": "kangaeru",
+                "en": "think about, consider"
+              }
+            },
+            {
+              "id": "j-知",
+              "kind": "KANJI",
+              "jp": "知",
+              "reading": "し",
+              "romaji": "shi",
+              "meaning": "know",
+              "on": "チ",
+              "kun": "し(る)",
+              "words": [
+                {
+                  "jp": "知る",
+                  "reading": "しる",
+                  "romaji": "shiru",
+                  "en": "know"
+                },
+                {
+                  "jp": "知らせる",
+                  "reading": "しらせる",
+                  "romaji": "shiraseru",
+                  "en": "inform"
+                }
+              ],
+              "example": {
+                "jp": "知る",
+                "romaji": "shiru",
+                "en": "know"
+              }
+            },
+            {
+              "id": "j-意",
+              "kind": "KANJI",
+              "jp": "意",
+              "reading": "い",
+              "romaji": "i",
+              "meaning": "mind; intention",
+              "on": "イ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "意味",
+                  "reading": "いみ",
+                  "romaji": "imi",
+                  "en": "meaning"
+                },
+                {
+                  "jp": "注意",
+                  "reading": "ちゅうい",
+                  "romaji": "chuui",
+                  "en": "caution"
+                }
+              ],
+              "example": {
+                "jp": "意味",
+                "romaji": "imi",
+                "en": "meaning"
+              }
+            },
+            {
+              "id": "j-楽",
+              "kind": "KANJI",
+              "jp": "楽",
+              "reading": "たの",
+              "romaji": "tano",
+              "meaning": "fun; music",
+              "on": "ガク・ラク",
+              "kun": "たの(しい)",
+              "words": [
+                {
+                  "jp": "楽しい",
+                  "reading": "たのしい",
+                  "romaji": "tanoshii",
+                  "en": "fun"
+                },
+                {
+                  "jp": "音楽",
+                  "reading": "おんがく",
+                  "romaji": "ongaku",
+                  "en": "music"
+                }
+              ],
+              "example": {
+                "jp": "楽しい",
+                "romaji": "tanoshii",
+                "en": "fun"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj23-2",
+          "title": "悪〜特",
+          "type": "KANJI",
+          "icon": "悪",
+          "items": [
+            {
+              "id": "j-悪",
+              "kind": "KANJI",
+              "jp": "悪",
+              "reading": "わる",
+              "romaji": "waru",
+              "meaning": "bad",
+              "on": "アク",
+              "kun": "わる(い)",
+              "words": [
+                {
+                  "jp": "悪い",
+                  "reading": "わるい",
+                  "romaji": "warui",
+                  "en": "bad"
+                },
+                {
+                  "jp": "悪口",
+                  "reading": "わるくち",
+                  "romaji": "warukuchi",
+                  "en": "badmouthing"
+                }
+              ],
+              "example": {
+                "jp": "悪い",
+                "romaji": "warui",
+                "en": "bad"
+              }
+            },
+            {
+              "id": "j-好",
+              "kind": "KANJI",
+              "jp": "好",
+              "reading": "す",
+              "romaji": "su",
+              "meaning": "like",
+              "on": "コウ",
+              "kun": "す(き)・この(む)",
+              "words": [
+                {
+                  "jp": "好き",
+                  "reading": "すき",
+                  "romaji": "suki",
+                  "en": "like"
+                },
+                {
+                  "jp": "大好き",
+                  "reading": "だいすき",
+                  "romaji": "daisuki",
+                  "en": "love, really like"
+                }
+              ],
+              "example": {
+                "jp": "好き",
+                "romaji": "suki",
+                "en": "like"
+              }
+            },
+            {
+              "id": "j-真",
+              "kind": "KANJI",
+              "jp": "真",
+              "reading": "しん",
+              "romaji": "shin",
+              "meaning": "true; real",
+              "on": "シン",
+              "kun": "ま",
+              "words": [
+                {
+                  "jp": "写真",
+                  "reading": "しゃしん",
+                  "romaji": "shashin",
+                  "en": "photograph"
+                },
+                {
+                  "jp": "真ん中",
+                  "reading": "まんなか",
+                  "romaji": "mannaka",
+                  "en": "the very middle"
+                }
+              ],
+              "example": {
+                "jp": "写真",
+                "romaji": "shashin",
+                "en": "photograph"
+              }
+            },
+            {
+              "id": "j-正",
+              "kind": "KANJI",
+              "jp": "正",
+              "reading": "ただ",
+              "romaji": "tada",
+              "meaning": "correct",
+              "on": "セイ・ショウ",
+              "kun": "ただ(しい)・まさ",
+              "words": [
+                {
+                  "jp": "正しい",
+                  "reading": "ただしい",
+                  "romaji": "tadashii",
+                  "en": "correct"
+                },
+                {
+                  "jp": "お正月",
+                  "reading": "おしょうがつ",
+                  "romaji": "oshougatsu",
+                  "en": "New Year"
+                }
+              ],
+              "example": {
+                "jp": "正しい",
+                "romaji": "tadashii",
+                "en": "correct"
+              }
+            },
+            {
+              "id": "j-特",
+              "kind": "KANJI",
+              "jp": "特",
+              "reading": "とく",
+              "romaji": "toku",
+              "meaning": "special",
+              "on": "トク",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "特に",
+                  "reading": "とくに",
+                  "romaji": "tokuni",
+                  "en": "especially"
+                },
+                {
+                  "jp": "特急",
+                  "reading": "とっきゅう",
+                  "romaji": "tokkyuu",
+                  "en": "limited express"
+                }
+              ],
+              "example": {
+                "jp": "特に",
+                "romaji": "tokuni",
+                "en": "especially"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj24",
+      "title": "Things & life",
+      "subtitle": "物 服 洋 住 音 · 歌 電 便 持 使",
+      "color": "#3B5BA9",
+      "dark": "#24386B",
+      "tags": [
+        "kanji",
+        "n4",
+        "thing",
+        "clothes",
+        "ocean",
+        "live",
+        "sound",
+        "song",
+        "electricity",
+        "convenience",
+        "hold",
+        "use"
+      ],
+      "lessons": [
+        {
+          "id": "kj24-1",
+          "title": "物〜音",
+          "type": "KANJI",
+          "icon": "物",
+          "items": [
+            {
+              "id": "j-物",
+              "kind": "KANJI",
+              "jp": "物",
+              "reading": "もの",
+              "romaji": "mono",
+              "meaning": "thing; object",
+              "on": "ブツ・モツ",
+              "kun": "もの",
+              "words": [
+                {
+                  "jp": "物",
+                  "reading": "もの",
+                  "romaji": "mono",
+                  "en": "thing"
+                },
+                {
+                  "jp": "動物",
+                  "reading": "どうぶつ",
+                  "romaji": "doubutsu",
+                  "en": "animal"
+                }
+              ],
+              "example": {
+                "jp": "物",
+                "romaji": "mono",
+                "en": "thing"
+              }
+            },
+            {
+              "id": "j-服",
+              "kind": "KANJI",
+              "jp": "服",
+              "reading": "ふく",
+              "romaji": "fuku",
+              "meaning": "clothes",
+              "on": "フク",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "服",
+                  "reading": "ふく",
+                  "romaji": "fuku",
+                  "en": "clothes"
+                },
+                {
+                  "jp": "洋服",
+                  "reading": "ようふく",
+                  "romaji": "youfuku",
+                  "en": "(Western) clothes"
+                }
+              ],
+              "example": {
+                "jp": "服",
+                "romaji": "fuku",
+                "en": "clothes"
+              }
+            },
+            {
+              "id": "j-洋",
+              "kind": "KANJI",
+              "jp": "洋",
+              "reading": "よう",
+              "romaji": "you",
+              "meaning": "ocean; Western",
+              "on": "ヨウ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "洋服",
+                  "reading": "ようふく",
+                  "romaji": "youfuku",
+                  "en": "(Western) clothes"
+                },
+                {
+                  "jp": "西洋",
+                  "reading": "せいよう",
+                  "romaji": "seiyou",
+                  "en": "the West"
+                }
+              ],
+              "example": {
+                "jp": "洋服",
+                "romaji": "youfuku",
+                "en": "(Western) clothes"
+              }
+            },
+            {
+              "id": "j-住",
+              "kind": "KANJI",
+              "jp": "住",
+              "reading": "す",
+              "romaji": "su",
+              "meaning": "live (reside)",
+              "on": "ジュウ",
+              "kun": "す(む)",
+              "words": [
+                {
+                  "jp": "住む",
+                  "reading": "すむ",
+                  "romaji": "sumu",
+                  "en": "live"
+                },
+                {
+                  "jp": "住所",
+                  "reading": "じゅうしょ",
+                  "romaji": "juusho",
+                  "en": "address"
+                }
+              ],
+              "example": {
+                "jp": "住む",
+                "romaji": "sumu",
+                "en": "live"
+              }
+            },
+            {
+              "id": "j-音",
+              "kind": "KANJI",
+              "jp": "音",
+              "reading": "おと",
+              "romaji": "oto",
+              "meaning": "sound",
+              "on": "オン・イン",
+              "kun": "おと・ね",
+              "words": [
+                {
+                  "jp": "音",
+                  "reading": "おと",
+                  "romaji": "oto",
+                  "en": "sound"
+                },
+                {
+                  "jp": "音楽",
+                  "reading": "おんがく",
+                  "romaji": "ongaku",
+                  "en": "music"
+                }
+              ],
+              "example": {
+                "jp": "音",
+                "romaji": "oto",
+                "en": "sound"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj24-2",
+          "title": "歌〜使",
+          "type": "KANJI",
+          "icon": "歌",
+          "items": [
+            {
+              "id": "j-歌",
+              "kind": "KANJI",
+              "jp": "歌",
+              "reading": "うた",
+              "romaji": "uta",
+              "meaning": "song",
+              "on": "カ",
+              "kun": "うた・うた(う)",
+              "words": [
+                {
+                  "jp": "歌",
+                  "reading": "うた",
+                  "romaji": "uta",
+                  "en": "song"
+                },
+                {
+                  "jp": "歌う",
+                  "reading": "うたう",
+                  "romaji": "utau",
+                  "en": "sing"
+                }
+              ],
+              "example": {
+                "jp": "歌",
+                "romaji": "uta",
+                "en": "song"
+              }
+            },
+            {
+              "id": "j-電",
+              "kind": "KANJI",
+              "jp": "電",
+              "reading": "でん",
+              "romaji": "den",
+              "meaning": "electricity",
+              "on": "デン",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "電話",
+                  "reading": "でんわ",
+                  "romaji": "denwa",
+                  "en": "telephone"
+                },
+                {
+                  "jp": "電車",
+                  "reading": "でんしゃ",
+                  "romaji": "densha",
+                  "en": "train"
+                }
+              ],
+              "example": {
+                "jp": "電話",
+                "romaji": "denwa",
+                "en": "telephone"
+              }
+            },
+            {
+              "id": "j-便",
+              "kind": "KANJI",
+              "jp": "便",
+              "reading": "べん",
+              "romaji": "ben",
+              "meaning": "convenience; mail",
+              "on": "ベン・ビン",
+              "kun": "たよ(り)",
+              "words": [
+                {
+                  "jp": "便利",
+                  "reading": "べんり",
+                  "romaji": "benri",
+                  "en": "convenient"
+                },
+                {
+                  "jp": "郵便局",
+                  "reading": "ゆうびんきょく",
+                  "romaji": "yuubinkyoku",
+                  "en": "post office"
+                }
+              ],
+              "example": {
+                "jp": "便利",
+                "romaji": "benri",
+                "en": "convenient"
+              }
+            },
+            {
+              "id": "j-持",
+              "kind": "KANJI",
+              "jp": "持",
+              "reading": "も",
+              "romaji": "mo",
+              "meaning": "hold; have",
+              "on": "ジ",
+              "kun": "も(つ)",
+              "words": [
+                {
+                  "jp": "持つ",
+                  "reading": "もつ",
+                  "romaji": "motsu",
+                  "en": "hold, have"
+                },
+                {
+                  "jp": "気持ち",
+                  "reading": "きもち",
+                  "romaji": "kimochi",
+                  "en": "feeling"
+                }
+              ],
+              "example": {
+                "jp": "持つ",
+                "romaji": "motsu",
+                "en": "hold, have"
+              }
+            },
+            {
+              "id": "j-使",
+              "kind": "KANJI",
+              "jp": "使",
+              "reading": "つか",
+              "romaji": "tsuka",
+              "meaning": "use",
+              "on": "シ",
+              "kun": "つか(う)",
+              "words": [
+                {
+                  "jp": "使う",
+                  "reading": "つかう",
+                  "romaji": "tsukau",
+                  "en": "use"
+                },
+                {
+                  "jp": "大使館",
+                  "reading": "たいしかん",
+                  "romaji": "taishikan",
+                  "en": "embassy"
+                }
+              ],
+              "example": {
+                "jp": "使う",
+                "romaji": "tsukau",
+                "en": "use"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj25",
+      "title": "Comparing",
+      "subtitle": "強 弱 重 低 広 · 有 無 不 同 別",
+      "color": "#4F8A3A",
+      "dark": "#355F26",
+      "tags": [
+        "kanji",
+        "n4",
+        "strong",
+        "weak",
+        "heavy",
+        "low",
+        "wide",
+        "have",
+        "none",
+        "not",
+        "same",
+        "separate"
+      ],
+      "lessons": [
+        {
+          "id": "kj25-1",
+          "title": "強〜広",
+          "type": "KANJI",
+          "icon": "強",
+          "items": [
+            {
+              "id": "j-強",
+              "kind": "KANJI",
+              "jp": "強",
+              "reading": "つよ",
+              "romaji": "tsuyo",
+              "meaning": "strong",
+              "on": "キョウ・ゴウ",
+              "kun": "つよ(い)",
+              "words": [
+                {
+                  "jp": "強い",
+                  "reading": "つよい",
+                  "romaji": "tsuyoi",
+                  "en": "strong"
+                },
+                {
+                  "jp": "勉強",
+                  "reading": "べんきょう",
+                  "romaji": "benkyou",
+                  "en": "study"
+                }
+              ],
+              "example": {
+                "jp": "強い",
+                "romaji": "tsuyoi",
+                "en": "strong"
+              }
+            },
+            {
+              "id": "j-弱",
+              "kind": "KANJI",
+              "jp": "弱",
+              "reading": "よわ",
+              "romaji": "yowa",
+              "meaning": "weak",
+              "on": "ジャク",
+              "kun": "よわ(い)",
+              "words": [
+                {
+                  "jp": "弱い",
+                  "reading": "よわい",
+                  "romaji": "yowai",
+                  "en": "weak"
+                },
+                {
+                  "jp": "弱点",
+                  "reading": "じゃくてん",
+                  "romaji": "jakuten",
+                  "en": "weak point"
+                }
+              ],
+              "example": {
+                "jp": "弱い",
+                "romaji": "yowai",
+                "en": "weak"
+              }
+            },
+            {
+              "id": "j-重",
+              "kind": "KANJI",
+              "jp": "重",
+              "reading": "おも",
+              "romaji": "omo",
+              "meaning": "heavy",
+              "on": "ジュウ・チョウ",
+              "kun": "おも(い)・かさ(ねる)",
+              "words": [
+                {
+                  "jp": "重い",
+                  "reading": "おもい",
+                  "romaji": "omoi",
+                  "en": "heavy"
+                },
+                {
+                  "jp": "体重",
+                  "reading": "たいじゅう",
+                  "romaji": "taijuu",
+                  "en": "body weight"
+                }
+              ],
+              "example": {
+                "jp": "重い",
+                "romaji": "omoi",
+                "en": "heavy"
+              }
+            },
+            {
+              "id": "j-低",
+              "kind": "KANJI",
+              "jp": "低",
+              "reading": "ひく",
+              "romaji": "hiku",
+              "meaning": "low",
+              "on": "テイ",
+              "kun": "ひく(い)",
+              "words": [
+                {
+                  "jp": "低い",
+                  "reading": "ひくい",
+                  "romaji": "hikui",
+                  "en": "low, short"
+                },
+                {
+                  "jp": "最低",
+                  "reading": "さいてい",
+                  "romaji": "saitei",
+                  "en": "the lowest, the worst"
+                }
+              ],
+              "example": {
+                "jp": "低い",
+                "romaji": "hikui",
+                "en": "low, short"
+              }
+            },
+            {
+              "id": "j-広",
+              "kind": "KANJI",
+              "jp": "広",
+              "reading": "ひろ",
+              "romaji": "hiro",
+              "meaning": "wide",
+              "on": "コウ",
+              "kun": "ひろ(い)",
+              "words": [
+                {
+                  "jp": "広い",
+                  "reading": "ひろい",
+                  "romaji": "hiroi",
+                  "en": "wide, spacious"
+                },
+                {
+                  "jp": "広島",
+                  "reading": "ひろしま",
+                  "romaji": "hiroshima",
+                  "en": "Hiroshima"
+                }
+              ],
+              "example": {
+                "jp": "広い",
+                "romaji": "hiroi",
+                "en": "wide, spacious"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj25-2",
+          "title": "有〜別",
+          "type": "KANJI",
+          "icon": "有",
+          "items": [
+            {
+              "id": "j-有",
+              "kind": "KANJI",
+              "jp": "有",
+              "reading": "ゆう",
+              "romaji": "yuu",
+              "meaning": "have; exist",
+              "on": "ユウ・ウ",
+              "kun": "あ(る)",
+              "words": [
+                {
+                  "jp": "有名",
+                  "reading": "ゆうめい",
+                  "romaji": "yuumei",
+                  "en": "famous"
+                },
+                {
+                  "jp": "有料",
+                  "reading": "ゆうりょう",
+                  "romaji": "yuuryou",
+                  "en": "paid, with a fee"
+                }
+              ],
+              "example": {
+                "jp": "有名",
+                "romaji": "yuumei",
+                "en": "famous"
+              }
+            },
+            {
+              "id": "j-無",
+              "kind": "KANJI",
+              "jp": "無",
+              "reading": "む",
+              "romaji": "mu",
+              "meaning": "none; without",
+              "on": "ム・ブ",
+              "kun": "な(い)",
+              "words": [
+                {
+                  "jp": "無料",
+                  "reading": "むりょう",
+                  "romaji": "muryou",
+                  "en": "free (of charge)"
+                },
+                {
+                  "jp": "無理",
+                  "reading": "むり",
+                  "romaji": "muri",
+                  "en": "impossible"
+                }
+              ],
+              "example": {
+                "jp": "無料",
+                "romaji": "muryou",
+                "en": "free (of charge)"
+              }
+            },
+            {
+              "id": "j-不",
+              "kind": "KANJI",
+              "jp": "不",
+              "reading": "ふ",
+              "romaji": "fu",
+              "meaning": "not; un-",
+              "on": "フ・ブ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "不便",
+                  "reading": "ふべん",
+                  "romaji": "fuben",
+                  "en": "inconvenient"
+                },
+                {
+                  "jp": "不安",
+                  "reading": "ふあん",
+                  "romaji": "fuan",
+                  "en": "anxiety"
+                }
+              ],
+              "example": {
+                "jp": "不便",
+                "romaji": "fuben",
+                "en": "inconvenient"
+              }
+            },
+            {
+              "id": "j-同",
+              "kind": "KANJI",
+              "jp": "同",
+              "reading": "おな",
+              "romaji": "ona",
+              "meaning": "same",
+              "on": "ドウ",
+              "kun": "おな(じ)",
+              "words": [
+                {
+                  "jp": "同じ",
+                  "reading": "おなじ",
+                  "romaji": "onaji",
+                  "en": "same"
+                },
+                {
+                  "jp": "同時",
+                  "reading": "どうじ",
+                  "romaji": "douji",
+                  "en": "at the same time"
+                }
+              ],
+              "example": {
+                "jp": "同じ",
+                "romaji": "onaji",
+                "en": "same"
+              }
+            },
+            {
+              "id": "j-別",
+              "kind": "KANJI",
+              "jp": "別",
+              "reading": "べつ",
+              "romaji": "betsu",
+              "meaning": "separate; different",
+              "on": "ベツ",
+              "kun": "わか(れる)",
+              "words": [
+                {
+                  "jp": "別",
+                  "reading": "べつ",
+                  "romaji": "betsu",
+                  "en": "separate, different"
+                },
+                {
+                  "jp": "特別",
+                  "reading": "とくべつ",
+                  "romaji": "tokubetsu",
+                  "en": "special"
+                }
+              ],
+              "example": {
+                "jp": "別",
+                "romaji": "betsu",
+                "en": "separate, different"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj26",
+      "title": "Doing & counting",
+      "subtitle": "方 以 度 代 作 · 発 動 集 合 回",
+      "color": "#B04A72",
+      "dark": "#82304F",
+      "tags": [
+        "kanji",
+        "n4",
+        "direction",
+        "by means of",
+        "degree",
+        "generation",
+        "make",
+        "depart",
+        "move",
+        "gather",
+        "fit",
+        "times"
+      ],
+      "lessons": [
+        {
+          "id": "kj26-1",
+          "title": "方〜作",
+          "type": "KANJI",
+          "icon": "方",
+          "items": [
+            {
+              "id": "j-方",
+              "kind": "KANJI",
+              "jp": "方",
+              "reading": "ほう",
+              "romaji": "hou",
+              "meaning": "direction; way",
+              "on": "ホウ",
+              "kun": "かた",
+              "words": [
+                {
+                  "jp": "読み方",
+                  "reading": "よみかた",
+                  "romaji": "yomikata",
+                  "en": "way of reading"
+                },
+                {
+                  "jp": "両方",
+                  "reading": "りょうほう",
+                  "romaji": "ryouhou",
+                  "en": "both"
+                }
+              ],
+              "example": {
+                "jp": "読み方",
+                "romaji": "yomikata",
+                "en": "way of reading"
+              }
+            },
+            {
+              "id": "j-以",
+              "kind": "KANJI",
+              "jp": "以",
+              "reading": "い",
+              "romaji": "i",
+              "meaning": "by means of; from",
+              "on": "イ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "以上",
+                  "reading": "いじょう",
+                  "romaji": "ijou",
+                  "en": "more than"
+                },
+                {
+                  "jp": "以外",
+                  "reading": "いがい",
+                  "romaji": "igai",
+                  "en": "except"
+                }
+              ],
+              "example": {
+                "jp": "以上",
+                "romaji": "ijou",
+                "en": "more than"
+              }
+            },
+            {
+              "id": "j-度",
+              "kind": "KANJI",
+              "jp": "度",
+              "reading": "ど",
+              "romaji": "do",
+              "meaning": "degree; times",
+              "on": "ド",
+              "kun": "たび",
+              "words": [
+                {
+                  "jp": "今度",
+                  "reading": "こんど",
+                  "romaji": "kondo",
+                  "en": "next time"
+                },
+                {
+                  "jp": "三度",
+                  "reading": "さんど",
+                  "romaji": "sando",
+                  "en": "three times"
+                }
+              ],
+              "example": {
+                "jp": "今度",
+                "romaji": "kondo",
+                "en": "next time"
+              }
+            },
+            {
+              "id": "j-代",
+              "kind": "KANJI",
+              "jp": "代",
+              "reading": "だい",
+              "romaji": "dai",
+              "meaning": "generation; charge",
+              "on": "ダイ・タイ",
+              "kun": "か(わる)・よ",
+              "words": [
+                {
+                  "jp": "時代",
+                  "reading": "じだい",
+                  "romaji": "jidai",
+                  "en": "era"
+                },
+                {
+                  "jp": "電気代",
+                  "reading": "でんきだい",
+                  "romaji": "denkidai",
+                  "en": "electricity bill"
+                }
+              ],
+              "example": {
+                "jp": "時代",
+                "romaji": "jidai",
+                "en": "era"
+              }
+            },
+            {
+              "id": "j-作",
+              "kind": "KANJI",
+              "jp": "作",
+              "reading": "つく",
+              "romaji": "tsuku",
+              "meaning": "make",
+              "on": "サク・サ",
+              "kun": "つく(る)",
+              "words": [
+                {
+                  "jp": "作る",
+                  "reading": "つくる",
+                  "romaji": "tsukuru",
+                  "en": "make"
+                },
+                {
+                  "jp": "作文",
+                  "reading": "さくぶん",
+                  "romaji": "sakubun",
+                  "en": "essay, composition"
+                }
+              ],
+              "example": {
+                "jp": "作る",
+                "romaji": "tsukuru",
+                "en": "make"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj26-2",
+          "title": "発〜回",
+          "type": "KANJI",
+          "icon": "発",
+          "items": [
+            {
+              "id": "j-発",
+              "kind": "KANJI",
+              "jp": "発",
+              "reading": "はつ",
+              "romaji": "hatsu",
+              "meaning": "depart; emit",
+              "on": "ハツ・ホツ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "出発",
+                  "reading": "しゅっぱつ",
+                  "romaji": "shuppatsu",
+                  "en": "departure"
+                },
+                {
+                  "jp": "発音",
+                  "reading": "はつおん",
+                  "romaji": "hatsuon",
+                  "en": "pronunciation"
+                }
+              ],
+              "example": {
+                "jp": "出発",
+                "romaji": "shuppatsu",
+                "en": "departure"
+              }
+            },
+            {
+              "id": "j-動",
+              "kind": "KANJI",
+              "jp": "動",
+              "reading": "うご",
+              "romaji": "ugo",
+              "meaning": "move",
+              "on": "ドウ",
+              "kun": "うご(く)",
+              "words": [
+                {
+                  "jp": "動く",
+                  "reading": "うごく",
+                  "romaji": "ugoku",
+                  "en": "move"
+                },
+                {
+                  "jp": "動物",
+                  "reading": "どうぶつ",
+                  "romaji": "doubutsu",
+                  "en": "animal"
+                }
+              ],
+              "example": {
+                "jp": "動く",
+                "romaji": "ugoku",
+                "en": "move"
+              }
+            },
+            {
+              "id": "j-集",
+              "kind": "KANJI",
+              "jp": "集",
+              "reading": "あつ",
+              "romaji": "atsu",
+              "meaning": "gather",
+              "on": "シュウ",
+              "kun": "あつ(まる)・あつ(める)",
+              "words": [
+                {
+                  "jp": "集める",
+                  "reading": "あつめる",
+                  "romaji": "atsumeru",
+                  "en": "collect"
+                },
+                {
+                  "jp": "集合",
+                  "reading": "しゅうごう",
+                  "romaji": "shuugou",
+                  "en": "meeting up"
+                }
+              ],
+              "example": {
+                "jp": "集める",
+                "romaji": "atsumeru",
+                "en": "collect"
+              }
+            },
+            {
+              "id": "j-合",
+              "kind": "KANJI",
+              "jp": "合",
+              "reading": "あ",
+              "romaji": "a",
+              "meaning": "fit; join",
+              "on": "ゴウ・ガッ",
+              "kun": "あ(う)",
+              "words": [
+                {
+                  "jp": "合う",
+                  "reading": "あう",
+                  "romaji": "au",
+                  "en": "fit, match"
+                },
+                {
+                  "jp": "試合",
+                  "reading": "しあい",
+                  "romaji": "shiai",
+                  "en": "match, game"
+                }
+              ],
+              "example": {
+                "jp": "合う",
+                "romaji": "au",
+                "en": "fit, match"
+              }
+            },
+            {
+              "id": "j-回",
+              "kind": "KANJI",
+              "jp": "回",
+              "reading": "かい",
+              "romaji": "kai",
+              "meaning": "times; turn",
+              "on": "カイ",
+              "kun": "まわ(る)",
+              "words": [
+                {
+                  "jp": "一回",
+                  "reading": "いっかい",
+                  "romaji": "ikkai",
+                  "en": "once"
+                },
+                {
+                  "jp": "回る",
+                  "reading": "まわる",
+                  "romaji": "mawaru",
+                  "en": "turn, go around"
+                }
+              ],
+              "example": {
+                "jp": "一回",
+                "romaji": "ikkai",
+                "en": "once"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kj27",
+      "title": "Everyday ideas",
+      "subtitle": "主 公 切 建 注 · 理 用 界 計 間",
+      "color": "#7A55B5",
+      "dark": "#573A88",
+      "tags": [
+        "kanji",
+        "n4",
+        "master",
+        "public",
+        "cut",
+        "build",
+        "pour",
+        "reason",
+        "use",
+        "boundary",
+        "measure",
+        "between"
+      ],
+      "lessons": [
+        {
+          "id": "kj27-1",
+          "title": "主〜注",
+          "type": "KANJI",
+          "icon": "主",
+          "items": [
+            {
+              "id": "j-主",
+              "kind": "KANJI",
+              "jp": "主",
+              "reading": "しゅ",
+              "romaji": "shu",
+              "meaning": "master; main",
+              "on": "シュ",
+              "kun": "ぬし・おも",
+              "words": [
+                {
+                  "jp": "主人",
+                  "reading": "しゅじん",
+                  "romaji": "shujin",
+                  "en": "husband"
+                },
+                {
+                  "jp": "主に",
+                  "reading": "おもに",
+                  "romaji": "omoni",
+                  "en": "mainly"
+                }
+              ],
+              "example": {
+                "jp": "主人",
+                "romaji": "shujin",
+                "en": "husband"
+              }
+            },
+            {
+              "id": "j-公",
+              "kind": "KANJI",
+              "jp": "公",
+              "reading": "こう",
+              "romaji": "kou",
+              "meaning": "public",
+              "on": "コウ",
+              "kun": "おおやけ",
+              "words": [
+                {
+                  "jp": "公園",
+                  "reading": "こうえん",
+                  "romaji": "kouen",
+                  "en": "park"
+                },
+                {
+                  "jp": "公務員",
+                  "reading": "こうむいん",
+                  "romaji": "koumuin",
+                  "en": "civil servant"
+                }
+              ],
+              "example": {
+                "jp": "公園",
+                "romaji": "kouen",
+                "en": "park"
+              }
+            },
+            {
+              "id": "j-切",
+              "kind": "KANJI",
+              "jp": "切",
+              "reading": "き",
+              "romaji": "ki",
+              "meaning": "cut",
+              "on": "セツ・サイ",
+              "kun": "き(る)",
+              "words": [
+                {
+                  "jp": "切る",
+                  "reading": "きる",
+                  "romaji": "kiru",
+                  "en": "cut"
+                },
+                {
+                  "jp": "大切",
+                  "reading": "たいせつ",
+                  "romaji": "taisetsu",
+                  "en": "important"
+                }
+              ],
+              "example": {
+                "jp": "切る",
+                "romaji": "kiru",
+                "en": "cut"
+              }
+            },
+            {
+              "id": "j-建",
+              "kind": "KANJI",
+              "jp": "建",
+              "reading": "た",
+              "romaji": "ta",
+              "meaning": "build",
+              "on": "ケン・コン",
+              "kun": "た(てる)",
+              "words": [
+                {
+                  "jp": "建てる",
+                  "reading": "たてる",
+                  "romaji": "tateru",
+                  "en": "build"
+                },
+                {
+                  "jp": "建物",
+                  "reading": "たてもの",
+                  "romaji": "tatemono",
+                  "en": "building"
+                }
+              ],
+              "example": {
+                "jp": "建てる",
+                "romaji": "tateru",
+                "en": "build"
+              }
+            },
+            {
+              "id": "j-注",
+              "kind": "KANJI",
+              "jp": "注",
+              "reading": "ちゅう",
+              "romaji": "chuu",
+              "meaning": "pour; attention",
+              "on": "チュウ",
+              "kun": "そそ(ぐ)",
+              "words": [
+                {
+                  "jp": "注意",
+                  "reading": "ちゅうい",
+                  "romaji": "chuui",
+                  "en": "caution"
+                },
+                {
+                  "jp": "注文",
+                  "reading": "ちゅうもん",
+                  "romaji": "chuumon",
+                  "en": "order (food)"
+                }
+              ],
+              "example": {
+                "jp": "注意",
+                "romaji": "chuui",
+                "en": "caution"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kj27-2",
+          "title": "理〜間",
+          "type": "KANJI",
+          "icon": "理",
+          "items": [
+            {
+              "id": "j-理",
+              "kind": "KANJI",
+              "jp": "理",
+              "reading": "り",
+              "romaji": "ri",
+              "meaning": "reason; logic",
+              "on": "リ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "料理",
+                  "reading": "りょうり",
+                  "romaji": "ryouri",
+                  "en": "cooking, dish"
+                },
+                {
+                  "jp": "理由",
+                  "reading": "りゆう",
+                  "romaji": "riyuu",
+                  "en": "reason"
+                }
+              ],
+              "example": {
+                "jp": "料理",
+                "romaji": "ryouri",
+                "en": "cooking, dish"
+              }
+            },
+            {
+              "id": "j-用",
+              "kind": "KANJI",
+              "jp": "用",
+              "reading": "よう",
+              "romaji": "you",
+              "meaning": "use; errand",
+              "on": "ヨウ",
+              "kun": "もち(いる)",
+              "words": [
+                {
+                  "jp": "用事",
+                  "reading": "ようじ",
+                  "romaji": "youji",
+                  "en": "errand"
+                },
+                {
+                  "jp": "用意",
+                  "reading": "ようい",
+                  "romaji": "youi",
+                  "en": "preparation"
+                }
+              ],
+              "example": {
+                "jp": "用事",
+                "romaji": "youji",
+                "en": "errand"
+              }
+            },
+            {
+              "id": "j-界",
+              "kind": "KANJI",
+              "jp": "界",
+              "reading": "かい",
+              "romaji": "kai",
+              "meaning": "boundary; world",
+              "on": "カイ",
+              "kun": "",
+              "words": [
+                {
+                  "jp": "世界",
+                  "reading": "せかい",
+                  "romaji": "sekai",
+                  "en": "world"
+                },
+                {
+                  "jp": "業界",
+                  "reading": "ぎょうかい",
+                  "romaji": "gyoukai",
+                  "en": "industry (business world)"
+                }
+              ],
+              "example": {
+                "jp": "世界",
+                "romaji": "sekai",
+                "en": "world"
+              }
+            },
+            {
+              "id": "j-計",
+              "kind": "KANJI",
+              "jp": "計",
+              "reading": "けい",
+              "romaji": "kei",
+              "meaning": "measure",
+              "on": "ケイ",
+              "kun": "はか(る)",
+              "words": [
+                {
+                  "jp": "時計",
+                  "reading": "とけい",
+                  "romaji": "tokei",
+                  "en": "clock, watch"
+                },
+                {
+                  "jp": "計画",
+                  "reading": "けいかく",
+                  "romaji": "keikaku",
+                  "en": "plan"
+                }
+              ],
+              "example": {
+                "jp": "時計",
+                "romaji": "tokei",
+                "en": "clock, watch"
+              }
+            },
+            {
+              "id": "j-間",
+              "kind": "KANJI",
+              "jp": "間",
+              "reading": "あいだ",
+              "romaji": "aida",
+              "meaning": "between; interval",
+              "on": "カン・ケン",
+              "kun": "あいだ・ま",
+              "words": [
+                {
+                  "jp": "時間",
+                  "reading": "じかん",
+                  "romaji": "jikan",
+                  "en": "time"
+                },
+                {
+                  "jp": "間",
+                  "reading": "あいだ",
+                  "romaji": "aida",
+                  "en": "between"
+                }
+              ],
+              "example": {
+                "jp": "時間",
+                "romaji": "jikan",
+                "en": "time"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "extraKana": [
@@ -30890,7 +36483,7 @@
     },
     {
       "id": "kanji",
-      "title": "Kanji N5",
+      "title": "Kanji",
       "icon": "漢",
       "color": "#8E3B46",
       "dark": "#6B2A33",
@@ -30910,6 +36503,29 @@
             "kj10"
           ],
           "rank": 1
+        },
+        {
+          "name": "Kanji N4",
+          "units": [
+            "kj11",
+            "kj12",
+            "kj13",
+            "kj14",
+            "kj15",
+            "kj16",
+            "kj17",
+            "kj18",
+            "kj19",
+            "kj20",
+            "kj21",
+            "kj22",
+            "kj23",
+            "kj24",
+            "kj25",
+            "kj26",
+            "kj27"
+          ],
+          "rank": 2
         }
       ]
     }

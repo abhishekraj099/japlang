@@ -112,7 +112,7 @@ class ContentTest {
     @Test
     fun aRevisionFollowsEveryTwoLessons() {
         val revisions = Course.lessons.filter { it.id.contains("-rev") }
-        assertEquals(85, revisions.size)
+        assertEquals(102, revisions.size)
         Course.units.forEach { unit ->
             val lessons = unit.lessons
             lessons.forEachIndexed { i, lesson ->
