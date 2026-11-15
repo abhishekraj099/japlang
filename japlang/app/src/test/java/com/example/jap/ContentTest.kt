@@ -136,14 +136,8 @@ class ContentTest {
         assertTrue(Course.goals(Course.units.first { it.id == "hira" }).first().startsWith("Read and write 46 hiragana"))
     }
 
-    /** Basic units brought up to full depth: six sentences per set and a conversation. */
-    private val contentReadyUnits = listOf(
-        "b1", "b2", "fam", "ani", "dish", "comp", "ask", "place", "num", "time",
-        "time2", "dir", "traf", "days", "life1", "rel1", "sport", "life2",
-        "rel2", "colors", "look", "clothes", "comp2", "adj", "taste", "ability",
-        "travel", "reason", "location", "countobj", "counttime", "pastadj", "compare", "verbs",
-        "desire", "purpose", "groups", "teform", "cont", "perm", "conn", "seq",
-    )
+    /** Every Basic course unit except the alphabet ones has full depth: six sentences per set and a conversation. */
+    private val contentReadyUnits = Course.courses.first().unitIds.filterNot { id -> Course.units.first { it.id == id }.alphabet }
 
     @Test
     fun basicUnitsHaveSixSentencesPerSet() {
