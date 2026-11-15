@@ -1,6 +1,6 @@
 {
   "title": "JLPT N5 mock test",
-  "minutes": 10,
+  "minutes": 60,
   "passPercent": 60,
   "questions": [
     {
@@ -70,6 +70,160 @@
       "explain": "じゅう (10) + ご (5) = 15. Fifty would be ごじゅう."
     },
     {
+      "section": "Vocabulary",
+      "prompt": "さむい です から、＿＿ を きます。",
+      "options": [
+        "コート",
+        "くつ",
+        "めがね",
+        "ぼうし"
+      ],
+      "explain": "コート (kooto) = coat. \"It's cold, so I'll wear a coat.\" くつ, めがね and ぼうし are not worn with きます."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "あつい です ね。つめたい ＿＿ を のみましょう。",
+      "options": [
+        "ジュース",
+        "パン",
+        "ほん",
+        "くつ"
+      ],
+      "explain": "ジュース (juusu) = juice. \"It's hot. Let's drink something cold.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "としょかん で ほん を ＿＿。",
+      "options": [
+        "かりました",
+        "たべました",
+        "のみました",
+        "およぎました"
+      ],
+      "explain": "かりました (karimashita) = borrowed. \"I borrowed a book at the library.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "まいあさ シャワー を ＿＿。",
+      "options": [
+        "あびます",
+        "のみます",
+        "かきます",
+        "ききます"
+      ],
+      "explain": "シャワー を あびます (shawaa o abimasu) = take a shower."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence means the same as 「わたし の あに は きょうし です。」?",
+      "options": [
+        "あに は がっこう で おしえて います。",
+        "あに は がっこう で べんきょう して います。",
+        "あに は びょういん で はたらいて います。",
+        "あに は みせ で はたらいて います。"
+      ],
+      "explain": "きょうし (kyoushi) = teacher, so my older brother teaches at a school (oshiete imasu)."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence means the same as 「この へや は くらい です。」?",
+      "options": [
+        "この へや は あかるくない です。",
+        "この へや は ひろくない です。",
+        "この へや は きれい じゃない です。",
+        "この へや は しずか じゃない です。"
+      ],
+      "explain": "くらい (kurai) = dark = あかるくない (akarukunai), not bright."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence means the same as 「おととい デパート に いきました。」?",
+      "options": [
+        "ふつか まえ に デパート に いきました。",
+        "きのう デパート に いきました。",
+        "あした デパート に いきます。",
+        "あさって デパート に いきます。"
+      ],
+      "explain": "おととい (ototoi) = the day before yesterday = ふつか まえ (futsuka mae), two days ago."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "きょう は ＿＿ です から、かさ を もって いきます。",
+      "options": [
+        "あめ",
+        "やすみ",
+        "にちようび",
+        "いい てんき"
+      ],
+      "explain": "あめ (ame) = rain. \"It's raining today, so I'll take an umbrella.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which is the correct katakana for \"television\"?",
+      "options": [
+        "テレビ",
+        "テレヒ",
+        "テルビ",
+        "テレブ"
+      ],
+      "explain": "テレビ (terebi) = television."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "この りんご は ひとつ 100えん です。みっつ で ＿＿ えん です。",
+      "options": [
+        "さんびゃく",
+        "さんぜん",
+        "ひゃく",
+        "ろっぴゃく"
+      ],
+      "explain": "100 × 3 = 300 = さんびゃく (sanbyaku). さんぜん = 3,000."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "えき の まえ で ともだち を ＿＿ います。",
+      "options": [
+        "まって",
+        "ねて",
+        "あらって",
+        "あびて"
+      ],
+      "explain": "まって います (matte imasu) = I am waiting. \"I'm waiting for a friend in front of the station.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "やおや で ＿＿ を かいます。",
+      "options": [
+        "やさい",
+        "くすり",
+        "くつ",
+        "ほん"
+      ],
+      "explain": "やおや (yaoya) = greengrocer, where you buy やさい (yasai), vegetables."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "きょう は かようび です。あした は ＿＿ です。",
+      "options": [
+        "すいようび",
+        "もくようび",
+        "げつようび",
+        "どようび"
+      ],
+      "explain": "かようび (kayoubi) = Tuesday, so tomorrow is すいようび (suiyoubi), Wednesday."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "The opposite of 「ひろい」 is:",
+      "options": [
+        "せまい",
+        "ながい",
+        "みじかい",
+        "たかい"
+      ],
+      "explain": "ひろい (hiroi) = wide, spacious; せまい (semai) = narrow, small."
+    },
+    {
       "section": "Kanji",
       "prompt": "How is 「山」 read?",
       "options": [
@@ -112,6 +266,83 @@
         "person"
       ],
       "explain": "月 = つき (tsuki), moon or month."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「この かばん は 高い です。」 How is 高い read?",
+      "options": [
+        "たかい",
+        "ながい",
+        "やすい",
+        "ひくい"
+      ],
+      "explain": "高い = たかい (takai), expensive. \"This bag is expensive.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「まいばん 九時 に ねます。」 How is 九時 read?",
+      "options": [
+        "くじ",
+        "きゅうじ",
+        "くうじ",
+        "きゅじ"
+      ],
+      "explain": "九時 = くじ (kuji), nine o'clock. For the hour, 九 is read く."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「あの 店 で パン を 買いました。」 How is 店 read?",
+      "options": [
+        "みせ",
+        "いえ",
+        "えき",
+        "へや"
+      ],
+      "explain": "店 = みせ (mise), shop. \"I bought bread at that shop.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「でぐち は あちら です。」 How is でぐち written?",
+      "options": [
+        "出口",
+        "入口",
+        "出目",
+        "山口"
+      ],
+      "explain": "でぐち (deguchi), exit = 出口. 入口 = いりぐち, entrance."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「あした は 土よう日 です。」 How is 土よう日 read?",
+      "options": [
+        "どようび",
+        "にちようび",
+        "もくようび",
+        "きんようび"
+      ],
+      "explain": "土よう日 = どようび (doyoubi), Saturday."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「まいばん ほん を よみます。」 How is よみます written?",
+      "options": [
+        "読みます",
+        "話みます",
+        "語みます",
+        "見みます"
+      ],
+      "explain": "よみます (yomimasu), read = 読みます. 話します = speak, 見ます = see."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「父 は かいしゃいん です。」 How is 父 read?",
+      "options": [
+        "ちち",
+        "はは",
+        "あに",
+        "あね"
+      ],
+      "explain": "父 = ちち (chichi), my father. 母 = はは, mother."
     },
     {
       "section": "Grammar",
@@ -180,6 +411,171 @@
       "explain": "どういたしまして = \"You're welcome.\""
     },
     {
+      "section": "Grammar",
+      "prompt": "わたし は バス ＿＿ がっこう へ いきます。",
+      "options": [
+        "で",
+        "を",
+        "が",
+        "に"
+      ],
+      "explain": "で marks the means: \"I go to school by bus.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "つくえ の うえ ＿＿ ほん が あります。",
+      "options": [
+        "に",
+        "を",
+        "へ",
+        "で"
+      ],
+      "explain": "に marks where something is with あります: \"There is a book on the desk.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "ともだち ＿＿ えいが を みました。",
+      "options": [
+        "と",
+        "を",
+        "へ",
+        "に"
+      ],
+      "explain": "と = with: \"I watched a film with a friend.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "これ は わたし ＿＿ かさ です。",
+      "options": [
+        "の",
+        "を",
+        "に",
+        "が"
+      ],
+      "explain": "の shows ownership: \"This is my umbrella.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"Yesterday was cold.\"  きのう は ＿＿。",
+      "options": [
+        "さむかった です",
+        "さむい です",
+        "さむい でした",
+        "さむくない です"
+      ],
+      "explain": "Past of an い-adjective: さむい → さむかった です (samukatta desu). さむい でした is incorrect."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"It's a quiet room, isn't it?\"  しずか ＿＿ へや です ね。",
+      "options": [
+        "な",
+        "の",
+        "に",
+        "で"
+      ],
+      "explain": "な-adjectives take な before a noun: しずかな へや (shizuka na heya)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"Please open the window.\"  まど を ＿＿ ください。",
+      "options": [
+        "あけて",
+        "あけます",
+        "あける",
+        "あけた"
+      ],
+      "explain": "て-form + ください = please do: あけて ください (akete kudasai)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "A: いっしょ に ひるごはん を たべませんか。  B: ええ、＿＿。",
+      "options": [
+        "たべましょう",
+        "たべませんでした",
+        "たべました",
+        "たべたくない です"
+      ],
+      "explain": "ええ、たべましょう (tabemashou) = \"Yes, let's eat.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"There is nobody in the room.\"  へや に だれ ＿＿ いません。",
+      "options": [
+        "も",
+        "が",
+        "を",
+        "と"
+      ],
+      "explain": "だれ も + negative = nobody: だれ も いません (dare mo imasen)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "A: この りんご は ＿＿ です か。  B: ひとつ 100えん です。",
+      "options": [
+        "いくら",
+        "いつ",
+        "どこ",
+        "だれ"
+      ],
+      "explain": "いくら (ikura) = how much. B answers with a price."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "A: ＿＿ にほん へ きました か。  B: きょねん きました。",
+      "options": [
+        "いつ",
+        "なに",
+        "どこ",
+        "だれ"
+      ],
+      "explain": "いつ (itsu) = when. B answers きょねん (kyonen), last year."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "テレビ を み ＿＿ ごはん を たべます。",
+      "options": [
+        "ながら",
+        "たい",
+        "ません",
+        "ましょう"
+      ],
+      "explain": "verb stem + ながら = while: \"I eat while watching TV.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "ごはん を たべた ＿＿、さんぽ します。",
+      "options": [
+        "あとで",
+        "まえに",
+        "ながら",
+        "ましょう"
+      ],
+      "explain": "た-form + あとで = after: \"After eating, I go for a walk.\" まえに needs the dictionary form (たべる まえに)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"I want to go to Japan.\"  にほん へ ＿＿ たい です。",
+      "options": [
+        "いき",
+        "いく",
+        "いって",
+        "いきます"
+      ],
+      "explain": "verb stem + たい = want to: いきたい です (ikitai desu)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "あに の へや は わたし の へや ＿＿ ひろい です。",
+      "options": [
+        "より",
+        "を",
+        "に",
+        "が"
+      ],
+      "explain": "Aより = than A: \"My brother's room is bigger than my room.\""
+    },
+    {
       "section": "Reading",
       "prompt": "Where does Ken go every day?",
       "options": [
@@ -226,6 +622,78 @@
       ],
       "explain": "たなかさん の ともだち = Tanaka's friend. の links an owner to what they have.",
       "passage": "たなかさん は せんせい です。たなかさん の ともだち は がくせい です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What time will the mother come home?",
+      "options": [
+        "5 o'clock",
+        "3 o'clock",
+        "4 o'clock",
+        "6 o'clock"
+      ],
+      "explain": "5じ に かえります = \"I'll be back at 5.\" She leaves for the hospital at 3.",
+      "passage": "ゆきさん へ\nきょう、わたし は 3じ に びょういん へ いきます。5じ に かえります。れいぞうこ に ケーキ が あります。たべて ください。\nはは より"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What does the mother ask Yuki to do?",
+      "options": [
+        "Eat the cake",
+        "Go to the hospital",
+        "Buy a cake",
+        "Wait at the hospital"
+      ],
+      "explain": "ケーキ が あります。たべて ください = \"There's cake. Please eat it.\"",
+      "passage": "ゆきさん へ\nきょう、わたし は 3じ に びょういん へ いきます。5じ に かえります。れいぞうこ に ケーキ が あります。たべて ください。\nはは より"
+    },
+    {
+      "section": "Reading",
+      "prompt": "When is the party?",
+      "options": [
+        "Next Saturday at 6 p.m.",
+        "This Saturday at 6 p.m.",
+        "Next Sunday at 6 p.m.",
+        "Next Saturday at 6 a.m."
+      ],
+      "explain": "らいしゅう の どようび (raishuu no doyoubi) = next Saturday; ごご 6じ = 6 p.m.",
+      "passage": "マリアさん、こんにちは。\nらいしゅう の どようび に、うち で パーティー を します。ごご 6じ から です。ともだち も きます。のみもの を もって きて ください。\nたなか"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What should Maria bring?",
+      "options": [
+        "Drinks",
+        "Cake",
+        "Her friends",
+        "Nothing"
+      ],
+      "explain": "のみもの を もって きて ください = \"Please bring drinks.\"",
+      "passage": "マリアさん、こんにちは。\nらいしゅう の どようび に、うち で パーティー を します。ごご 6じ から です。ともだち も きます。のみもの を もって きて ください。\nたなか"
+    },
+    {
+      "section": "Reading",
+      "prompt": "Which day is the library closed?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Saturday",
+        "Sunday"
+      ],
+      "explain": "げつようび は やすみ です = \"Closed on Mondays.\"",
+      "passage": "としょかん の おしらせ\nげつようび は やすみ です。\nかようび〜きんようび：あさ 9じ 〜 よる 8じ\nどようび・にちようび：あさ 10じ 〜 ごご 5じ"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What time does the library close on Sunday?",
+      "options": [
+        "5 p.m.",
+        "8 p.m.",
+        "9 a.m.",
+        "10 a.m."
+      ],
+      "explain": "どようび・にちようび：あさ 10じ 〜 ごご 5じ = weekends 10 a.m. to 5 p.m.",
+      "passage": "としょかん の おしらせ\nげつようび は やすみ です。\nかようび〜きんようび：あさ 9じ 〜 よる 8じ\nどようび・にちようび：あさ 10じ 〜 ごご 5じ"
     }
   ]
 }

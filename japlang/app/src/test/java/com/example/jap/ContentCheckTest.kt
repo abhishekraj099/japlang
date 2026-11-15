@@ -102,4 +102,24 @@ class ContentCheckTest {
             assertTrue("Repeated option: ${q.getString("prompt")}", options.toSet().size == options.size)
         }
     }
+
+    /** The mock test should feel like a real N5 paper, not a quick quiz. */
+    @Test
+    fun mockTestIsAFullN5Paper() {
+        val exam = ContentTest.asset("exam.json")
+        val questions = exam.getJSONArray("questions").objects()
+        assertTrue("Too few questions: ${questions.size}", questions.size >= 60)
+        val perSection = questions.groupingBy { it.getString("section") }.eachCount()
+        mapOf("Vocabulary" to 20, "Grammar" to 20, "Kanji" to 10, "Reading" to 10).forEach { (section, min) ->
+            assertTrue("Too few $section questions: ${perSection[section]}", (perSection[section] ?: 0) >= min)
+        }
+        questions.filter { it.getString("section") == "Reading" }.forEach { q ->
+            assertTrue("Reading without a passage: ${q.getString("prompt")}", q.optString("passage").isNotBlank())
+        }
+        assertTrue("Mock test should last 60 minutes", exam.getInt("minutes") == 60)
+        questions.forEach { q ->
+            val options = q.getJSONArray("options").let { a -> List(a.length()) { a.getString(it) } }
+            assertTrue("Answer not unique: ${q.getString("prompt")}", options.count { it == options[0] } == 1)
+        }
+    }
 }
