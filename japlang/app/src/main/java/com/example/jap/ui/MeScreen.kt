@@ -203,7 +203,6 @@ private fun ProfileHeader(progress: Progress) {
     }
 }
 
-/** This week's XP per day as bars, with today's totals. */
 /** Right answers per skill over the last [Skills.WINDOW]; "–" until there are enough to mean anything. */
 @Composable
 private fun SkillsCard(progress: Progress) {
@@ -226,6 +225,7 @@ private fun SkillsCard(progress: Progress) {
     }
 }
 
+/** This week's XP per day as bars, with today's totals. */
 @Composable
 private fun WeekCard(progress: Progress) {
     val scheme = MaterialTheme.colorScheme

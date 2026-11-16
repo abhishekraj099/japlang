@@ -289,6 +289,15 @@ class Progress(context: Context) {
     var skillLog by mutableStateOf(readSkills())
         private set
 
+    /** Speaking exercises skipped in a row; an answered one resets it. See [Skills.speakingOff]. */
+    var speakSkips by mutableIntStateOf(prefs.getInt("speakSkips", 0))
+        private set
+
+    fun recordSpeak(skipped: Boolean) {
+        speakSkips = if (skipped) speakSkips + 1 else 0
+        prefs.edit().putInt("speakSkips", speakSkips).apply()
+    }
+
     fun recordSkill(skill: Skill, correct: Boolean) {
         skillLog = skillLog + (skill to Skills.append(skillLog[skill].orEmpty(), correct))
         prefs.edit().putString("skillLog", skillLog.entries.joinToString("\n") { (k, v) -> "${k.name}|${v.joinToString("") { if (it) "1" else "0" }}" }).apply()
@@ -583,6 +592,7 @@ class Progress(context: Context) {
         srs = emptyMap()
         writeSrs = emptyMap()
         skillLog = emptyMap()
+        speakSkips = 0
         reviewedDay = 0L
         reviewedReading = 0
         reviewedWriting = 0

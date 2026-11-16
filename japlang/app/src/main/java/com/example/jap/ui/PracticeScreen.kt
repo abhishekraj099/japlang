@@ -77,7 +77,12 @@ internal fun smartPractice(progress: Progress, off: Set<Skill>, now: Long = Syst
     if (items.isEmpty()) return null
     val grammar = weakest.mapNotNull { Course.grammarPoint(it.key) }.take(SMART_GRAMMAR)
     val phrases = Course.units.filter { u -> u.lessons.any { it.id in progress.done } }.flatMap { u -> u.lessons.flatMap { it.phrases } }
-    val unavailable = off + listOfNotNull(Skill.GRAMMAR.takeIf { grammar.isEmpty() }, Skill.SPEAKING.takeIf { phrases.isEmpty() })
+    val unavailable = off + listOfNotNull(
+        Skill.GRAMMAR.takeIf { grammar.isEmpty() },
+        Skill.SPEAKING.takeIf { phrases.isEmpty() || Skills.speakingOff(progress.speakSkips) },
+        // を alone cannot be told apart by ear, so there is nothing to listen to.
+        Skill.LISTENING.takeIf { items.all { it.romaji == "wo" } }
+    )
     val skill = Skills.pick(progress.skillLog, unavailable)
     return skill to Exercises.forSmart(skill, items, grammar, phrases)
 }
@@ -128,7 +133,7 @@ fun PracticeScreen(
     val dueToday = plan.today.size + grammarDue
     val items = remember(srs) { Review.itemsOnly(srs) }
     val off = unavailableSkills()
-    val smart = remember(srs, progress.skillLog, progress.done, off) { smartPractice(progress, off)?.first }
+    val smart = remember(srs, progress.skillLog, progress.done, progress.speakSkips, off) { smartPractice(progress, off)?.first }
 
     GuideTour("practice")
     Column(

@@ -96,6 +96,14 @@ class SkillsTest {
     }
 
     @Test
+    fun speakingSetAsideAfterThreeSkips() {
+        assertFalse(Skills.speakingOff(0))
+        assertFalse(Skills.speakingOff(Skills.SPEAK_SKIP_LIMIT - 1))
+        assertTrue(Skills.speakingOff(Skills.SPEAK_SKIP_LIMIT))
+        assertEquals(3, Skills.SPEAK_SKIP_LIMIT)
+    }
+
+    @Test
     fun forSmartMatchesSkill() {
         val items = Course.lessons.flatMap { it.items }.filter(Course::quizzable).distinctBy { it.id }.take(20)
         val grammar = listOf("g-b1-1", "g-b2-1", "g-b2-2").mapNotNull(Course::grammarPoint)

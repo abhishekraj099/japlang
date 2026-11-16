@@ -117,7 +117,8 @@ fun RevisionSummary(
 ) {
     val scheme = MaterialTheme.colorScheme
     val accuracy = if (graded == 0) 100 else right * 100 / graded
-    val writing = session.review == "writing"
+    // A Smart writing session grades only writing memory, so it is summarised like a writing review.
+    val writing = session.review == "writing" || (results.isEmpty() && writeResults.isNotEmpty())
     val grades = if (writing) writeResults else results
     val memories = if (writing) progress.writeSrs else progress.srs
     // The change each answer makes, worked out before the progress is saved.

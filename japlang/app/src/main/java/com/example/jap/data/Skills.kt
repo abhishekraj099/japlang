@@ -14,6 +14,9 @@ object Skills {
     const val WINDOW = 50
     const val MIN_ANSWERS = 10
 
+    /** Skipped speaking exercises in a row after which Smart practice stops offering speaking. */
+    const val SPEAK_SKIP_LIMIT = 3
+
     fun of(exercise: Exercise): Skill? = when (exercise) {
         is Choice -> when {
             exercise.listen -> Skill.LISTENING
@@ -29,6 +32,12 @@ object Skills {
 
     /** Percent right, or null until there are enough answers to mean anything. */
     fun percent(log: List<Boolean>): Int? = if (log.size < MIN_ANSWERS) null else log.count { it } * 100 / log.size
+
+    /**
+     * Speaking can only be skipped, never missed, so a learner who always skips would never reach [MIN_ANSWERS] and
+     * would be offered speaking forever. After [SPEAK_SKIP_LIMIT] skips in a row it is set aside until one is answered.
+     */
+    fun speakingOff(consecutiveSkips: Int): Boolean = consecutiveSkips >= SPEAK_SKIP_LIMIT
 
     fun append(log: List<Boolean>, correct: Boolean): List<Boolean> = (log + correct).takeLast(WINDOW)
 

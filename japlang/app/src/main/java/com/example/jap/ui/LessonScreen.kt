@@ -230,9 +230,12 @@ fun LessonScreen(
 
     /** [correct] is null for screens that are not graded. A missed exercise comes back once at the end. */
     fun advance(exercise: Exercise, correct: Boolean?) {
+        // Skips are not misses: they only count toward setting speaking aside in Smart practice.
+        if (exercise is Speak) progress.recordSpeak(skipped = correct == null)
         if (correct != null) {
             graded++
-            Skills.of(exercise)?.let { progress.recordSkill(it, correct) }
+            // Only the first attempt scores the skill; a retry after a miss would otherwise count the item twice.
+            if (exercise !in retried) Skills.of(exercise)?.let { progress.recordSkill(it, correct) }
             val id = exercise.itemId
             // The first answer to an item sets its grade; a retry after a miss does not undo the miss.
             val grade = Memory.grade(correct, System.currentTimeMillis() - shownAt)
