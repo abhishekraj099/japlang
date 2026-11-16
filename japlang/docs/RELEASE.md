@@ -63,10 +63,11 @@ Release builds are shrunk with R8. If a new library crashes only in release buil
 
 ## Native-speaker review
 
-`python3 tools/review_sheet.py review.csv` exports every lesson text (practice items and sentences, dialogues,
-phrases, stories, talks, both mock exams, kanji example words) with a stable `id`. Give it to a native speaker: they
-fill in the `correction` column only where something is wrong or unnatural, and you apply fixes by `id`.
-`--check` self-tests the export.
+`python3 tools/review_sheet.py review.csv` exports every lesson text with a stable `id`: kana and kanji items (with
+readings, notes, examples and kanji example words), practice sentences, grammar notes, theory blocks, dialogue lines,
+phrases and tips, scenarios (vocabulary and patterns), stories, talks (turns and answers), and both mock exams (one row
+per question). Give it to a native speaker: they fill in the `correction` column only where something is wrong or
+unnatural, and you apply fixes by `id`. `--check` self-tests the export and fails if a source goes missing.
 
 ## Still needed before a public launch
 
