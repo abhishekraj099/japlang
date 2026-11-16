@@ -140,7 +140,7 @@
       "prompt": "友だち を 駅 まで ＿＿ に 行きます。",
       "options": [
         "むかえ",
-        "とどけ",
+        "わすれ",
         "しらべ",
         "くらべ"
       ],
@@ -405,7 +405,7 @@
       "options": [
         "よう",
         "つもり",
-        "ため",
+        "まで",
         "ながら"
       ],
       "explain": "plain form + よう です = it seems: \"Tanaka's light is off. He seems to have gone to bed.\""

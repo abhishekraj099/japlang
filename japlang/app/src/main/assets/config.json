@@ -121,7 +121,7 @@
     },
     {
       "title": "Test taker",
-      "how": "Pass the mock test",
+      "how": "Pass the N5 mock test",
       "metric": "EXAM",
       "target": 60
     },

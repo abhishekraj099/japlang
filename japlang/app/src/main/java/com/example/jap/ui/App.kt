@@ -234,7 +234,9 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         is Page.Cards -> FlashcardScreen(page.items, onBack = { go(Page.Words) })
         Page.Words -> WordsScreen(progress, onBack = { go(null) }, onCards = { go(Page.Cards(it)) })
         is Page.Game -> GameScreen(progress, onBack = { go(null) }, script = page.script)
-        is Page.Test -> ExamScreen(Exams.paper(page.paperId)!!, progress, onBack = { go(null) })
+        // An unknown paper id (content changed under a saved page) goes back instead of crashing.
+        is Page.Test -> Exams.paper(page.paperId)?.let { ExamScreen(it, progress, onBack = { go(null) }) }
+            ?: LaunchedEffect(page) { go(null) }
         Page.Placement -> PlacementScreen(progress, onLeave = { go(null) })
         Page.Streak -> StreakScreen(progress, onBack = { go(null) }, onStudy = {
             tab = 0
