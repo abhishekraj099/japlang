@@ -75,16 +75,19 @@ internal fun smartPractice(progress: Progress, off: Set<Skill>, now: Long = Syst
     val weakest = progress.srs.entries.sortedBy { Memory.retrievability(it.value, now) }
     val items = weakest.mapNotNull { Course.item(it.key) }.filter(Course::quizzable).take(SESSION_SIZE)
     if (items.isEmpty()) return null
+    // Writing has its own memories; until there are any, start on words already learned for reading.
+    val writeItems = progress.writeSrs.entries.sortedBy { Memory.retrievability(it.value, now) }
+        .mapNotNull { Course.item(it.key) }.filter(Course::quizzable).ifEmpty { progress.writeNew() }.take(SESSION_SIZE)
     val grammar = weakest.mapNotNull { Course.grammarPoint(it.key) }.take(SMART_GRAMMAR)
     val phrases = Course.units.filter { u -> u.lessons.any { it.id in progress.done } }.flatMap { u -> u.lessons.flatMap { it.phrases } }
     val unavailable = off + listOfNotNull(
         Skill.GRAMMAR.takeIf { grammar.isEmpty() },
         Skill.SPEAKING.takeIf { phrases.isEmpty() || Skills.speakingOff(progress.speakSkips) },
         // を alone cannot be told apart by ear, so there is nothing to listen to.
-        Skill.LISTENING.takeIf { items.all { it.romaji == "wo" } }
+        Skill.LISTENING.takeIf { items.all { it.romaji == "wo" } || !progress.lessonAudio }
     )
     val skill = Skills.pick(progress.skillLog, unavailable)
-    return skill to Exercises.forSmart(skill, items, grammar, phrases)
+    return skill to Exercises.forSmart(skill, if (skill == Skill.WRITING) writeItems else items, grammar, phrases)
 }
 
 private const val SMART_GRAMMAR = 6
@@ -133,14 +136,14 @@ fun PracticeScreen(
     val dueToday = plan.today.size + grammarDue
     val items = remember(srs) { Review.itemsOnly(srs) }
     val off = unavailableSkills()
-    val smart = remember(srs, progress.skillLog, progress.done, progress.speakSkips, off) { smartPractice(progress, off)?.first }
+    val smart = remember(srs, progress.writeSrs, progress.skillLog, progress.done, progress.speakSkips, progress.lessonAudio, off) { smartPractice(progress, off)?.first }
 
     GuideTour("practice")
     Column(
         modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)
     ) {
-        SmartCard(smart, smart?.let { Skills.percent(progress.skillLog[it].orEmpty()) }) { onSmart(off) }
+        SmartCard(smart, smart?.let { progress.skillLog[it] }.orEmpty()) { onSmart(off) }
         Panel(Modifier.fillMaxWidth().guideTarget("review-card")) {
             Column(Modifier.fillMaxWidth().padding(18.dp)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -254,17 +257,23 @@ fun PracticeScreen(
     }
 }
 
-/** Smart practice: trains the weakest skill, and says in plain words why that one. [skill] is null before anything is learned. */
+/**
+ * Smart practice: trains the weakest skill, and says in plain words why that one. [skill] is null before anything is
+ * learned; [log] is its recent answers.
+ */
 @Composable
-private fun SmartCard(skill: Skill?, percent: Int?, onStart: () -> Unit) {
+private fun SmartCard(skill: Skill?, log: List<Boolean>, onStart: () -> Unit) {
     val scheme = MaterialTheme.colorScheme
     val name = skill?.label?.lowercase().orEmpty()
+    val percent = Skills.percent(log)
     Panel(Modifier.fillMaxWidth()) {
         Column(Modifier.fillMaxWidth().padding(18.dp)) {
             Text("Smart practice", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold, color = scheme.onSurface)
             Text(
                 when {
                     skill == null -> "Your weakest skill, trained"
+                    // Speaking can't be missed, so it shows a count, not a percent.
+                    skill == Skill.SPEAKING -> "Training: Speaking · ${Skills.score(skill, log)}"
                     percent == null -> "Getting to know your strengths"
                     else -> "Training: ${skill.label} · $percent%"
                 },
@@ -273,6 +282,7 @@ private fun SmartCard(skill: Skill?, percent: Int?, onStart: () -> Unit) {
             Text(
                 when {
                     skill == null -> "Once you've learned some words, this finds the skill that needs help most and trains it."
+                    skill == Skill.SPEAKING -> "Speaking can't be marked wrong, so it counts what you say aloud instead of scoring it. This session has you say phrases you've learned."
                     percent == null -> "Each skill gets a score after ${Skills.MIN_ANSWERS} answers. You've done the least $name so far, so this session starts there."
                     else -> "${skill.label} is your weakest skill right now ($percent% of your last answers right), so this session trains it with the words you're most likely to forget."
                 },

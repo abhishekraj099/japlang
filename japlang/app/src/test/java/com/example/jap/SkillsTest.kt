@@ -96,6 +96,28 @@ class SkillsTest {
     }
 
     @Test
+    fun speakingPercentIsNoRankingSignal() {
+        // Speaking only ever logs "right", but a scored skill with a lower percent still wins over it.
+        val logs = Skill.entries.associateWith { log(20, 0) } + (Skill.SPEAKING to log(10, 0)) + (Skill.GRAMMAR to log(19, 1))
+        assertEquals(Skill.GRAMMAR, Skills.pick(logs, emptySet()))
+        // Even a speaking log that somehow held misses is not ranked against the others.
+        assertEquals(Skill.GRAMMAR, Skills.pick(logs + (Skill.SPEAKING to log(0, 10)), emptySet()))
+        // While exploring it is still tried first when least practised, and it is picked if it is all that is open.
+        assertEquals(Skill.SPEAKING, Skills.pick(logs + (Skill.SPEAKING to log(3, 0)), emptySet()))
+        assertEquals(Skill.SPEAKING, Skills.pick(logs, Skill.entries.toSet() - Skill.SPEAKING))
+        // Once set aside it is never picked.
+        assertFalse(Skills.pick(logs + (Skill.SPEAKING to log(0, 0)), setOf(Skill.SPEAKING)) == Skill.SPEAKING)
+    }
+
+    @Test
+    fun speakingShowsACountNotAPercent() {
+        assertEquals("12 spoken", Skills.score(Skill.SPEAKING, log(12, 0)))
+        assertEquals("0 spoken", Skills.score(Skill.SPEAKING, emptyList()))
+        assertEquals("70%", Skills.score(Skill.READING, log(7, 3)))
+        assertNull(Skills.score(Skill.READING, log(5, 0)))
+    }
+
+    @Test
     fun speakingSetAsideAfterThreeSkips() {
         assertFalse(Skills.speakingOff(0))
         assertFalse(Skills.speakingOff(Skills.SPEAK_SKIP_LIMIT - 1))
@@ -106,7 +128,7 @@ class SkillsTest {
     @Test
     fun forSmartMatchesSkill() {
         val items = Course.lessons.flatMap { it.items }.filter(Course::quizzable).distinctBy { it.id }.take(20)
-        val grammar = listOf("g-b1-1", "g-b2-1", "g-b2-2").mapNotNull(Course::grammarPoint)
+        val grammar = listOf("g-b1-1", "g-b2-1", "g-b2-2", "g-looks-1").mapNotNull(Course::grammarPoint)
         val phrases = Course.phrases.take(10)
         Skill.entries.forEach { skill ->
             val exercises = Exercises.forSmart(skill, items, grammar, phrases)

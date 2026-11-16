@@ -203,7 +203,10 @@ private fun ProfileHeader(progress: Progress) {
     }
 }
 
-/** Right answers per skill over the last [Skills.WINDOW]; "–" until there are enough to mean anything. */
+/**
+ * Right answers per skill over the last [Skills.WINDOW]; "–" until there are enough to mean anything. Speaking shows
+ * how many were spoken instead, since it can never be marked wrong.
+ */
 @Composable
 private fun SkillsCard(progress: Progress) {
     val scheme = MaterialTheme.colorScheme
@@ -211,12 +214,13 @@ private fun SkillsCard(progress: Progress) {
         Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
             Text("Your skills", style = MaterialTheme.typography.titleMedium, color = scheme.onSurface)
             Skill.entries.forEach { skill ->
-                val percent = Skills.percent(progress.skillLog[skill].orEmpty())
+                val log = progress.skillLog[skill].orEmpty()
+                val fill = if (skill == Skill.SPEAKING) log.count { it } / Skills.WINDOW.toFloat() else (Skills.percent(log) ?: 0) / 100f
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(skill.label, Modifier.width(84.dp), style = MaterialTheme.typography.bodyMedium, color = scheme.onSurface)
-                    Meter((percent ?: 0) / 100f, scheme.primary, Modifier.weight(1f), height = 10.dp)
+                    Meter(fill, scheme.primary, Modifier.weight(1f), height = 10.dp)
                     Text(
-                        percent?.let { "$it%" } ?: "–", Modifier.width(48.dp), textAlign = TextAlign.End,
+                        Skills.score(skill, log) ?: "–", Modifier.width(76.dp), textAlign = TextAlign.End,
                         style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant
                     )
                 }

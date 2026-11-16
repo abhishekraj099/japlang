@@ -39,18 +39,26 @@ object Skills {
      */
     fun speakingOff(consecutiveSkips: Int): Boolean = consecutiveSkips >= SPEAK_SKIP_LIMIT
 
+    /**
+     * What to show for a skill: speaking can never be marked wrong, so it shows how many were spoken rather than a
+     * percent; the rest show [percent], or null until scored.
+     */
+    fun score(skill: Skill, log: List<Boolean>): String? =
+        if (skill == Skill.SPEAKING) "${log.count { it }} spoken" else percent(log)?.let { "$it%" }
+
     fun append(log: List<Boolean>, correct: Boolean): List<Boolean> = (log + correct).takeLast(WINDOW)
 
     /**
      * The skill to train next, never one in [unavailable]. While a skill still has too few answers to be scored, the
      * least-practised one goes first, so every skill gets a score instead of one known skill being trained forever;
-     * once all are scored, the lowest percent wins.
+     * once all are scored, the lowest percent wins. Speaking's percent is always 100 (it can only be skipped, never
+     * missed), so it is no ranking signal: once scored it is picked only when nothing else is open.
      */
     fun pick(logs: Map<Skill, List<Boolean>>, unavailable: Set<Skill>): Skill {
         // Reading always has material once anything is learned, so it is the fallback if everything else is off.
         val open = Skill.entries.filter { it !in unavailable }.ifEmpty { listOf(Skill.READING) }
         val size = { s: Skill -> logs[s].orEmpty().size }
         return if (open.any { size(it) < MIN_ANSWERS }) open.minBy(size)
-        else open.minBy { percent(logs.getValue(it))!! }
+        else open.filter { it != Skill.SPEAKING }.ifEmpty { open }.minBy { percent(logs.getValue(it))!! }
     }
 }

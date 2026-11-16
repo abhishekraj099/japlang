@@ -127,6 +127,7 @@ import com.example.jap.data.Write
 import com.example.jap.ink.Handwriting
 import com.example.jap.ui.theme.Kin
 import com.example.jap.ink.LocalHandwriting
+import com.example.jap.data.Skill
 import com.example.jap.data.Skills
 import kotlinx.coroutines.delay
 
@@ -235,7 +236,8 @@ fun LessonScreen(
         if (correct != null) {
             graded++
             // Only the first attempt scores the skill; a retry after a miss would otherwise count the item twice.
-            if (exercise !in retried) Skills.of(exercise)?.let { progress.recordSkill(it, correct) }
+            // A listening answer given while muted was heard by nobody, so it says nothing about listening.
+            if (exercise !in retried) Skills.of(exercise)?.takeIf { it != Skill.LISTENING || !speaker.muted }?.let { progress.recordSkill(it, correct) }
             val id = exercise.itemId
             // The first answer to an item sets its grade; a retry after a miss does not undo the miss.
             val grade = Memory.grade(correct, System.currentTimeMillis() - shownAt)

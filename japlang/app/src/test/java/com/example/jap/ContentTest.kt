@@ -67,7 +67,7 @@ class ContentTest {
     }
 
     @Test
-    fun placementCoversTheWholeMainCourse() {
+    fun placementCoversUpToIntermediate() {
         // Clearing every level skips the 59 units up to the end of Intermediate; the N4 level comes next.
         assertEquals(59, Placement.unitsCleared(Placement.levels.size))
         assertEquals(Course.courses.first().unitIds.take(59), Course.units.take(59).map { it.id })
