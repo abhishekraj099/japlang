@@ -2165,6 +2165,194 @@
       ]
     },
     {
+      "id": "st-perm",
+      "title": "A day in the park",
+      "unlockAfter": "perm",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "にちようび、",
+            "ケンさん",
+            "と",
+            "ゆきさん",
+            "は",
+            "こうえん",
+            "へ",
+            "いきました。"
+          ],
+          "romaji": "nichiyoubi, Ken-san to Yuki-san wa kouen e ikimashita.",
+          "en": "On Sunday, Ken and Yuki went to the park."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ここ",
+            "で",
+            "しゃしん",
+            "を",
+            "とって",
+            "も",
+            "いいですか。"
+          ],
+          "romaji": "koko de shashin o totte mo ii desu ka.",
+          "en": "May I take photos here?"
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "はい、",
+            "とって",
+            "も",
+            "いいです。"
+          ],
+          "romaji": "hai, totte mo ii desu.",
+          "en": "Yes, you may."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "こうえん",
+            "に",
+            "は",
+            "かわ",
+            "が",
+            "あります。"
+          ],
+          "romaji": "kouen ni wa kawa ga arimasu.",
+          "en": "There's a river in the park."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "かわ",
+            "で",
+            "およいで",
+            "も",
+            "いいですか。"
+          ],
+          "romaji": "kawa de oyoide mo ii desu ka.",
+          "en": "May I swim in the river?"
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "いいえ、",
+            "かわ",
+            "で",
+            "およいで",
+            "は",
+            "いけません。"
+          ],
+          "romaji": "iie, kawa de oyoide wa ikemasen.",
+          "en": "No, you mustn't swim in the river."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "じゃあ、",
+            "ここ",
+            "で",
+            "テニス",
+            "を",
+            "やって",
+            "も",
+            "いいですか。"
+          ],
+          "romaji": "jaa, koko de tenisu o yatte mo ii desu ka.",
+          "en": "Then may I play tennis here?"
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ええ、",
+            "いいです",
+            "よ。"
+          ],
+          "romaji": "ee, ii desu yo.",
+          "en": "Yes, that's fine."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "ふたり",
+            "は",
+            "テニス",
+            "を",
+            "しました。",
+            "ごご、",
+            "あめ",
+            "が",
+            "ふりました。"
+          ],
+          "romaji": "futari wa tenisu o shimashita. gogo, ame ga furimashita.",
+          "en": "The two of them played tennis. In the afternoon, it rained."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ゆきさん、",
+            "わたし",
+            "の",
+            "かさ",
+            "を",
+            "つかって",
+            "も",
+            "いいです",
+            "よ。"
+          ],
+          "romaji": "Yuki-san, watashi no kasa o tsukatte mo ii desu yo.",
+          "en": "Yuki, you can use my umbrella."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ありがとう。"
+          ],
+          "romaji": "arigatou.",
+          "en": "Thanks."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "May Ken take photos in the park?",
+          "options": [
+            "Yes",
+            "No",
+            "Only of the river"
+          ],
+          "explain": "とって も いいです: you may take them."
+        },
+        {
+          "prompt": "What mustn't they do in the river?",
+          "options": [
+            "Swim",
+            "Take photos",
+            "Play tennis"
+          ],
+          "explain": "かわ で およいで は いけません."
+        },
+        {
+          "prompt": "What did they play?",
+          "options": [
+            "Tennis",
+            "Football",
+            "The piano"
+          ],
+          "explain": "ふたり は テニス を しました."
+        },
+        {
+          "prompt": "What did Ken offer Yuki?",
+          "options": [
+            "His umbrella",
+            "His camera",
+            "Some water"
+          ],
+          "explain": "わたし の かさ を つかって も いいです よ."
+        }
+      ]
+    },
+    {
       "id": "st-seq",
       "title": "The old temple",
       "unlockAfter": "seq",
@@ -2354,6 +2542,181 @@
             "Eat lunch"
           ],
           "explain": "あの へや に はいって は いけません: you mustn't go into that room."
+        }
+      ]
+    },
+    {
+      "id": "st-oblig",
+      "title": "Homework first",
+      "unlockAfter": "oblig",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "きょう",
+            "は",
+            "げつようび",
+            "です。"
+          ],
+          "romaji": "kyou wa getsuyoubi desu.",
+          "en": "Today is Monday."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ケンさん、",
+            "こんばん",
+            "えいが",
+            "を",
+            "みませんか。"
+          ],
+          "romaji": "Ken-san, konban eiga o mimasen ka.",
+          "en": "Ken, would you like to see a film tonight?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "すみません。",
+            "こんばん",
+            "は",
+            "しゅくだい",
+            "を",
+            "しなければ",
+            "なりません。"
+          ],
+          "romaji": "sumimasen. konban wa shukudai o shinakereba narimasen.",
+          "en": "Sorry. I have to do my homework tonight."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "あした",
+            "まで",
+            "に",
+            "としょかん",
+            "に",
+            "ほん",
+            "を",
+            "かえさなければ",
+            "なりません。"
+          ],
+          "romaji": "ashita made ni toshokan ni hon o kaesanakereba narimasen.",
+          "en": "I have to return a book to the library by tomorrow."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "かんじ",
+            "も",
+            "おぼえなければ",
+            "なりません。"
+          ],
+          "romaji": "kanji mo oboenakereba narimasen.",
+          "en": "And I have to memorise kanji too."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "たいへん",
+            "です",
+            "ね。",
+            "じゃあ、",
+            "どようび",
+            "は",
+            "どうですか。"
+          ],
+          "romaji": "taihen desu ne. jaa, doyoubi wa dou desu ka.",
+          "en": "That's a lot. Then how about Saturday?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "どようび",
+            "は",
+            "ひま",
+            "です。"
+          ],
+          "romaji": "doyoubi wa hima desu.",
+          "en": "I'm free on Saturday."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "よかった。",
+            "じゃあ、",
+            "どようび",
+            "に",
+            "いきましょう。"
+          ],
+          "romaji": "yokatta. jaa, doyoubi ni ikimashou.",
+          "en": "Great. Let's go on Saturday, then."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "えいが",
+            "の",
+            "おかね",
+            "は",
+            "わたし",
+            "が",
+            "はらいます",
+            "から、",
+            "ケンさん",
+            "は",
+            "はらわなくても",
+            "いいです",
+            "よ。"
+          ],
+          "romaji": "eiga no okane wa watashi ga haraimasu kara, Ken-san wa harawanakutemo ii desu yo.",
+          "en": "I'll pay for the film, so you don't have to pay, Ken."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ありがとう、",
+            "ゆきさん。"
+          ],
+          "romaji": "arigatou, Yuki-san.",
+          "en": "Thanks, Yuki."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Why can't Ken go tonight?",
+          "options": [
+            "He has to do homework",
+            "He's ill",
+            "He has no money"
+          ],
+          "explain": "こんばん は しゅくだい を しなければ なりません."
+        },
+        {
+          "prompt": "What must Ken return by tomorrow?",
+          "options": [
+            "A library book",
+            "An umbrella",
+            "A ticket"
+          ],
+          "explain": "としょかん に ほん を かえさなければ なりません."
+        },
+        {
+          "prompt": "When will they see the film?",
+          "options": [
+            "On Saturday",
+            "Tonight",
+            "On Sunday"
+          ],
+          "explain": "どようび に いきましょう."
+        },
+        {
+          "prompt": "Who will pay for the film?",
+          "options": [
+            "Yuki",
+            "Ken",
+            "They will each pay"
+          ],
+          "explain": "えいが の おかね は わたし が はらいます, says Yuki, so Ken doesn't have to pay."
         }
       ]
     },
@@ -2879,6 +3242,185 @@
       ]
     },
     {
+      "id": "st-givetake",
+      "title": "Birthday gifts",
+      "unlockAfter": "givetake",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "きのう",
+            "は",
+            "ケンさん",
+            "の",
+            "たんじょうび",
+            "でした。"
+          ],
+          "romaji": "kinou wa Ken-san no tanjoubi deshita.",
+          "en": "Yesterday was Ken's birthday."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ケンさん、",
+            "たんじょうび",
+            "に",
+            "なに",
+            "を",
+            "もらいましたか。"
+          ],
+          "romaji": "Ken-san, tanjoubi ni nani o moraimashita ka.",
+          "en": "Ken, what did you get for your birthday?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "あね",
+            "が",
+            "ネクタイ",
+            "を",
+            "くれました。"
+          ],
+          "romaji": "ane ga nekutai o kuremashita.",
+          "en": "My older sister gave me a tie."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "いもうと",
+            "は",
+            "ケーキ",
+            "を",
+            "つくって",
+            "くれました。"
+          ],
+          "romaji": "imouto wa keeki o tsukutte kuremashita.",
+          "en": "My younger sister made me a cake."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "いいですね。",
+            "その",
+            "ネクタイ、",
+            "すてき",
+            "です",
+            "ね。"
+          ],
+          "romaji": "ii desu ne. sono nekutai, suteki desu ne.",
+          "en": "How nice. That tie is lovely."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ありがとう。",
+            "ゆきさん",
+            "の",
+            "とけい",
+            "も",
+            "すてき",
+            "です",
+            "ね。"
+          ],
+          "romaji": "arigatou. Yuki-san no tokei mo suteki desu ne.",
+          "en": "Thanks. Your watch is lovely too, Yuki."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "これ",
+            "は",
+            "はは",
+            "が",
+            "くれました。"
+          ],
+          "romaji": "kore wa haha ga kuremashita.",
+          "en": "My mother gave me this."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "わたし",
+            "も",
+            "ケンさん",
+            "に",
+            "ほん",
+            "を",
+            "あげます。",
+            "どうぞ。"
+          ],
+          "romaji": "watashi mo Ken-san ni hon o agemasu. douzo.",
+          "en": "I've got a book for you too, Ken. Here you are."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "にほんご",
+            "の",
+            "ほん",
+            "です",
+            "ね。",
+            "ありがとうございます！"
+          ],
+          "romaji": "nihongo no hon desu ne. arigatou gozaimasu!",
+          "en": "It's a Japanese book. Thank you so much!"
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "わからない",
+            "とき",
+            "は、",
+            "わたし",
+            "が",
+            "おしえて",
+            "あげます",
+            "よ。"
+          ],
+          "romaji": "wakaranai toki wa, watashi ga oshiete agemasu yo.",
+          "en": "When you don't understand something, I'll teach you."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Who gave Ken a tie?",
+          "options": [
+            "His older sister",
+            "His younger sister",
+            "Yuki"
+          ],
+          "explain": "あね が ネクタイ を くれました."
+        },
+        {
+          "prompt": "What did Ken's younger sister do?",
+          "options": [
+            "She made him a cake",
+            "She gave him a watch",
+            "She bought him a book"
+          ],
+          "explain": "いもうと は ケーキ を つくって くれました."
+        },
+        {
+          "prompt": "Who gave Yuki her watch?",
+          "options": [
+            "Her mother",
+            "Ken",
+            "Her sister"
+          ],
+          "explain": "これ は はは が くれました."
+        },
+        {
+          "prompt": "What did Yuki give Ken?",
+          "options": [
+            "A Japanese book",
+            "A tie",
+            "Sweets"
+          ],
+          "explain": "ケンさん に ほん を あげます, and it's a にほんご の ほん."
+        }
+      ]
+    },
+    {
       "id": "st-ndesu",
       "title": "Why are you late?",
       "unlockAfter": "ndesu",
@@ -3041,6 +3583,181 @@
             "A tie"
           ],
           "explain": "お菓子 を かいました: I bought you some sweets."
+        }
+      ]
+    },
+    {
+      "id": "st-advice",
+      "title": "Yuki's report",
+      "unlockAfter": "advice",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "ゆきさん",
+            "の",
+            "しゅくだい",
+            "は",
+            "にほんご",
+            "の",
+            "レポート",
+            "です。"
+          ],
+          "romaji": "Yuki-san no shukudai wa nihongo no repooto desu.",
+          "en": "Yuki's homework is a report in Japanese."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "せんせい、",
+            "レポート",
+            "を",
+            "かいた",
+            "んですが、",
+            "みて",
+            "いただけませんか。"
+          ],
+          "romaji": "sensei, repooto o kaita n desu ga, mite itadakemasen ka.",
+          "en": "Sensei, I've written my report. Could you take a look at it?"
+        },
+        {
+          "speaker": "Teacher",
+          "tokens": [
+            "いいです",
+            "よ。",
+            "とても",
+            "いい",
+            "です",
+            "ね。"
+          ],
+          "romaji": "ii desu yo. totemo ii desu ne.",
+          "en": "Of course. It's very good."
+        },
+        {
+          "speaker": "Teacher",
+          "tokens": [
+            "でも、",
+            "この",
+            "かんじ",
+            "は",
+            "ちがいます。"
+          ],
+          "romaji": "demo, kono kanji wa chigaimasu.",
+          "en": "But this kanji is wrong."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "すみません。",
+            "この",
+            "かんじ",
+            "が",
+            "わからない",
+            "んですが、",
+            "おしえて",
+            "いただけませんか。"
+          ],
+          "romaji": "sumimasen. kono kanji ga wakaranai n desu ga, oshiete itadakemasen ka.",
+          "en": "Sorry. I don't know this kanji. Could you teach me?"
+        },
+        {
+          "speaker": "Teacher",
+          "tokens": [
+            "これ",
+            "は",
+            "「みず」",
+            "です。"
+          ],
+          "romaji": "kore wa \"mizu\" desu.",
+          "en": "This one is \"mizu\" (water)."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ありがとうございます。",
+            "レポート",
+            "は",
+            "いつ",
+            "まで",
+            "ですか。"
+          ],
+          "romaji": "arigatou gozaimasu. repooto wa itsu made desu ka.",
+          "en": "Thank you. When is the report due?"
+        },
+        {
+          "speaker": "Teacher",
+          "tokens": [
+            "きんようび",
+            "まで",
+            "です。"
+          ],
+          "romaji": "kin'youbi made desu.",
+          "en": "It's due by Friday."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "わかりました。",
+            "それから、",
+            "どの",
+            "じしょ",
+            "を",
+            "かったら",
+            "いいですか。"
+          ],
+          "romaji": "wakarimashita. sorekara, dono jisho o kattara ii desu ka.",
+          "en": "I see. And which dictionary should I buy?"
+        },
+        {
+          "speaker": "Teacher",
+          "tokens": [
+            "この",
+            "じしょ",
+            "が",
+            "いい",
+            "です",
+            "よ。"
+          ],
+          "romaji": "kono jisho ga ii desu yo.",
+          "en": "This dictionary is good."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What is Yuki's homework?",
+          "options": [
+            "A report in Japanese",
+            "A letter to a friend",
+            "A diary"
+          ],
+          "explain": "しゅくだい は にほんご の レポート です."
+        },
+        {
+          "prompt": "What was wrong with the report?",
+          "options": [
+            "One kanji was wrong",
+            "It was too short",
+            "It was late"
+          ],
+          "explain": "この かんじ は ちがいます."
+        },
+        {
+          "prompt": "When is the report due?",
+          "options": [
+            "By Friday",
+            "By tomorrow",
+            "By Monday"
+          ],
+          "explain": "きんようび まで です."
+        },
+        {
+          "prompt": "What else did Yuki ask about?",
+          "options": [
+            "Which dictionary to buy",
+            "Which teacher to ask",
+            "Where to buy a pen"
+          ],
+          "explain": "どの じしょ を かったら いいですか: which dictionary should I buy?"
         }
       ]
     },
@@ -3218,6 +3935,1255 @@
             "Stop working"
           ],
           "explain": "もし 1おくえん あったら、まいにち 旅行 します."
+        }
+      ]
+    },
+    {
+      "id": "st-vol",
+      "title": "Let's start tomorrow",
+      "unlockAfter": "vol",
+      "lines": [
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ゆきさん、",
+            "しゅうまつ",
+            "に",
+            "うみ",
+            "へ",
+            "いこう。"
+          ],
+          "romaji": "Yuki-san, shuumatsu ni umi e ikou.",
+          "en": "Yuki, let's go to the sea at the weekend."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "いい",
+            "ね！",
+            "でも、",
+            "わたし",
+            "は",
+            "すこし",
+            "やせよう",
+            "と",
+            "おもって",
+            "います。"
+          ],
+          "romaji": "ii ne! demo, watashi wa sukoshi yaseyou to omotte imasu.",
+          "en": "Great! But I'm thinking of losing a bit of weight."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "じゃあ、",
+            "あした",
+            "から",
+            "いっしょに",
+            "ジョギング",
+            "を",
+            "はじめよう。"
+          ],
+          "romaji": "jaa, ashita kara issho ni jogingu o hajimeyou.",
+          "en": "Then let's start jogging together from tomorrow."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "そう",
+            "しよう！",
+            "あした",
+            "の",
+            "あさ",
+            "7じ",
+            "に",
+            "こうえん",
+            "へ",
+            "いこう。"
+          ],
+          "romaji": "sou shiyou! ashita no asa shichiji ni kouen e ikou.",
+          "en": "Let's do that! Let's go to the park at seven tomorrow morning."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "つぎ",
+            "の",
+            "あさ、",
+            "ゆきさん",
+            "は",
+            "7じ",
+            "に",
+            "こうえん",
+            "へ",
+            "いきました。"
+          ],
+          "romaji": "tsugi no asa, Yuki-san wa shichiji ni kouen e ikimashita.",
+          "en": "The next morning, Yuki went to the park at seven."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "でも、",
+            "ケンさん",
+            "は",
+            "いませんでした。"
+          ],
+          "romaji": "demo, Ken-san wa imasen deshita.",
+          "en": "But Ken wasn't there."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ケンさん、",
+            "いま",
+            "どこ？"
+          ],
+          "romaji": "Ken-san, ima doko?",
+          "en": "Ken, where are you now?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "すみません、",
+            "まだ",
+            "ねて",
+            "いました。"
+          ],
+          "romaji": "sumimasen, mada nete imashita.",
+          "en": "Sorry, I was still asleep."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "もう！",
+            "じゃあ、",
+            "あした",
+            "また",
+            "はじめよう。"
+          ],
+          "romaji": "mou! jaa, ashita mata hajimeyou.",
+          "en": "Honestly! Then let's start again tomorrow."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "こんばん",
+            "は",
+            "はやく",
+            "ねよう",
+            "と",
+            "おもいます。"
+          ],
+          "romaji": "konban wa hayaku neyou to omoimasu.",
+          "en": "I think I'll go to bed early tonight."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Where does Ken want to go at the weekend?",
+          "options": [
+            "The sea",
+            "The mountains",
+            "Osaka"
+          ],
+          "explain": "しゅうまつ に うみ へ いこう."
+        },
+        {
+          "prompt": "What is Yuki thinking of doing?",
+          "options": [
+            "Losing a bit of weight",
+            "Studying abroad",
+            "Moving house"
+          ],
+          "explain": "すこし やせよう と おもって います."
+        },
+        {
+          "prompt": "Why wasn't Ken at the park?",
+          "options": [
+            "He was still asleep",
+            "It was raining",
+            "He was ill"
+          ],
+          "explain": "まだ ねて いました: I was still asleep."
+        },
+        {
+          "prompt": "What does Ken plan to do tonight?",
+          "options": [
+            "Go to bed early",
+            "Go jogging",
+            "Watch a film"
+          ],
+          "explain": "こんばん は はやく ねよう と おもいます."
+        }
+      ]
+    },
+    {
+      "id": "st-maybe",
+      "title": "The typhoon",
+      "unlockAfter": "maybe",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "あした、",
+            "ケンさん",
+            "と",
+            "ゆきさん",
+            "は",
+            "ふじさん",
+            "へ",
+            "いく",
+            "よていです。"
+          ],
+          "romaji": "ashita, Ken-san to Yuki-san wa fujisan e iku yotei desu.",
+          "en": "Tomorrow, Ken and Yuki are due to go to Mt Fuji."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ケンさん、",
+            "あした",
+            "の",
+            "てんき",
+            "は",
+            "どう",
+            "ですか。"
+          ],
+          "romaji": "Ken-san, ashita no tenki wa dou desu ka.",
+          "en": "Ken, what's the weather like tomorrow?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "てんきよほう",
+            "を",
+            "みました。",
+            "たいふう",
+            "が",
+            "くる",
+            "かもしれません。"
+          ],
+          "romaji": "tenkiyohou o mimashita. taifuu ga kuru kamoshiremasen.",
+          "en": "I checked the weather forecast. A typhoon might come."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "え、",
+            "ほんとう",
+            "ですか。"
+          ],
+          "romaji": "e, hontou desu ka.",
+          "en": "What, really?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ごご",
+            "から",
+            "は",
+            "たぶん",
+            "あめ",
+            "でしょう。"
+          ],
+          "romaji": "gogo kara wa tabun ame deshou.",
+          "en": "It will probably rain from the afternoon."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "でんしゃ",
+            "も",
+            "こんで",
+            "いる",
+            "かもしれません",
+            "ね。"
+          ],
+          "romaji": "densha mo konde iru kamoshiremasen ne.",
+          "en": "The trains might be crowded too."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "じゃあ、",
+            "らいしゅう",
+            "に",
+            "しましょう。"
+          ],
+          "romaji": "jaa, raishuu ni shimashou.",
+          "en": "Then let's make it next week."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "そう",
+            "です",
+            "ね。",
+            "らいしゅう",
+            "は",
+            "きっと",
+            "はれる",
+            "でしょう。"
+          ],
+          "romaji": "sou desu ne. raishuu wa kitto hareru deshou.",
+          "en": "Good idea. Next week it'll surely be sunny."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "でも、",
+            "つぎ",
+            "の",
+            "ひ",
+            "は",
+            "とても",
+            "いい",
+            "てんき",
+            "でした。"
+          ],
+          "romaji": "demo, tsugi no hi wa totemo ii tenki deshita.",
+          "en": "But the next day, the weather was lovely."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "あれ？",
+            "たいふう",
+            "は",
+            "きません",
+            "でした",
+            "ね。"
+          ],
+          "romaji": "are? taifuu wa kimasen deshita ne.",
+          "en": "Huh? The typhoon didn't come, did it?"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Where were Ken and Yuki due to go?",
+          "options": [
+            "Mt Fuji",
+            "The sea",
+            "Osaka"
+          ],
+          "explain": "ふじさん へ いく よていです."
+        },
+        {
+          "prompt": "What did the forecast say might come?",
+          "options": [
+            "A typhoon",
+            "Snow",
+            "An earthquake"
+          ],
+          "explain": "たいふう が くる かもしれません."
+        },
+        {
+          "prompt": "What did they decide?",
+          "options": [
+            "To go next week",
+            "To go by car",
+            "To stay at home all week"
+          ],
+          "explain": "らいしゅう に しましょう: let's make it next week."
+        },
+        {
+          "prompt": "What was the weather like the next day?",
+          "options": [
+            "Lovely",
+            "Rainy",
+            "Very windy"
+          ],
+          "explain": "つぎ の ひ は とても いい てんき でした."
+        }
+      ]
+    },
+    {
+      "id": "st-looks",
+      "title": "A scary film",
+      "unlockAfter": "looks",
+      "lines": [
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ゆきさん、",
+            "あの",
+            "えいが",
+            "を",
+            "みませんか。"
+          ],
+          "romaji": "Yuki-san, ano eiga o mimasen ka.",
+          "en": "Yuki, shall we see that film?"
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "こわそう",
+            "です",
+            "ね。",
+            "わたし",
+            "は",
+            "こわい",
+            "えいが",
+            "は",
+            "ちょっと…"
+          ],
+          "romaji": "kowasou desu ne. watashi wa kowai eiga wa chotto...",
+          "en": "It looks scary. I'm not really into scary films..."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "でも、",
+            "ともだち",
+            "に",
+            "よると、",
+            "とても",
+            "おもしろい",
+            "そうです。"
+          ],
+          "romaji": "demo, tomodachi ni yoru to, totemo omoshiroi sou desu.",
+          "en": "But according to my friend, it's really good."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "そう",
+            "ですか。",
+            "じゃあ、",
+            "みましょう。"
+          ],
+          "romaji": "sou desu ka. jaa, mimashou.",
+          "en": "Is that right? OK, let's see it, then."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "えいが",
+            "の",
+            "あと、",
+            "ふたり",
+            "は",
+            "きっさてん",
+            "に",
+            "はいりました。"
+          ],
+          "romaji": "eiga no ato, futari wa kissaten ni hairimashita.",
+          "en": "After the film, the two of them went into a café."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "この",
+            "ケーキ",
+            "は",
+            "おいしそう",
+            "です",
+            "ね。"
+          ],
+          "romaji": "kono keeki wa oishisou desu ne.",
+          "en": "This cake looks delicious."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ええ。",
+            "あの",
+            "パン",
+            "も",
+            "やわらかそう",
+            "です。"
+          ],
+          "romaji": "ee. ano pan mo yawarakasou desu.",
+          "en": "Yes. That bread looks soft too."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ゆきさん",
+            "は",
+            "うれしそう",
+            "です",
+            "ね。"
+          ],
+          "romaji": "Yuki-san wa ureshisou desu ne.",
+          "en": "You look happy, Yuki."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "えいが",
+            "が",
+            "おもしろかった",
+            "です",
+            "から。"
+          ],
+          "romaji": "eiga ga omoshirokatta desu kara.",
+          "en": "Because the film was good."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "わたし",
+            "は",
+            "すこし",
+            "こわかった",
+            "です。"
+          ],
+          "romaji": "watashi wa sukoshi kowakatta desu.",
+          "en": "I was a little scared."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "How did the film look to Yuki?",
+          "options": [
+            "Scary",
+            "Boring",
+            "Funny"
+          ],
+          "explain": "こわそう です ね: it looks scary."
+        },
+        {
+          "prompt": "What had Ken's friend said about the film?",
+          "options": [
+            "It's really good",
+            "It's too long",
+            "It's very scary"
+          ],
+          "explain": "ともだち に よると、とても おもしろい そうです."
+        },
+        {
+          "prompt": "Where did they go after the film?",
+          "options": [
+            "A café",
+            "A restaurant",
+            "Home"
+          ],
+          "explain": "ふたり は きっさてん に はいりました."
+        },
+        {
+          "prompt": "Who was a little scared?",
+          "options": [
+            "Ken",
+            "Yuki",
+            "Ken's friend"
+          ],
+          "explain": "わたし は すこし こわかった です, says Ken."
+        }
+      ]
+    },
+    {
+      "id": "st-trydo",
+      "title": "Natto for breakfast",
+      "unlockAfter": "trydo",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "あさ、",
+            "ケンさん",
+            "は",
+            "ゆきさん",
+            "の",
+            "うち",
+            "に",
+            "いきました。"
+          ],
+          "romaji": "asa, Ken-san wa Yuki-san no uchi ni ikimashita.",
+          "en": "In the morning, Ken went to Yuki's house."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "あさごはん",
+            "です。",
+            "なっとう",
+            "を",
+            "たべて",
+            "みて",
+            "ください。"
+          ],
+          "romaji": "asagohan desu. nattou o tabete mite kudasai.",
+          "en": "Breakfast is ready. Try some natto."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "なっとう",
+            "は",
+            "たべた",
+            "こと",
+            "が",
+            "ありません。"
+          ],
+          "romaji": "nattou wa tabeta koto ga arimasen.",
+          "en": "I've never eaten natto."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "じゃあ、",
+            "ちょっと",
+            "たべて",
+            "みます。"
+          ],
+          "romaji": "jaa, chotto tabete mimasu.",
+          "en": "OK, I'll try a little."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "どう",
+            "ですか。"
+          ],
+          "romaji": "dou desu ka.",
+          "en": "How is it?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "あ、",
+            "おいしい",
+            "です！"
+          ],
+          "romaji": "a, oishii desu!",
+          "en": "Oh, it's tasty!"
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "でも、",
+            "ケンさん",
+            "は",
+            "コップ",
+            "を",
+            "わって",
+            "しまいました。"
+          ],
+          "romaji": "demo, Ken-san wa koppu o watte shimaimashita.",
+          "en": "But Ken broke a glass by mistake."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "すみません！",
+            "コップ",
+            "を",
+            "わって",
+            "しまいました。"
+          ],
+          "romaji": "sumimasen! koppu o watte shimaimashita.",
+          "en": "I'm so sorry! I've broken a glass."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "だいじょうぶ",
+            "です",
+            "よ。"
+          ],
+          "romaji": "daijoubu desu yo.",
+          "en": "Don't worry, it's fine."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ごご",
+            "は",
+            "いっしょに",
+            "きもの",
+            "を",
+            "きて",
+            "みましょう。"
+          ],
+          "romaji": "gogo wa issho ni kimono o kite mimashou.",
+          "en": "This afternoon, let's try on kimonos together."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "いいですね。",
+            "いちど",
+            "きもの",
+            "を",
+            "きて",
+            "みたいです。"
+          ],
+          "romaji": "ii desu ne. ichido kimono o kite mitai desu.",
+          "en": "Great. I'd love to try wearing a kimono once."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What did Yuki ask Ken to try?",
+          "options": [
+            "Natto",
+            "Sushi",
+            "Green tea"
+          ],
+          "explain": "なっとう を たべて みて ください."
+        },
+        {
+          "prompt": "Had Ken eaten natto before?",
+          "options": [
+            "No, never",
+            "Yes, many times",
+            "Yes, once"
+          ],
+          "explain": "なっとう は たべた こと が ありません."
+        },
+        {
+          "prompt": "What did Ken break?",
+          "options": [
+            "A glass",
+            "A plate",
+            "His chopsticks"
+          ],
+          "explain": "コップ を わって しまいました."
+        },
+        {
+          "prompt": "What will they try in the afternoon?",
+          "options": [
+            "Wearing kimonos",
+            "A hot spring",
+            "Cooking natto"
+          ],
+          "explain": "きもの を きて みましょう."
+        }
+      ]
+    },
+    {
+      "id": "st-ease",
+      "title": "Ken's curry",
+      "unlockAfter": "ease",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "ゆきさん",
+            "は",
+            "ケンさん",
+            "の",
+            "うち",
+            "で",
+            "ばんごはん",
+            "を",
+            "たべます。"
+          ],
+          "romaji": "Yuki-san wa Ken-san no uchi de bangohan o tabemasu.",
+          "en": "Yuki is having dinner at Ken's house."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "きょう",
+            "は",
+            "わたし",
+            "が",
+            "カレー",
+            "を",
+            "つくって",
+            "みました。"
+          ],
+          "romaji": "kyou wa watashi ga karee o tsukutte mimashita.",
+          "en": "Today I tried making curry."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "この",
+            "りょうり",
+            "の",
+            "ほん",
+            "は",
+            "せつめい",
+            "が",
+            "わかりやすい",
+            "です。"
+          ],
+          "romaji": "kono ryouri no hon wa setsumei ga wakariyasui desu.",
+          "en": "The explanations in this cookbook are easy to understand."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "いただきます。",
+            "…",
+            "あ、",
+            "からい！"
+          ],
+          "romaji": "itadakimasu. ... a, karai!",
+          "en": "Let's eat. ... Oh, it's spicy!"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "すみません。",
+            "ちょっと",
+            "からすぎます",
+            "か。"
+          ],
+          "romaji": "sumimasen. chotto karasugimasu ka.",
+          "en": "Sorry. Is it a bit too spicy?"
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "からい",
+            "です",
+            "が、",
+            "おいしい",
+            "です。"
+          ],
+          "romaji": "karai desu ga, oishii desu.",
+          "en": "It's spicy, but it's delicious."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "ゆきさん",
+            "は",
+            "カレー",
+            "を",
+            "たくさん",
+            "たべました。"
+          ],
+          "romaji": "Yuki-san wa karee o takusan tabemashita.",
+          "en": "Yuki ate lots of curry."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ああ、",
+            "たべすぎました。"
+          ],
+          "romaji": "aa, tabesugimashita.",
+          "en": "Oh, I ate too much."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "つぎ",
+            "は",
+            "あまい",
+            "カレー",
+            "を",
+            "つくります",
+            "ね。"
+          ],
+          "romaji": "tsugi wa amai karee o tsukurimasu ne.",
+          "en": "Next time I'll make a milder curry."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "いいえ、",
+            "この",
+            "カレー",
+            "が",
+            "いい",
+            "です！"
+          ],
+          "romaji": "iie, kono karee ga ii desu!",
+          "en": "No, I like this curry!"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Who made the curry?",
+          "options": [
+            "Ken",
+            "Yuki",
+            "Ken's mother"
+          ],
+          "explain": "わたし が カレー を つくって みました, says Ken."
+        },
+        {
+          "prompt": "What is the cookbook like?",
+          "options": [
+            "Easy to understand",
+            "Hard to read",
+            "Too long"
+          ],
+          "explain": "せつめい が わかりやすい です."
+        },
+        {
+          "prompt": "How did Yuki feel after dinner?",
+          "options": [
+            "She had eaten too much",
+            "She was still hungry",
+            "She felt ill"
+          ],
+          "explain": "たべすぎました: I ate too much."
+        },
+        {
+          "prompt": "What kind of curry does Yuki want next time?",
+          "options": [
+            "The same spicy curry",
+            "A milder curry",
+            "A curry with no meat"
+          ],
+          "explain": "いいえ、この カレー が いい です: she wants this one again."
+        }
+      ]
+    },
+    {
+      "id": "st-passive",
+      "title": "Ken's long day",
+      "unlockAfter": "passive",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "きのう、",
+            "ケンさん",
+            "は",
+            "たいへん",
+            "でした。"
+          ],
+          "romaji": "kinou, Ken-san wa taihen deshita.",
+          "en": "Yesterday was a hard day for Ken."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "あさ、",
+            "でんしゃ",
+            "で",
+            "あし",
+            "を",
+            "ふまれました。"
+          ],
+          "romaji": "asa, densha de ashi o fumaremashita.",
+          "en": "In the morning, someone stepped on my foot on the train."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "それから、",
+            "あめ",
+            "に",
+            "ふられました。",
+            "かさ",
+            "が",
+            "ありません",
+            "でした。"
+          ],
+          "romaji": "sorekara, ame ni furaremashita. kasa ga arimasen deshita.",
+          "en": "After that, I got caught in the rain. I didn't have an umbrella."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "たいへん",
+            "でした",
+            "ね。"
+          ],
+          "romaji": "taihen deshita ne.",
+          "en": "What a pain."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "がっこう",
+            "で",
+            "は",
+            "しゅくだい",
+            "を",
+            "わすれて、",
+            "せんせい",
+            "に",
+            "しかられました。"
+          ],
+          "romaji": "gakkou de wa shukudai o wasurete, sensei ni shikararemashita.",
+          "en": "At school I forgot my homework and got told off by the teacher."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "ほんとう",
+            "に",
+            "たいへん",
+            "です",
+            "ね。"
+          ],
+          "romaji": "hontou ni taihen desu ne.",
+          "en": "That really is a hard day."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "でも、",
+            "いい",
+            "こと",
+            "も",
+            "ありました。"
+          ],
+          "romaji": "demo, ii koto mo arimashita.",
+          "en": "But something good happened too."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "にほんご",
+            "の",
+            "しけん",
+            "で、",
+            "せんせい",
+            "に",
+            "ほめられました。"
+          ],
+          "romaji": "nihongo no shiken de, sensei ni homeraremashita.",
+          "en": "The teacher praised me for my Japanese test."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ともだち",
+            "の",
+            "パーティー",
+            "に",
+            "も",
+            "しょうたいされました。"
+          ],
+          "romaji": "tomodachi no paatii ni mo shoutai saremashita.",
+          "en": "And I was invited to a friend's party, too."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "よかった",
+            "です",
+            "ね！"
+          ],
+          "romaji": "yokatta desu ne!",
+          "en": "That's great!"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What happened on the train?",
+          "options": [
+            "Someone stepped on Ken's foot",
+            "Ken lost his wallet",
+            "Ken fell asleep"
+          ],
+          "explain": "でんしゃ で あし を ふまれました."
+        },
+        {
+          "prompt": "Why did Ken get wet?",
+          "options": [
+            "He had no umbrella",
+            "He fell in a river",
+            "He went swimming"
+          ],
+          "explain": "あめ に ふられました。かさ が ありません でした."
+        },
+        {
+          "prompt": "Why did the teacher tell Ken off?",
+          "options": [
+            "He forgot his homework",
+            "He was late",
+            "He was talking"
+          ],
+          "explain": "しゅくだい を わすれて、せんせい に しかられました."
+        },
+        {
+          "prompt": "What good thing happened?",
+          "options": [
+            "He was praised and invited to a party",
+            "He found an umbrella",
+            "He got a present"
+          ],
+          "explain": "せんせい に ほめられました, and ともだち の パーティー に しょうたいされました."
+        }
+      ]
+    },
+    {
+      "id": "st-ba",
+      "title": "The lost key",
+      "unlockAfter": "ba",
+      "lines": [
+        {
+          "speaker": "",
+          "tokens": [
+            "ケンさん",
+            "は",
+            "かぎ",
+            "を",
+            "なくしました。"
+          ],
+          "romaji": "Ken-san wa kagi o nakushimashita.",
+          "en": "Ken has lost his key."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ゆきさん、",
+            "かぎ",
+            "が",
+            "ありません。",
+            "どう",
+            "すれば",
+            "いい",
+            "ですか。"
+          ],
+          "romaji": "Yuki-san, kagi ga arimasen. dou sureba ii desu ka.",
+          "en": "Yuki, my key's gone. What should I do?"
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "よく",
+            "さがせば、",
+            "きっと",
+            "みつかります",
+            "よ。"
+          ],
+          "romaji": "yoku sagaseba, kitto mitsukarimasu yo.",
+          "en": "If you look carefully, you'll surely find it."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "かばん",
+            "の",
+            "なか",
+            "も",
+            "みました。",
+            "でも、",
+            "ありません。"
+          ],
+          "romaji": "kaban no naka mo mimashita. demo, arimasen.",
+          "en": "I looked in my bag too. But it isn't there."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "きのう、",
+            "どこ",
+            "へ",
+            "いきましたか。"
+          ],
+          "romaji": "kinou, doko e ikimashita ka.",
+          "en": "Where did you go yesterday?"
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "えき",
+            "の",
+            "ちかく",
+            "の",
+            "きっさてん",
+            "へ",
+            "いきました。"
+          ],
+          "romaji": "eki no chikaku no kissaten e ikimashita.",
+          "en": "I went to a café near the station."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "じゃあ、",
+            "きっさてん",
+            "に",
+            "でんわ",
+            "すれば",
+            "いい",
+            "です",
+            "よ。"
+          ],
+          "romaji": "jaa, kissaten ni denwa sureba ii desu yo.",
+          "en": "Then you should phone the café."
+        },
+        {
+          "speaker": "",
+          "tokens": [
+            "ケンさん",
+            "は",
+            "きっさてん",
+            "に",
+            "でんわ",
+            "しました。"
+          ],
+          "romaji": "Ken-san wa kissaten ni denwa shimashita.",
+          "en": "Ken phoned the café."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "ありました！",
+            "かぎ",
+            "は",
+            "きっさてん",
+            "に",
+            "ありました。"
+          ],
+          "romaji": "arimashita! kagi wa kissaten ni arimashita.",
+          "en": "Found it! The key was at the café."
+        },
+        {
+          "speaker": "Ken",
+          "tokens": [
+            "でも、",
+            "きっさてん",
+            "は",
+            "6じ",
+            "まで",
+            "です。"
+          ],
+          "romaji": "demo, kissaten wa rokuji made desu.",
+          "en": "But the café is only open until six."
+        },
+        {
+          "speaker": "Yuki",
+          "tokens": [
+            "いそげば、",
+            "まにあいます",
+            "よ！"
+          ],
+          "romaji": "isogeba, maniaimasu yo!",
+          "en": "If you hurry, you'll make it!"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What did Ken lose?",
+          "options": [
+            "His key",
+            "His wallet",
+            "His phone"
+          ],
+          "explain": "かぎ を なくしました."
+        },
+        {
+          "prompt": "What did Yuki say first?",
+          "options": [
+            "If you look carefully, you'll find it",
+            "Buy a new one",
+            "Ask a police officer"
+          ],
+          "explain": "よく さがせば、きっと みつかります よ."
+        },
+        {
+          "prompt": "Where had Ken gone yesterday?",
+          "options": [
+            "A café near the station",
+            "The library",
+            "A department store"
+          ],
+          "explain": "えき の ちかく の きっさてん へ いきました."
+        },
+        {
+          "prompt": "Where was the key?",
+          "options": [
+            "At the café",
+            "In his bag",
+            "At the station"
+          ],
+          "explain": "かぎ は きっさてん に ありました."
         }
       ]
     }

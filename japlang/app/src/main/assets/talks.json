@@ -1450,6 +1450,356 @@
       ]
     },
     {
+      "id": "talk-cont",
+      "title": "Where do you live?",
+      "unlockAfter": "cont",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "どこ に すんで いますか。",
+          "romaji": "doko ni sunde imasu ka",
+          "en": "Where do you live?",
+          "answers": [
+            {
+              "jp": "とうきょう に すんで います。",
+              "romaji": "toukyou ni sunde imasu",
+              "en": "I live in Tokyo.",
+              "heard": [
+                "東京に住んでいます"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "おおさか に すんで います。",
+              "romaji": "oosaka ni sunde imasu",
+              "en": "I live in Osaka.",
+              "heard": [
+                "大阪に住んでいます"
+              ],
+              "next": "t2"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "いいですね。いま なに を して いますか。",
+          "romaji": "ii desu ne. ima nani o shite imasu ka.",
+          "en": "Nice! What are you doing right now?",
+          "answers": [
+            {
+              "jp": "にほんご を べんきょう して います。",
+              "romaji": "nihongo o benkyou shite imasu",
+              "en": "I'm studying Japanese.",
+              "heard": [
+                "日本語を勉強しています"
+              ],
+              "next": "t3"
+            },
+            {
+              "jp": "ラジオ を きいて います。",
+              "romaji": "rajio o kiite imasu",
+              "en": "I'm listening to the radio.",
+              "heard": [
+                "ラジオを聞いています",
+                "ラジオを聴いています"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "しごと は？ どこ で はたらいて いますか。",
+          "romaji": "shigoto wa? doko de hataraite imasu ka.",
+          "en": "And work? Where do you work?",
+          "answers": [
+            {
+              "jp": "ぎんこう で はたらいて います。",
+              "romaji": "ginkou de hataraite imasu",
+              "en": "I work at a bank.",
+              "heard": [
+                "銀行で働いています"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "だいがく で べんきょう して います。",
+              "romaji": "daigaku de benkyou shite imasu",
+              "en": "I study at university.",
+              "heard": [
+                "大学で勉強しています"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "そう ですか。くるま を もって いますか。",
+          "romaji": "sou desu ka. kuruma o motte imasu ka.",
+          "en": "I see. Do you have a car?",
+          "answers": [
+            {
+              "jp": "はい、もって います。",
+              "romaji": "hai, motte imasu",
+              "en": "Yes, I do.",
+              "heard": [
+                "はい持っています"
+              ],
+              "next": null
+            },
+            {
+              "jp": "いいえ、もって いません。",
+              "romaji": "iie, motte imasen",
+              "en": "No, I don't.",
+              "heard": [
+                "いいえ持っていません"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-oblig",
+      "title": "A busy week",
+      "unlockAfter": "oblig",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "こんしゅう は いそがしい ですか。",
+          "romaji": "konshuu wa isogashii desu ka",
+          "en": "Are you busy this week?",
+          "answers": [
+            {
+              "jp": "はい、とても いそがしい です。",
+              "romaji": "hai, totemo isogashii desu",
+              "en": "Yes, very busy.",
+              "heard": [
+                "はいとても忙しいです"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "いいえ、ひま です。",
+              "romaji": "iie, hima desu",
+              "en": "No, I'm free.",
+              "heard": [
+                "いいえ暇です"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "たいへん ですね。なに を しなければ なりませんか。",
+          "romaji": "taihen desu ne. nani o shinakereba narimasen ka.",
+          "en": "That sounds tough. What do you have to do?",
+          "answers": [
+            {
+              "jp": "しゅくだい を しなければ なりません。",
+              "romaji": "shukudai o shinakereba narimasen",
+              "en": "I have to do my homework.",
+              "heard": [
+                "宿題をしなければなりません"
+              ],
+              "next": "t3"
+            },
+            {
+              "jp": "かんじ を おぼえなければ なりません。",
+              "romaji": "kanji o oboenakereba narimasen",
+              "en": "I have to memorise kanji.",
+              "heard": [
+                "漢字を覚えなければなりません"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "あした は はやく おきなければ なりませんか。",
+          "romaji": "ashita wa hayaku okinakereba narimasen ka",
+          "en": "Do you have to get up early tomorrow?",
+          "answers": [
+            {
+              "jp": "はい、6じ に おきなければ なりません。",
+              "romaji": "hai, rokuji ni okinakereba narimasen",
+              "en": "Yes, I have to get up at six.",
+              "heard": [
+                "はい6時に起きなければなりません",
+                "はい六時に起きなければなりません"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "いいえ、あした は やすみ です。",
+              "romaji": "iie, ashita wa yasumi desu",
+              "en": "No, tomorrow's my day off.",
+              "heard": [
+                "いいえ明日は休みです"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "そう ですか。じゃあ、きょう は ゆっくり して ください ね。",
+          "romaji": "sou desu ka. jaa, kyou wa yukkuri shite kudasai ne.",
+          "en": "I see. Then take it easy today, OK?",
+          "answers": [
+            {
+              "jp": "ありがとうございます。",
+              "romaji": "arigatou gozaimasu",
+              "en": "Thank you.",
+              "heard": [
+                "ありがとう"
+              ],
+              "next": null
+            },
+            {
+              "jp": "はい、そう します。",
+              "romaji": "hai, sou shimasu",
+              "en": "Yes, I will.",
+              "heard": [
+                "はいそうします"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-hobby",
+      "title": "Your free time",
+      "unlockAfter": "hobby",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "しゅみ は なん ですか。",
+          "romaji": "shumi wa nan desu ka",
+          "en": "What's your hobby?",
+          "answers": [
+            {
+              "jp": "しゅみ は りょうり です。",
+              "romaji": "shumi wa ryouri desu",
+              "en": "My hobby is cooking.",
+              "heard": [
+                "趣味は料理です"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "わたし の しゅみ は ピアノ を ひく こと です。",
+              "romaji": "watashi no shumi wa piano o hiku koto desu",
+              "en": "My hobby is playing the piano.",
+              "heard": [
+                "私の趣味はピアノを弾くことです",
+                "趣味はピアノを弾くことです"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "しゅみ は さんぽ です。",
+              "romaji": "shumi wa sanpo desu",
+              "en": "My hobby is taking walks.",
+              "heard": [
+                "趣味は散歩です"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "すてき ですね。まいにち しますか。",
+          "romaji": "suteki desu ne. mainichi shimasu ka.",
+          "en": "Lovely! Do you do it every day?",
+          "answers": [
+            {
+              "jp": "はい、まいにち します。",
+              "romaji": "hai, mainichi shimasu",
+              "en": "Yes, every day.",
+              "heard": [
+                "はい毎日します"
+              ],
+              "next": "t3"
+            },
+            {
+              "jp": "いいえ、にちようび だけ です。",
+              "romaji": "iie, nichiyoubi dake desu",
+              "en": "No, only on Sundays.",
+              "heard": [
+                "いいえ日曜日だけです"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "ねる まえ に、いつも なに を しますか。",
+          "romaji": "neru mae ni, itsumo nani o shimasu ka",
+          "en": "What do you always do before bed?",
+          "answers": [
+            {
+              "jp": "ねる まえ に、ほん を よみます。",
+              "romaji": "neru mae ni, hon o yomimasu",
+              "en": "I read before bed.",
+              "heard": [
+                "寝る前に本を読みます"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "ねる まえ に、ニュース を みます。",
+              "romaji": "neru mae ni, nyuusu o mimasu",
+              "en": "I watch the news before bed.",
+              "heard": [
+                "寝る前にニュースを見ます"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "なつやすみ に なに を しますか。",
+          "romaji": "natsuyasumi ni nani o shimasu ka",
+          "en": "What will you do in the summer holidays?",
+          "answers": [
+            {
+              "jp": "うみ へ いきます。",
+              "romaji": "umi e ikimasu",
+              "en": "I'll go to the sea.",
+              "heard": [
+                "海へ行きます",
+                "海に行きます"
+              ],
+              "next": null
+            },
+            {
+              "jp": "にほん へ いきます。",
+              "romaji": "nihon e ikimasu",
+              "en": "I'll go to Japan.",
+              "heard": [
+                "日本へ行きます",
+                "日本に行きます"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "talk-ta",
       "title": "Have you ever...?",
       "unlockAfter": "ta",
@@ -1556,6 +1906,691 @@
               "en": "No, never.",
               "heard": [
                 "いいえ一度もありません"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-ndesu",
+      "title": "You look tired",
+      "unlockAfter": "ndesu",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "げんき が ない ですね。どう した んですか。",
+          "romaji": "genki ga nai desu ne. dou shita n desu ka.",
+          "en": "You don't seem yourself. What's wrong?",
+          "answers": [
+            {
+              "jp": "きぶん が わるい んです。",
+              "romaji": "kibun ga warui n desu",
+              "en": "I'm not feeling well.",
+              "heard": [
+                "気分が悪いんです"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "あたま が いたい んです。",
+              "romaji": "atama ga itai n desu",
+              "en": "I have a headache.",
+              "heard": [
+                "頭が痛いんです"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "ちょっと ねむい んです。",
+              "romaji": "chotto nemui n desu",
+              "en": "I'm just a bit sleepy.",
+              "heard": [
+                "ちょっと眠いんです"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "だいじょうぶ ですか。くすり を のみましたか。",
+          "romaji": "daijoubu desu ka. kusuri o nomimashita ka.",
+          "en": "Are you all right? Have you taken any medicine?",
+          "answers": [
+            {
+              "jp": "はい、のみました。",
+              "romaji": "hai, nomimashita",
+              "en": "Yes, I have.",
+              "heard": [
+                "はい飲みました"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "いいえ、まだ です。",
+              "romaji": "iie, mada desu",
+              "en": "No, not yet.",
+              "heard": [
+                "いいえまだです"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "ゆうべ は なんじ に ねましたか。",
+          "romaji": "yuube wa nanji ni nemashita ka",
+          "en": "What time did you go to bed last night?",
+          "answers": [
+            {
+              "jp": "12じ に ねました。",
+              "romaji": "juuniji ni nemashita",
+              "en": "I went to bed at twelve.",
+              "heard": [
+                "12時に寝ました",
+                "十二時に寝ました"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "しゅくだい が ありました から、ねません でした。",
+              "romaji": "shukudai ga arimashita kara, nemasen deshita",
+              "en": "I had homework, so I didn't sleep.",
+              "heard": [
+                "宿題がありましたから寝ませんでした"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "きょう は はやく ねて ください ね。",
+          "romaji": "kyou wa hayaku nete kudasai ne",
+          "en": "Please go to bed early tonight, OK?",
+          "answers": [
+            {
+              "jp": "ありがとうございます。",
+              "romaji": "arigatou gozaimasu",
+              "en": "Thank you.",
+              "heard": [
+                "ありがとう"
+              ],
+              "next": null
+            },
+            {
+              "jp": "はい、そう します。",
+              "romaji": "hai, sou shimasu",
+              "en": "Yes, I will.",
+              "heard": [
+                "はいそうします"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-cap2",
+      "title": "What can you read?",
+      "unlockAfter": "cap2",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "ひらがな が よめますか。",
+          "romaji": "hiragana ga yomemasu ka",
+          "en": "Can you read hiragana?",
+          "answers": [
+            {
+              "jp": "はい、よめます。",
+              "romaji": "hai, yomemasu",
+              "en": "Yes, I can.",
+              "heard": [
+                "はい読めます"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "すこし よめます。",
+              "romaji": "sukoshi yomemasu",
+              "en": "I can read a little.",
+              "heard": [
+                "少し読めます"
+              ],
+              "next": "t2"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "いいですね！ かんじ は どう ですか。",
+          "romaji": "ii desu ne! kanji wa dou desu ka.",
+          "en": "Great! What about kanji?",
+          "answers": [
+            {
+              "jp": "すこし かけます。",
+              "romaji": "sukoshi kakemasu",
+              "en": "I can write a few.",
+              "heard": [
+                "少し書けます"
+              ],
+              "next": "t3"
+            },
+            {
+              "jp": "まだ ひらがな しか かけません。",
+              "romaji": "mada hiragana shika kakemasen",
+              "en": "I can still only write hiragana.",
+              "heard": [
+                "まだひらがなしか書けません"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "さしみ は たべられますか。",
+          "romaji": "sashimi wa taberaremasu ka",
+          "en": "Can you eat sashimi?",
+          "answers": [
+            {
+              "jp": "はい、たべられます。",
+              "romaji": "hai, taberaremasu",
+              "en": "Yes, I can.",
+              "heard": [
+                "はい食べられます"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "いいえ、たべられません。",
+              "romaji": "iie, taberaremasen",
+              "en": "No, I can't.",
+              "heard": [
+                "いいえ食べられません"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "あした も いっしょに べんきょう できますか。",
+          "romaji": "ashita mo issho ni benkyou dekimasu ka",
+          "en": "Can we study together tomorrow too?",
+          "answers": [
+            {
+              "jp": "はい、できます。",
+              "romaji": "hai, dekimasu",
+              "en": "Yes, I can.",
+              "heard": [
+                "はいできます"
+              ],
+              "next": null
+            },
+            {
+              "jp": "すみません、あした は ちょっと…",
+              "romaji": "sumimasen, ashita wa chotto...",
+              "en": "Sorry, tomorrow's a bit difficult.",
+              "heard": [
+                "すみません明日はちょっと"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-plan",
+      "title": "Holiday plans",
+      "unlockAfter": "plan",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "なつやすみ に なに を する つもりですか。",
+          "romaji": "natsuyasumi ni nani o suru tsumori desu ka",
+          "en": "What do you intend to do in the summer holidays?",
+          "answers": [
+            {
+              "jp": "にほん へ いく つもりです。",
+              "romaji": "nihon e iku tsumori desu",
+              "en": "I intend to go to Japan.",
+              "heard": [
+                "日本へ行くつもりです",
+                "日本に行くつもりです"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "うち で ゆっくり する つもりです。",
+              "romaji": "uchi de yukkuri suru tsumori desu",
+              "en": "I intend to take it easy at home.",
+              "heard": [
+                "家でゆっくりするつもりです"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "いいですね！ にほん で なに を する つもりですか。",
+          "romaji": "ii desu ne! nihon de nani o suru tsumori desu ka.",
+          "en": "Wonderful! What do you intend to do in Japan?",
+          "answers": [
+            {
+              "jp": "にほん の おてら を みる つもりです。",
+              "romaji": "nihon no otera o miru tsumori desu",
+              "en": "I intend to see Japanese temples.",
+              "heard": [
+                "日本のお寺を見るつもりです"
+              ],
+              "next": "t3"
+            },
+            {
+              "jp": "にほんご を べんきょう する つもりです。",
+              "romaji": "nihongo o benkyou suru tsumori desu",
+              "en": "I intend to study Japanese.",
+              "heard": [
+                "日本語を勉強するつもりです"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "らいしゅう の よてい は どう ですか。",
+          "romaji": "raishuu no yotei wa dou desu ka",
+          "en": "How does your schedule look next week?",
+          "answers": [
+            {
+              "jp": "らいしゅう は ひま です。",
+              "romaji": "raishuu wa hima desu",
+              "en": "I'm free next week.",
+              "heard": [
+                "来週は暇です"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "らいしゅう は よてい が たくさん あります。",
+              "romaji": "raishuu wa yotei ga takusan arimasu",
+              "en": "I have a lot of plans next week.",
+              "heard": [
+                "来週は予定がたくさんあります"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "しょうらい は なに に なる つもりですか。",
+          "romaji": "shourai wa nani ni naru tsumori desu ka",
+          "en": "What do you intend to become in the future?",
+          "answers": [
+            {
+              "jp": "せんせい に なる つもりです。",
+              "romaji": "sensei ni naru tsumori desu",
+              "en": "I intend to become a teacher.",
+              "heard": [
+                "先生になるつもりです"
+              ],
+              "next": null
+            },
+            {
+              "jp": "まだ わかりません。",
+              "romaji": "mada wakarimasen",
+              "en": "I don't know yet.",
+              "heard": [
+                "まだ分かりません"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-seems",
+      "title": "A cough and a cold",
+      "unlockAfter": "seems",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "せき が でて います ね。だいじょうぶ ですか。",
+          "romaji": "seki ga dete imasu ne. daijoubu desu ka.",
+          "en": "You've got a cough. Are you all right?",
+          "answers": [
+            {
+              "jp": "かぜ の ようです。",
+              "romaji": "kaze no you desu",
+              "en": "It seems I have a cold.",
+              "heard": [
+                "風邪のようです"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "のど が いたい んです。",
+              "romaji": "nodo ga itai n desu",
+              "en": "My throat hurts.",
+              "heard": [
+                "喉が痛いんです"
+              ],
+              "next": "t2"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "ねつ も ありますか。",
+          "romaji": "netsu mo arimasu ka",
+          "en": "Do you have a fever too?",
+          "answers": [
+            {
+              "jp": "はい、ねつ が ある ようです。",
+              "romaji": "hai, netsu ga aru you desu",
+              "en": "Yes, it seems I have a fever.",
+              "heard": [
+                "はい熱があるようです"
+              ],
+              "next": "t3"
+            },
+            {
+              "jp": "いいえ、ねつ は ありません。",
+              "romaji": "iie, netsu wa arimasen",
+              "en": "No, no fever.",
+              "heard": [
+                "いいえ熱はありません"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "びょういん へ いきましたか。",
+          "romaji": "byouin e ikimashita ka",
+          "en": "Have you been to the doctor?",
+          "answers": [
+            {
+              "jp": "はい、きのう いきました。",
+              "romaji": "hai, kinou ikimashita",
+              "en": "Yes, I went yesterday.",
+              "heard": [
+                "はい昨日行きました"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "いいえ、まだ です。",
+              "romaji": "iie, mada desu",
+              "en": "No, not yet.",
+              "heard": [
+                "いいえまだです"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "あたたかく して、きょう は はやく ねて ください ね。",
+          "romaji": "atatakaku shite, kyou wa hayaku nete kudasai ne",
+          "en": "Keep warm and go to bed early today, OK?",
+          "answers": [
+            {
+              "jp": "ありがとうございます。",
+              "romaji": "arigatou gozaimasu",
+              "en": "Thank you.",
+              "heard": [
+                "ありがとう"
+              ],
+              "next": null
+            },
+            {
+              "jp": "はい、そう します。",
+              "romaji": "hai, sou shimasu",
+              "en": "Yes, I will.",
+              "heard": [
+                "はいそうします"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-trydo",
+      "title": "Something new",
+      "unlockAfter": "trydo",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "なっとう を たべた こと が ありますか。",
+          "romaji": "nattou o tabeta koto ga arimasu ka",
+          "en": "Have you ever eaten natto?",
+          "answers": [
+            {
+              "jp": "はい、あります。",
+              "romaji": "hai, arimasu",
+              "en": "Yes, I have.",
+              "heard": [
+                "はいあります"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "いいえ、ありません。",
+              "romaji": "iie, arimasen",
+              "en": "No, I haven't.",
+              "heard": [
+                "いいえありません"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "どう でしたか。",
+          "romaji": "dou deshita ka",
+          "en": "How was it?",
+          "answers": [
+            {
+              "jp": "おいしかった です。",
+              "romaji": "oishikatta desu",
+              "en": "It was tasty.",
+              "heard": [
+                "美味しかったです"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "あまり すき じゃありません。",
+              "romaji": "amari suki ja arimasen",
+              "en": "I don't really like it.",
+              "heard": [
+                "あまり好きじゃありません",
+                "あまり好きではありません"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "おいしい です よ。いちど たべて みて ください。",
+          "romaji": "oishii desu yo. ichido tabete mite kudasai.",
+          "en": "It's tasty! Do try it once.",
+          "answers": [
+            {
+              "jp": "はい、たべて みます。",
+              "romaji": "hai, tabete mimasu",
+              "en": "OK, I'll try it.",
+              "heard": [
+                "はい食べてみます"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "ちょっと こわい です。",
+              "romaji": "chotto kowai desu",
+              "en": "I'm a bit scared of it.",
+              "heard": [
+                "ちょっと怖いです"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "にほん で なに を して みたい ですか。",
+          "romaji": "nihon de nani o shite mitai desu ka",
+          "en": "What would you like to try in Japan?",
+          "answers": [
+            {
+              "jp": "きもの を きて みたい です。",
+              "romaji": "kimono o kite mitai desu",
+              "en": "I'd like to try wearing a kimono.",
+              "heard": [
+                "着物を着てみたいです"
+              ],
+              "next": null
+            },
+            {
+              "jp": "おんせん に はいって みたい です。",
+              "romaji": "onsen ni haitte mitai desu",
+              "en": "I'd like to try a hot spring.",
+              "heard": [
+                "温泉に入ってみたいです"
+              ],
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talk-ba",
+      "title": "Practice makes perfect",
+      "unlockAfter": "ba",
+      "start": "t1",
+      "turns": [
+        {
+          "id": "t1",
+          "jp": "にほんご は むずかしい ですか。",
+          "romaji": "nihongo wa muzukashii desu ka",
+          "en": "Is Japanese difficult?",
+          "answers": [
+            {
+              "jp": "はい、むずかしい です。",
+              "romaji": "hai, muzukashii desu",
+              "en": "Yes, it's difficult.",
+              "heard": [
+                "はい難しいです"
+              ],
+              "next": "t2"
+            },
+            {
+              "jp": "むずかしい です が、おもしろい です。",
+              "romaji": "muzukashii desu ga, omoshiroi desu",
+              "en": "It's difficult, but interesting.",
+              "heard": [
+                "難しいですが面白いです"
+              ],
+              "next": "t2"
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "jp": "れんしゅう すれば する ほど、じょうずに なります よ。どう やって べんきょう して いますか。",
+          "romaji": "renshuu sureba suru hodo, jouzu ni narimasu yo. dou yatte benkyou shite imasu ka.",
+          "en": "The more you practise, the better you get. How are you studying?",
+          "answers": [
+            {
+              "jp": "まいにち かんじ を かいて います。",
+              "romaji": "mainichi kanji o kaite imasu",
+              "en": "I write kanji every day.",
+              "heard": [
+                "毎日漢字を書いています"
+              ],
+              "next": "t3"
+            },
+            {
+              "jp": "にほん の うた を きいて います。",
+              "romaji": "nihon no uta o kiite imasu",
+              "en": "I listen to Japanese songs.",
+              "heard": [
+                "日本の歌を聞いています",
+                "日本の歌を聴いています"
+              ],
+              "next": "t3"
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "jp": "かいわ は どう ですか。",
+          "romaji": "kaiwa wa dou desu ka",
+          "en": "How about conversation?",
+          "answers": [
+            {
+              "jp": "かいわ は もっと れんしゅう しなければ なりません。",
+              "romaji": "kaiwa wa motto renshuu shinakereba narimasen",
+              "en": "I need to practise conversation more.",
+              "heard": [
+                "会話はもっと練習しなければなりません"
+              ],
+              "next": "t4"
+            },
+            {
+              "jp": "かいわ は たのしい です。",
+              "romaji": "kaiwa wa tanoshii desu",
+              "en": "Conversation is fun.",
+              "heard": [
+                "会話は楽しいです"
+              ],
+              "next": "t4"
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "jp": "つかえば つかう ほど、なれます よ。また いっしょに れんしゅう しましょう ね。",
+          "romaji": "tsukaeba tsukau hodo, naremasu yo. mata issho ni renshuu shimashou ne.",
+          "en": "The more you use it, the more used to it you get. Let's practise together again soon.",
+          "answers": [
+            {
+              "jp": "はい、また おねがいします。",
+              "romaji": "hai, mata onegaishimasu",
+              "en": "Yes, I'd like that.",
+              "heard": [
+                "はいまたお願いします"
+              ],
+              "next": null
+            },
+            {
+              "jp": "ありがとうございます。がんばります。",
+              "romaji": "arigatou gozaimasu. ganbarimasu.",
+              "en": "Thank you. I'll do my best.",
+              "heard": [
+                "ありがとうございます頑張ります"
               ],
               "next": null
             }

@@ -23,13 +23,18 @@ class TalksTest {
         private val allowedForms = setOf(
             "いきましたか", // いきます + ～ましたか (time)
             "しましたか", // します + ～ましたか (time)
+            "のみましたか", // のみます + ～ましたか (time)
+            "ねましたか", // ねます + ～ましたか (time)
+            "なりませんか", // ～なければ なりません + か (oblig)
+            "たべられますか", // たべられます, can-do form, + か (cap2)
+            "たべられません", // たべられます, can-do form, + ～ません (cap2)
         )
     }
 
     @Test
     fun talksAreWellFormed() {
         val basic = KnownWords.basicUnits
-        assertTrue("${Talks.all.size} talks", Talks.all.size >= 8)
+        assertTrue("${Talks.all.size} talks", Talks.all.size >= 20)
         val unlocks = Talks.all.map { basic.indexOf(it.unlockAfter) }
         assertTrue("unlockAfter must be Basic units: $unlocks", unlocks.all { it >= 0 })
         assertEquals("one talk per unit", unlocks.size, unlocks.toSet().size)
