@@ -35656,6 +35656,2405 @@
       ]
     },
     {
+      "id": "prep",
+      "title": "Preparing ahead",
+      "subtitle": "Doing things in advance, and things left that way",
+      "color": "#2E8A99",
+      "dark": "#1F6672",
+      "tags": [
+        "preparation",
+        "verbs",
+        "grammar"
+      ],
+      "practices": [
+        {
+          "title": "Doing in advance",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "よやくします",
+              "romaji": "yoyaku shimasu",
+              "meaning": "book / reserve",
+              "emoji": "📅"
+            },
+            {
+              "kind": "WORD",
+              "jp": "しらべます",
+              "romaji": "shirabemasu",
+              "meaning": "look up / check",
+              "emoji": "🔍"
+            },
+            {
+              "kind": "WORD",
+              "jp": "かたづけます",
+              "romaji": "katazukemasu",
+              "meaning": "tidy up",
+              "emoji": "🧹"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "レストラン",
+                "を",
+                "よやくして",
+                "おきます"
+              ],
+              "romaji": "resutoran o yoyaku shite okimasu",
+              "en": "I'll book the restaurant in advance.",
+              "blank": 3,
+              "distract": [
+                "みます",
+                "ください"
+              ]
+            },
+            {
+              "tokens": [
+                "りょこう",
+                "の",
+                "まえ",
+                "に",
+                "ホテル",
+                "を",
+                "しらべて",
+                "おきました"
+              ],
+              "romaji": "ryokou no mae ni hoteru o shirabete okimashita",
+              "en": "Before the trip, I looked up hotels ahead of time.",
+              "blank": 6,
+              "distract": [
+                "しらべる",
+                "しらべた"
+              ]
+            },
+            {
+              "tokens": [
+                "のみもの",
+                "を",
+                "れいぞうこ",
+                "に",
+                "いれて",
+                "おきます"
+              ],
+              "romaji": "nomimono o reizouko ni irete okimasu",
+              "en": "I'll put the drinks in the fridge so they're ready.",
+              "blank": 5,
+              "distract": [
+                "います",
+                "みます"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "が",
+                "きます",
+                "から、",
+                "へや",
+                "を",
+                "かたづけて",
+                "おきましょう"
+              ],
+              "romaji": "tomodachi ga kimasu kara, heya o katazukete okimashou",
+              "en": "A friend is coming, so let's tidy the room beforehand.",
+              "distract": [
+                "ください",
+                "かたづけた"
+              ]
+            },
+            {
+              "tokens": [
+                "かいぎ",
+                "の",
+                "まえ",
+                "に",
+                "コピー",
+                "を",
+                "して",
+                "おきます"
+              ],
+              "romaji": "kaigi no mae ni kopii o shite okimasu",
+              "en": "I'll make the copies before the meeting.",
+              "distract": [
+                "する",
+                "した"
+              ]
+            },
+            {
+              "tokens": [
+                "まど",
+                "を",
+                "あけて",
+                "おいて",
+                "ください"
+              ],
+              "romaji": "mado o akete oite kudasai",
+              "en": "Please leave the window open.",
+              "blank": 3,
+              "distract": [
+                "みて",
+                "きて"
+              ]
+            },
+            {
+              "tokens": [
+                "じゃあ、",
+                "きっぷ",
+                "を",
+                "かっとく",
+                "ね"
+              ],
+              "romaji": "jaa, kippu o kattoku ne",
+              "en": "OK, I'll get the tickets ahead of time.",
+              "distract": [
+                "かう",
+                "かった"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Doing in advance",
+            "pattern": "Verb て-form + おきます",
+            "body": "て-form + おきます means doing something now so that it is ready for later: レストラン を よやくして おきます. It can also mean leaving something as it is: まど を あけて おいて ください (please leave the window open). In casual speech ～て おく shortens to ～とく: かって おく → かっとく, よんで おく → よんどく.",
+            "id": "g-prep-1"
+          }
+        },
+        {
+          "title": "Left that way",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "かざります",
+              "romaji": "kazarimasu",
+              "meaning": "decorate / put on display",
+              "emoji": "🖼️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "つつみます",
+              "romaji": "tsutsumimasu",
+              "meaning": "wrap",
+              "emoji": "🎁"
+            },
+            {
+              "kind": "WORD",
+              "jp": "メモ",
+              "romaji": "memo",
+              "meaning": "memo / note",
+              "emoji": "📝"
+            },
+            {
+              "kind": "WORD",
+              "jp": "かべ",
+              "romaji": "kabe",
+              "meaning": "wall",
+              "emoji": "🧱"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "かべ",
+                "に",
+                "え",
+                "が",
+                "かざって",
+                "あります"
+              ],
+              "romaji": "kabe ni e ga kazatte arimasu",
+              "en": "A picture has been put up on the wall.",
+              "blank": 5,
+              "distract": [
+                "います",
+                "おきます"
+              ]
+            },
+            {
+              "tokens": [
+                "つくえ",
+                "の",
+                "うえ",
+                "に",
+                "メモ",
+                "が",
+                "おいて",
+                "あります"
+              ],
+              "romaji": "tsukue no ue ni memo ga oite arimasu",
+              "en": "There's a note left on the desk.",
+              "blank": 7,
+              "distract": [
+                "います",
+                "おきます"
+              ]
+            },
+            {
+              "tokens": [
+                "ドア",
+                "が",
+                "しめて",
+                "あります"
+              ],
+              "romaji": "doa ga shimete arimasu",
+              "en": "The door has been shut.",
+              "blank": 2,
+              "distract": [
+                "しめる",
+                "しめた"
+              ]
+            },
+            {
+              "tokens": [
+                "プレゼント",
+                "は",
+                "もう",
+                "つつんで",
+                "あります"
+              ],
+              "romaji": "purezento wa mou tsutsunde arimasu",
+              "en": "The present is already wrapped.",
+              "blank": 3,
+              "distract": [
+                "つつむ",
+                "つつんだ"
+              ]
+            },
+            {
+              "tokens": [
+                "レストラン",
+                "は",
+                "もう",
+                "よやくして",
+                "あります"
+              ],
+              "romaji": "resutoran wa mou yoyaku shite arimasu",
+              "en": "The restaurant has already been booked.",
+              "distract": [
+                "よやくする",
+                "よやくした"
+              ]
+            },
+            {
+              "tokens": [
+                "でんき",
+                "が",
+                "つけて",
+                "あります",
+                "から、",
+                "だれか",
+                "いる",
+                "でしょう"
+              ],
+              "romaji": "denki ga tsukete arimasu kara, dareka iru deshou",
+              "en": "The light has been left on, so someone is probably in.",
+              "distract": [
+                "つける",
+                "おきます"
+              ]
+            },
+            {
+              "tokens": [
+                "まど",
+                "が",
+                "あいて",
+                "います"
+              ],
+              "romaji": "mado ga aite imasu",
+              "en": "The window is open.",
+              "blank": 2,
+              "distract": [
+                "あけて",
+                "あける"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Left that way",
+            "pattern": "Noun が + て-form + あります",
+            "body": "て-form + あります describes a state someone left on purpose. The thing is the subject and takes が, and the doer isn't mentioned: かべ に え が かざって あります (a picture has been put up on the wall). Use a verb that takes を, such as かざります, しめます or つけます. まど が あいて います just says the window is open; まど が あけて あります says someone opened it for a reason. ～て おきます is the action done ahead; ～て あります is the state it leaves.",
+            "id": "g-prep-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Ready for the party",
+        "lines": [
+          {
+            "speaker": "Yuki",
+            "jp": "あした の パーティー の じゅんび は どう ですか。",
+            "romaji": "ashita no paatii no junbi wa dou desu ka.",
+            "en": "How are the preparations for tomorrow's party going?",
+            "heard": [
+              "明日のパーティーの準備はどうですか"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "のみもの は もう かって あります。",
+            "romaji": "nomimono wa mou katte arimasu.",
+            "en": "The drinks have already been bought.",
+            "heard": [
+              "飲み物はもう買ってあります"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ケーキ は？",
+            "romaji": "keeki wa?",
+            "en": "And the cake?",
+            "heard": [
+              "ケーキは"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "みせ に よやくして あります。",
+            "romaji": "mise ni yoyaku shite arimasu.",
+            "en": "It's reserved at the shop.",
+            "heard": [
+              "店に予約してあります",
+              "お店に予約してあります"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "じゃあ、わたし は へや を かたづけて おきます。",
+            "romaji": "jaa, watashi wa heya o katazukete okimasu.",
+            "en": "Then I'll tidy the room beforehand.",
+            "heard": [
+              "じゃあ私は部屋を片付けておきます"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ありがとう。いす も ならべて おいて ください。",
+            "romaji": "arigatou. isu mo narabete oite kudasai.",
+            "en": "Thanks. Please set out the chairs too.",
+            "heard": [
+              "ありがとう椅子も並べておいてください",
+              "ありがとういすも並べておいてください"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい、わかりました。",
+            "romaji": "hai, wakarimashita.",
+            "en": "OK, will do.",
+            "heard": [
+              "はいわかりました",
+              "はい分かりました"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "じゅんびしておきます",
+          "romaji": "junbi shite okimasu",
+          "en": "I'll get things ready.",
+          "heard": [
+            "準備しておきます"
+          ]
+        },
+        {
+          "jp": "あけておいてください",
+          "romaji": "akete oite kudasai",
+          "en": "Please leave it open.",
+          "heard": [
+            "開けておいてください"
+          ]
+        },
+        {
+          "jp": "もうかってあります",
+          "romaji": "mou katte arimasu",
+          "en": "I've already bought it.",
+          "heard": [
+            "もう買ってあります"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "while",
+      "title": "While, and what's more",
+      "subtitle": "Two things at once, and stacking reasons",
+      "color": "#B5562B",
+      "dark": "#8A3E1C",
+      "tags": [
+        "actions",
+        "reasons",
+        "daily life"
+      ],
+      "practices": [
+        {
+          "title": "While doing",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "アルバイト",
+              "romaji": "arubaito",
+              "meaning": "part-time job",
+              "emoji": "💼"
+            },
+            {
+              "kind": "WORD",
+              "jp": "けいたいでんわ",
+              "romaji": "keitai denwa",
+              "meaning": "mobile phone",
+              "emoji": "📱"
+            },
+            {
+              "kind": "WORD",
+              "jp": "わらいます",
+              "romaji": "waraimasu",
+              "meaning": "laugh",
+              "emoji": "😄"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "おんがく",
+                "を",
+                "ききながら",
+                "べんきょうします"
+              ],
+              "romaji": "ongaku o kikinagara benkyou shimasu",
+              "en": "I study while listening to music.",
+              "blank": 2,
+              "distract": [
+                "きく",
+                "きいた"
+              ]
+            },
+            {
+              "tokens": [
+                "テレビ",
+                "を",
+                "みながら",
+                "ごはん",
+                "を",
+                "たべます"
+              ],
+              "romaji": "terebi o minagara gohan o tabemasu",
+              "en": "I eat while watching TV.",
+              "blank": 2,
+              "distract": [
+                "みる",
+                "みた"
+              ]
+            },
+            {
+              "tokens": [
+                "アルバイト",
+                "を",
+                "しながら",
+                "だいがく",
+                "に",
+                "いって",
+                "います"
+              ],
+              "romaji": "arubaito o shinagara daigaku ni itte imasu",
+              "en": "I go to university while working a part-time job.",
+              "blank": 2,
+              "distract": [
+                "したら",
+                "しよう"
+              ]
+            },
+            {
+              "tokens": [
+                "あるきながら",
+                "けいたいでんわ",
+                "を",
+                "みないで",
+                "ください"
+              ],
+              "romaji": "arukinagara keitai denwa o minaide kudasai",
+              "en": "Please don't look at your phone while walking.",
+              "blank": 0,
+              "distract": [
+                "あるく",
+                "あるいた"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "と",
+                "わらいながら",
+                "はなしました"
+              ],
+              "romaji": "tomodachi to warainagara hanashimashita",
+              "en": "I talked with my friend while laughing.",
+              "distract": [
+                "わらう",
+                "わらった"
+              ]
+            },
+            {
+              "tokens": [
+                "コーヒー",
+                "を",
+                "のみながら",
+                "しんぶん",
+                "を",
+                "よみます"
+              ],
+              "romaji": "koohii o nominagara shinbun o yomimasu",
+              "en": "I read the newspaper while drinking coffee.",
+              "distract": [
+                "のむ",
+                "のんだ"
+              ]
+            }
+          ],
+          "note": {
+            "title": "While doing",
+            "pattern": "Verb ます-stem + ながら",
+            "body": "ます-stem + ながら joins two things one person does at the same time: おんがく を ききながら べんきょうします. The main action comes last and carries the tense and politeness; the ながら action is in the background. It also works over a longer period: アルバイト を しながら だいがく に いって います. Both actions must have the same subject; for two different people, use とき instead.",
+            "id": "g-while-1"
+          }
+        },
+        {
+          "title": "And what's more",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "やちん",
+              "romaji": "yachin",
+              "meaning": "rent",
+              "emoji": "🏠"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ねだん",
+              "romaji": "nedan",
+              "meaning": "price",
+              "emoji": "🏷️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "てんいん",
+              "romaji": "ten'in",
+              "meaning": "shop staff",
+              "emoji": "🧑‍💼"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "この",
+                "アパート",
+                "は",
+                "えき",
+                "に",
+                "ちかい",
+                "し、",
+                "やちん",
+                "も",
+                "やすい",
+                "です"
+              ],
+              "romaji": "kono apaato wa eki ni chikai shi, yachin mo yasui desu",
+              "en": "This apartment is near the station, and the rent is cheap too.",
+              "blank": 6,
+              "distract": [
+                "ながら、",
+                "でも、"
+              ]
+            },
+            {
+              "tokens": [
+                "あめ",
+                "も",
+                "ふって",
+                "いる",
+                "し、",
+                "きょう",
+                "は",
+                "うち",
+                "に",
+                "います"
+              ],
+              "romaji": "ame mo futte iru shi, kyou wa uchi ni imasu",
+              "en": "It's raining and all, so I'm staying home today.",
+              "blank": 4,
+              "distract": [
+                "ながら、",
+                "たら、"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "みせ",
+                "は",
+                "ねだん",
+                "も",
+                "やすい",
+                "し、",
+                "てんいん",
+                "も",
+                "しんせつ",
+                "です"
+              ],
+              "romaji": "kono mise wa nedan mo yasui shi, ten'in mo shinsetsu desu",
+              "en": "This shop's prices are low, and the staff are kind too.",
+              "distract": [
+                "ながら、",
+                "やすく"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "ホテル",
+                "は",
+                "しずか",
+                "だ",
+                "し、",
+                "へや",
+                "も",
+                "ひろい",
+                "です"
+              ],
+              "romaji": "kono hoteru wa shizuka da shi, heya mo hiroi desu",
+              "en": "This hotel is quiet, and the rooms are spacious too.",
+              "blank": 4,
+              "distract": [
+                "な",
+                "の"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう",
+                "は",
+                "ねつ",
+                "も",
+                "あった",
+                "し、",
+                "がっこう",
+                "を",
+                "やすみました"
+              ],
+              "romaji": "kinou wa netsu mo atta shi, gakkou o yasumimashita",
+              "en": "Yesterday I had a fever and all, so I stayed off school.",
+              "blank": 4,
+              "distract": [
+                "ある",
+                "あって"
+              ]
+            },
+            {
+              "tokens": [
+                "あたま",
+                "も",
+                "いい",
+                "し、",
+                "やさしい",
+                "し、",
+                "かれ",
+                "は",
+                "にんき",
+                "が",
+                "あります"
+              ],
+              "romaji": "atama mo ii shi, yasashii shi, kare wa ninki ga arimasu",
+              "en": "He's smart and kind, so he's popular.",
+              "distract": [
+                "ながら、",
+                "でも、"
+              ]
+            }
+          ],
+          "note": {
+            "title": "And what's more",
+            "pattern": "Plain form + し、～",
+            "body": "し after a plain form lists reasons or points and hints there are more: えき に ちかい し、やちん も やすい です. も often goes with it (やちん も). な-adjectives and nouns take だ: しずか だ し. Unlike から, which gives one clear cause, し stacks several, and the conclusion can be left unsaid: あたま も いい し、やさしい し….",
+            "id": "g-while-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "The new apartment",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "あたらしい アパート は どう ですか。",
+            "romaji": "atarashii apaato wa dou desu ka.",
+            "en": "How's your new apartment?",
+            "heard": [
+              "新しいアパートはどうですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "とても いい です よ。えき に ちかい し、やちん も やすい です。",
+            "romaji": "totemo ii desu yo. eki ni chikai shi, yachin mo yasui desu.",
+            "en": "It's really nice. It's close to the station, and the rent's cheap too.",
+            "heard": [
+              "とてもいいですよ駅に近いし家賃も安いです"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いい です ね。いま も アルバイト を して いますか。",
+            "romaji": "ii desu ne. ima mo arubaito o shite imasu ka.",
+            "en": "Nice. Are you still doing your part-time job?",
+            "heard": [
+              "いいですね今もアルバイトをしていますか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい。はたらきながら にほんご を べんきょうして います。",
+            "romaji": "hai. hatarakinagara nihongo o benkyou shite imasu.",
+            "en": "Yes. I'm studying Japanese while working.",
+            "heard": [
+              "はい働きながら日本語を勉強しています"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "たいへん でしょう。",
+            "romaji": "taihen deshou.",
+            "en": "That must be hard.",
+            "heard": [
+              "大変でしょう"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ええ、でも たのしい し、ともだち も できました。",
+            "romaji": "ee, demo tanoshii shi, tomodachi mo dekimashita.",
+            "en": "Yes, but it's fun, and I've made friends too.",
+            "heard": [
+              "ええでも楽しいし友達もできました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "よかった です ね。",
+            "romaji": "yokatta desu ne.",
+            "en": "I'm glad to hear it.",
+            "heard": [
+              "良かったですね",
+              "よかったですね"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "あるきながらはなしましょう",
+          "romaji": "arukinagara hanashimashou",
+          "en": "Let's talk as we walk.",
+          "heard": [
+            "歩きながら話しましょう"
+          ]
+        },
+        {
+          "jp": "たべながらはなさないでください",
+          "romaji": "tabenagara hanasanaide kudasai",
+          "en": "Please don't talk while you're eating.",
+          "heard": [
+            "食べながら話さないでください"
+          ]
+        },
+        {
+          "jp": "やすいし、おいしいし",
+          "romaji": "yasui shi, oishii shi",
+          "en": "It's cheap, and it's tasty too.",
+          "heard": [
+            "安いし美味しいし",
+            "安いしおいしいし"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ease",
+      "title": "Easy, hard, too much",
+      "subtitle": "Easy to do, hard to do, and overdoing it",
+      "color": "#6B4E8C",
+      "dark": "#4E3768",
+      "tags": [
+        "describing",
+        "adjectives",
+        "shopping"
+      ],
+      "practices": [
+        {
+          "title": "Easy or hard to do",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "じ",
+              "romaji": "ji",
+              "meaning": "handwriting / written character",
+              "emoji": "✍️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "せつめい",
+              "romaji": "setsumei",
+              "meaning": "explanation",
+              "emoji": "💬"
+            },
+            {
+              "kind": "WORD",
+              "jp": "きかい",
+              "romaji": "kikai",
+              "meaning": "machine",
+              "emoji": "⚙️"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "この",
+                "ペン",
+                "は",
+                "かきやすい",
+                "です"
+              ],
+              "romaji": "kono pen wa kakiyasui desu",
+              "en": "This pen is easy to write with.",
+              "blank": 3,
+              "distract": [
+                "かきにくい",
+                "かきたい"
+              ]
+            },
+            {
+              "tokens": [
+                "せんせい",
+                "の",
+                "せつめい",
+                "は",
+                "わかりやすい",
+                "です"
+              ],
+              "romaji": "sensei no setsumei wa wakariyasui desu",
+              "en": "The teacher's explanations are easy to understand.",
+              "blank": 4,
+              "distract": [
+                "わかりにくい",
+                "わかりたい"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "くつ",
+                "は",
+                "あるきにくい",
+                "です"
+              ],
+              "romaji": "kono kutsu wa arukinikui desu",
+              "en": "These shoes are hard to walk in.",
+              "blank": 3,
+              "distract": [
+                "あるきやすい",
+                "あるきたい"
+              ]
+            },
+            {
+              "tokens": [
+                "かれ",
+                "の",
+                "じ",
+                "は",
+                "よみにくい",
+                "です"
+              ],
+              "romaji": "kare no ji wa yominikui desu",
+              "en": "His handwriting is hard to read.",
+              "distract": [
+                "よみやすい",
+                "よみたい"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "きかい",
+                "は",
+                "つかいやすくて、",
+                "べんり",
+                "です"
+              ],
+              "romaji": "kono kikai wa tsukaiyasukute, benri desu",
+              "en": "This machine is easy to use and handy.",
+              "blank": 3,
+              "distract": [
+                "つかいにくくて、",
+                "つかいたくて、"
+              ]
+            },
+            {
+              "tokens": [
+                "なっとう",
+                "は",
+                "はし",
+                "で",
+                "たべにくい",
+                "です"
+              ],
+              "romaji": "nattou wa hashi de tabenikui desu",
+              "en": "Natto is hard to eat with chopsticks.",
+              "distract": [
+                "たべやすい",
+                "たべたい"
+              ]
+            },
+            {
+              "tokens": [
+                "ここ",
+                "は",
+                "しずか",
+                "で、",
+                "すみやすい",
+                "まち",
+                "です"
+              ],
+              "romaji": "koko wa shizuka de, sumiyasui machi desu",
+              "en": "This is a quiet town that's easy to live in.",
+              "distract": [
+                "すみにくい",
+                "すみたい"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Easy or hard to do",
+            "pattern": "Verb ます-stem + やすい / にくい",
+            "body": "ます-stem + やすい means easy to do, and + にくい hard to do: かきやすい ペン (a pen that's easy to write with), よみにくい じ (hard-to-read handwriting). The result is an い-adjective: つかいやすくて、べんり です. This やすい follows a verb stem, so it is not やすい (cheap).",
+            "id": "g-ease-1"
+          }
+        },
+        {
+          "title": "Too much",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "ふとります",
+              "romaji": "futorimasu",
+              "meaning": "put on weight",
+              "emoji": "⚖️"
+            },
+            {
+              "kind": "WORD",
+              "jp": "サイズ",
+              "romaji": "saizu",
+              "meaning": "size",
+              "emoji": "📏"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ゲーム",
+              "romaji": "geemu",
+              "meaning": "game",
+              "emoji": "🎮"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "きのう",
+                "は",
+                "たべすぎました"
+              ],
+              "romaji": "kinou wa tabesugimashita",
+              "en": "I ate too much yesterday.",
+              "blank": 2,
+              "distract": [
+                "たべました",
+                "たべませんでした"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "シャツ",
+                "は",
+                "サイズ",
+                "が",
+                "おおきすぎます"
+              ],
+              "romaji": "kono shatsu wa saizu ga ookisugimasu",
+              "en": "The size of this shirt is too big.",
+              "blank": 5,
+              "distract": [
+                "ちいさすぎます",
+                "ながすぎます"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "へや",
+                "は",
+                "さむすぎます"
+              ],
+              "romaji": "kono heya wa samusugimasu",
+              "en": "This room is too cold.",
+              "blank": 3,
+              "distract": [
+                "あつすぎます",
+                "せますぎます"
+              ]
+            },
+            {
+              "tokens": [
+                "ゲーム",
+                "を",
+                "しすぎないで",
+                "ください"
+              ],
+              "romaji": "geemu o shisuginaide kudasai",
+              "en": "Please don't play games too much.",
+              "distract": [
+                "しないで",
+                "したくて"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "カレー",
+                "は",
+                "からすぎて、",
+                "たべられません"
+              ],
+              "romaji": "kono karee wa karasugite, taberaremasen",
+              "en": "This curry is so spicy I can't eat it.",
+              "blank": 3,
+              "distract": [
+                "あますぎて、",
+                "ぬるすぎて、"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "まち",
+                "は",
+                "しずかすぎて、",
+                "さびしい",
+                "です"
+              ],
+              "romaji": "kono machi wa shizukasugite, sabishii desu",
+              "en": "This town is so quiet it's lonely.",
+              "distract": [
+                "にぎやかすぎて、",
+                "しずかな"
+              ]
+            },
+            {
+              "tokens": [
+                "たべすぎて、",
+                "ふとりました"
+              ],
+              "romaji": "tabesugite, futorimashita",
+              "en": "I put on weight from eating too much.",
+              "distract": [
+                "たべすぎます",
+                "ふとります"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Too much",
+            "pattern": "Stem + すぎます",
+            "body": "すぎます after a stem means too much: たべすぎました (I ate too much). い-adjectives drop い: さむい → さむすぎます, and いい becomes よすぎます. な-adjectives add it to the stem: しずかすぎます. It conjugates like a group 2 verb: からすぎて、たべられません; しすぎないで ください.",
+            "id": "g-ease-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Shoe shopping",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "この くつ、どう ですか。",
+            "romaji": "kono kutsu, dou desu ka.",
+            "en": "What do you think of these shoes?",
+            "heard": [
+              "この靴どうですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "すてき です ね。はいて みて ください。",
+            "romaji": "suteki desu ne. haite mite kudasai.",
+            "en": "They're lovely. Try them on.",
+            "heard": [
+              "素敵ですね履いてみてください",
+              "すてきですねはいてみてください"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ああ、ちょっと ちいさすぎます。",
+            "romaji": "aa, chotto chiisasugimasu.",
+            "en": "Ah, they're a bit too small.",
+            "heard": [
+              "ああちょっと小さすぎます"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "じゃあ、こちら は？",
+            "romaji": "jaa, kochira wa?",
+            "en": "Then how about these?",
+            "heard": [
+              "じゃあこちらは"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "これ は あるきやすい です ね。でも、たかすぎます。",
+            "romaji": "kore wa arukiyasui desu ne. demo, takasugimasu.",
+            "en": "These are easy to walk in. But they're too expensive.",
+            "heard": [
+              "これは歩きやすいですねでも高すぎます"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "いい くつ は ながく はけます よ。",
+            "romaji": "ii kutsu wa nagaku hakemasu yo.",
+            "en": "Good shoes last a long time, you know.",
+            "heard": [
+              "いい靴は長く履けますよ"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "そう です ね。じゃあ、これ を かいます。",
+            "romaji": "sou desu ne. jaa, kore o kaimasu.",
+            "en": "True. Then I'll buy these.",
+            "heard": [
+              "そうですねじゃあこれを買います"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "わかりやすいです",
+          "romaji": "wakariyasui desu",
+          "en": "It's easy to understand.",
+          "heard": [
+            "分かりやすいです",
+            "わかりやすいです"
+          ]
+        },
+        {
+          "jp": "のみすぎないでね",
+          "romaji": "nomisuginaide ne",
+          "en": "Don't drink too much, OK?",
+          "heard": [
+            "飲みすぎないでね",
+            "飲み過ぎないでね"
+          ]
+        },
+        {
+          "jp": "ちょっとたかすぎます",
+          "romaji": "chotto takasugimasu",
+          "en": "It's a bit too expensive.",
+          "heard": [
+            "ちょっと高すぎます",
+            "ちょっと高過ぎます"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive",
+      "subtitle": "Things done to you",
+      "color": "#3F6E8C",
+      "dark": "#2B4F66",
+      "tags": [
+        "verbs",
+        "grammar",
+        "daily life"
+      ],
+      "practices": [
+        {
+          "title": "Done to me",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "ほめます",
+              "romaji": "homemasu",
+              "meaning": "praise",
+              "emoji": "👏"
+            },
+            {
+              "kind": "WORD",
+              "jp": "しかります",
+              "romaji": "shikarimasu",
+              "meaning": "scold / tell off",
+              "emoji": "😠"
+            },
+            {
+              "kind": "WORD",
+              "jp": "しょうたいします",
+              "romaji": "shoutai shimasu",
+              "meaning": "invite",
+              "emoji": "💌"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ちゅういします",
+              "romaji": "chuui shimasu",
+              "meaning": "warn / caution",
+              "emoji": "⚠️"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "せんせい",
+                "に",
+                "ほめられました"
+              ],
+              "romaji": "sensei ni homeraremashita",
+              "en": "I was praised by the teacher.",
+              "blank": 2,
+              "distract": [
+                "ほめました",
+                "ほめましょう"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "に",
+                "しかられました"
+              ],
+              "romaji": "chichi ni shikararemashita",
+              "en": "I got told off by my father.",
+              "blank": 1,
+              "distract": [
+                "を",
+                "が"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "の",
+                "パーティー",
+                "に",
+                "しょうたいされました"
+              ],
+              "romaji": "tomodachi no paatii ni shoutai saremashita",
+              "en": "I was invited to my friend's party.",
+              "blank": 4,
+              "distract": [
+                "しょうたいしました",
+                "しょうたいしましょう"
+              ]
+            },
+            {
+              "tokens": [
+                "けいかん",
+                "に",
+                "ちゅういされました"
+              ],
+              "romaji": "keikan ni chuui saremashita",
+              "en": "I was warned by a police officer.",
+              "distract": [
+                "ちゅういしました",
+                "ちゅういしましょう"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "うた",
+                "は",
+                "わかい",
+                "ひと",
+                "に",
+                "よく",
+                "うたわれて",
+                "います"
+              ],
+              "romaji": "kono uta wa wakai hito ni yoku utawarete imasu",
+              "en": "This song is sung a lot by young people.",
+              "blank": 7,
+              "distract": [
+                "うたって",
+                "うたえて"
+              ]
+            },
+            {
+              "tokens": [
+                "せんせい",
+                "に",
+                "なまえ",
+                "を",
+                "よばれました"
+              ],
+              "romaji": "sensei ni namae o yobaremashita",
+              "en": "My name was called by the teacher.",
+              "distract": [
+                "よびました",
+                "よびましょう"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Done to me",
+            "pattern": "Passive: group 1 -areru, group 2 -rareru",
+            "body": "The passive form says what was done to the subject. Group 1: the final -u becomes -areru (しかる → しかられる, よぶ → よばれる, and う becomes わ: いう → いわれる). Group 2: る → られる (ほめる → ほめられる), the same shape as the potential form. Group 3: する → される, くる → こられる. It conjugates like a group 2 verb: ほめられます, ほめられました. The doer takes に: せんせい に ほめられました (I was praised by the teacher).",
+            "id": "g-passive-1"
+          }
+        },
+        {
+          "title": "It happened to me",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "ふみます",
+              "romaji": "fumimasu",
+              "meaning": "step on",
+              "emoji": "🦶"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ぬすみます",
+              "romaji": "nusumimasu",
+              "meaning": "steal",
+              "emoji": "🦹"
+            },
+            {
+              "kind": "WORD",
+              "jp": "よごします",
+              "romaji": "yogoshimasu",
+              "meaning": "make dirty",
+              "emoji": "🫗"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "でんしゃ",
+                "で",
+                "あし",
+                "を",
+                "ふまれました"
+              ],
+              "romaji": "densha de ashi o fumaremashita",
+              "en": "Someone stepped on my foot on the train.",
+              "blank": 4,
+              "distract": [
+                "ふみました",
+                "ふみましょう"
+              ]
+            },
+            {
+              "tokens": [
+                "さいふ",
+                "を",
+                "ぬすまれました"
+              ],
+              "romaji": "saifu o nusumaremashita",
+              "en": "I had my wallet stolen.",
+              "blank": 2,
+              "distract": [
+                "ぬすみました",
+                "ぬすみたいです"
+              ]
+            },
+            {
+              "tokens": [
+                "きのう、",
+                "あめ",
+                "に",
+                "ふられました"
+              ],
+              "romaji": "kinou, ame ni furaremashita",
+              "en": "I got caught in the rain yesterday.",
+              "blank": 3,
+              "distract": [
+                "ふりました",
+                "ふりそうです"
+              ]
+            },
+            {
+              "tokens": [
+                "みんな",
+                "に",
+                "わらわれました"
+              ],
+              "romaji": "minna ni warawaremashita",
+              "en": "Everyone laughed at me.",
+              "distract": [
+                "わらいました",
+                "わらいましょう"
+              ]
+            },
+            {
+              "tokens": [
+                "おとうと",
+                "に",
+                "ほん",
+                "を",
+                "よごされました"
+              ],
+              "romaji": "otouto ni hon o yogosaremashita",
+              "en": "My younger brother got my book dirty.",
+              "blank": 1,
+              "distract": [
+                "が",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "よる",
+                "おそく",
+                "ともだち",
+                "に",
+                "こられて、",
+                "こまりました"
+              ],
+              "romaji": "yoru osoku tomodachi ni korarete, komarimashita",
+              "en": "A friend came round late at night, which was a nuisance.",
+              "blank": 4,
+              "distract": [
+                "きて、",
+                "こなくて、"
+              ]
+            },
+            {
+              "tokens": [
+                "こども",
+                "に",
+                "なかれて、",
+                "ねられませんでした"
+              ],
+              "romaji": "kodomo ni nakarete, neraremasen deshita",
+              "en": "My child cried, so I couldn't sleep.",
+              "distract": [
+                "ないて、",
+                "なかなくて、"
+              ]
+            }
+          ],
+          "note": {
+            "title": "It happened to me",
+            "pattern": "Person に + passive: it happened to me",
+            "body": "Japanese often uses the passive for something unwelcome that happens to you, even with verbs that take no object: あめ に ふられました (I got caught in the rain), よる おそく ともだち に こられて、こまりました. When something of yours is affected, you stay the subject and the thing keeps を: さいふ を ぬすまれました (I had my wallet stolen), でんしゃ で あし を ふまれました (someone stepped on my foot).",
+            "id": "g-passive-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "A bad day",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "げんき が ない です ね。どう しましたか。",
+            "romaji": "genki ga nai desu ne. dou shimashita ka.",
+            "en": "You look down. What happened?",
+            "heard": [
+              "元気がないですねどうしましたか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "けさ、でんしゃ で さいふ を ぬすまれました。",
+            "romaji": "kesa, densha de saifu o nusumaremashita.",
+            "en": "This morning I had my wallet stolen on the train.",
+            "heard": [
+              "今朝電車で財布を盗まれました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ほんとう ですか。たいへん でした ね。",
+            "romaji": "hontou desu ka. taihen deshita ne.",
+            "en": "Really? That's awful.",
+            "heard": [
+              "本当ですか大変でしたね"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "それから、かいしゃ に おくれて、しかられました。",
+            "romaji": "sorekara, kaisha ni okurete, shikararemashita.",
+            "en": "Then I was late for work and got told off.",
+            "heard": [
+              "それから会社に遅れて叱られました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "こうばん に いきましたか。",
+            "romaji": "kouban ni ikimashita ka.",
+            "en": "Did you go to the police box?",
+            "heard": [
+              "交番に行きましたか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい。おまわりさん に いろいろ しつもん されました。",
+            "romaji": "hai. omawarisan ni iroiro shitsumon saremashita.",
+            "en": "Yes. The officer asked me all sorts of questions.",
+            "heard": [
+              "はいお巡りさんにいろいろ質問されました",
+              "はいおまわりさんにいろいろ質問されました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "きょう は はやく かえって やすんで ください。",
+            "romaji": "kyou wa hayaku kaette yasunde kudasai.",
+            "en": "Go home early today and get some rest.",
+            "heard": [
+              "今日は早く帰って休んでください"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "ほめられました",
+          "romaji": "homeraremashita",
+          "en": "I got praised.",
+          "heard": [
+            "褒められました",
+            "ほめられました"
+          ]
+        },
+        {
+          "jp": "よくいわれます",
+          "romaji": "yoku iwaremasu",
+          "en": "People often tell me that.",
+          "heard": [
+            "よく言われます"
+          ]
+        },
+        {
+          "jp": "あめにふられました",
+          "romaji": "ame ni furaremashita",
+          "en": "I got rained on.",
+          "heard": [
+            "雨に降られました"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make and let",
+      "subtitle": "Making and letting people do things",
+      "color": "#2B4C7E",
+      "dark": "#1D365C",
+      "tags": [
+        "verbs",
+        "family",
+        "requests"
+      ],
+      "practices": [
+        {
+          "title": "Make or let",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "ぶちょう",
+              "romaji": "buchou",
+              "meaning": "department manager",
+              "emoji": "👔"
+            },
+            {
+              "kind": "WORD",
+              "jp": "おや",
+              "romaji": "oya",
+              "meaning": "parent",
+              "emoji": "👪"
+            },
+            {
+              "kind": "WORD",
+              "jp": "じゅく",
+              "romaji": "juku",
+              "meaning": "cram school",
+              "emoji": "🏫"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "はは",
+                "は",
+                "わたし",
+                "に",
+                "やさい",
+                "を",
+                "たべさせました"
+              ],
+              "romaji": "haha wa watashi ni yasai o tabesasemashita",
+              "en": "My mother made me eat vegetables.",
+              "blank": 6,
+              "distract": [
+                "たべられました",
+                "たべました"
+              ]
+            },
+            {
+              "tokens": [
+                "ぶちょう",
+                "は",
+                "わたし",
+                "に",
+                "ざんぎょう",
+                "させました"
+              ],
+              "romaji": "buchou wa watashi ni zangyou sasemashita",
+              "en": "The manager made me work overtime.",
+              "blank": 5,
+              "distract": [
+                "しました",
+                "されました"
+              ]
+            },
+            {
+              "tokens": [
+                "おや",
+                "は",
+                "こども",
+                "を",
+                "じゅく",
+                "に",
+                "いかせました"
+              ],
+              "romaji": "oya wa kodomo o juku ni ikasemashita",
+              "en": "The parents sent their child to cram school.",
+              "blank": 3,
+              "distract": [
+                "が",
+                "で"
+              ]
+            },
+            {
+              "tokens": [
+                "ちち",
+                "は",
+                "わたし",
+                "に",
+                "りゅうがく",
+                "させて",
+                "くれました"
+              ],
+              "romaji": "chichi wa watashi ni ryuugaku sasete kuremashita",
+              "en": "My father let me study abroad.",
+              "distract": [
+                "されて",
+                "して"
+              ]
+            },
+            {
+              "tokens": [
+                "せんせい",
+                "は",
+                "せいと",
+                "に",
+                "さくぶん",
+                "を",
+                "かかせました"
+              ],
+              "romaji": "sensei wa seito ni sakubun o kakasemashita",
+              "en": "The teacher had the pupils write an essay.",
+              "blank": 6,
+              "distract": [
+                "かかれました",
+                "かきました"
+              ]
+            },
+            {
+              "tokens": [
+                "こども",
+                "を",
+                "こうえん",
+                "で",
+                "あそばせます"
+              ],
+              "romaji": "kodomo o kouen de asobasemasu",
+              "en": "I let the children play in the park.",
+              "distract": [
+                "あそびます",
+                "あそばれます"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Make or let",
+            "pattern": "Causative: group 1 -aseru, group 2 -saseru",
+            "body": "The causative form means make or let someone do something. Group 1: the final -u becomes -aseru (いく → いかせる, かく → かかせる, and う becomes わ: かう → かわせる). Group 2: る → させる (たべる → たべさせる). Group 3: する → させる, くる → こさせる. It conjugates like a group 2 verb: たべさせます. When the verb already has を, the person made to act takes に: こども に やさい を たべさせました. With a verb that has no object they usually take を: こども を じゅく に いかせました, and に instead says they wanted to. Context decides make or let; ～させて くれました is let, as a kindness.",
+            "id": "g-causative-1"
+          }
+        },
+        {
+          "title": "Let me…",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "じこしょうかい",
+              "romaji": "jiko shoukai",
+              "meaning": "self-introduction",
+              "emoji": "🙋"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ごちそうします",
+              "romaji": "gochisou shimasu",
+              "meaning": "treat (someone to a meal)",
+              "emoji": "🍱"
+            },
+            {
+              "kind": "WORD",
+              "jp": "あんないします",
+              "romaji": "annai shimasu",
+              "meaning": "show around / guide",
+              "emoji": "🗺️"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "じこしょうかい",
+                "を",
+                "させて",
+                "ください"
+              ],
+              "romaji": "jiko shoukai o sasete kudasai",
+              "en": "Please let me introduce myself.",
+              "blank": 2,
+              "distract": [
+                "されて",
+                "して"
+              ]
+            },
+            {
+              "tokens": [
+                "きょう",
+                "は",
+                "わたし",
+                "に",
+                "ごちそう",
+                "させて",
+                "ください"
+              ],
+              "romaji": "kyou wa watashi ni gochisou sasete kudasai",
+              "en": "Let me treat you today.",
+              "blank": 5,
+              "distract": [
+                "されて",
+                "して"
+              ]
+            },
+            {
+              "tokens": [
+                "すみません、",
+                "ちょっと",
+                "かんがえさせて",
+                "ください"
+              ],
+              "romaji": "sumimasen, chotto kangaesasete kudasai",
+              "en": "Sorry, let me think about it a little.",
+              "blank": 2,
+              "distract": [
+                "かんがえて",
+                "かんがえられて"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "やすませて",
+                "ください"
+              ],
+              "romaji": "ashita yasumasete kudasai",
+              "en": "Please let me take tomorrow off.",
+              "blank": 1,
+              "distract": [
+                "やすんで",
+                "やすまれて"
+              ]
+            },
+            {
+              "tokens": [
+                "わたし",
+                "に",
+                "まち",
+                "を",
+                "あんない",
+                "させて",
+                "ください"
+              ],
+              "romaji": "watashi ni machi o annai sasete kudasai",
+              "en": "Let me show you around the town.",
+              "distract": [
+                "されて",
+                "して"
+              ]
+            },
+            {
+              "tokens": [
+                "その",
+                "しごと、",
+                "わたし",
+                "に",
+                "やらせて",
+                "ください"
+              ],
+              "romaji": "sono shigoto, watashi ni yarasete kudasai",
+              "en": "Let me do that job.",
+              "distract": [
+                "やって",
+                "やられて"
+              ]
+            }
+          ],
+          "note": {
+            "title": "Let me…",
+            "pattern": "Causative て-form + ください",
+            "body": "Causative て-form + ください asks to be allowed to do something: じこしょうかい を させて ください (let me introduce myself). It is a polite way to offer or to ask: ごちそう させて ください (let me treat you), ちょっと かんがえさせて ください (let me think it over). Compare して ください, which asks the other person to do it.",
+            "id": "g-causative-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Childhood lessons",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "こども の とき、なにか ならって いましたか。",
+            "romaji": "kodomo no toki, nanika naratte imashita ka.",
+            "en": "Did you take any lessons as a child?",
+            "heard": [
+              "子供の時何か習っていましたか",
+              "子どものとき何か習っていましたか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい。りょうしん が ピアノ を ならわせて くれました。",
+            "romaji": "hai. ryoushin ga piano o narawasete kuremashita.",
+            "en": "Yes. My parents let me learn the piano.",
+            "heard": [
+              "はい両親がピアノを習わせてくれました"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いい です ね。わたし の りょうしん は、まいにち わたし を じゅく に いかせました。",
+            "romaji": "ii desu ne. watashi no ryoushin wa, mainichi watashi o juku ni ikasemashita.",
+            "en": "Nice. My parents made me go to cram school every day.",
+            "heard": [
+              "いいですね私の両親は毎日私を塾に行かせました"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "まいにち ですか。たいへん でした ね。",
+            "romaji": "mainichi desu ka. taihen deshita ne.",
+            "en": "Every day? That must have been hard.",
+            "heard": [
+              "毎日ですか大変でしたね"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ええ。でも、いま は よかった と おもいます。",
+            "romaji": "ee. demo, ima wa yokatta to omoimasu.",
+            "en": "Yes. But now I think it was good for me.",
+            "heard": [
+              "ええでも今は良かったと思います",
+              "ええでも今はよかったと思います"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "わたし も いま は ピアノ が だいすき です。",
+            "romaji": "watashi mo ima wa piano ga daisuki desu.",
+            "en": "I love the piano now too.",
+            "heard": [
+              "私も今はピアノが大好きです"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "こんど、ピアノ を きかせて ください。",
+            "romaji": "kondo, piano o kikasete kudasai.",
+            "en": "Let me hear you play sometime.",
+            "heard": [
+              "今度ピアノを聞かせてください",
+              "今度ピアノを聴かせてください"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "はい、いい です よ。",
+            "romaji": "hai, ii desu yo.",
+            "en": "Sure.",
+            "heard": [
+              "はいいいですよ"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "わたしにやらせてください",
+          "romaji": "watashi ni yarasete kudasai",
+          "en": "Let me do it.",
+          "heard": [
+            "私にやらせてください"
+          ]
+        },
+        {
+          "jp": "おまたせしました",
+          "romaji": "omatase shimashita",
+          "en": "Sorry to have kept you waiting.",
+          "heard": [
+            "お待たせしました"
+          ]
+        },
+        {
+          "jp": "やすませてください",
+          "romaji": "yasumasete kudasai",
+          "en": "Please let me rest.",
+          "heard": [
+            "休ませてください"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ba",
+      "title": "Conditional ば",
+      "subtitle": "If…, and the more…, the more",
+      "color": "#4F7A4A",
+      "dark": "#3A5C36",
+      "tags": [
+        "conditions",
+        "advice",
+        "verbs"
+      ],
+      "practices": [
+        {
+          "title": "If (ば)",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "さがします",
+              "romaji": "sagashimasu",
+              "meaning": "look for",
+              "emoji": "🔎"
+            },
+            {
+              "kind": "WORD",
+              "jp": "みつかります",
+              "romaji": "mitsukarimasu",
+              "meaning": "be found",
+              "emoji": "💡"
+            },
+            {
+              "kind": "WORD",
+              "jp": "あんしんします",
+              "romaji": "anshin shimasu",
+              "meaning": "feel relieved",
+              "emoji": "😌"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "やすければ、",
+                "かいます"
+              ],
+              "romaji": "yasukereba, kaimasu",
+              "en": "If it's cheap, I'll buy it.",
+              "blank": 0,
+              "distract": [
+                "やすい、",
+                "やすかった、"
+              ]
+            },
+            {
+              "tokens": [
+                "いそげば、",
+                "まにあいます"
+              ],
+              "romaji": "isogeba, maniaimasu",
+              "en": "If you hurry, you'll make it.",
+              "blank": 0,
+              "distract": [
+                "いそぐ、",
+                "いそいだ、"
+              ]
+            },
+            {
+              "tokens": [
+                "ボタン",
+                "を",
+                "おせば、",
+                "ドア",
+                "が",
+                "あきます"
+              ],
+              "romaji": "botan o oseba, doa ga akimasu",
+              "en": "If you press the button, the door opens.",
+              "blank": 2,
+              "distract": [
+                "おす、",
+                "おした、"
+              ]
+            },
+            {
+              "tokens": [
+                "よく",
+                "さがせば、",
+                "きっと",
+                "みつかります"
+              ],
+              "romaji": "yoku sagaseba, kitto mitsukarimasu",
+              "en": "If you look carefully, you'll surely find it.",
+              "distract": [
+                "さがす、",
+                "さがした、"
+              ]
+            },
+            {
+              "tokens": [
+                "でんわ",
+                "すれば、",
+                "おかあさん",
+                "も",
+                "あんしん",
+                "します",
+                "よ"
+              ],
+              "romaji": "denwa sureba, okaasan mo anshin shimasu yo",
+              "en": "If you call, your mother will feel relieved.",
+              "blank": 1,
+              "distract": [
+                "する、",
+                "した、"
+              ]
+            },
+            {
+              "tokens": [
+                "あした",
+                "なら、",
+                "ひま",
+                "です"
+              ],
+              "romaji": "ashita nara, hima desu",
+              "en": "If it's tomorrow, I'm free.",
+              "blank": 1,
+              "distract": [
+                "だけ、",
+                "ながら、"
+              ]
+            },
+            {
+              "tokens": [
+                "はやく",
+                "ねなければ、",
+                "あした",
+                "おきられません"
+              ],
+              "romaji": "hayaku nenakereba, ashita okiraremasen",
+              "en": "If I don't go to bed early, I won't be able to get up tomorrow.",
+              "distract": [
+                "ねない、",
+                "ねなかった、"
+              ]
+            },
+            {
+              "tokens": [
+                "よければ、",
+                "いっしょに",
+                "いきませんか"
+              ],
+              "romaji": "yokereba, issho ni ikimasen ka",
+              "en": "If you like, shall we go together?",
+              "distract": [
+                "いい、",
+                "よかった、"
+              ]
+            }
+          ],
+          "note": {
+            "title": "If (ば)",
+            "pattern": "Verb -eba, い-adj ～ければ, noun なら",
+            "body": "The ば form states a condition: いそげば、まにあいます (if you hurry, you'll make it). Verbs change the final -u to -eba: いそぐ → いそげば, おす → おせば, たべる → たべれば, する → すれば, くる → くれば. ない becomes なければ: ねなければ. い-adjectives swap い for ければ: やすい → やすければ, and いい → よければ. Nouns and な-adjectives use なら: あした なら、ひま です. ～たら also means if, but ば puts the weight on the condition, so it suits rules and advice; for requests or what happens after a one-off event, ～たら is safer: ついたら、でんわ して ください.",
+            "id": "g-ba-1"
+          }
+        },
+        {
+          "title": "The more…, the more",
+          "items": [
+            {
+              "kind": "WORD",
+              "jp": "なれます",
+              "romaji": "naremasu",
+              "meaning": "get used to",
+              "emoji": "🙂"
+            },
+            {
+              "kind": "WORD",
+              "jp": "ふえます",
+              "romaji": "fuemasu",
+              "meaning": "increase",
+              "emoji": "📈"
+            },
+            {
+              "kind": "WORD",
+              "jp": "かいわ",
+              "romaji": "kaiwa",
+              "meaning": "conversation",
+              "emoji": "🗣️"
+            }
+          ],
+          "sentences": [
+            {
+              "tokens": [
+                "れんしゅう",
+                "すれば",
+                "する",
+                "ほど、",
+                "じょうずに",
+                "なります"
+              ],
+              "romaji": "renshuu sureba suru hodo, jouzu ni narimasu",
+              "en": "The more you practise, the better you get.",
+              "blank": 1,
+              "distract": [
+                "して",
+                "したら"
+              ]
+            },
+            {
+              "tokens": [
+                "にほんご",
+                "は",
+                "つかえば",
+                "つかう",
+                "ほど、",
+                "なれます"
+              ],
+              "romaji": "nihongo wa tsukaeba tsukau hodo, naremasu",
+              "en": "The more you use Japanese, the more used to it you get.",
+              "blank": 3,
+              "distract": [
+                "つかって",
+                "つかった"
+              ]
+            },
+            {
+              "tokens": [
+                "この",
+                "ほん",
+                "は",
+                "よめば",
+                "よむ",
+                "ほど、",
+                "おもしろく",
+                "なります"
+              ],
+              "romaji": "kono hon wa yomeba yomu hodo, omoshiroku narimasu",
+              "en": "The more I read this book, the more interesting it gets.",
+              "distract": [
+                "よんで",
+                "よんだ"
+              ]
+            },
+            {
+              "tokens": [
+                "どう",
+                "すれば",
+                "いい",
+                "ですか"
+              ],
+              "romaji": "dou sureba ii desu ka",
+              "en": "What should I do?",
+              "blank": 1,
+              "distract": [
+                "する",
+                "した"
+              ]
+            },
+            {
+              "tokens": [
+                "かいわ",
+                "を",
+                "れんしゅう",
+                "すれば",
+                "いい",
+                "です",
+                "よ"
+              ],
+              "romaji": "kaiwa o renshuu sureba ii desu yo",
+              "en": "You should practise conversation.",
+              "distract": [
+                "する",
+                "して"
+              ]
+            },
+            {
+              "tokens": [
+                "ともだち",
+                "が",
+                "ふえれば、",
+                "もっと",
+                "たのしく",
+                "なります",
+                "よ"
+              ],
+              "romaji": "tomodachi ga fuereba, motto tanoshiku narimasu yo",
+              "en": "If you make more friends, it'll get more fun.",
+              "blank": 2,
+              "distract": [
+                "ふえる、",
+                "ふえた、"
+              ]
+            },
+            {
+              "tokens": [
+                "どの",
+                "でんしゃ",
+                "に",
+                "のれば",
+                "いい",
+                "ですか"
+              ],
+              "romaji": "dono densha ni noreba ii desu ka",
+              "en": "Which train should I take?",
+              "blank": 3,
+              "distract": [
+                "のる",
+                "のった"
+              ]
+            }
+          ],
+          "note": {
+            "title": "The more…, the more",
+            "pattern": "～ば ～ほど / ～ば いい",
+            "body": "Say a verb twice, first in the ば form and then in the dictionary form, and add ほど for the more…, the more…: れんしゅう すれば する ほど、じょうずに なります. い-adjectives work too: やすければ やすい ほど いい です. ～ば いい ですか asks what you should do: どの でんしゃ に のれば いい ですか. Answer with ～ば いい です: かいわ を れんしゅう すれば いい です よ.",
+            "id": "g-ba-2"
+          }
+        }
+      ],
+      "dialogue": {
+        "title": "Getting better at Japanese",
+        "lines": [
+          {
+            "speaker": "Ken",
+            "jp": "にほんご の かいわ が なかなか じょうずに なりません。",
+            "romaji": "nihongo no kaiwa ga nakanaka jouzu ni narimasen.",
+            "en": "My Japanese conversation just isn't getting any better.",
+            "heard": [
+              "日本語の会話がなかなか上手になりません"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "にほんじん の ともだち と たくさん はなせば、すぐ なれます よ。",
+            "romaji": "nihonjin no tomodachi to takusan hanaseba, sugu naremasu yo.",
+            "en": "If you talk a lot with Japanese friends, you'll soon get used to it.",
+            "heard": [
+              "日本人の友達とたくさん話せばすぐ慣れますよ"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "でも、にほんじん の ともだち が あまり いません。",
+            "romaji": "demo, nihonjin no tomodachi ga amari imasen.",
+            "en": "But I don't have many Japanese friends.",
+            "heard": [
+              "でも日本人の友達があまりいません"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "じゃあ、こんど の パーティー に きませんか。ひと が おおければ おおい ほど たのしい です から。",
+            "romaji": "jaa, kondo no paatii ni kimasen ka. hito ga ookereba ooi hodo tanoshii desu kara.",
+            "en": "Then why not come to the next party? The more people, the more fun.",
+            "heard": [
+              "じゃあ今度のパーティーに来ませんか人が多ければ多いほど楽しいですから"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "いいん ですか。",
+            "romaji": "iin desu ka.",
+            "en": "Is that all right?",
+            "heard": [
+              "いいんですか"
+            ]
+          },
+          {
+            "speaker": "Yuki",
+            "jp": "ええ。よければ、ともだち も つれて きて ください。",
+            "romaji": "ee. yokereba, tomodachi mo tsurete kite kudasai.",
+            "en": "Sure. If you like, bring a friend too.",
+            "heard": [
+              "ええよければ友達も連れてきてください",
+              "ええよければ友達も連れて来てください"
+            ]
+          },
+          {
+            "speaker": "Ken",
+            "jp": "ありがとう ございます。じゃあ、いきます。",
+            "romaji": "arigatou gozaimasu. jaa, ikimasu.",
+            "en": "Thank you. I'll be there, then.",
+            "heard": [
+              "ありがとうございますじゃあ行きます"
+            ]
+          }
+        ]
+      },
+      "phrases": [
+        {
+          "jp": "よければどうぞ",
+          "romaji": "yokereba douzo",
+          "en": "Help yourself, if you like.",
+          "heard": [
+            "よければどうぞ"
+          ]
+        },
+        {
+          "jp": "どうすればいいですか",
+          "romaji": "dou sureba ii desu ka",
+          "en": "What should I do?",
+          "heard": [
+            "どうすればいいですか"
+          ]
+        },
+        {
+          "jp": "はやければはやいほどいいです",
+          "romaji": "hayakereba hayai hodo ii desu",
+          "en": "The sooner, the better.",
+          "heard": [
+            "早ければ早いほどいいです"
+          ]
+        }
+      ]
+    },
+    {
       "id": "tr-air",
       "title": "At the airport",
       "subtitle": "Check-in, passports and gates",
@@ -46956,7 +49355,13 @@
             "maybe",
             "looks",
             "seems",
-            "trydo"
+            "trydo",
+            "prep",
+            "while",
+            "ease",
+            "passive",
+            "causative",
+            "ba"
           ],
           "rank": 3
         }

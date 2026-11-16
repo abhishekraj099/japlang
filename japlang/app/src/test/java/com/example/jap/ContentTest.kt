@@ -112,7 +112,7 @@ class ContentTest {
     @Test
     fun aRevisionFollowsEveryTwoLessons() {
         val revisions = Course.lessons.filter { it.id.contains("-rev") }
-        assertEquals(131, revisions.size)
+        assertEquals(137, revisions.size)
         Course.units.forEach { unit ->
             val lessons = unit.lessons
             lessons.forEachIndexed { i, lesson ->
@@ -178,7 +178,10 @@ class ContentTest {
         val n4 = levels[4]
         assertEquals("Intermediate 2 (N4)", n4.name)
         assertEquals(3, n4.rank)
-        assertEquals(listOf("vol", "plan", "maybe", "looks", "seems", "trydo"), n4.units.take(6))
+        assertEquals(
+            listOf("vol", "plan", "maybe", "looks", "seems", "trydo", "prep", "while", "ease", "passive", "causative", "ba"),
+            n4.units.take(12),
+        )
         val raw = asset("course.json").getJSONArray("units").let { a -> List(a.length()) { a.getJSONObject(it) } }.associateBy { it.getString("id") }
         n4.units.forEach { id ->
             val unit = raw.getValue(id)
