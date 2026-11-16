@@ -53,16 +53,53 @@ import com.example.jap.data.Item
 import com.example.jap.data.Memory
 import com.example.jap.data.Progress
 import com.example.jap.data.Review
+import com.example.jap.data.Exercise
+import com.example.jap.data.Exercises
+import com.example.jap.data.Skill
+import com.example.jap.data.Skills
+import com.example.jap.ink.Handwriting
+import com.example.jap.ink.LocalHandwriting
+import android.speech.SpeechRecognizer
+import androidx.compose.ui.platform.LocalContext
 import com.example.jap.data.Stories
 import com.example.jap.data.Talks
 
 internal const val SESSION_SIZE = 12
+
+/**
+ * What Smart practice trains next: the weakest skill (see [Skills.pick]) on the learner's weakest material, or null
+ * before anything is learned. [off] are skills this device cannot check; skills with nothing learned yet are left out
+ * too. Shared by the card and "Keep going" so both choose alike.
+ */
+internal fun smartPractice(progress: Progress, off: Set<Skill>, now: Long = System.currentTimeMillis()): Pair<Skill, List<Exercise>>? {
+    val weakest = progress.srs.entries.sortedBy { Memory.retrievability(it.value, now) }
+    val items = weakest.mapNotNull { Course.item(it.key) }.filter(Course::quizzable).take(SESSION_SIZE)
+    if (items.isEmpty()) return null
+    val grammar = weakest.mapNotNull { Course.grammarPoint(it.key) }.take(SMART_GRAMMAR)
+    val phrases = Course.units.filter { u -> u.lessons.any { it.id in progress.done } }.flatMap { u -> u.lessons.flatMap { it.phrases } }
+    val unavailable = off + listOfNotNull(Skill.GRAMMAR.takeIf { grammar.isEmpty() }, Skill.SPEAKING.takeIf { phrases.isEmpty() })
+    val skill = Skills.pick(progress.skillLog, unavailable)
+    return skill to Exercises.forSmart(skill, items, grammar, phrases)
+}
+
+private const val SMART_GRAMMAR = 6
+
+/** Skills this device cannot check: handwriting until its model is ready, speaking without a speech recogniser. */
+@Composable
+internal fun unavailableSkills(): Set<Skill> {
+    val handwriting = LocalHandwriting.current.state
+    val context = LocalContext.current
+    val speech = remember { SpeechRecognizer.isRecognitionAvailable(context) }
+    return setOfNotNull(Skill.WRITING.takeIf { handwriting != Handwriting.State.READY }, Skill.SPEAKING.takeIf { !speech })
+}
 
 @Composable
 fun PracticeScreen(
     progress: Progress,
     /** [due] is true for the spaced-repetition review, false for practising anything learned. */
     onReview: (title: String, items: List<Item>, due: Boolean) -> Unit,
+    /** Starts Smart practice; [off] are the skills this device cannot check. */
+    onSmart: (off: Set<Skill>) -> Unit,
     onWords: () -> Unit,
     onSpeak: () -> Unit,
     onDictate: () -> Unit,
@@ -90,12 +127,15 @@ fun PracticeScreen(
     val grammarDue = remember(srs) { minOf(Review.dueGrammar(srs).size, GRAMMAR_PER_SESSION) }
     val dueToday = plan.today.size + grammarDue
     val items = remember(srs) { Review.itemsOnly(srs) }
+    val off = unavailableSkills()
+    val smart = remember(srs, progress.skillLog, progress.done, off) { smartPractice(progress, off)?.first }
 
     GuideTour("practice")
     Column(
         modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)
     ) {
+        SmartCard(smart, smart?.let { Skills.percent(progress.skillLog[it].orEmpty()) }) { onSmart(off) }
         Panel(Modifier.fillMaxWidth().guideTarget("review-card")) {
             Column(Modifier.fillMaxWidth().padding(18.dp)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -206,6 +246,36 @@ fun PracticeScreen(
             )
         }
         Activity(Icons.Rounded.TravelExplore, "Lesson on any topic", "Type a situation, like \"restaurant\" or \"train\", and get a lesson for it.", onTopics)
+    }
+}
+
+/** Smart practice: trains the weakest skill, and says in plain words why that one. [skill] is null before anything is learned. */
+@Composable
+private fun SmartCard(skill: Skill?, percent: Int?, onStart: () -> Unit) {
+    val scheme = MaterialTheme.colorScheme
+    val name = skill?.label?.lowercase().orEmpty()
+    Panel(Modifier.fillMaxWidth()) {
+        Column(Modifier.fillMaxWidth().padding(18.dp)) {
+            Text("Smart practice", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold, color = scheme.onSurface)
+            Text(
+                when {
+                    skill == null -> "Your weakest skill, trained"
+                    percent == null -> "Getting to know your strengths"
+                    else -> "Training: ${skill.label} · $percent%"
+                },
+                style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant
+            )
+            Text(
+                when {
+                    skill == null -> "Once you've learned some words, this finds the skill that needs help most and trains it."
+                    percent == null -> "Each skill gets a score after ${Skills.MIN_ANSWERS} answers. You've done the least $name so far, so this session starts there."
+                    else -> "${skill.label} is your weakest skill right now ($percent% of your last answers right), so this session trains it with the words you're most likely to forget."
+                },
+                color = scheme.onSurfaceVariant,
+                modifier = Modifier.padding(top = 14.dp, bottom = 16.dp)
+            )
+            PushButton(if (skill == null) "Finish a lesson first" else "Train $name", onClick = onStart, enabled = skill != null)
+        }
     }
 }
 

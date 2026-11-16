@@ -98,6 +98,8 @@ import com.example.jap.data.CrashLog
 import com.example.jap.data.Guide
 import com.example.jap.data.League
 import com.example.jap.data.Progress
+import com.example.jap.data.Skill
+import com.example.jap.data.Skills
 import com.example.jap.data.Tip
 import com.example.jap.ui.theme.Kin
 import com.example.jap.ui.theme.Kon
@@ -148,6 +150,7 @@ fun MeScreen(progress: Progress, onLink: (MeLink) -> Unit, modifier: Modifier = 
             }
         }
         WeekCard(progress)
+        SkillsCard(progress)
         RankLadder(progress)
         Section("Trophies in progress", "See all") { onLink(MeLink.TROPHIES) }
         Panel(Modifier.fillMaxWidth()) {
@@ -201,6 +204,28 @@ private fun ProfileHeader(progress: Progress) {
 }
 
 /** This week's XP per day as bars, with today's totals. */
+/** Right answers per skill over the last [Skills.WINDOW]; "–" until there are enough to mean anything. */
+@Composable
+private fun SkillsCard(progress: Progress) {
+    val scheme = MaterialTheme.colorScheme
+    Panel(Modifier.fillMaxWidth()) {
+        Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            Text("Your skills", style = MaterialTheme.typography.titleMedium, color = scheme.onSurface)
+            Skill.entries.forEach { skill ->
+                val percent = Skills.percent(progress.skillLog[skill].orEmpty())
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(skill.label, Modifier.width(84.dp), style = MaterialTheme.typography.bodyMedium, color = scheme.onSurface)
+                    Meter((percent ?: 0) / 100f, scheme.primary, Modifier.weight(1f), height = 10.dp)
+                    Text(
+                        percent?.let { "$it%" } ?: "–", Modifier.width(48.dp), textAlign = TextAlign.End,
+                        style = MaterialTheme.typography.bodyMedium, color = scheme.onSurfaceVariant
+                    )
+                }
+            }
+        }
+    }
+}
+
 @Composable
 private fun WeekCard(progress: Progress) {
     val scheme = MaterialTheme.colorScheme

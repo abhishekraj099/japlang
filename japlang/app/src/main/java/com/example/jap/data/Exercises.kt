@@ -4,6 +4,8 @@ import kotlin.random.Random
 
 object Exercises {
 
+    private const val SESSION = 12
+
     fun normalise(s: String) = s.lowercase().filter { it.isLetter() }
 
     fun forLesson(lesson: Lesson): List<Exercise> = when (lesson.type) {
@@ -71,6 +73,26 @@ object Exercises {
 
     /** Writing practice: each item written from its meaning and sound. */
     fun forWriting(items: List<Item>): List<Exercise> = items.map { Write(it) }
+
+    /**
+     * Smart practice: about [SESSION] exercises that train only [skill], on the material passed in (the weakest first).
+     * Every graded exercise here maps back to [skill] under [Skills.of].
+     */
+    fun forSmart(skill: Skill, items: List<Item>, grammar: List<GrammarPoint>, phrases: List<Phrase>): List<Exercise> = when (skill) {
+        Skill.READING -> items.take(SESSION).mapIndexed { i, it ->
+            when (i % 3) {
+                0 -> recognise(it, items)
+                1 -> recall(it, items)
+                else -> typeIn(it)
+            }
+        } + if (items.size >= 4) listOf(match(items)) else emptyList()
+        // を falls back to a reading question in [listen], so it is left out here.
+        Skill.LISTENING -> items.filter { it.romaji != "wo" }.take(SESSION).map { listen(it, items) }
+        Skill.WRITING -> forWriting(items.take(Config.writingSessionSize))
+        Skill.SPEAKING -> forSpeaking(phrases)
+        Skill.GRAMMAR -> forGrammar(grammar) +
+            grammar.flatMap { it.sentences }.shuffled().take((SESSION - grammar.size).coerceAtLeast(0)).map(::build)
+    }
 
     /** A story's comprehension questions; the file lists the right answer first, so the options are shuffled. */
     fun forStory(story: Story): List<Exercise> = story.questions.map { q ->

@@ -284,6 +284,15 @@ class Progress(context: Context) {
         private set
     var bestGame by mutableIntStateOf(prefs.getInt("bestGame", 0))
         private set
+
+    /** The last [Skills.WINDOW] graded answers per skill, oldest first; Smart practice trains the weakest skill. */
+    var skillLog by mutableStateOf(readSkills())
+        private set
+
+    fun recordSkill(skill: Skill, correct: Boolean) {
+        skillLog = skillLog + (skill to Skills.append(skillLog[skill].orEmpty(), correct))
+        prefs.edit().putString("skillLog", skillLog.entries.joinToString("\n") { (k, v) -> "${k.name}|${v.joinToString("") { if (it) "1" else "0" }}" }).apply()
+    }
     private var bestN5 by mutableIntStateOf(prefs.getInt(examKey("n5"), -1))
     private var bestN4 by mutableIntStateOf(prefs.getInt(examKey("n4"), -1))
 
@@ -573,6 +582,7 @@ class Progress(context: Context) {
         xp = 0
         srs = emptyMap()
         writeSrs = emptyMap()
+        skillLog = emptyMap()
         reviewedDay = 0L
         reviewedReading = 0
         reviewedWriting = 0
@@ -633,6 +643,13 @@ class Progress(context: Context) {
             .putString("lineScores", lineScores.entries.joinToString("\n") { "${it.key}|${it.value}" })
             .apply()
     }
+
+    /** One line per skill: SKILL|answers, 1 for right and 0 for wrong; unknown skill names are skipped. */
+    private fun readSkills(): Map<Skill, List<Boolean>> =
+        prefs.getString("skillLog", "").orEmpty().lines().mapNotNull { line ->
+            val skill = Skill.entries.firstOrNull { it.name == line.substringBefore("|") }
+            skill?.let { it to line.substringAfter("|").map { c -> c == '1' } }
+        }.toMap()
 
     private fun readDays(key: String): Set<Long> =
         prefs.getStringSet(key, emptySet()).orEmpty().mapNotNull { it.toLongOrNull() }.toSet()

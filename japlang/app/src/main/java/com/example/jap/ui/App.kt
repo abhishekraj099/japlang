@@ -59,6 +59,7 @@ import com.example.jap.data.Review
 import com.example.jap.data.Scenario
 import com.example.jap.data.Scenarios
 import com.example.jap.data.SessionKind
+import com.example.jap.data.Skill
 import com.example.jap.data.Video
 import com.example.jap.data.VideoSection
 
@@ -194,6 +195,14 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                 else if (due) Review.pick(false, plan, progress.srs, SESSION_SIZE).takeIf { it.isNotEmpty() }?.let { revision(false, it) }
                 else null
             }
+        )
+    }
+
+    /** Smart practice on the weakest skill; "Keep going" picks again from the answers saved by then. */
+    fun smart(off: Set<Skill>): Session? = smartPractice(progress, off)?.let { (skill, exercises) ->
+        Session(
+            "Smart practice · ${skill.label}", null, scheme.secondary, Config.practiceXp, SessionKind.PRACTICE, exercises,
+            review = "smart", next = { smart(off) }
         )
     }
 
@@ -358,6 +367,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                     PracticeScreen(
                         progress,
                         onReview = { _, items, due -> go(Page.Run(revision(due, items))) },
+                        onSmart = { off -> smart(off)?.takeIf { it.exercises.isNotEmpty() }?.let { go(Page.Run(it)) } },
                         onWords = { go(Page.Words) },
                         onSpeak = { run("Speaking", SessionKind.PRACTICE, Config.practiceXp, Exercises.forSpeaking(Course.phrases)) },
                         onDictate = {

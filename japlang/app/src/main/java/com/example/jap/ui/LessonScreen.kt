@@ -127,6 +127,7 @@ import com.example.jap.data.Write
 import com.example.jap.ink.Handwriting
 import com.example.jap.ui.theme.Kin
 import com.example.jap.ink.LocalHandwriting
+import com.example.jap.data.Skills
 import kotlinx.coroutines.delay
 
 /** One run through a list of exercises. [lessonId] is set when finishing it completes a course lesson. */
@@ -231,6 +232,7 @@ fun LessonScreen(
     fun advance(exercise: Exercise, correct: Boolean?) {
         if (correct != null) {
             graded++
+            Skills.of(exercise)?.let { progress.recordSkill(it, correct) }
             val id = exercise.itemId
             // The first answer to an item sets its grade; a retry after a miss does not undo the miss.
             val grade = Memory.grade(correct, System.currentTimeMillis() - shownAt)
