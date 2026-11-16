@@ -61,6 +61,13 @@ Release builds are shrunk with R8. If a new library crashes only in release buil
 - App content → Target audience: 13 and over (the policy says the app is not directed at children).
 - Store listing: include the KanjiVG attribution if you show stroke-order screenshots (CC BY-SA 3.0).
 
+## Native-speaker review
+
+`python3 tools/review_sheet.py review.csv` exports every lesson text (practice items and sentences, dialogues,
+phrases, stories, talks, both mock exams, kanji example words) with a stable `id`. Give it to a native speaker: they
+fill in the `correction` column only where something is wrong or unnatural, and you apply fixes by `id`.
+`--check` self-tests the export.
+
 ## Still needed before a public launch
 
 - A contact email and hosted policy URL (steps 2 and 3).
