@@ -46,6 +46,7 @@ import com.example.jap.data.Config
 import com.example.jap.audio.LocalVoice
 import com.example.jap.data.Course
 import com.example.jap.data.Daily
+import com.example.jap.data.Exams
 import com.example.jap.data.Exercises
 import com.example.jap.data.Guide
 import com.example.jap.data.Item
@@ -83,7 +84,7 @@ internal sealed interface Page {
     class Cards(val items: List<Item>) : Page
     data object Words : Page
     class Game(val script: Kind? = null) : Page
-    data object Test : Page
+    class Test(val paperId: String) : Page
     data object Placement : Page
     data object Streak : Page
     data object Topics : Page
@@ -233,7 +234,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
         is Page.Cards -> FlashcardScreen(page.items, onBack = { go(Page.Words) })
         Page.Words -> WordsScreen(progress, onBack = { go(null) }, onCards = { go(Page.Cards(it)) })
         is Page.Game -> GameScreen(progress, onBack = { go(null) }, script = page.script)
-        Page.Test -> ExamScreen(progress, onBack = { go(null) })
+        is Page.Test -> ExamScreen(Exams.paper(page.paperId)!!, progress, onBack = { go(null) })
         Page.Placement -> PlacementScreen(progress, onLeave = { go(null) })
         Page.Streak -> StreakScreen(progress, onBack = { go(null) }, onStudy = {
             tab = 0
@@ -366,7 +367,7 @@ private fun Main(progress: Progress, page: Page?, go: (Page?) -> Unit) {
                         },
                         onWriting = { items -> run("Writing practice", SessionKind.PRACTICE, Config.practiceXp, Exercises.forWriting(items), review = "writing") },
                         onGame = { go(Page.Game()) },
-                        onExam = { go(Page.Test) },
+                        onExam = { go(Page.Test(it)) },
                         onStories = { go(Page.Stories) },
                         onTalk = { go(Page.TalkWith(it)) },
                         onConversations = { go(Page.Talk) },

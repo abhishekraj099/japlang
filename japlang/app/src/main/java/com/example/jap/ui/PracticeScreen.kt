@@ -46,7 +46,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jap.data.Config
 import com.example.jap.data.Course
-import com.example.jap.data.Exam
+import com.example.jap.data.Exams
 import com.example.jap.data.Guide
 import com.example.jap.data.GuideTalk
 import com.example.jap.data.Item
@@ -68,7 +68,7 @@ fun PracticeScreen(
     onDictate: () -> Unit,
     onWriting: (items: List<Item>) -> Unit,
     onGame: () -> Unit,
-    onExam: () -> Unit,
+    onExam: (paperId: String) -> Unit,
     onStories: () -> Unit,
     onTalk: (GuideTalk) -> Unit,
     onConversations: () -> Unit,
@@ -197,11 +197,14 @@ fun PracticeScreen(
             "Answer as many as you can in ${Config.gameSeconds} seconds." + if (progress.bestGame > 0) " Best: ${progress.bestGame}." else "",
             onGame
         )
-        Activity(
-            Icons.Rounded.Quiz, Exam.title,
-            "A timed practice test with explanations." + if (progress.bestExam >= 0) " Best: ${progress.bestExam}%." else "",
-            onExam
-        )
+        Exams.papers.forEach { paper ->
+            val best = progress.bestExam(paper.id)
+            Activity(
+                Icons.Rounded.Quiz, paper.title,
+                "A timed practice test with explanations." + if (best >= 0) " Best: $best%." else "",
+                { onExam(paper.id) }
+            )
+        }
         Activity(Icons.Rounded.TravelExplore, "Lesson on any topic", "Type a situation, like \"restaurant\" or \"train\", and get a lesson for it.", onTopics)
     }
 }

@@ -284,8 +284,11 @@ class Progress(context: Context) {
         private set
     var bestGame by mutableIntStateOf(prefs.getInt("bestGame", 0))
         private set
-    var bestExam by mutableIntStateOf(prefs.getInt("bestExam", -1))
-        private set
+    private var bestN5 by mutableIntStateOf(prefs.getInt(examKey("n5"), -1))
+    private var bestN4 by mutableIntStateOf(prefs.getInt(examKey("n4"), -1))
+
+    /** Best percent on that paper, -1 before the first sitting. */
+    fun bestExam(paperId: String): Int = if (paperId == "n4") bestN4 else bestN5
 
     /** Longest run of correct answers inside one session. */
     var bestRun by mutableIntStateOf(prefs.getInt("bestRun", 0))
@@ -455,8 +458,9 @@ class Progress(context: Context) {
     }
 
     /** [percent] is the share of correct answers, 0 to 100. */
-    fun recordExam(percent: Int) {
-        if (percent > bestExam) bestExam = percent
+    fun recordExam(paperId: String, percent: Int) {
+        if (percent <= bestExam(paperId)) return
+        if (paperId == "n4") bestN4 = percent else bestN5 = percent
         save()
     }
 
@@ -541,7 +545,7 @@ class Progress(context: Context) {
             BadgeMetric.XP -> xp
             BadgeMetric.STREAK -> streak
             BadgeMetric.LEARNED -> Review.itemsOnly(srs).size
-            BadgeMetric.EXAM -> bestExam
+            BadgeMetric.EXAM -> bestExam("n5")
             BadgeMetric.RUN -> bestRun
             BadgeMetric.PROTECTED -> protectedDays.size
             BadgeMetric.COINS -> coins
@@ -582,7 +586,8 @@ class Progress(context: Context) {
         lastWeek = 0L
         weekTotal = 0
         bestGame = 0
-        bestExam = -1
+        bestN5 = -1
+        bestN4 = -1
         bestRun = 0
         coins = 0
         omamori = 0
@@ -611,7 +616,8 @@ class Progress(context: Context) {
             .putLong("lastWeek", lastWeek)
             .putInt("weekXp", weekTotal)
             .putInt("bestGame", bestGame)
-            .putInt("bestExam", bestExam)
+            .putInt(examKey("n5"), bestN5)
+            .putInt(examKey("n4"), bestN4)
             .putInt("bestRun", bestRun)
             .putInt("coins", coins)
             .putInt("omamori", omamori)
@@ -674,6 +680,9 @@ class Progress(context: Context) {
 
     companion object {
         const val SETTINGS = "settings"
+
+        /** N5 keeps the key from before there were two papers, so old best scores and the Test taker trophy carry over. */
+        fun examKey(paperId: String) = if (paperId == "n5") "bestExam" else "bestExam_$paperId"
         const val KEY_REMINDER = "reminder"
         private const val DAY = 86_400_000L
         private const val KEEP_DAYS = 400

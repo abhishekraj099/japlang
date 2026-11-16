@@ -1,0 +1,710 @@
+{
+  "title": "JLPT N4 mock test",
+  "minutes": 60,
+  "passPercent": 60,
+  "questions": [
+    {
+      "section": "Vocabulary",
+      "prompt": "雨 が ふって いる ので、かさ を ＿＿ 出かけます。",
+      "options": [
+        "もって",
+        "かぶって",
+        "はいて",
+        "しめて"
+      ],
+      "explain": "もって (motte) = carrying. \"It's raining, so I'll go out with an umbrella.\" かぶります is for hats, はきます for shoes and trousers, しめます for ties and belts."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "電車 が おくれて、じゅぎょう に ＿＿。",
+      "options": [
+        "まにあいませんでした",
+        "かたづけませんでした",
+        "つたえませんでした",
+        "あやまりませんでした"
+      ],
+      "explain": "まにあいます (ma ni aimasu) = be in time. \"The train was late, so I wasn't in time for class.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "へや が きたない ので、＿＿ ください。",
+      "options": [
+        "かたづけて",
+        "こわして",
+        "よごして",
+        "ひろって"
+      ],
+      "explain": "かたづけます (katazukemasu) = tidy up. \"The room is dirty, so please tidy it up.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "あした は ＿＿ が わるい ので、あさって に して も いい です か。",
+      "options": [
+        "つごう",
+        "けしき",
+        "しゅみ",
+        "きょうみ"
+      ],
+      "explain": "つごう が わるい (tsugou ga warui) = it doesn't suit me. \"Tomorrow is bad for me, so could we make it the day after?\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "日本 の せいかつ に もう ＿＿。",
+      "options": [
+        "なれました",
+        "にました",
+        "ほめました",
+        "くらべました"
+      ],
+      "explain": "〜に なれます (ni naremasu) = get used to. \"I've already got used to life in Japan.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "この 道 は 車 が 多くて ＿＿ です から、気 を つけて ください。",
+      "options": [
+        "あぶない",
+        "めずらしい",
+        "はずかしい",
+        "やわらかい"
+      ],
+      "explain": "あぶない (abunai) = dangerous. \"This road has a lot of cars and is dangerous, so be careful.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "しょうらい の 仕事 に ついて、先生 に ＿＿ しました。",
+      "options": [
+        "そうだん",
+        "よやく",
+        "ひっこし",
+        "るす"
+      ],
+      "explain": "そうだん します (soudan shimasu) = consult, talk over. \"I talked to my teacher about my future job.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "レストラン に 電話 を して、7時 に 4人 で ＿＿ しました。",
+      "options": [
+        "よやく",
+        "けいけん",
+        "しっぱい",
+        "せつめい"
+      ],
+      "explain": "よやく します (yoyaku shimasu) = book, reserve. \"I phoned the restaurant and booked for four at seven.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "かぜ を ひいた とき は、うち で ＿＿ 休んで ください。",
+      "options": [
+        "ゆっくり",
+        "そろそろ",
+        "ちっとも",
+        "なかなか"
+      ],
+      "explain": "ゆっくり (yukkuri) = properly, taking your time. \"When you have a cold, rest well at home.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "この 本 は むずかしくて、＿＿ わかりません。",
+      "options": [
+        "ちっとも",
+        "かならず",
+        "もうすぐ",
+        "ぜひ"
+      ],
+      "explain": "ちっとも 〜ません (chittomo ... masen) = not at all. \"This book is hard; I don't understand it at all.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "大切な かいぎ です から、＿＿ 来て ください。",
+      "options": [
+        "かならず",
+        "ちっとも",
+        "けっして",
+        "ずいぶん"
+      ],
+      "explain": "かならず (kanarazu) = without fail. \"It's an important meeting, so be sure to come.\" ちっとも and けっして go with a negative."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "A: ＿＿ です ね。お元気 でした か。  B: はい、元気 でした。",
+      "options": [
+        "おひさしぶり",
+        "おまちどおさま",
+        "おだいじに",
+        "いってらっしゃい"
+      ],
+      "explain": "おひさしぶり です (ohisashiburi desu) = it's been a long time. \"Long time no see. Have you been well?\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "友だち を 駅 まで ＿＿ に 行きます。",
+      "options": [
+        "むかえ",
+        "とどけ",
+        "しらべ",
+        "くらべ"
+      ],
+      "explain": "むかえ に 行きます (mukae ni ikimasu) = go to meet someone. \"I'm going to the station to meet my friend.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "ことば の 意味 が わからない とき は、じしょ で ＿＿。",
+      "options": [
+        "しらべます",
+        "あやまります",
+        "はこびます",
+        "ひろいます"
+      ],
+      "explain": "しらべます (shirabemasu) = look up. \"When I don't know what a word means, I look it up in a dictionary.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence means the same as 「この へや は 少し くらい です。」?",
+      "options": [
+        "この へや は あまり 明るく ありません。",
+        "この へや は とても 明るい です。",
+        "この へや は あまり 広く ありません。",
+        "この へや は とても しずか です。"
+      ],
+      "explain": "くらい (kurai) = dark, so the room is \"not very bright\": あまり 明るく ありません (amari akaruku arimasen)."
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence means the same as 「きのう は るす でした。」?",
+      "options": [
+        "きのう は うち に いません でした。",
+        "きのう は うち に いました。",
+        "きのう は いそがしかった です。",
+        "きのう は びょうき でした。"
+      ],
+      "explain": "るす (rusu) = being out, not at home: うち に いません でした (uchi ni imasen deshita), \"I wasn't at home.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence means the same as 「この 店 は いつも すいて います。」?",
+      "options": [
+        "この 店 は いつも 人 が 少ない です。",
+        "この 店 は いつも 人 が 多い です。",
+        "この 店 は いつも 高い です。",
+        "この 店 は いつも 休み です。"
+      ],
+      "explain": "すいて います (suite imasu) = is empty, not crowded: 人 が 少ない (hito ga sukunai), \"there are few people.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence means the same as 「弟 は 先生 に しかられました。」?",
+      "options": [
+        "先生 は 弟 に 「だめ です よ。」と 言いました。",
+        "先生 は 弟 に 「よく できました。」と 言いました。",
+        "先生 は 弟 に 「ありがとう。」と 言いました。",
+        "先生 は 弟 に 「おはよう。」と 言いました。"
+      ],
+      "explain": "しかられました (shikararemashita) = was told off, so the teacher said 「だめ です よ。」 (dame desu yo), \"That's not OK.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence uses 「こわれる」 correctly?",
+      "options": [
+        "時計 が こわれた ので、新しい の を 買いました。",
+        "かぜ が こわれて、ねつ が 出ました。",
+        "雨 が こわれて、空 が 明るく なりました。",
+        "おなか が いっぱい で、ごはん が こわれました。"
+      ],
+      "explain": "こわれる (kowareru) = break, of a machine or object. \"My watch broke, so I bought a new one.\""
+    },
+    {
+      "section": "Vocabulary",
+      "prompt": "Which sentence uses 「ていねい」 correctly?",
+      "options": [
+        "先生 は ていねいに せつめい して くれました。",
+        "この ラーメン は ていねい で おいしい です。",
+        "今日 は ていねい で、雨 が ふりそう です。",
+        "ていねいな 道 を 歩いて 学校 へ 行きます。"
+      ],
+      "explain": "ていねい (teinei) = careful, polite. \"The teacher explained it carefully for me.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「父 は 毎朝 車 を 運転 します。」 How is 運転 read?",
+      "options": [
+        "うんてん",
+        "うんでん",
+        "うてん",
+        "うんどう"
+      ],
+      "explain": "運転 = うんてん (unten), driving. \"My father drives every morning.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「あした は 英語 の 試験 が あります。」 How is 試験 read?",
+      "options": [
+        "しけん",
+        "しげん",
+        "じけん",
+        "しっけん"
+      ],
+      "explain": "試験 = しけん (shiken), exam. \"I have an English exam tomorrow.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「この 病院 は 駅 から 近い です。」 How is 病院 read?",
+      "options": [
+        "びょういん",
+        "びよういん",
+        "びょうき",
+        "ぴょういん"
+      ],
+      "explain": "病院 = びょういん (byouin), hospital. びよういん is a hair salon."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「あの 建物 は 図書館 です。」 How is 建物 read?",
+      "options": [
+        "たてもの",
+        "けんぶつ",
+        "たちもの",
+        "たてぶつ"
+      ],
+      "explain": "建物 = たてもの (tatemono), building. \"That building is the library.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「兄 は 銀行 で 働いて います。」 How is 働いて read?",
+      "options": [
+        "はたらいて",
+        "うごいて",
+        "あるいて",
+        "つとめて"
+      ],
+      "explain": "働いて = はたらいて (hataraite), working. \"My older brother works at a bank.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「この 漢字 の 意味 を 教えて ください。」 How is 意味 read?",
+      "options": [
+        "いみ",
+        "いし",
+        "おもみ",
+        "いあじ"
+      ],
+      "explain": "意味 = いみ (imi), meaning. \"Please tell me what this kanji means.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「わたし は 音楽 を 聞く の が 好き です。」 How is 音楽 read?",
+      "options": [
+        "おんがく",
+        "おんらく",
+        "いんがく",
+        "おとがく"
+      ],
+      "explain": "音楽 = おんがく (ongaku), music. \"I like listening to music.\""
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「来週、りょこう に 行きます。」 How is りょこう written?",
+      "options": [
+        "旅行",
+        "族行",
+        "旅待",
+        "方行"
+      ],
+      "explain": "りょこう (ryokou) = 旅行, a trip. 族 (family) only looks like 旅."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「駅 で 友だち を まって います。」 How is まって written?",
+      "options": [
+        "待って",
+        "持って",
+        "特って",
+        "時って"
+      ],
+      "explain": "まって (matte) = 待って, waiting. 持って is もって, holding."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「この へや は ひろい です。」 How is ひろい written?",
+      "options": [
+        "広い",
+        "遠い",
+        "低い",
+        "近い"
+      ],
+      "explain": "ひろい (hiroi) = 広い, spacious. 遠い = far, 低い = low, 近い = near."
+    },
+    {
+      "section": "Kanji",
+      "prompt": "「えいが を 見 に 行きません か。」 How is えいが written?",
+      "options": [
+        "映画",
+        "英画",
+        "映回",
+        "英回"
+      ],
+      "explain": "えいが (eiga) = 映画, a film. 英 is the えい of 英語 (English)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "夏休み に 北海道 へ 行こう ＿＿ 思って います。",
+      "options": [
+        "と",
+        "を",
+        "に",
+        "で"
+      ],
+      "explain": "volitional + と 思って います = I'm thinking of doing: 行こう と 思って います (ikou to omotte imasu)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "来年、日本 へ りゅうがく する ＿＿ です。",
+      "options": [
+        "つもり",
+        "ので",
+        "まま",
+        "ながら"
+      ],
+      "explain": "dictionary form + つもり です = I intend to: \"I plan to study in Japan next year.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "空 が くらい です ね。午後 は 雨 が ふる ＿＿。",
+      "options": [
+        "かもしれません",
+        "つもりです",
+        "ことが できます",
+        "ことに します"
+      ],
+      "explain": "〜かもしれません (kamoshiremasen) = may, might: \"It may rain this afternoon.\" Rain can't intend, decide or be able to."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"This cake looks delicious.\"  この ケーキ は おいし ＿＿ です ね。",
+      "options": [
+        "そう",
+        "よう",
+        "みたい",
+        "らしい"
+      ],
+      "explain": "い-adjective stem + そう = looks: おいしそう (oishisou). よう, みたい and らしい follow the full おいしい."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "天気 よほう に よると、あした は ゆき が ふる ＿＿ です。",
+      "options": [
+        "そう",
+        "つもり",
+        "ため",
+        "まま"
+      ],
+      "explain": "plain form + そう です = I hear that: \"According to the forecast, it will snow tomorrow.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "田中さん の へや の 電気 が きえて います。もう ねた ＿＿ です。",
+      "options": [
+        "よう",
+        "つもり",
+        "ため",
+        "ながら"
+      ],
+      "explain": "plain form + よう です = it seems: \"Tanaka's light is off. He seems to have gone to bed.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"May I try these shoes on?\"  この くつ、はいて ＿＿ も いい です か。",
+      "options": [
+        "みて",
+        "しまって",
+        "おいて",
+        "あげて"
+      ],
+      "explain": "て-form + みる = try doing: はいて みて も いい です か (haite mite mo ii desu ka)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"I ended up eating all the cake.\"  ケーキ を ぜんぶ 食べて ＿＿。",
+      "options": [
+        "しまいました",
+        "みました",
+        "おきました",
+        "いきました"
+      ],
+      "explain": "て-form + しまう = end up doing, often with regret: 食べて しまいました (tabete shimaimashita)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"I'll buy the drinks ahead of the party.\"  パーティー の 前 に 飲み物 を 買って ＿＿。",
+      "options": [
+        "おきます",
+        "しまいます",
+        "みます",
+        "います"
+      ],
+      "explain": "て-form + おく = do in advance: 買って おきます (katte okimasu)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"This flat is near the station, and on top of that the rent is cheap.\"  この アパート は 駅 から 近い ＿＿、やちん も 安い です。",
+      "options": [
+        "し",
+        "とき",
+        "ながら",
+        "まで"
+      ],
+      "explain": "plain form + し = and what's more, giving one reason after another: 近い し (chikai shi)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"While I'm in Japan, I want to climb Mount Fuji.\"  日本 に いる ＿＿ に、ふじさん に のぼりたい です。",
+      "options": [
+        "あいだ",
+        "ながら",
+        "ところ",
+        "ため"
+      ],
+      "explain": "〜あいだ に (aida ni) = while, during that time: 日本 に いる あいだ に (nihon ni iru aida ni)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"This pen is easy to write with.\"  この ペン は 書き ＿＿ です。",
+      "options": [
+        "やすい",
+        "にくい",
+        "たい",
+        "そう"
+      ],
+      "explain": "verb stem + やすい = easy to do: 書きやすい (kakiyasui). 書きにくい would be hard to write with."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "きのう の 夜、おさけ を 飲み ＿＿、あたま が いたい です。",
+      "options": [
+        "すぎて",
+        "やすくて",
+        "ながら",
+        "たくて"
+      ],
+      "explain": "verb stem + すぎる = too much: 飲みすぎて (nomisugite). \"I drank too much last night, and my head hurts.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"Someone stepped on my foot on the train.\"  電車 の 中 で 足 を ＿＿。",
+      "options": [
+        "ふまれました",
+        "ふみました",
+        "ふませました",
+        "ふめました"
+      ],
+      "explain": "passive: ふむ → ふまれる (fumareru). 足 を ふまれました = I had my foot stepped on."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "わたし は 母 ＿＿ しかられました。",
+      "options": [
+        "に",
+        "を",
+        "で",
+        "が"
+      ],
+      "explain": "In the passive, the person who does it takes に: 母 に しかられました (haha ni shikararemashita), \"I was told off by my mother.\""
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"Mother made my little brother clean his room.\"  母 は 弟 に へや を そうじ ＿＿。",
+      "options": [
+        "させました",
+        "されました",
+        "しました",
+        "できました"
+      ],
+      "explain": "causative: する → させる (saseru). そうじ させました = made him clean."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"Please let me go home early today.\"  今日 は 早く 帰ら ＿＿ ください。",
+      "options": [
+        "せて",
+        "れて",
+        "なくて",
+        "ないで"
+      ],
+      "explain": "causative て-form + ください = please let me: 帰らせて ください (kaerasete kudasai)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"When spring comes, the cherry blossoms bloom.\"  春 に なれ ＿＿、さくら が さきます。",
+      "options": [
+        "ば",
+        "ても",
+        "のに",
+        "から"
+      ],
+      "explain": "ば-form = if, when: なる → なれば (nareba)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "かぜ の とき は、薬 を 飲んだ ＿＿ いい です よ。",
+      "options": [
+        "ほうが",
+        "まま",
+        "ところ",
+        "ばかり"
+      ],
+      "explain": "た-form + ほうが いい = you'd better: 飲んだ ほうが いい です (nonda hou ga ii desu)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"I have to get up early tomorrow.\"  あした は 早く 起き ＿＿。",
+      "options": [
+        "なければ なりません",
+        "なくても いい です",
+        "ても いい です",
+        "ないで ください"
+      ],
+      "explain": "ない-stem + なければ なりません = must: 起きなければ なりません (okinakereba narimasen)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "\"My friend drove me to the station.\"  友だち が 駅 まで 車 で 送って ＿＿。",
+      "options": [
+        "くれました",
+        "あげました",
+        "もらいました",
+        "やりました"
+      ],
+      "explain": "て-form + くれる = someone does something for me: 送って くれました (okutte kuremashita)."
+    },
+    {
+      "section": "Grammar",
+      "prompt": "わたし は 日本語 で 手紙 が ＿＿。",
+      "options": [
+        "書けます",
+        "書きます",
+        "書かせます",
+        "書いて います"
+      ],
+      "explain": "With が, use the potential form: 手紙 が 書けます (tegami ga kakemasu), \"I can write a letter in Japanese.\""
+    },
+    {
+      "section": "Reading",
+      "prompt": "What time does the meeting start now?",
+      "options": [
+        "11:00",
+        "10:00",
+        "3:00",
+        "10:30"
+      ],
+      "explain": "かいぎ は 10時 から 11時 に かわりました = \"The meeting has moved from 10 to 11.\"",
+      "passage": "田中さん へ\nあした の かいぎ は 10時 から 11時 に かわりました。ばしょ は 3かい の かいぎしつ です。かいぎ の 前 に しりょう を 10まい コピー して おいて ください。\n山田"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What does Yamada ask Tanaka to do?",
+      "options": [
+        "Make ten copies of the papers before the meeting",
+        "Book a room on the third floor",
+        "Phone Yamada at ten",
+        "Buy ten notebooks"
+      ],
+      "explain": "しりょう を 10まい コピー して おいて ください = \"Please copy ten sets of the papers in advance.\"",
+      "passage": "田中さん へ\nあした の かいぎ は 10時 から 11時 に かわりました。ばしょ は 3かい の かいぎしつ です。かいぎ の 前 に しりょう を 10まい コピー して おいて ください。\n山田"
+    },
+    {
+      "section": "Reading",
+      "prompt": "How long can the writer run now?",
+      "options": [
+        "30 minutes",
+        "10 minutes",
+        "One hour",
+        "Three minutes"
+      ],
+      "explain": "今 は 30分 走れる よう に なりました = \"Now I've become able to run for 30 minutes.\"",
+      "passage": "わたし は 先月 から 毎朝 こうえん を 走って います。はじめ は 10分 走る と つかれて しまいました が、今 は 30分 走れる よう に なりました。走った あと で 飲む コーヒー は とても おいしい です。来月 は 友だち と いっしょ に 走る つもり です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What does the writer plan to do next month?",
+      "options": [
+        "Run with a friend",
+        "Stop running",
+        "Run in the evening",
+        "Stop drinking coffee"
+      ],
+      "explain": "来月 は 友だち と いっしょ に 走る つもり です = \"Next month I plan to run with a friend.\"",
+      "passage": "わたし は 先月 から 毎朝 こうえん を 走って います。はじめ は 10分 走る と つかれて しまいました が、今 は 30分 走れる よう に なりました。走った あと で 飲む コーヒー は とても おいしい です。来月 は 友だち と いっしょ に 走る つもり です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "When did the writer start running?",
+      "options": [
+        "Last month",
+        "Last year",
+        "Last week",
+        "Yesterday"
+      ],
+      "explain": "先月 から (sengetsu kara) = since last month.",
+      "passage": "わたし は 先月 から 毎朝 こうえん を 走って います。はじめ は 10分 走る と つかれて しまいました が、今 は 30分 走れる よう に なりました。走った あと で 飲む コーヒー は とても おいしい です。来月 は 友だち と いっしょ に 走る つもり です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "How many books can one person borrow?",
+      "options": [
+        "5",
+        "2",
+        "7",
+        "1"
+      ],
+      "explain": "一人 5さつ まで です = \"Up to five books per person.\"",
+      "passage": "図書館 から の おしらせ\n・本 は 2週間 かりる こと が できます。\n・一人 5さつ まで です。\n・本 を かえす の が おくれた 人 は、1週間 本 を かりる こと が できません。\n・月曜日 は 休み です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "What happens if you return a book late?",
+      "options": [
+        "You cannot borrow books for one week",
+        "You must pay a fine",
+        "You can only borrow two books",
+        "You must come back on Monday"
+      ],
+      "explain": "おくれた 人 は、1週間 本 を かりる こと が できません = \"People who are late cannot borrow books for a week.\"",
+      "passage": "図書館 から の おしらせ\n・本 は 2週間 かりる こと が できます。\n・一人 5さつ まで です。\n・本 を かえす の が おくれた 人 は、1週間 本 を かりる こと が できません。\n・月曜日 は 休み です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "Which day is the library closed?",
+      "options": [
+        "Monday",
+        "Sunday",
+        "Saturday",
+        "Friday"
+      ],
+      "explain": "月曜日 は 休み です = \"Closed on Mondays.\"",
+      "passage": "図書館 から の おしらせ\n・本 は 2週間 かりる こと が できます。\n・一人 5さつ まで です。\n・本 を かえす の が おくれた 人 は、1週間 本 を かりる こと が できません。\n・月曜日 は 休み です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "Who cooked Japanese food every evening?",
+      "options": [
+        "The friend's mother",
+        "The writer",
+        "The friend",
+        "The friend's father"
+      ],
+      "explain": "友だち の お母さん は … 毎ばん おいしい 日本料理 を 作って くれました = \"My friend's mother made delicious Japanese food every evening.\"",
+      "passage": "先週、日本人 の 友だち の うち に とまりました。友だち の お母さん は 料理 が じょうず で、毎ばん おいしい 日本料理 を 作って くれました。わたし は おれい に 国 の 料理 を 作りました。みんな が 「おいしい。」と 言って くれた ので、うれしかった です。"
+    },
+    {
+      "section": "Reading",
+      "prompt": "Why was the writer happy?",
+      "options": [
+        "Everyone said the writer's cooking was delicious",
+        "The friend's mother taught the writer to cook",
+        "The writer stayed for a whole month",
+        "The writer was given a present"
+      ],
+      "explain": "みんな が 「おいしい。」と 言って くれた ので、うれしかった です = \"Everyone said it was delicious, so I was happy.\"",
+      "passage": "先週、日本人 の 友だち の うち に とまりました。友だち の お母さん は 料理 が じょうず で、毎ばん おいしい 日本料理 を 作って くれました。わたし は おれい に 国 の 料理 を 作りました。みんな が 「おいしい。」と 言って くれた ので、うれしかった です。"
+    }
+  ]
+}

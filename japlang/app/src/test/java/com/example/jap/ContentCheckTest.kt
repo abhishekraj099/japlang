@@ -1,9 +1,14 @@
 package com.example.jap
 
+import com.example.jap.data.Config
+import com.example.jap.data.BadgeMetric
 import com.example.jap.data.Course
+import com.example.jap.data.Exams
+import com.example.jap.data.Progress
 import com.example.jap.data.Kind
 import org.json.JSONArray
 import org.json.JSONObject
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.BeforeClass
 import org.junit.Test
@@ -132,5 +137,41 @@ class ContentCheckTest {
             val options = q.getJSONArray("options").let { a -> List(a.length()) { a.getString(it) } }
             assertTrue("Answer not unique: ${q.getString("prompt")}", options.count { it == options[0] } == 1)
         }
+    }
+
+    /** The N4 paper mirrors the N5 one: all four sections, passages for reading, one clear answer each. */
+    @Test
+    fun n4PaperIsAFullTest() {
+        Exams.load("n4", ContentTest.asset("exam_n4.json"))
+        val paper = Exams.paper("n4")!!
+        assertTrue("Too few questions: ${paper.questions.size}", paper.questions.size >= 55)
+        assertEquals(60, paper.minutes)
+        val sections = paper.questions.map { it.section }.toSet()
+        listOf("Vocabulary", "Grammar", "Kanji", "Reading").forEach { assertTrue("No $it questions", it in sections) }
+        paper.questions.forEach { q ->
+            if (q.section == "Reading") assertTrue("Reading without a passage: ${q.prompt}", q.passage.isNotBlank())
+            assertTrue("Too few options: ${q.prompt}", q.options.size >= 3)
+            assertTrue("Repeated option: ${q.prompt}", q.options.toSet().size == q.options.size)
+            assertTrue("Answer not unique: ${q.prompt}", q.options.count { it == q.options[0] } == 1)
+        }
+    }
+
+    @Test
+    fun n5PaperUnchanged() {
+        val raw = ContentTest.asset("exam.json")
+        Exams.load("n5", raw)
+        val paper = Exams.paper("n5")!!
+        assertEquals(62, paper.questions.size)
+        assertEquals(raw.getString("title"), paper.title)
+        val prompts = raw.getJSONArray("questions").objects().map { it.getString("prompt") }
+        assertEquals(prompts, paper.questions.map { it.prompt })
+    }
+
+    /** Scores saved before N4 existed live under "bestExam"; the N5 paper and the Test taker trophy must keep reading it. */
+    @Test
+    fun n5BestScoreAndTrophyCarryOver() {
+        assertEquals("bestExam", Progress.examKey("n5"))
+        assertTrue(Progress.examKey("n4") != Progress.examKey("n5"))
+        assertTrue(Config.badges.any { it.title == "Test taker" && it.metric == BadgeMetric.EXAM })
     }
 }

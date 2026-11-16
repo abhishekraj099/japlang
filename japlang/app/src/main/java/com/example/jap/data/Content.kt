@@ -16,7 +16,8 @@ object Content {
         if (loaded) return
         Config.load(read(context, "config.json"))
         Course.load(read(context, "course.json"))
-        Exam.load(read(context, "exam.json"))
+        Exams.load("n5", read(context, "exam.json"))
+        Exams.load("n4", read(context, "exam_n4.json"))
         Scenarios.load(read(context, "scenarios.json"))
         Videos.load(read(context, "videos.json"))
         Guide.load(read(context, "guide.json"))

@@ -34,34 +34,34 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jap.data.Config
-import com.example.jap.data.Exam
+import com.example.jap.data.ExamPaper
 import com.example.jap.data.Progress
 import kotlinx.coroutines.delay
 
 private enum class ExamPhase { INTRO, RUNNING, RESULT }
 
 @Composable
-fun ExamScreen(progress: Progress, onBack: () -> Unit) {
+fun ExamScreen(paper: ExamPaper, progress: Progress, onBack: () -> Unit) {
     val scheme = MaterialTheme.colorScheme
-    val questions = Exam.questions
+    val questions = paper.questions
     // Option order is fixed for one sitting so the review matches what was shown.
     val options = remember { questions.map { it.options.shuffled() } }
     val picks = remember { mutableStateListOf<Int>().also { list -> repeat(questions.size) { list.add(-1) } } }
     var phase by remember { mutableStateOf(ExamPhase.INTRO) }
     var index by remember { mutableIntStateOf(0) }
-    var left by remember { mutableIntStateOf(Exam.minutes * 60) }
+    var left by remember { mutableIntStateOf(paper.minutes * 60) }
     var confirmLeave by remember { mutableStateOf(false) }
 
     // Read from state at call time: the timer calls finish() long after this composition.
     fun rightCount() = questions.indices.count { picks[it] >= 0 && options[it][picks[it]] == questions[it].options.first() }
     val right = rightCount()
     val percent = right * 100 / questions.size
-    val passed = percent >= Exam.passPercent
+    val passed = percent >= paper.passPercent
 
     fun finish() {
         val score = rightCount() * 100 / questions.size
-        progress.recordExam(score)
-        if (score >= Exam.passPercent) progress.finish(null, Config.examPassXp, emptyMap())
+        progress.recordExam(paper.id, score)
+        if (score >= paper.passPercent) progress.finish(null, Config.examPassXp, emptyMap())
         phase = ExamPhase.RESULT
     }
 
@@ -74,13 +74,13 @@ fun ExamScreen(progress: Progress, onBack: () -> Unit) {
         if (phase == ExamPhase.RUNNING) finish()
     }
 
-    SubScreen(Exam.title, onBack = { if (phase == ExamPhase.RUNNING) confirmLeave = true else onBack() }) {
+    SubScreen(paper.title, onBack = { if (phase == ExamPhase.RUNNING) confirmLeave = true else onBack() }) {
         when (phase) {
             ExamPhase.INTRO -> Column(Modifier.fillMaxSize().padding(20.dp)) {
                 Column(Modifier.weight(1f).fillMaxWidth(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
                     Icon(Icons.Rounded.Quiz, contentDescription = null, tint = scheme.primary, modifier = Modifier.size(72.dp))
                     Text(
-                        "${questions.size} questions · ${Exam.minutes} minutes",
+                        "${questions.size} questions · ${paper.minutes} minutes",
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold,
                         color = scheme.onBackground,
@@ -88,16 +88,16 @@ fun ExamScreen(progress: Progress, onBack: () -> Unit) {
                         modifier = Modifier.padding(top = 12.dp)
                     )
                     Text(
-                        "Vocabulary, kanji, grammar and reading in the style of JLPT N5. " +
+                        "Vocabulary, kanji, grammar and reading in the style of JLPT ${paper.id.uppercase()}. " +
                             "You see the answers and explanations at the end. " +
-                            "${Exam.passPercent}% or more is a pass.",
+                            "${paper.passPercent}% or more is a pass.",
                         color = scheme.onSurfaceVariant,
                         textAlign = TextAlign.Center,
                         modifier = Modifier.padding(top = 8.dp)
                     )
-                    if (progress.bestExam >= 0) {
+                    if (progress.bestExam(paper.id) >= 0) {
                         Text(
-                            "Your best: ${progress.bestExam}%",
+                            "Your best: ${progress.bestExam(paper.id)}%",
                             fontWeight = FontWeight.Bold,
                             color = scheme.primary,
                             modifier = Modifier.padding(top = 12.dp)
